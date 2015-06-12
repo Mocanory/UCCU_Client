@@ -1,0 +1,250 @@
+[22:17:48] [ClientServer/ClientMain/KERNEL]: 0.开始建立网络连接…………
+[22:17:48] [ClientServer/ClientMain/KERNEL]: 1.网络连接成功!
+[22:17:48] [ClientServer/ClientMain/KERNEL]: 2.发送0000包，确认对方是否为服务器Gate端
+[22:17:48] [ClientServer/ClientDecoder/INFO]: Receive a package 0001(回应连接请求)
+[22:17:48] [ClientServer/ClientDecoder/INFO]: package 0001: 1
+[22:17:48] [ClientSever/LoginBox/serverState/INFO]: Receive a package 0001(回应连接请求)
+[22:17:48] [ClientSever/LoginBox/serverState/INFO]: package 0001: 1
+[22:17:48] [ClientServer/ClientMain/KERNEL]: 3.收到0001包，确认对方为服务器Gate端
+[22:17:48] [ClientServer/ClientMain/KERNEL]: 4.初始化loginBox登陆界面
+[22:17:58] [ClientServer/LoginBox/INFO]: package 0004(注册信息) send!
+[22:17:58] [ClientServer/ClientDecoder/INFO]: Receive a package 0005(注册结果)
+[22:17:58] [ClientServer/ClientDecoder/INFO]: package 0005: true
+[22:17:58] [ClientServer/LoginBox/onRegistResponse/INFO]: Receive a package 0005(注册结果)
+[22:17:58] [ClientServer/LoginBox/onRegistResponse/INFO]: package 0005: true
+[22:17:59] [ClientServer/LoginBox/INFO]: package 0002(登陆信息) send!
+[22:18:00] [ClientServer/ClientDecoder/INFO]: Receive a package 0003(登陆反馈)
+[22:18:00] [ClientServer/ClientDecoder/INFO]: package 0003: true
+[22:18:00] [ClientServer/LoginBox/onLoginResponse/INFO]: Receive a package 0003(登陆反馈)
+[22:18:00] [ClientServer/LoginBox/onLoginResponse/INFO]: package 0003: true
+[22:18:00] [ClientServer/ClientDecoder/INFO]: Receive a package 0006(角色预加载——空包)
+[22:18:00] [ClientServer/LoginBox/noMorePackage/INFO]: Receive a package 0006(角色预加载)
+[22:18:00] [ClientServer/LoginBox/noMorePackage/INFO]: package 0006: 这是最后一个空包
+[22:18:09] [ClientServer/LoginBox/INFO]: package 0008(创建角色) send!
+[22:18:09] [ClientServer/LoginBox/INFO]: userID: wangp3name: wp
+[22:18:09] [ClientServer/ClientDecoder/INFO]: Receive a package 0009(角色创建结果)
+[22:18:09] [ClientServer/ClientDecoder/INFO]: package 0009: true
+[22:18:09] [ClientServer/LoginBox/onCreatResponse/INFO]: Receive a package 0009(角色创建结果)
+[22:18:10] [ClientServer/ClientDecoder/INFO]: Receive a package 0006(角色预加载)
+[22:18:10] [ClientServer/ClientDecoder/INFO]: package 0006: /id: 2011/name: wp/level: 1/gender: 1
+[22:18:10] [ClientSever/LoginBox/addCharacter/INFO]: Receive a package 0006(角色预加载)
+[22:18:26] [ClientServer/LoginBox/INFO]: package 0008(创建角色) send!
+[22:18:26] [ClientServer/LoginBox/INFO]: userID: wangp3name: wp2
+[22:18:27] [ClientServer/ClientDecoder/INFO]: Receive a package 0009(角色创建结果)
+[22:18:27] [ClientServer/ClientDecoder/INFO]: package 0009: true
+[22:18:27] [ClientServer/LoginBox/onCreatResponse/INFO]: Receive a package 0009(角色创建结果)
+[22:18:28] [ClientServer/ClientDecoder/INFO]: Receive a package 0006(角色预加载)
+[22:18:28] [ClientServer/ClientDecoder/INFO]: package 0006: /id: 2012/name: wp2/level: 1/gender: 1
+[22:18:28] [ClientSever/LoginBox/addCharacter/INFO]: Receive a package 0006(角色预加载)
+[22:18:37] [ClientServer/LoginBox/INFO]: package 0007(角色选择) send!
+[22:18:37] [ClientServer/ClientMain/KERNEL]: 5.登陆结束
+[22:18:37] [ClientServer/ClientMain/KERNEL]: 6.开始游戏，启动gameBox
+[22:18:37] [ClientServer/ClientDecoder/INFO]: Receive a package 000A(游戏中所有玩家信息)
+[22:18:37] [ClientServer/ClientDecoder/INFO]: package 000A: /id: 2011/name: wp        /level: 1/gender: 1/posX: 0/posY: 0
+[22:18:37] [ClientServer/GameBox/addCharacter/INFO]: Receive a package 000A(游戏中所有玩家信息)
+[22:18:40] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[22:18:40] [Client/GameBox/ActionThread/INFO]: nextX0.0nextY0.0
+[22:18:40] [ClientServer/GameBox/mouseClick/INFO]: screenX840.0screenY439.0
+[22:18:40] [ClientServer/GameBox/mouseClick/INFO]: middleX683.0middleY384.0
+[22:18:40] [ClientServer/ClientDecoder/INFO]: Receive a package 000C(所有玩家坐标更新)
+[22:18:40] [ClientServer/ClientDecoder/INFO]: package 000C: /id: 2011/posX: 0/posY: 0
+[22:18:40] [ClientServer/GameBox/UpdateThread---queue/INFO]: X: 0.0Y: 0.0
+[22:18:42] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[22:18:42] [Client/GameBox/ActionThread/INFO]: nextX3.0nextY1.0509554140127388
+[22:18:42] [ClientServer/ClientDecoder/INFO]: Receive a package 000C(所有玩家坐标更新)
+[22:18:42] [ClientServer/ClientDecoder/INFO]: package 000C: /id: 2011/posX: 3/posY: 1
+[22:18:42] [ClientServer/GameBox/UpdateThread---queue/INFO]: X: 3.0Y: 1.0
+[22:18:44] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[22:18:44] [Client/GameBox/ActionThread/INFO]: nextX3.0nextY1.0509554140127388
+[22:18:44] [ClientServer/ClientDecoder/INFO]: Receive a package 000C(所有玩家坐标更新)
+[22:18:44] [ClientServer/ClientDecoder/INFO]: package 000C: /id: 2011/posX: 3/posY: 1
+[22:18:44] [ClientServer/GameBox/UpdateThread---queue/INFO]: X: 3.0Y: 1.0
+[22:18:46] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[22:18:46] [Client/GameBox/ActionThread/INFO]: nextX3.0nextY1.0509554140127388
+[22:18:46] [ClientServer/ClientDecoder/INFO]: Receive a package 000C(所有玩家坐标更新)
+[22:18:46] [ClientServer/ClientDecoder/INFO]: package 000C: /id: 2011/posX: 3/posY: 1
+[22:18:46] [ClientServer/GameBox/UpdateThread---queue/INFO]: X: 3.0Y: 1.0
+[22:18:47] [ClientServer/GameBox/mouseClick/INFO]: screenX1214.0screenY474.0
+[22:18:47] [ClientServer/GameBox/mouseClick/INFO]: middleX683.0middleY384.0
+[22:18:48] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[22:18:48] [Client/GameBox/ActionThread/INFO]: nextX3.0nextY0.5084745762711864
+[22:18:48] [ClientServer/ClientDecoder/INFO]: Receive a package 000C(所有玩家坐标更新)
+[22:18:48] [ClientServer/ClientDecoder/INFO]: package 000C: /id: 2011/posX: 3/posY: 0
+[22:18:48] [ClientServer/GameBox/UpdateThread---queue/INFO]: X: 3.0Y: 0.0
+[22:18:50] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[22:18:50] [Client/GameBox/ActionThread/INFO]: nextX3.0nextY0.5084745762711864
+[22:18:50] [ClientServer/ClientDecoder/INFO]: Receive a package 000C(所有玩家坐标更新)
+[22:18:50] [ClientServer/ClientDecoder/INFO]: package 000C: /id: 2011/posX: 3/posY: 0
+[22:18:50] [ClientServer/GameBox/UpdateThread---queue/INFO]: X: 3.0Y: 0.0
+[22:18:52] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[22:18:52] [Client/GameBox/ActionThread/INFO]: nextX3.0nextY0.5084745762711864
+[22:18:52] [ClientServer/ClientDecoder/INFO]: Receive a package 000C(所有玩家坐标更新)
+[22:18:52] [ClientServer/ClientDecoder/INFO]: package 000C: /id: 2011/posX: 3/posY: 0
+[22:18:52] [ClientServer/GameBox/UpdateThread---queue/INFO]: X: 3.0Y: 0.0
+[22:18:54] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[22:18:54] [Client/GameBox/ActionThread/INFO]: nextX3.0nextY0.5084745762711864
+[22:18:54] [ClientServer/ClientDecoder/INFO]: Receive a package 000C(所有玩家坐标更新)
+[22:18:54] [ClientServer/ClientDecoder/INFO]: package 000C: /id: 2011/posX: 3/posY: 0
+[22:18:54] [ClientServer/GameBox/UpdateThread---queue/INFO]: X: 3.0Y: 0.0
+[22:18:56] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[22:18:56] [Client/GameBox/ActionThread/INFO]: nextX3.0nextY0.5084745762711864
+[22:18:56] [ClientServer/ClientDecoder/INFO]: Receive a package 000C(所有玩家坐标更新)
+[22:18:56] [ClientServer/ClientDecoder/INFO]: package 000C: /id: 2011/posX: 3/posY: 0
+[22:18:56] [ClientServer/GameBox/UpdateThread---queue/INFO]: X: 3.0Y: 0.0
+[22:18:58] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[22:18:58] [Client/GameBox/ActionThread/INFO]: nextX3.0nextY0.5084745762711864
+[22:18:58] [ClientServer/ClientDecoder/INFO]: Receive a package 000C(所有玩家坐标更新)
+[22:18:58] [ClientServer/ClientDecoder/INFO]: package 000C: /id: 2011/posX: 3/posY: 0
+[22:18:58] [ClientServer/GameBox/UpdateThread---queue/INFO]: X: 3.0Y: 0.0
+[22:18:59] [ClientServer/GameBox/mouseClick/INFO]: screenX1101.0screenY499.0
+[22:18:59] [ClientServer/GameBox/mouseClick/INFO]: middleX683.0middleY384.0
+[22:19:00] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[22:19:00] [Client/GameBox/ActionThread/INFO]: nextX3.0nextY0.8253588516746411
+[22:19:00] [ClientServer/ClientDecoder/INFO]: Receive a package 000C(所有玩家坐标更新)
+[22:19:00] [ClientServer/ClientDecoder/INFO]: package 000C: /id: 2011/posX: 3/posY: 0
+[22:19:00] [ClientServer/GameBox/UpdateThread---queue/INFO]: X: 3.0Y: 0.0
+[22:19:01] [ClientServer/GameBox/mouseClick/INFO]: screenX872.0screenY617.0
+[22:19:01] [ClientServer/GameBox/mouseClick/INFO]: middleX683.0middleY384.0
+[22:19:02] [ClientServer/GameBox/mouseClick/INFO]: screenX872.0screenY617.0
+[22:19:02] [ClientServer/GameBox/mouseClick/INFO]: middleX683.0middleY384.0
+[22:19:02] [ClientServer/GameBox/mouseClick/INFO]: screenX872.0screenY617.0
+[22:19:02] [ClientServer/GameBox/mouseClick/INFO]: middleX683.0middleY384.0
+[22:19:02] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[22:19:02] [Client/GameBox/ActionThread/INFO]: nextX2.433476394849785nextY3.0
+[22:19:02] [ClientServer/ClientDecoder/INFO]: Receive a package 000C(所有玩家坐标更新)
+[22:19:02] [ClientServer/ClientDecoder/INFO]: package 000C: /id: 2011/posX: 2/posY: 3
+[22:19:02] [ClientServer/GameBox/UpdateThread---queue/INFO]: X: 2.0Y: 3.0
+[22:19:04] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[22:19:04] [Client/GameBox/ActionThread/INFO]: nextX2.433476394849785nextY3.0
+[22:19:04] [ClientServer/ClientDecoder/INFO]: Receive a package 000C(所有玩家坐标更新)
+[22:19:04] [ClientServer/ClientDecoder/INFO]: package 000C: /id: 2011/posX: 2/posY: 3
+[22:19:04] [ClientServer/GameBox/UpdateThread---queue/INFO]: X: 2.0Y: 3.0
+[22:19:06] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[22:19:06] [Client/GameBox/ActionThread/INFO]: nextX2.433476394849785nextY3.0
+[22:19:06] [ClientServer/ClientDecoder/INFO]: Receive a package 000C(所有玩家坐标更新)
+[22:19:06] [ClientServer/ClientDecoder/INFO]: package 000C: /id: 2011/posX: 2/posY: 3
+[22:19:06] [ClientServer/GameBox/UpdateThread---queue/INFO]: X: 2.0Y: 3.0
+[22:19:07] [ClientServer/GameBox/mouseClick/INFO]: screenX948.0screenY580.0
+[22:19:07] [ClientServer/GameBox/mouseClick/INFO]: middleX683.0middleY384.0
+[22:19:07] [ClientServer/GameBox/mouseClick/INFO]: screenX948.0screenY580.0
+[22:19:07] [ClientServer/GameBox/mouseClick/INFO]: middleX683.0middleY384.0
+[22:19:07] [ClientServer/GameBox/mouseClick/INFO]: screenX948.0screenY580.0
+[22:19:07] [ClientServer/GameBox/mouseClick/INFO]: middleX683.0middleY384.0
+[22:19:07] [ClientServer/GameBox/mouseClick/INFO]: screenX948.0screenY580.0
+[22:19:07] [ClientServer/GameBox/mouseClick/INFO]: middleX683.0middleY384.0
+[22:19:08] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[22:19:08] [Client/GameBox/ActionThread/INFO]: nextX3.0nextY2.218867924528302
+[22:19:08] [ClientServer/ClientDecoder/INFO]: Receive a package 000C(所有玩家坐标更新)
+[22:19:08] [ClientServer/ClientDecoder/INFO]: package 000C: /id: 2011/posX: 3/posY: 2
+[22:19:08] [ClientServer/GameBox/UpdateThread---queue/INFO]: X: 3.0Y: 2.0
+[22:19:10] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[22:19:10] [Client/GameBox/ActionThread/INFO]: nextX3.0nextY2.218867924528302
+[22:19:10] [ClientServer/ClientDecoder/INFO]: Receive a package 000C(所有玩家坐标更新)
+[22:19:10] [ClientServer/ClientDecoder/INFO]: package 000C: /id: 2011/posX: 3/posY: 2
+[22:19:10] [ClientServer/GameBox/UpdateThread---queue/INFO]: X: 3.0Y: 2.0
+[22:19:11] [ClientServer/GameBox/mouseClick/INFO]: screenX1103.0screenY392.0
+[22:19:11] [ClientServer/GameBox/mouseClick/INFO]: middleX683.0middleY384.0
+[22:19:11] [ClientServer/GameBox/mouseClick/INFO]: screenX1103.0screenY392.0
+[22:19:11] [ClientServer/GameBox/mouseClick/INFO]: middleX683.0middleY384.0
+[22:19:11] [ClientServer/GameBox/mouseClick/INFO]: screenX1103.0screenY392.0
+[22:19:11] [ClientServer/GameBox/mouseClick/INFO]: middleX683.0middleY384.0
+[22:19:11] [ClientServer/GameBox/mouseClick/INFO]: screenX1103.0screenY392.0
+[22:19:11] [ClientServer/GameBox/mouseClick/INFO]: middleX683.0middleY384.0
+[22:19:12] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[22:19:12] [Client/GameBox/ActionThread/INFO]: nextX3.0nextY0.05714285714285714
+[22:19:12] [ClientServer/ClientDecoder/INFO]: Receive a package 000C(所有玩家坐标更新)
+[22:19:12] [ClientServer/ClientDecoder/INFO]: package 000C: /id: 2011/posX: 3/posY: 0
+[22:19:12] [ClientServer/GameBox/UpdateThread---queue/INFO]: X: 3.0Y: 0.0
+[22:19:14] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[22:19:14] [Client/GameBox/ActionThread/INFO]: nextX3.0nextY0.05714285714285714
+[22:19:14] [ClientServer/ClientDecoder/INFO]: Receive a package 000C(所有玩家坐标更新)
+[22:19:14] [ClientServer/ClientDecoder/INFO]: package 000C: /id: 2011/posX: 3/posY: 0
+[22:19:14] [ClientServer/GameBox/UpdateThread---queue/INFO]: X: 3.0Y: 0.0
+[22:19:16] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[22:19:16] [Client/GameBox/ActionThread/INFO]: nextX3.0nextY0.05714285714285714
+[22:19:16] [ClientServer/ClientDecoder/INFO]: Receive a package 000C(所有玩家坐标更新)
+[22:19:16] [ClientServer/ClientDecoder/INFO]: package 000C: /id: 2011/posX: 3/posY: 0
+[22:19:16] [ClientServer/GameBox/UpdateThread---queue/INFO]: X: 3.0Y: 0.0
+[22:19:18] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[22:19:18] [Client/GameBox/ActionThread/INFO]: nextX3.0nextY0.05714285714285714
+[22:19:18] [ClientServer/ClientDecoder/INFO]: Receive a package 000C(所有玩家坐标更新)
+[22:19:18] [ClientServer/ClientDecoder/INFO]: package 000C: /id: 2011/posX: 3/posY: 0
+[22:19:18] [ClientServer/GameBox/UpdateThread---queue/INFO]: X: 3.0Y: 0.0
+[22:19:20] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[22:19:20] [Client/GameBox/ActionThread/INFO]: nextX3.0nextY0.05714285714285714
+[22:19:20] [ClientServer/GameBox/mouseClick/INFO]: screenX281.0screenY90.0
+[22:19:20] [ClientServer/GameBox/mouseClick/INFO]: middleX683.0middleY384.0
+[22:19:20] [ClientServer/ClientDecoder/INFO]: Receive a package 000C(所有玩家坐标更新)
+[22:19:20] [ClientServer/ClientDecoder/INFO]: package 000C: /id: 2011/posX: 3/posY: 0
+[22:19:20] [ClientServer/GameBox/UpdateThread---queue/INFO]: X: 3.0Y: 0.0
+[22:19:20] [ClientServer/GameBox/mouseClick/INFO]: screenX281.0screenY90.0
+[22:19:20] [ClientServer/GameBox/mouseClick/INFO]: middleX683.0middleY384.0
+[22:19:22] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[22:19:22] [Client/GameBox/ActionThread/INFO]: nextX4.1020408163265305nextY3.0
+[22:19:22] [ClientServer/ClientDecoder/INFO]: Receive a package 000C(所有玩家坐标更新)
+[22:19:22] [ClientServer/ClientDecoder/INFO]: package 000C: /id: 2011/posX: 4/posY: 3
+[22:19:22] [ClientServer/GameBox/UpdateThread---queue/INFO]: X: 4.0Y: 3.0
+[22:19:24] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[22:19:24] [Client/GameBox/ActionThread/INFO]: nextX4.1020408163265305nextY3.0
+[22:19:24] [ClientServer/ClientDecoder/INFO]: Receive a package 000C(所有玩家坐标更新)
+[22:19:24] [ClientServer/ClientDecoder/INFO]: package 000C: /id: 2011/posX: 4/posY: 3
+[22:19:24] [ClientServer/GameBox/UpdateThread---queue/INFO]: X: 4.0Y: 3.0
+[22:19:26] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[22:19:26] [Client/GameBox/ActionThread/INFO]: nextX4.1020408163265305nextY3.0
+[22:19:26] [ClientServer/ClientDecoder/INFO]: Receive a package 000C(所有玩家坐标更新)
+[22:19:26] [ClientServer/ClientDecoder/INFO]: package 000C: /id: 2011/posX: 4/posY: 3
+[22:19:26] [ClientServer/GameBox/UpdateThread---queue/INFO]: X: 4.0Y: 3.0
+[22:19:28] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[22:19:28] [Client/GameBox/ActionThread/INFO]: nextX4.1020408163265305nextY3.0
+[22:19:28] [ClientServer/ClientDecoder/INFO]: Receive a package 000C(所有玩家坐标更新)
+[22:19:28] [ClientServer/ClientDecoder/INFO]: package 000C: /id: 2011/posX: 4/posY: 3
+[22:19:28] [ClientServer/GameBox/UpdateThread---queue/INFO]: X: 4.0Y: 3.0
+[22:19:30] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[22:19:30] [Client/GameBox/ActionThread/INFO]: nextX4.1020408163265305nextY3.0
+[22:19:30] [ClientServer/ClientDecoder/INFO]: Receive a package 000C(所有玩家坐标更新)
+[22:19:30] [ClientServer/ClientDecoder/INFO]: package 000C: /id: 2011/posX: 4/posY: 3
+[22:19:30] [ClientServer/GameBox/UpdateThread---queue/INFO]: X: 4.0Y: 3.0
+[22:19:30] [ClientServer/ClientDecoder/INFO]: Receive a package 000F(全局喇叭信息)
+[22:19:30] [ClientServer/ClientDecoder/INFO]: speakerID: 2011message: dsend
+[22:19:32] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[22:19:32] [Client/GameBox/ActionThread/INFO]: nextX4.1020408163265305nextY3.0
+[22:19:32] [ClientServer/ClientDecoder/INFO]: Receive a package 000C(所有玩家坐标更新)
+[22:19:32] [ClientServer/ClientDecoder/INFO]: package 000C: /id: 2011/posX: 4/posY: 3
+[22:19:32] [ClientServer/GameBox/UpdateThread---queue/INFO]: X: 4.0Y: 3.0
+[22:19:34] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[22:19:34] [Client/GameBox/ActionThread/INFO]: nextX4.1020408163265305nextY3.0
+[22:19:34] [ClientServer/ClientDecoder/INFO]: Receive a package 000C(所有玩家坐标更新)
+[22:19:34] [ClientServer/ClientDecoder/INFO]: package 000C: /id: 2011/posX: 4/posY: 3
+[22:19:34] [ClientServer/GameBox/UpdateThread---queue/INFO]: X: 4.0Y: 3.0
+[22:19:36] [ClientServer/ClientDecoder/INFO]: Receive a package 000F(全局喇叭信息)
+[22:19:36] [ClientServer/ClientDecoder/INFO]: speakerID: 2011message: dddd
+[22:19:36] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[22:19:36] [Client/GameBox/ActionThread/INFO]: nextX4.1020408163265305nextY3.0
+[22:19:36] [ClientServer/ClientDecoder/INFO]: Receive a package 000C(所有玩家坐标更新)
+[22:19:36] [ClientServer/ClientDecoder/INFO]: package 000C: /id: 2011/posX: 4/posY: 3
+[22:19:36] [ClientServer/GameBox/UpdateThread---queue/INFO]: X: 4.0Y: 3.0
+[22:19:38] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[22:19:38] [Client/GameBox/ActionThread/INFO]: nextX4.1020408163265305nextY3.0
+[22:19:38] [ClientServer/ClientDecoder/INFO]: Receive a package 000C(所有玩家坐标更新)
+[22:19:38] [ClientServer/ClientDecoder/INFO]: package 000C: /id: 2011/posX: 4/posY: 3
+[22:19:38] [ClientServer/GameBox/UpdateThread---queue/INFO]: X: 4.0Y: 3.0
+[22:19:40] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[22:19:40] [Client/GameBox/ActionThread/INFO]: nextX4.1020408163265305nextY3.0
+[22:19:40] [ClientServer/ClientDecoder/INFO]: Receive a package 000C(所有玩家坐标更新)
+[22:19:40] [ClientServer/ClientDecoder/INFO]: package 000C: /id: 2011/posX: 4/posY: 3
+[22:19:40] [ClientServer/GameBox/UpdateThread---queue/INFO]: X: 4.0Y: 3.0
+[22:19:42] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[22:19:42] [Client/GameBox/ActionThread/INFO]: nextX4.1020408163265305nextY3.0
+[22:19:42] [ClientServer/ClientDecoder/INFO]: Receive a package 000C(所有玩家坐标更新)
+[22:19:42] [ClientServer/ClientDecoder/INFO]: package 000C: /id: 2011/posX: 4/posY: 3
+[22:19:42] [ClientServer/GameBox/UpdateThread---queue/INFO]: X: 4.0Y: 3.0
+[22:19:44] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[22:19:44] [Client/GameBox/ActionThread/INFO]: nextX4.1020408163265305nextY3.0
+[22:19:44] [ClientServer/ClientDecoder/INFO]: Receive a package 000C(所有玩家坐标更新)
+[22:19:44] [ClientServer/ClientDecoder/INFO]: package 000C: /id: 2011/posX: 4/posY: 3
+[22:19:44] [ClientServer/GameBox/UpdateThread---queue/INFO]: X: 4.0Y: 3.0
+[22:19:46] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[22:19:46] [Client/GameBox/ActionThread/INFO]: nextX4.1020408163265305nextY3.0
+[22:19:46] [ClientServer/ClientDecoder/INFO]: Receive a package 000C(所有玩家坐标更新)
+[22:19:46] [ClientServer/ClientDecoder/INFO]: package 000C: /id: 2011/posX: 4/posY: 3
+[22:19:46] [ClientServer/GameBox/UpdateThread---queue/INFO]: X: 4.0Y: 3.0

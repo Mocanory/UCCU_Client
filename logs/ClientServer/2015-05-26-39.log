@@ -1,0 +1,39 @@
+[17:17:51] [ClientServer/ClientMain/KERNEL]: 1.开始建立网络连接…………
+[17:17:54] [ClientServer/ClientMain/KERNEL]: 2.网络连接成功！启动loginBox
+[17:17:55] [ClientServer/ClientMain/KERNEL]: 2.同时发送0000包，确认对方是否为网关
+[17:17:55] [AioModule/Write/Completed/DEBUG]: Sent 14 bytes to session/162.105.38.69:8438
+[17:17:55] [AioModule/Write/Completed/DEBUG]: Sent contents(14bytes): ff ff 00 00 00 0e 00 00 00 00 30 39 20 db 
+[17:17:56] [AioModule/Read/Completed/DEBUG]: Received 11 bytes from session/162.105.38.69:8438
+[17:17:56] [AioModule/Read/Completed/DEBUG]: Received contents(11bytes): ff ff 00 00 00 0b 00 01 01 2a 46 
+[17:17:56] [ClientServer/ClientDecoder/INFO]: Receive a package 0001(回应连接请求)
+[17:17:56] [ClientServer/ClientDecoder/INFO]: package 0001: 1
+[17:17:56] [ClientSever/LoginBox/serverState/INFO]: Receive a package 0001(回应连接请求)
+[17:17:56] [ClientSever/LoginBox/serverState/INFO]: package 0001: 1
+[17:17:59] [ClientServer/LoginBox/INFO]: package 0002(登陆信息) send!
+[17:17:59] [AioModule/Write/Completed/DEBUG]: Sent 45 bytes to session/162.105.38.69:8438
+[17:17:59] [AioModule/Write/Completed/DEBUG]: Sent contents(45bytes): ff ff 00 00 00 2d 00 02 37 00 38 46 31 34 45 34 35 46 43 45 45 41 31 36 37 41 35 41 33 36 44 45 44 44 34 42 45 41 32 35 34 33 00 16 63 
+[17:17:59] [AioModule/Read/Completed/DEBUG]: Received 11 bytes from session/162.105.38.69:8438
+[17:17:59] [AioModule/Read/Completed/DEBUG]: Received contents(11bytes): ff ff 00 00 00 0b 00 03 00 2a 57 
+[17:17:59] [ClientServer/ClientDecoder/INFO]: Receive a package 0003(登陆反馈)
+[17:17:59] [ClientServer/ClientDecoder/INFO]: package 0003: false
+[17:17:59] [ClientServer/LoginBox/onLoginResponse/INFO]: Receive a package 0003(登陆反馈)
+[17:17:59] [ClientServer/LoginBox/onLoginResponse/INFO]: package 0003: false
+[17:18:01] [ClientServer/LoginBox/INFO]: package 0004(注册信息) send!
+[17:18:01] [AioModule/Write/Completed/DEBUG]: Sent 45 bytes to session/162.105.38.69:8438
+[17:18:01] [AioModule/Write/Completed/DEBUG]: Sent contents(45bytes): ff ff 00 00 00 2d 00 04 37 00 38 46 31 34 45 34 35 46 43 45 45 41 31 36 37 41 35 41 33 36 44 45 44 44 34 42 45 41 32 35 34 33 00 1c 84 
+[17:18:02] [AioModule/Read/Completed/DEBUG]: Received 14 bytes from session/162.105.38.69:8438
+[17:18:02] [AioModule/Read/Completed/DEBUG]: Received contents(14bytes): ff ff 00 00 00 0e 00 05 00 00 00 01 43 96 
+[17:18:02] [ClientServer/ClientDecoder/INFO]: Receive a package 0005(注册结果)
+[17:18:02] [ClientServer/ClientDecoder/INFO]: package 0005: true
+[17:18:02] [ClientServer/LoginBox/onRegistResponse/INFO]: Receive a package 0005(注册结果)
+[17:18:02] [ClientServer/LoginBox/onRegistResponse/INFO]: package 0005: true
+[17:18:03] [AioModule/Write/Completed/DEBUG]: Sent 25 bytes to session/162.105.38.69:8438
+[17:18:03] [AioModule/Write/Completed/DEBUG]: Sent contents(25bytes): ff ff 00 00 00 19 00 08 37 00 64 69 79 69 67 65 6d 69 6e 67 7a 69 00 0e b3 
+[17:18:03] [AioModule/Write/Completed/DEBUG]: Sent 25 bytes to session/162.105.38.69:8438
+[17:18:03] [AioModule/Write/Completed/DEBUG]: Sent contents(25bytes): ff ff 00 00 00 19 00 08 37 00 64 69 65 72 67 65 6d 69 6e 67 7a 69 00 06 07 
+[17:18:03] [AioModule/Read/Failed/WARNING]: Failed to read from session/162.105.38.69:8438. java.io.IOException: 指定的网络名不再可用。
+
+[17:18:03] [ClientServer/LoginBox/INFO]: package 0002(登陆信息) send!
+[17:18:03] [AioModule/Write/Failed/WARNING]: Failed to send to sessionnull. java.nio.channels.ClosedChannelException
+[17:19:23] [ClientServer/ClientMain/KERNEL]: 3.登陆结束
+[17:19:23] [ClientServer/ClientMain/KERNEL]: 登陆失败，退出主程序

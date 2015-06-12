@@ -1,0 +1,4 @@
+[22:06:25] [ClientServer/main/KERNEL]: 1.开始建立连接…………
+[22:06:25] [ClientServer/main/KERNEL]: 2.连接成功！启动loginBox
+[22:06:27] [ClientServer/main/KERNEL]: 3.登陆结束
+[22:06:27] [ClientServer/main/KERNEL]: 登陆失败，退出主程序

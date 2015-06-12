@@ -1,0 +1,50 @@
+[17:10:56] [ClientServer/ClientMain/init/DEBUG]: address: baidu.com:80
+[17:10:56] [ClientServer/ClientMain/init/DEBUG]: init over
+[17:10:56] [ClientServer/ClientMain/KERNEL]: 0.开始建立网络连接…………
+[17:10:56] [ClientServer/ClientMain/setUpConnection/DEBUG]: setUpConnection over
+[17:10:56] [ClientServer/ClientMain/KERNEL]: 1.网络连接成功!
+[17:10:56] [ClientServer/ClientMain/KERNEL]: 2.发送0000包，确认对方是否为服务器Gate端
+[17:10:56] [ClientServer/ClientMain/send00Package/DEBUG]: send00Package over
+[17:10:56] [AioModule/Write/Completed/DEBUG]: Sent 14 bytes to sessionbaidu.com/123.125.114.144:80
+[17:10:56] [ClientSever/LoginBox/serverState/INFO]: Receive a package 0001(回应连接请求)
+[17:10:56] [AioModule/Write/Completed/DEBUG]: Sent contents(14bytes): ff ff 00 00 00 0e 00 00 00 00 30 39 20 db 
+[17:10:56] [ClientSever/LoginBox/serverState/INFO]: package 0001: 1
+[17:10:56] [ClientServer/ClientMain/KERNEL]: 3.收到0001包，确认对方为服务器Gate端
+[17:10:56] [ClientServer/ClientMain/KERNEL]: 4.初始化loginBox登陆界面
+[17:10:56] [ClientServer/LoginBox/onLoginResponse/INFO]: Receive a package 0003(登陆反馈)
+[17:10:56] [ClientServer/LoginBox/onLoginResponse/INFO]: package 0003: true
+[17:10:57] [ClientSever/LoginBox/addCharacter/INFO]: Receive a package 0006(角色预加载)
+[17:10:57] [ClientSever/LoginBox/addCharacter/INFO]: Receive a package 0006(角色预加载)
+[17:10:57] [ClientServer/LoginBox/noMorePackage/INFO]: Receive a package 0006(角色预加载: 这是最后一个空包
+[17:10:58] [ClientServer/LoginBox/onCreatResponse/INFO]: Receive a package 0009(角色创建结果)
+[17:10:58] [AioModule/Write/Completed/DEBUG]: Sent 19 bytes to sessionbaidu.com/123.125.114.144:80
+[17:10:58] [AioModule/Write/Completed/DEBUG]: Sent contents(19bytes): ff ff 00 00 00 13 00 08 31 31 00 64 64 64 64 00 01 1a f0 
+[17:10:59] [ClientSever/LoginBox/addCharacter/INFO]: Receive a package 0006(角色预加载)
+[17:10:59] [ClientServer/GameBox/addCharacter/DEBUG]: Receive a package 000A(游戏中所有玩家信息)
+[17:10:59] [ClientServer/GameBox/addCharacter/DEBUG]: 000A:加入一个主角玩家:third role
+[17:10:59] [ClientServer/GameBox/addCharacter/DEBUG]: Receive a package 000A(游戏中所有玩家信息)
+[17:10:59] [ClientServer/GameBox/addCharacter/DEBUG]: 000A:加入一个非主角玩家:another role
+[17:10:59] [ClientServer/ClientMain/KERNEL]: 5.登陆结束
+[17:10:59] [ClientServer/ClientMain/KERNEL]: 6.开始游戏，启动gameBox
+[17:10:59] [ClientServer/GameBox/startGame/KERNEL]: 接收主角详细信息(000A):关闭加载窗口,开始游戏!
+[17:10:59] [Client/GameBox/updateTarget/INFO]: receive Package 000C(角色目标)
+[17:10:59] [Client/GameBox/updateTarget/INFO]: targetX: 1000/targetY 2000
+[17:11:00] [Client/GameBox/updateTarget/INFO]: receive Package 000C(角色目标)
+[17:11:00] [Client/GameBox/updateTarget/INFO]: targetX: 298/targetY 193
+[17:11:00] [Client/GameBox/sendTargetPos/INFO]: package 000B(角色移动意图) send!
+[17:11:00] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to sessionbaidu.com/123.125.114.144:80
+[17:11:00] [Client/GameBox/sendTargetPos/INFO]: targetX: 298.0/targetY: 193.0
+[17:11:00] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 00 03 00 00 01 2a 00 00 00 c1 22 91 
+[17:11:01] [Client/GameBox/updateTarget/INFO]: receive Package 000C(角色目标)
+[17:11:01] [Client/GameBox/updateTarget/INFO]: targetX: 530/targetY 320
+[17:11:01] [Client/GameBox/sendTargetPos/INFO]: package 000B(角色移动意图) send!
+[17:11:01] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to sessionbaidu.com/123.125.114.144:80
+[17:11:01] [Client/GameBox/sendTargetPos/INFO]: targetX: 530.0/targetY: 320.0
+[17:11:01] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 00 03 00 00 02 12 00 00 01 40 67 33 
+[17:11:02] [Client/GameBox/updateTarget/INFO]: receive Package 000C(角色目标)
+[17:11:02] [Client/GameBox/updateTarget/INFO]: targetX: 698/targetY 418
+[17:11:02] [Client/GameBox/sendTargetPos/INFO]: package 000B(角色移动意图) send!
+[17:11:02] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to sessionbaidu.com/123.125.114.144:80
+[17:11:02] [Client/GameBox/sendTargetPos/INFO]: targetX: 698.0/targetY: 418.0
+[17:11:02] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 00 03 00 00 02 ba 00 00 01 a2 47 e6 
+[17:11:04] [ClientServer/ClientMain/KERNEL]: 7.游戏结束，退出主程序

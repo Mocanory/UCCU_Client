@@ -1,0 +1,963 @@
+[19:22:22] [ClientServer/ClientMain/KERNEL]: 1.开始建立网络连接…………
+[19:22:22] [ClientServer/ClientMain/KERNEL]: 2.网络连接成功！启动loginBox
+[19:22:23] [ClientServer/ClientMain/KERNEL]: 2.同时发送0000包，确认对方是否为网关
+[19:22:23] [AioModule/Write/Completed/DEBUG]: Sent 14 bytes to session/162.105.38.69:8438
+[19:22:23] [AioModule/Write/Completed/DEBUG]: Sent contents(14bytes): ff ff 00 00 00 0e 00 00 00 00 30 39 20 db 
+[19:22:23] [AioModule/Read/Completed/DEBUG]: Received 11 bytes from session/162.105.38.69:8438
+[19:22:23] [AioModule/Read/Completed/DEBUG]: Received contents(11bytes): ff ff 00 00 00 0b 00 01 01 2a 46 
+[19:22:23] [ClientServer/ClientDecoder/INFO]: Receive a package 0001(回应连接请求)
+[19:22:23] [ClientServer/ClientDecoder/INFO]: package 0001: 1
+[19:22:23] [ClientSever/LoginBox/serverState/INFO]: Receive a package 0001(回应连接请求)
+[19:22:23] [ClientSever/LoginBox/serverState/INFO]: package 0001: 1
+[19:22:26] [ClientServer/LoginBox/INFO]: package 0002(登陆信息) send!
+[19:22:26] [AioModule/Write/Completed/DEBUG]: Sent 46 bytes to session/162.105.38.69:8438
+[19:22:26] [AioModule/Write/Completed/DEBUG]: Sent contents(46bytes): ff ff 00 00 00 2e 00 02 31 31 00 36 35 31 32 42 44 34 33 44 39 43 41 41 36 45 30 32 43 39 39 30 42 30 41 38 32 36 35 32 44 43 41 00 63 82 
+[19:22:26] [AioModule/Read/Completed/DEBUG]: Received 11 bytes from session/162.105.38.69:8438
+[19:22:26] [AioModule/Read/Completed/DEBUG]: Received contents(11bytes): ff ff 00 00 00 0b 00 03 01 2a 58 
+[19:22:26] [ClientServer/ClientDecoder/INFO]: Receive a package 0003(登陆反馈)
+[19:22:26] [ClientServer/ClientDecoder/INFO]: package 0003: true
+[19:22:26] [ClientServer/LoginBox/onLoginResponse/INFO]: Receive a package 0003(登陆反馈)
+[19:22:26] [ClientServer/LoginBox/onLoginResponse/INFO]: package 0003: true
+[19:22:27] [AioModule/Read/Completed/DEBUG]: Received 54 bytes from session/162.105.38.69:8438
+[19:22:27] [AioModule/Read/Completed/DEBUG]: Received contents(54bytes): ff ff 00 00 00 1b 00 06 00 00 03 f9 64 64 64 64 20 20 20 20 20 20 00 01 01 41 15 ff ff 00 00 00 1b 00 06 00 00 03 fa 64 67 67 67 20 20 20 20 20 20 00 01 01 3f cf 
+[19:22:27] [ClientServer/ClientDecoder/INFO]: Receive a package 0006(角色预加载)
+[19:22:27] [ClientServer/ClientDecoder/INFO]: package 0006: /id: 1017/name: dddd      /level: 1/gender: 1
+[19:22:27] [ClientSever/LoginBox/addCharacter/INFO]: Receive a package 0006(角色预加载)
+[19:22:27] [ClientServer/ClientDecoder/INFO]: Receive a package 0006(角色预加载)
+[19:22:27] [ClientServer/ClientDecoder/INFO]: package 0006: /id: 1018/name: dggg      /level: 1/gender: 1
+[19:22:27] [ClientSever/LoginBox/addCharacter/INFO]: Receive a package 0006(角色预加载)
+[19:22:27] [AioModule/Read/Completed/DEBUG]: Received 10 bytes from session/162.105.38.69:8438
+[19:22:27] [AioModule/Read/Completed/DEBUG]: Received contents(10bytes): ff ff 00 00 00 0a 00 06 45 71 
+[19:22:27] [ClientServer/ClientDecoder/INFO]: Receive a package 0006(角色预加载)
+[19:22:27] [ClientServer/ClientDecoder/INFO]: package 0006: 这是最后一个空包
+[19:22:27] [ClientServer/LoginBox/noMorePackage/INFO]: Receive a package 0006(角色预加载)
+[19:22:27] [ClientServer/LoginBox/noMorePackage/INFO]: package 0006: 这是最后一个空包
+[19:22:29] [AioModule/Write/Completed/DEBUG]: Sent 14 bytes to session/162.105.38.69:8438
+[19:22:29] [ClientServer/LoginBox/INFO]: package 0007(角色选择) send!
+[19:22:29] [AioModule/Write/Completed/DEBUG]: Sent contents(14bytes): ff ff 00 00 00 0e 00 07 00 00 03 fa a0 83 
+[19:22:30] [AioModule/Read/Completed/DEBUG]: Received 35 bytes from session/162.105.38.69:8438
+[19:22:30] [AioModule/Read/Completed/DEBUG]: Received contents(35bytes): ff ff 00 00 00 23 00 0a 00 00 03 fa 64 67 67 67 20 20 20 20 20 20 00 01 01 00 00 00 05 00 00 00 04 91 a2 
+[19:22:30] [ClientServer/ClientDecoder/INFO]: Receive a package 000A(游戏中所有玩家信息)
+[19:22:30] [ClientServer/ClientDecoder/INFO]: package 000A: /id: 1018/name: dggg      /level: 1/gender: 1/posX: 5/posY: 4
+[19:22:30] [ClientServer/GameBox/addCharacter/INFO]: Receive a package 000A(游戏中所有玩家信息)
+[19:22:36] [ClientServer/ClientMain/KERNEL]: 3.登陆结束
+[19:22:36] [ClientServer/ClientMain/KERNEL]: 4.开始游戏，启动gameBox
+[19:22:37] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:37] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to session/162.105.38.69:8438
+[19:22:37] [Client/GameBox/ActionThread/INFO]: nextX0.0nextY0.0
+[19:22:37] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 03 fa 00 00 00 00 00 00 00 00 3b ac 
+[19:22:37] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:37] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to session/162.105.38.69:8438
+[19:22:37] [Client/GameBox/ActionThread/INFO]: nextX0.0nextY0.0
+[19:22:37] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 03 fa 00 00 00 00 00 00 00 00 3b ac 
+[19:22:37] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to session/162.105.38.69:8438
+[19:22:37] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:37] [Client/GameBox/ActionThread/INFO]: nextX0.0nextY0.0
+[19:22:37] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 03 fa 00 00 00 00 00 00 00 00 3b ac 
+[19:22:37] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:37] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to session/162.105.38.69:8438
+[19:22:37] [Client/GameBox/ActionThread/INFO]: nextX0.0nextY0.0
+[19:22:37] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 03 fa 00 00 00 00 00 00 00 00 3b ac 
+[19:22:37] [AioModule/Read/Completed/DEBUG]: Received 22 bytes from session/162.105.38.69:8438
+[19:22:37] [AioModule/Read/Completed/DEBUG]: Received contents(22bytes): ff ff 00 00 00 16 00 0c 00 00 03 fa 00 00 00 00 00 00 00 00 17 2c 
+[19:22:37] [ClientServer/ClientDecoder/INFO]: Receive a package 000C(所有玩家坐标更新)
+[19:22:37] [ClientServer/ClientDecoder/INFO]: package 000C: /id: 1018/posX: 0/posY: 0
+[19:22:37] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:37] [Client/GameBox/ActionThread/INFO]: nextX0.0nextY0.0
+[19:22:37] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to session/162.105.38.69:8438
+[19:22:37] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 03 fa 00 00 00 00 00 00 00 00 3b ac 
+[19:22:38] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to session/162.105.38.69:8438
+[19:22:38] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:38] [Client/GameBox/ActionThread/INFO]: nextX0.0nextY0.0
+[19:22:38] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 03 fa 00 00 00 00 00 00 00 00 3b ac 
+[19:22:38] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to session/162.105.38.69:8438
+[19:22:38] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:38] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 03 fa 00 00 00 00 00 00 00 00 3b ac 
+[19:22:38] [Client/GameBox/ActionThread/INFO]: nextX0.0nextY0.0
+[19:22:38] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:38] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to session/162.105.38.69:8438
+[19:22:38] [Client/GameBox/ActionThread/INFO]: nextX0.0nextY0.0
+[19:22:38] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 03 fa 00 00 00 00 00 00 00 00 3b ac 
+[19:22:38] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to session/162.105.38.69:8438
+[19:22:38] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 03 fa 00 00 00 00 00 00 00 00 3b ac 
+[19:22:38] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:38] [AioModule/Read/Completed/DEBUG]: Received 22 bytes from session/162.105.38.69:8438
+[19:22:38] [Client/GameBox/ActionThread/INFO]: nextX0.0nextY0.0
+[19:22:38] [AioModule/Read/Completed/DEBUG]: Received contents(22bytes): ff ff 00 00 00 16 00 0c 00 00 03 fa 00 00 00 00 00 00 00 00 17 2c 
+[19:22:38] [ClientServer/ClientDecoder/INFO]: Receive a package 000C(所有玩家坐标更新)
+[19:22:38] [ClientServer/ClientDecoder/INFO]: package 000C: /id: 1018/posX: 0/posY: 0
+[19:22:38] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:38] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to session/162.105.38.69:8438
+[19:22:38] [Client/GameBox/ActionThread/INFO]: nextX0.0nextY0.0
+[19:22:38] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 03 fa 00 00 00 00 00 00 00 00 3b ac 
+[19:22:38] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:38] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to session/162.105.38.69:8438
+[19:22:38] [Client/GameBox/ActionThread/INFO]: nextX0.0nextY0.0
+[19:22:38] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 03 fa 00 00 00 00 00 00 00 00 3b ac 
+[19:22:38] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:38] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to session/162.105.38.69:8438
+[19:22:38] [Client/GameBox/ActionThread/INFO]: nextX0.0nextY0.0
+[19:22:38] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 03 fa 00 00 00 00 00 00 00 00 3b ac 
+[19:22:38] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to session/162.105.38.69:8438
+[19:22:38] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:38] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 03 fa 00 00 00 00 00 00 00 00 3b ac 
+[19:22:38] [Client/GameBox/ActionThread/INFO]: nextX0.0nextY0.0
+[19:22:38] [AioModule/Read/Completed/DEBUG]: Received 22 bytes from session/162.105.38.69:8438
+[19:22:38] [AioModule/Read/Completed/DEBUG]: Received contents(22bytes): ff ff 00 00 00 16 00 0c 00 00 03 fa 00 00 00 00 00 00 00 00 17 2c 
+[19:22:38] [ClientServer/ClientDecoder/INFO]: Receive a package 000C(所有玩家坐标更新)
+[19:22:38] [ClientServer/ClientDecoder/INFO]: package 000C: /id: 1018/posX: 0/posY: 0
+[19:22:38] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:38] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to session/162.105.38.69:8438
+[19:22:38] [Client/GameBox/ActionThread/INFO]: nextX0.0nextY0.0
+[19:22:38] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 03 fa 00 00 00 00 00 00 00 00 3b ac 
+[19:22:38] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to session/162.105.38.69:8438
+[19:22:38] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:38] [Client/GameBox/ActionThread/INFO]: nextX0.0nextY0.0
+[19:22:38] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 03 fa 00 00 00 00 00 00 00 00 3b ac 
+[19:22:38] [AioModule/Read/Completed/DEBUG]: Received 22 bytes from session/162.105.38.69:8438
+[19:22:38] [AioModule/Read/Completed/DEBUG]: Received contents(22bytes): ff ff 00 00 00 16 00 0c 00 00 03 fa 00 00 00 00 00 00 00 00 17 2c 
+[19:22:38] [ClientServer/ClientDecoder/INFO]: Receive a package 000C(所有玩家坐标更新)
+[19:22:38] [ClientServer/ClientDecoder/INFO]: package 000C: /id: 1018/posX: 0/posY: 0
+[19:22:38] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:38] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to session/162.105.38.69:8438
+[19:22:38] [Client/GameBox/ActionThread/INFO]: nextX0.0nextY0.0
+[19:22:38] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 03 fa 00 00 00 00 00 00 00 00 3b ac 
+[19:22:38] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to session/162.105.38.69:8438
+[19:22:38] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 03 fa 00 00 00 00 00 00 00 00 3b ac 
+[19:22:38] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:38] [Client/GameBox/ActionThread/INFO]: nextX0.0nextY0.0
+[19:22:38] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to session/162.105.38.69:8438
+[19:22:38] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 03 fa 00 00 00 00 00 00 00 00 3b ac 
+[19:22:38] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:38] [Client/GameBox/ActionThread/INFO]: nextX0.0nextY0.0
+[19:22:38] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to session/162.105.38.69:8438
+[19:22:38] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:38] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 03 fa 00 00 00 00 00 00 00 00 3b ac 
+[19:22:38] [Client/GameBox/ActionThread/INFO]: nextX0.0nextY0.0
+[19:22:38] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to session/162.105.38.69:8438
+[19:22:38] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:38] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 03 fa 00 00 00 00 00 00 00 00 3b ac 
+[19:22:38] [Client/GameBox/ActionThread/INFO]: nextX0.0nextY0.0
+[19:22:38] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:38] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to session/162.105.38.69:8438
+[19:22:38] [Client/GameBox/ActionThread/INFO]: nextX0.0nextY0.0
+[19:22:38] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 03 fa 00 00 00 00 00 00 00 00 3b ac 
+[19:22:38] [AioModule/Read/Completed/DEBUG]: Received 22 bytes from session/162.105.38.69:8438
+[19:22:38] [AioModule/Read/Completed/DEBUG]: Received contents(22bytes): ff ff 00 00 00 16 00 0c 00 00 03 fa 00 00 00 00 00 00 00 00 17 2c 
+[19:22:38] [ClientServer/ClientDecoder/INFO]: Receive a package 000C(所有玩家坐标更新)
+[19:22:38] [ClientServer/ClientDecoder/INFO]: package 000C: /id: 1018/posX: 0/posY: 0
+[19:22:38] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:38] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to session/162.105.38.69:8438
+[19:22:38] [Client/GameBox/ActionThread/INFO]: nextX0.0nextY0.0
+[19:22:38] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 03 fa 00 00 00 00 00 00 00 00 3b ac 
+[19:22:39] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:39] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to session/162.105.38.69:8438
+[19:22:39] [Client/GameBox/ActionThread/INFO]: nextX0.0nextY0.0
+[19:22:39] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 03 fa 00 00 00 00 00 00 00 00 3b ac 
+[19:22:39] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to session/162.105.38.69:8438
+[19:22:39] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 03 fa 00 00 00 00 00 00 00 00 3b ac 
+[19:22:39] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:39] [Client/GameBox/ActionThread/INFO]: nextX0.0nextY0.0
+[19:22:39] [AioModule/Read/Failed/WARNING]: Failed to read from session/162.105.38.69:8438. java.io.IOException: 指定的网络名不再可用。
+
+[19:22:39] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:39] [Client/GameBox/ActionThread/INFO]: nextX0.0nextY0.0
+[19:22:39] [AioModule/Write/Failed/WARNING]: Failed to send to sessionnull. java.nio.channels.ClosedChannelException
+[19:22:39] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:39] [Client/GameBox/ActionThread/INFO]: nextX0.0nextY0.0
+[19:22:39] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:39] [Client/GameBox/ActionThread/INFO]: nextX0.0nextY0.0
+[19:22:39] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:39] [Client/GameBox/ActionThread/INFO]: nextX0.0nextY0.0
+[19:22:39] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:39] [Client/GameBox/ActionThread/INFO]: nextX0.0nextY0.0
+[19:22:39] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:39] [Client/GameBox/ActionThread/INFO]: nextX0.0nextY0.0
+[19:22:39] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:39] [Client/GameBox/ActionThread/INFO]: nextX0.0nextY0.0
+[19:22:39] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:39] [Client/GameBox/ActionThread/INFO]: nextX0.0nextY0.0
+[19:22:39] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:39] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:39] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:39] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:39] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:39] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:39] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:39] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:39] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:39] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:39] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:39] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:39] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:39] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:39] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:39] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:40] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:40] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:40] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:40] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:40] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:40] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:40] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:40] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:40] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:40] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:40] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:40] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:40] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:40] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:40] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:40] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:40] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:40] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:40] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:40] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:40] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:40] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:40] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:40] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:40] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:40] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:40] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:40] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:40] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:40] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:40] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:40] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:40] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:40] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:40] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:40] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:41] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:41] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:41] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:41] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:41] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:41] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:41] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:41] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:41] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:41] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:41] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:41] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:41] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:41] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:41] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:41] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:41] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:41] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:41] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:41] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:41] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:41] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:41] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:41] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:41] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:41] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:41] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:41] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:41] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:41] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:41] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:41] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:41] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:41] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:41] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:41] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:42] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:42] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:42] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:42] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:42] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:42] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:42] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:42] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:42] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:42] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:42] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:42] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:42] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:42] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:42] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:42] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:42] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:42] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:42] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:42] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:42] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:42] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:42] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:42] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:42] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:42] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:42] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:42] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:42] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:42] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:42] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:42] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:42] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:42] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:42] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:42] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:43] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:43] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:43] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:43] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:43] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:43] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:43] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:43] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:43] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:43] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:43] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:43] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:43] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:43] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:43] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:43] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:43] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:43] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:43] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:43] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:43] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:43] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:43] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:43] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:43] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:43] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:43] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:43] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:43] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:43] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:43] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:43] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:43] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:43] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:43] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:43] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:44] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:44] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:44] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:44] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:44] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:44] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:44] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:44] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:44] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:44] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:44] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:44] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:44] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:44] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:44] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:44] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:44] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:44] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:44] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:44] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:44] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:44] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:44] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:44] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:44] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:44] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:44] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:44] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:44] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:44] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:44] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:44] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:44] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:44] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:44] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:45] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:45] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:45] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:45] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:45] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:45] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:45] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:45] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:45] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:45] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:45] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:45] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:45] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:45] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:45] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:45] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:45] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:45] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:45] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:45] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:45] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:45] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:45] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:45] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:45] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:45] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:45] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:45] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:45] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:45] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:45] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:45] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:45] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:45] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:45] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:45] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:45] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:46] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:46] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:46] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:46] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:46] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:46] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:46] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:46] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:46] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:46] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:46] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:46] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:46] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:46] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:46] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:46] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:46] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:46] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:46] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:46] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:46] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:46] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:46] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:46] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:46] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:46] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:46] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:46] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:46] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:46] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:46] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:46] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:46] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:46] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:46] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:46] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:47] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:47] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:47] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:47] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:47] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:47] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:47] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:47] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:47] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:47] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:47] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:47] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:47] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:47] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:47] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:47] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:47] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:47] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:47] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:47] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:47] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:47] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:47] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:47] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:47] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:47] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:47] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:47] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:47] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:47] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:47] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:47] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:47] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:47] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:47] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:47] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:48] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:48] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:48] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:48] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:48] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:48] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:48] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:48] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:48] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:48] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:48] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:48] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:48] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:48] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:48] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:48] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:48] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:48] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:48] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:48] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:48] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:48] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:48] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:48] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:48] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:48] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:48] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:48] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:48] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:48] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:48] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:48] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:48] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:48] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:48] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:48] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:49] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:49] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:49] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:49] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:49] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:49] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:49] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:49] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:49] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:49] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:49] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:49] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:49] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:49] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:49] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:49] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:49] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:49] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:49] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:49] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:49] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:49] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:49] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:49] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:49] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:49] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:49] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:49] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:49] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:49] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:49] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:49] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:49] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:49] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:49] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:49] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:49] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:50] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:50] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:50] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:50] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:50] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:50] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:50] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:50] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:50] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:50] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:50] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:50] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:50] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:50] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:50] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:50] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:50] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:50] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:50] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:50] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:50] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:50] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:50] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:50] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:50] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:50] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:50] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:50] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:50] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:50] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:50] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:50] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:50] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:50] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:50] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:50] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:51] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:51] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:51] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:51] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:51] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:51] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:51] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:51] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:51] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:51] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:51] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:51] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:51] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:51] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:51] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:51] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:51] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:51] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:51] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:51] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:51] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:51] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:51] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:51] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:51] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:51] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:51] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:51] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:51] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:51] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:51] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:51] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:51] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:51] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:51] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:51] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:52] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:52] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:52] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:52] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:52] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:52] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:52] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:52] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:52] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:52] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:52] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:52] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:52] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:52] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:52] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:52] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:52] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:52] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:52] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:52] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:52] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:52] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:52] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:52] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:52] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:52] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:52] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:52] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:52] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:52] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:52] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:52] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:52] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:52] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:52] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:53] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:53] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:53] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:53] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:53] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:53] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:53] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:53] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:53] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:53] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:53] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:53] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:53] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:53] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:53] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:53] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:53] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:53] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:53] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:53] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:53] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:53] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:53] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:53] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:53] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:53] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:53] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:53] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:53] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:53] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:53] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:53] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:53] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:53] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:53] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:53] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:54] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:54] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:54] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:54] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:54] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:54] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:54] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:54] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:54] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:54] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:54] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:54] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:54] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:54] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:54] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:54] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:54] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:54] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:54] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:54] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:54] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:54] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:54] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:54] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:54] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:54] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:54] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:54] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:54] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:54] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:54] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:54] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:54] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:54] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:54] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:54] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:55] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:55] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:55] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:55] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:55] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:55] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:55] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:55] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:55] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:55] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:55] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:55] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:55] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:55] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:55] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:55] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:55] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:55] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:55] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:55] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:55] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:55] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:55] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:55] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:55] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:55] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:55] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:55] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:55] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:55] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:55] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:55] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:55] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:55] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:55] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:55] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:55] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:55] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:56] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:56] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:56] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:56] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:56] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:56] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:56] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:56] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:56] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:56] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:56] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:56] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:56] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:56] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:56] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:56] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:56] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:56] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:56] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:56] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:56] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:56] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:56] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:56] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:56] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:56] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:56] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:56] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:56] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:56] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:56] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:56] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:56] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:56] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:56] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:56] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:57] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:57] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:57] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:57] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:57] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:57] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:57] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:57] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:57] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:57] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:57] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:57] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:57] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:57] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:57] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:57] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:57] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:57] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:57] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:57] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:57] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:57] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:57] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:57] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:57] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:57] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:57] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:57] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:57] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:57] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:57] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:57] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:57] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:57] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:57] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:57] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:58] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:58] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:58] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:58] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:58] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:58] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:58] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:58] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:58] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:58] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:58] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:58] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:58] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:58] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:58] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:58] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:58] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:58] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:58] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:58] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:58] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:58] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:58] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:58] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:58] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:58] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:58] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:58] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:58] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:58] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:58] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:58] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:58] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:58] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:58] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:58] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:59] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:59] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:59] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:59] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:59] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:59] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:59] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:59] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:59] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:59] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:59] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:59] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:59] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:59] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:59] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:59] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:59] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:59] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:59] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:59] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:59] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:59] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:59] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:59] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:59] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:59] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:59] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:59] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:59] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:59] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:59] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:59] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:59] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:59] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:22:59] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:22:59] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:23:00] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:23:00] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:23:00] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:23:00] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:23:00] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:23:00] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:23:00] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:23:00] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:23:00] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:23:00] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:23:00] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:23:00] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:23:00] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:23:00] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:23:00] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:23:00] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:23:00] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:23:00] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:23:00] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:23:00] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:23:00] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:23:00] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:23:00] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:23:00] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:23:00] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:23:00] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:23:00] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:23:00] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:23:00] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:23:00] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:23:00] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:23:00] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:23:00] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:23:00] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:23:00] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:23:00] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:23:01] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:23:01] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:23:01] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:23:01] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:23:01] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:23:01] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:23:01] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:23:01] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692
+[19:23:01] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:23:01] [Client/GameBox/ActionThread/INFO]: nextX13.0nextY7.756272401433692

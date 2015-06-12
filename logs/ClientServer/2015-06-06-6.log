@@ -1,0 +1,27 @@
+[20:24:52] [ClientServer/ClientMain/KERNEL]: 0.开始建立网络连接…………
+[20:24:52] [ClientServer/ClientMain/KERNEL]: 1.网络连接成功!
+[20:24:52] [ClientServer/ClientMain/KERNEL]: 2.发送0000包，确认对方是否为服务器Gate端
+[20:24:52] [ClientSever/LoginBox/serverState/INFO]: Receive a package 0001(回应连接请求)
+[20:24:52] [ClientSever/LoginBox/serverState/INFO]: package 0001: 1
+[20:24:52] [ClientServer/ClientMain/KERNEL]: 3.收到0001包，确认对方为服务器Gate端
+[20:24:52] [ClientServer/ClientMain/KERNEL]: 4.初始化loginBox登陆界面
+[20:24:54] [ClientServer/LoginBox/onLoginResponse/INFO]: Receive a package 0003(登陆反馈)
+[20:24:54] [ClientServer/LoginBox/onLoginResponse/INFO]: package 0003: true
+[20:24:55] [ClientSever/LoginBox/addCharacter/INFO]: Receive a package 0006(角色预加载)
+[20:24:55] [ClientSever/LoginBox/addCharacter/INFO]: Receive a package 0006(角色预加载)
+[20:24:55] [ClientServer/LoginBox/noMorePackage/INFO]: Receive a package 0006(角色预加载: 这是最后一个空包
+[20:24:55] [ClientServer/LoginBox/onCreatResponse/INFO]: Receive a package 0009(角色创建结果)
+[20:24:56] [ClientSever/LoginBox/addCharacter/INFO]: Receive a package 0006(角色预加载)
+[20:24:56] [ClientServer/ClientMain/KERNEL]: 5.登陆结束
+[20:24:56] [ClientServer/ClientMain/KERNEL]: 6.开始游戏，启动gameBox
+[20:24:56] [ClientServer/GameBox/startGame/KERNEL]: 接收主角详细信息(000A):关闭加载窗口,开始游戏!
+[20:24:57] [Client/GameBox/updateTarget/INFO]: receive Package 000C(角色目标)
+[20:24:57] [Client/GameBox/updateTarget/INFO]: targetX: 10000/targetY 20000
+[20:24:57] [Client/GameBox/updateTarget/INFO]: receive Package 000C(角色目标)
+[20:24:57] [Client/GameBox/updateTarget/INFO]: targetX: 233/targetY 180
+[20:24:58] [Client/GameBox/sendTargetPos/INFO]: package 000B(角色移动意图) send!
+[20:24:58] [Client/GameBox/sendTargetPos/INFO]: targetX: 233.0/targetY: 180.0
+[20:24:58] [Client/GameBox/updateTarget/INFO]: receive Package 000C(角色目标)
+[20:24:58] [Client/GameBox/updateTarget/INFO]: targetX: 467/targetY 286
+[20:24:58] [Client/GameBox/sendTargetPos/INFO]: package 000B(角色移动意图) send!
+[20:24:58] [Client/GameBox/sendTargetPos/INFO]: targetX: 467.0/targetY: 286.0

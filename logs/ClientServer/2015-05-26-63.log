@@ -1,0 +1,16 @@
+[18:47:33] [ClientServer/ClientMain/KERNEL]: 1.开始建立网络连接…………
+[18:47:33] [ClientServer/ClientMain/KERNEL]: 2.网络连接成功！启动loginBox
+[18:47:34] [ClientServer/ClientMain/KERNEL]: 2.同时发送0000包，确认对方是否为网关
+[18:47:34] [AioModule/Write/Completed/DEBUG]: Sent 14 bytes to session/162.105.38.69:8438
+[18:47:34] [AioModule/Write/Completed/DEBUG]: Sent contents(14bytes): ff ff 00 00 00 0e 00 00 00 00 30 39 20 db 
+[18:47:37] [AioModule/Write/Completed/DEBUG]: Sent 46 bytes to session/162.105.38.69:8438
+[18:47:37] [ClientServer/LoginBox/INFO]: package 0002(登陆信息) send!
+[18:47:37] [AioModule/Write/Completed/DEBUG]: Sent contents(46bytes): ff ff 00 00 00 2e 00 02 31 31 00 36 35 31 32 42 44 34 33 44 39 43 41 41 36 45 30 32 43 39 39 30 42 30 41 38 32 36 35 32 44 43 41 00 63 82 
+[18:48:01] [AioModule/Read/Completed/DEBUG]: Received 11 bytes from session/162.105.38.69:8438
+[18:48:01] [AioModule/Read/Completed/DEBUG]: Received contents(11bytes): ff ff 00 00 00 0b 00 01 01 2a 46 
+[18:48:01] [ClientServer/ClientDecoder/INFO]: Receive a package 0001(回应连接请求)
+[18:48:01] [ClientServer/ClientDecoder/INFO]: package 0001: 1
+[18:48:01] [ClientSever/LoginBox/serverState/INFO]: Receive a package 0001(回应连接请求)
+[18:48:01] [ClientSever/LoginBox/serverState/INFO]: package 0001: 1
+[18:49:08] [AioModule/Read/Failed/WARNING]: Failed to read from session/162.105.38.69:8438. java.io.IOException: 指定的网络名不再可用。
+

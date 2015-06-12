@@ -1,0 +1,7 @@
+[03:29:57] [ClientServer/ClientMain/KERNEL]: 0.开始建立网络连接…………
+[03:29:57] [ClientServer/ClientMain/KERNEL]: 1.网络连接成功!
+[03:29:57] [ClientServer/ClientMain/KERNEL]: 2.发送0000包，确认对方是否为服务器Gate端
+[03:29:58] [ClientSever/LoginBox/serverState/INFO]: Receive a package 0001(回应连接请求)
+[03:29:58] [ClientSever/LoginBox/serverState/INFO]: package 0001: 1
+[03:29:58] [ClientServer/ClientMain/KERNEL]: 3.收到0001包，确认对方为服务器Gate端
+[03:29:58] [ClientServer/ClientMain/KERNEL]: 4.初始化loginBox登陆界面

@@ -1,0 +1,43 @@
+[19:44:58] [ClientServer/ClientMain/KERNEL]: 1.开始建立网络连接…………
+[19:44:58] [ClientServer/ClientMain/KERNEL]: 2.网络连接成功！启动loginBox
+[19:44:59] [ClientServer/ClientMain/KERNEL]: 2.同时发送0000包，确认对方是否为网关
+[19:44:59] [AioModule/Write/Completed/DEBUG]: Sent 14 bytes to session/162.105.38.69:8438
+[19:44:59] [AioModule/Write/Completed/DEBUG]: Sent contents(14bytes): ff ff 00 00 00 0e 00 00 00 00 30 39 20 db 
+[19:44:59] [AioModule/Read/Completed/DEBUG]: Received 11 bytes from session/162.105.38.69:8438
+[19:44:59] [AioModule/Read/Completed/DEBUG]: Received contents(11bytes): ff ff 00 00 00 0b 00 01 01 2a 46 
+[19:44:59] [ClientServer/ClientDecoder/INFO]: Receive a package 0001(回应连接请求)
+[19:44:59] [ClientServer/ClientDecoder/INFO]: package 0001: 1
+[19:44:59] [ClientSever/LoginBox/serverState/INFO]: Receive a package 0001(回应连接请求)
+[19:44:59] [ClientSever/LoginBox/serverState/INFO]: package 0001: 1
+[19:45:03] [ClientServer/LoginBox/INFO]: package 0002(登陆信息) send!
+[19:45:03] [AioModule/Write/Completed/DEBUG]: Sent 45 bytes to session/162.105.38.69:8438
+[19:45:03] [AioModule/Write/Completed/DEBUG]: Sent contents(45bytes): ff ff 00 00 00 2d 00 02 38 00 43 39 46 30 46 38 39 35 46 42 39 38 41 42 39 31 35 39 46 35 31 46 44 30 32 39 37 45 32 33 36 44 00 6b 4a 
+[19:45:04] [AioModule/Read/Completed/DEBUG]: Received 11 bytes from session/162.105.38.69:8438
+[19:45:04] [AioModule/Read/Completed/DEBUG]: Received contents(11bytes): ff ff 00 00 00 0b 00 03 01 2a 58 
+[19:45:04] [ClientServer/ClientDecoder/INFO]: Receive a package 0003(登陆反馈)
+[19:45:04] [ClientServer/ClientDecoder/INFO]: package 0003: true
+[19:45:04] [ClientServer/LoginBox/onLoginResponse/INFO]: Receive a package 0003(登陆反馈)
+[19:45:04] [ClientServer/LoginBox/onLoginResponse/INFO]: package 0003: true
+[19:45:05] [AioModule/Read/Completed/DEBUG]: Received 27 bytes from session/162.105.38.69:8438
+[19:45:05] [AioModule/Read/Completed/DEBUG]: Received contents(27bytes): ff ff 00 00 00 1b 00 06 00 00 03 f7 64 69 79 69 20 20 20 20 20 20 00 01 01 a5 72 
+[19:45:05] [ClientServer/ClientDecoder/INFO]: Receive a package 0006(角色预加载)
+[19:45:05] [ClientServer/ClientDecoder/INFO]: package 0006: /id: 1015/name: diyi      /level: 1/gender: 1
+[19:45:05] [ClientSever/LoginBox/addCharacter/INFO]: Receive a package 0006(角色预加载)
+[19:45:05] [AioModule/Read/Completed/DEBUG]: Received 27 bytes from session/162.105.38.69:8438
+[19:45:05] [AioModule/Read/Completed/DEBUG]: Received contents(27bytes): ff ff 00 00 00 1b 00 06 00 00 03 f8 64 69 65 72 20 20 20 20 20 20 00 01 01 3f 3c 
+[19:45:05] [ClientServer/ClientDecoder/INFO]: Receive a package 0006(角色预加载)
+[19:45:05] [ClientServer/ClientDecoder/INFO]: package 0006: /id: 1016/name: dier      /level: 1/gender: 1
+[19:45:05] [ClientSever/LoginBox/addCharacter/INFO]: Receive a package 0006(角色预加载)
+[19:45:05] [AioModule/Read/Completed/DEBUG]: Received 10 bytes from session/162.105.38.69:8438
+[19:45:05] [AioModule/Read/Completed/DEBUG]: Received contents(10bytes): ff ff 00 00 00 0a 00 06 45 71 
+[19:45:05] [ClientServer/ClientDecoder/INFO]: Receive a package 0006(角色预加载)
+[19:45:05] [ClientServer/ClientDecoder/INFO]: package 0006: 这是最后一个空包
+[19:45:05] [ClientServer/LoginBox/noMorePackage/INFO]: Receive a package 0006(角色预加载)
+[19:45:05] [ClientServer/LoginBox/noMorePackage/INFO]: package 0006: 这是最后一个空包
+[19:45:08] [AioModule/Write/Completed/DEBUG]: Sent 14 bytes to session/162.105.38.69:8438
+[19:45:08] [ClientServer/LoginBox/INFO]: package 0007(角色选择) send!
+[19:45:08] [AioModule/Write/Completed/DEBUG]: Sent contents(14bytes): ff ff 00 00 00 0e 00 07 00 00 03 f7 a0 80 
+[19:45:12] [ClientServer/ClientMain/KERNEL]: 3.登陆结束
+[19:45:12] [ClientServer/ClientMain/KERNEL]: 4.开始游戏，启动gameBox
+[19:47:15] [AioModule/Read/Failed/WARNING]: Failed to read from session/162.105.38.69:8438. java.io.IOException: 指定的网络名不再可用。
+

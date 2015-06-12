@@ -1,0 +1,37 @@
+[20:20:44] [ClientServer/ClientMain/KERNEL]: 1.开始建立网络连接…………
+[20:20:44] [ClientServer/ClientMain/KERNEL]: 2.网络连接成功！启动loginBox
+[20:20:45] [ClientServer/ClientMain/KERNEL]: 2.同时发送0000包，确认对方是否为网关
+[20:20:45] [AioModule/Write/Completed/DEBUG]: Sent 14 bytes to session/162.105.38.69:8438
+[20:20:45] [AioModule/Write/Completed/DEBUG]: Sent contents(14bytes): ff ff 00 00 00 0e 00 00 00 00 30 39 20 db 
+[20:20:45] [AioModule/Read/Completed/DEBUG]: Received 11 bytes from session/162.105.38.69:8438
+[20:20:45] [AioModule/Read/Completed/DEBUG]: Received contents(11bytes): ff ff 00 00 00 0b 00 01 01 2a 46 
+[20:20:45] [ClientServer/ClientDecoder/INFO]: Receive a package 0001(回应连接请求)
+[20:20:45] [ClientServer/ClientDecoder/INFO]: package 0001: 1
+[20:20:45] [ClientSever/LoginBox/serverState/INFO]: Receive a package 0001(回应连接请求)
+[20:20:45] [ClientSever/LoginBox/serverState/INFO]: package 0001: 1
+[20:20:48] [ClientServer/LoginBox/INFO]: package 0002(登陆信息) send!
+[20:20:48] [AioModule/Write/Completed/DEBUG]: Sent 45 bytes to session/162.105.38.69:8438
+[20:20:48] [AioModule/Write/Completed/DEBUG]: Sent contents(45bytes): ff ff 00 00 00 2d 00 02 38 00 43 39 46 30 46 38 39 35 46 42 39 38 41 42 39 31 35 39 46 35 31 46 44 30 32 39 37 45 32 33 36 44 00 6b 4a 
+[20:20:48] [AioModule/Read/Completed/DEBUG]: Received 11 bytes from session/162.105.38.69:8438
+[20:20:48] [AioModule/Read/Completed/DEBUG]: Received contents(11bytes): ff ff 00 00 00 0b 00 03 00 2a 57 
+[20:20:48] [ClientServer/ClientDecoder/INFO]: Receive a package 0003(登陆反馈)
+[20:20:48] [ClientServer/ClientDecoder/INFO]: package 0003: false
+[20:20:48] [ClientServer/LoginBox/onLoginResponse/INFO]: Receive a package 0003(登陆反馈)
+[20:20:48] [ClientServer/LoginBox/onLoginResponse/INFO]: package 0003: false
+[20:20:52] [AioModule/Write/Completed/DEBUG]: Sent 45 bytes to session/162.105.38.69:8438
+[20:20:52] [ClientServer/LoginBox/INFO]: package 0002(登陆信息) send!
+[20:20:52] [AioModule/Write/Completed/DEBUG]: Sent contents(45bytes): ff ff 00 00 00 2d 00 02 37 00 38 46 31 34 45 34 35 46 43 45 45 41 31 36 37 41 35 41 33 36 44 45 44 44 34 42 45 41 32 35 34 33 00 16 63 
+[20:20:53] [AioModule/Read/Completed/DEBUG]: Received 11 bytes from session/162.105.38.69:8438
+[20:20:53] [AioModule/Read/Completed/DEBUG]: Received contents(11bytes): ff ff 00 00 00 0b 00 03 01 2a 58 
+[20:20:53] [ClientServer/ClientDecoder/INFO]: Receive a package 0003(登陆反馈)
+[20:20:53] [ClientServer/ClientDecoder/INFO]: package 0003: true
+[20:20:53] [ClientServer/LoginBox/onLoginResponse/INFO]: Receive a package 0003(登陆反馈)
+[20:20:53] [ClientServer/LoginBox/onLoginResponse/INFO]: package 0003: true
+[20:20:54] [AioModule/Read/Completed/DEBUG]: Received 10 bytes from session/162.105.38.69:8438
+[20:20:54] [AioModule/Read/Completed/DEBUG]: Received contents(10bytes): ff ff 00 00 00 0a 00 06 45 71 
+[20:20:54] [ClientServer/ClientDecoder/INFO]: Receive a package 0006(角色预加载)
+[20:20:54] [ClientServer/ClientDecoder/INFO]: package 0006: 这是最后一个空包
+[20:20:54] [ClientServer/LoginBox/noMorePackage/INFO]: Receive a package 0006(角色预加载)
+[20:20:54] [ClientServer/LoginBox/noMorePackage/INFO]: package 0006: 这是最后一个空包
+[20:22:04] [ClientServer/ClientMain/KERNEL]: 3.登陆结束
+[20:22:04] [ClientServer/ClientMain/KERNEL]: 登陆失败，退出主程序

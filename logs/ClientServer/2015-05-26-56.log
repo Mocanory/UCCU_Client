@@ -1,0 +1,4 @@
+[18:27:51] [ClientServer/ClientMain/KERNEL]: 1.开始建立网络连接…………
+[18:28:12] [AioModule/Connect/WARNING]: Failed to connect to 162.105.38.69:8438. java.util.concurrent.ExecutionException: java.io.IOException: 信号灯超时时间已到
+
+[18:28:12] [ClientServer/ClientMain/KERNEL]: 网络连接失败

@@ -1,0 +1,14 @@
+[15:44:36] [ClientServer/ClientMain/KERNEL]: 1.开始建立网络连接…………
+[15:44:36] [ClientServer/ClientMain/KERNEL]: 2.网络连接成功！启动loginBox
+[15:44:36] [AioModule/Write/Completed/DEBUG]: Sent 14 bytes to session/162.105.38.69:8438
+[15:44:36] [ClientServer/ClientMain/KERNEL]: 2.同时发送0000包，确认对方是否为网关
+[15:44:36] [AioModule/Write/Completed/DEBUG]: Sent contents(14bytes): ff ff 00 00 00 0e 00 00 00 00 30 39 20 db 
+[15:44:40] [ClientServer/LoginBox/INFO]: package 0002(登陆信息) send!
+[15:44:40] [AioModule/Write/Completed/DEBUG]: Sent 50 bytes to session/162.105.38.69:8438
+[15:44:40] [AioModule/Write/Completed/DEBUG]: Sent contents(50bytes): ff ff 00 00 00 32 00 02 b5 c3 b5 bd b5 c4 00 41 31 33 37 45 39 30 42 39 33 36 32 46 46 44 32 43 35 34 39 36 38 42 43 35 35 31 46 30 37 33 41 00 1a 71 
+[15:44:46] [ClientSever/LoginBox/serverState/INFO]: Receive a package 0001(回应连接请求)
+[15:44:46] [ClientSever/LoginBox/serverState/INFO]: package 0001: 1
+[15:44:56] [ClientServer/LoginBox/onRegistResponse/INFO]: Receive a package 0005(注册结果)
+[15:44:56] [ClientServer/LoginBox/onRegistResponse/INFO]: package 0005: true
+[15:56:50] [ClientServer/ClientMain/KERNEL]: 3.登陆结束
+[15:56:50] [ClientServer/ClientMain/KERNEL]: 登陆失败，退出主程序

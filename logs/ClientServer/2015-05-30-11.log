@@ -1,0 +1,23 @@
+[17:40:52] [ClientServer/ClientMain/init/DEBUG]: address: baidu.com:80
+[17:40:53] [ClientServer/ClientMain/init/DEBUG]: init over
+[17:40:53] [ClientServer/ClientMain/KERNEL]: 0.开始建立网络连接…………
+[17:40:53] [ClientServer/ClientMain/setUpConnection/DEBUG]: setUpConnection over
+[17:40:53] [ClientServer/ClientMain/KERNEL]: 1.网络连接成功!
+[17:40:53] [ClientServer/ClientMain/KERNEL]: 2.发送0000包，确认对方是否为服务器Gate端
+[17:40:53] [ClientServer/ClientMain/send00Package/DEBUG]: send00Package over
+[17:40:53] [AioModule/Write/Completed/DEBUG]: Sent 14 bytes to sessionbaidu.com/180.149.132.47:80
+[17:40:53] [AioModule/Write/Completed/DEBUG]: Sent contents(14bytes): ff ff 00 00 00 0e 00 00 00 00 30 39 20 db 
+[17:40:54] [ClientSever/LoginBox/serverState/INFO]: Receive a package 0001(回应连接请求)
+[17:40:54] [ClientSever/LoginBox/serverState/INFO]: package 0001: 1
+[17:40:54] [ClientServer/ClientMain/KERNEL]: 3.收到0001包，确认对方为服务器Gate端
+[17:40:54] [ClientServer/ClientMain/KERNEL]: 4.初始化loginBox登陆界面
+[17:40:59] [ClientServer/LoginBox/onLoginResponse/INFO]: Receive a package 0003(登陆反馈)
+[17:40:59] [ClientServer/LoginBox/onLoginResponse/INFO]: package 0003: true
+[17:41:00] [ClientSever/LoginBox/addCharacter/INFO]: Receive a package 0006(角色预加载)
+[17:41:00] [ClientSever/LoginBox/addCharacter/INFO]: Receive a package 0006(角色预加载)
+[17:41:00] [ClientServer/LoginBox/noMorePackage/INFO]: Receive a package 0006(角色预加载)
+[17:41:00] [ClientServer/LoginBox/noMorePackage/INFO]: package 0006: 这是最后一个空包
+[17:41:02] [AioModule/Write/Completed/DEBUG]: Sent 19 bytes to sessionbaidu.com/180.149.132.47:80
+[17:41:02] [ClientServer/LoginBox/onCreatResponse/INFO]: Receive a package 0009(角色创建结果)
+[17:41:02] [AioModule/Write/Completed/DEBUG]: Sent contents(19bytes): ff ff 00 00 00 13 00 08 31 31 00 64 64 64 64 00 01 1a f0 
+[17:41:04] [ClientSever/LoginBox/addCharacter/INFO]: Receive a package 0006(角色预加载)

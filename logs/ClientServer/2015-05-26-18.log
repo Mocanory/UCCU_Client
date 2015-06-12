@@ -1,0 +1,20 @@
+[16:15:27] [ClientServer/ClientMain/KERNEL]: 1.开始建立网络连接…………
+[16:15:27] [ClientServer/ClientMain/KERNEL]: 2.网络连接成功！启动loginBox
+[16:15:28] [ClientServer/ClientMain/KERNEL]: 2.同时发送0000包，确认对方是否为网关
+[16:15:28] [AioModule/Write/Completed/DEBUG]: Sent 14 bytes to session/162.105.38.69:8438
+[16:15:28] [AioModule/Write/Completed/DEBUG]: Sent contents(14bytes): ff ff 00 00 00 0e 00 00 00 00 30 39 20 db 
+[16:15:28] [AioModule/Read/Completed/DEBUG]: Received 11 bytes from session/162.105.38.69:8438
+[16:15:28] [AioModule/Read/Completed/DEBUG]: Received contents(11bytes): ff ff 00 00 00 0b 00 01 01 2a 46 
+[16:15:28] [ClientServer/ClientDecoder/INFO]: Receive a package 0001(回应连接请求)
+[16:15:28] [ClientServer/ClientDecoder/INFO]: package 0001: 1
+[16:15:28] [ClientSever/LoginBox/serverState/INFO]: Receive a package 0001(回应连接请求)
+[16:15:28] [ClientSever/LoginBox/serverState/INFO]: package 0001: 1
+[16:15:35] [ClientServer/LoginBox/INFO]: package 0004(注册信息) send!
+[16:15:35] [AioModule/Write/Completed/DEBUG]: Sent 47 bytes to session/162.105.38.69:8438
+[16:15:35] [AioModule/Write/Completed/DEBUG]: Sent contents(47bytes): ff ff 00 00 00 2f 00 04 33 33 33 00 33 44 32 31 37 32 34 31 38 43 45 33 30 35 43 37 44 31 36 44 34 42 30 35 35 39 37 43 36 41 35 39 00 4f af 
+[16:15:36] [AioModule/Read/Completed/DEBUG]: Received 14 bytes from session/162.105.38.69:8438
+[16:15:36] [AioModule/Read/Completed/DEBUG]: Received contents(14bytes): ff ff 00 00 00 0e 00 05 00 00 00 01 43 96 
+[16:15:36] [ClientServer/ClientDecoder/INFO]: Receive a package 0005(注册结果)
+[16:15:36] [ClientServer/ClientDecoder/INFO]: package 0005: false
+[16:15:36] [ClientServer/LoginBox/onRegistResponse/INFO]: Receive a package 0005(注册结果)
+[16:15:36] [ClientServer/LoginBox/onRegistResponse/INFO]: package 0005: false

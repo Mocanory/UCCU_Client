@@ -1,0 +1,530 @@
+[19:49:40] [ClientServer/ClientMain/KERNEL]: 1.开始建立网络连接…………
+[19:49:40] [ClientServer/ClientMain/KERNEL]: 2.网络连接成功！启动loginBox
+[19:49:41] [ClientServer/ClientMain/KERNEL]: 2.同时发送0000包，确认对方是否为网关
+[19:49:41] [AioModule/Write/Completed/DEBUG]: Sent 14 bytes to session/162.105.38.69:8438
+[19:49:41] [AioModule/Write/Completed/DEBUG]: Sent contents(14bytes): ff ff 00 00 00 0e 00 00 00 00 30 39 20 db 
+[19:49:41] [AioModule/Read/Completed/DEBUG]: Received 11 bytes from session/162.105.38.69:8438
+[19:49:41] [AioModule/Read/Completed/DEBUG]: Received contents(11bytes): ff ff 00 00 00 0b 00 01 01 2a 46 
+[19:49:41] [ClientServer/ClientDecoder/INFO]: Receive a package 0001(回应连接请求)
+[19:49:41] [ClientServer/ClientDecoder/INFO]: package 0001: 1
+[19:49:41] [ClientSever/LoginBox/serverState/INFO]: Receive a package 0001(回应连接请求)
+[19:49:41] [ClientSever/LoginBox/serverState/INFO]: package 0001: 1
+[19:49:45] [ClientServer/LoginBox/INFO]: package 0002(登陆信息) send!
+[19:49:45] [AioModule/Write/Completed/DEBUG]: Sent 46 bytes to session/162.105.38.69:8438
+[19:49:45] [AioModule/Write/Completed/DEBUG]: Sent contents(46bytes): ff ff 00 00 00 2e 00 02 31 31 00 36 35 31 32 42 44 34 33 44 39 43 41 41 36 45 30 32 43 39 39 30 42 30 41 38 32 36 35 32 44 43 41 00 63 82 
+[19:49:46] [AioModule/Read/Completed/DEBUG]: Received 11 bytes from session/162.105.38.69:8438
+[19:49:46] [AioModule/Read/Completed/DEBUG]: Received contents(11bytes): ff ff 00 00 00 0b 00 03 01 2a 58 
+[19:49:46] [ClientServer/ClientDecoder/INFO]: Receive a package 0003(登陆反馈)
+[19:49:46] [ClientServer/ClientDecoder/INFO]: package 0003: true
+[19:49:46] [ClientServer/LoginBox/onLoginResponse/INFO]: Receive a package 0003(登陆反馈)
+[19:49:46] [ClientServer/LoginBox/onLoginResponse/INFO]: package 0003: true
+[19:49:47] [AioModule/Read/Completed/DEBUG]: Received 54 bytes from session/162.105.38.69:8438
+[19:49:47] [AioModule/Read/Completed/DEBUG]: Received contents(54bytes): ff ff 00 00 00 1b 00 06 00 00 03 f9 64 64 64 64 20 20 20 20 20 20 00 01 01 41 15 ff ff 00 00 00 1b 00 06 00 00 03 fa 64 67 67 67 20 20 20 20 20 20 00 01 01 3f cf 
+[19:49:47] [ClientServer/ClientDecoder/INFO]: Receive a package 0006(角色预加载)
+[19:49:47] [ClientServer/ClientDecoder/INFO]: package 0006: /id: 1017/name: dddd      /level: 1/gender: 1
+[19:49:47] [ClientSever/LoginBox/addCharacter/INFO]: Receive a package 0006(角色预加载)
+[19:49:47] [ClientServer/ClientDecoder/INFO]: Receive a package 0006(角色预加载)
+[19:49:47] [ClientServer/ClientDecoder/INFO]: package 0006: /id: 1018/name: dggg      /level: 1/gender: 1
+[19:49:47] [ClientSever/LoginBox/addCharacter/INFO]: Receive a package 0006(角色预加载)
+[19:49:47] [AioModule/Read/Completed/DEBUG]: Received 10 bytes from session/162.105.38.69:8438
+[19:49:47] [AioModule/Read/Completed/DEBUG]: Received contents(10bytes): ff ff 00 00 00 0a 00 06 45 71 
+[19:49:47] [ClientServer/ClientDecoder/INFO]: Receive a package 0006(角色预加载)
+[19:49:47] [ClientServer/ClientDecoder/INFO]: package 0006: 这是最后一个空包
+[19:49:47] [ClientServer/LoginBox/noMorePackage/INFO]: Receive a package 0006(角色预加载)
+[19:49:47] [ClientServer/LoginBox/noMorePackage/INFO]: package 0006: 这是最后一个空包
+[19:49:50] [ClientServer/LoginBox/INFO]: package 0007(角色选择) send!
+[19:49:50] [AioModule/Write/Completed/DEBUG]: Sent 14 bytes to session/162.105.38.69:8438
+[19:49:50] [AioModule/Write/Completed/DEBUG]: Sent contents(14bytes): ff ff 00 00 00 0e 00 07 00 00 03 fa a0 83 
+[19:49:51] [AioModule/Read/Completed/DEBUG]: Received 35 bytes from session/162.105.38.69:8438
+[19:49:51] [AioModule/Read/Completed/DEBUG]: Received contents(35bytes): ff ff 00 00 00 23 00 0a 00 00 03 fa 64 67 67 67 20 20 20 20 20 20 00 01 01 00 00 00 08 00 00 00 00 9f 47 
+[19:49:51] [ClientServer/ClientDecoder/INFO]: Receive a package 000A(游戏中所有玩家信息)
+[19:49:51] [ClientServer/ClientDecoder/INFO]: package 000A: /id: 1018/name: dggg      /level: 1/gender: 1/posX: 8/posY: 0
+[19:49:51] [ClientServer/GameBox/addCharacter/INFO]: Receive a package 000A(游戏中所有玩家信息)
+[19:49:54] [ClientServer/ClientMain/KERNEL]: 3.登陆结束
+[19:49:54] [ClientServer/ClientMain/KERNEL]: 4.开始游戏，启动gameBox
+[19:49:57] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:49:57] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to session/162.105.38.69:8438
+[19:49:57] [Client/GameBox/ActionThread/INFO]: nextX0.0nextY0.0
+[19:49:57] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 03 fa 00 00 00 00 00 00 00 00 3b ac 
+[19:49:57] [AioModule/Read/Completed/DEBUG]: Received 22 bytes from session/162.105.38.69:8438
+[19:49:57] [AioModule/Read/Completed/DEBUG]: Received contents(22bytes): ff ff 00 00 00 16 00 0c 00 00 03 fa 00 00 00 00 00 00 00 00 17 2c 
+[19:49:57] [ClientServer/ClientDecoder/INFO]: Receive a package 000C(所有玩家坐标更新)
+[19:49:57] [ClientServer/ClientDecoder/INFO]: package 000C: /id: 1018/posX: 0/posY: 0
+[19:49:57] [ClientServer/GameBox/UpdateThread---queue/INFO]: X: 0.0Y: 0.0
+[19:49:59] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:49:59] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to session/162.105.38.69:8438
+[19:49:59] [Client/GameBox/ActionThread/INFO]: nextX0.0nextY0.0
+[19:49:59] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 03 fa 00 00 00 00 00 00 00 00 3b ac 
+[19:49:59] [AioModule/Read/Completed/DEBUG]: Received 22 bytes from session/162.105.38.69:8438
+[19:49:59] [AioModule/Read/Completed/DEBUG]: Received contents(22bytes): ff ff 00 00 00 16 00 0c 00 00 03 fa 00 00 00 00 00 00 00 00 17 2c 
+[19:49:59] [ClientServer/ClientDecoder/INFO]: Receive a package 000C(所有玩家坐标更新)
+[19:49:59] [ClientServer/ClientDecoder/INFO]: package 000C: /id: 1018/posX: 0/posY: 0
+[19:49:59] [ClientServer/GameBox/UpdateThread---queue/INFO]: X: 0.0Y: 0.0
+[19:50:01] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to session/162.105.38.69:8438
+[19:50:01] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:50:01] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 03 fa 00 00 00 00 00 00 00 00 3b ac 
+[19:50:01] [Client/GameBox/ActionThread/INFO]: nextX0.0nextY0.0
+[19:50:01] [AioModule/Read/Completed/DEBUG]: Received 22 bytes from session/162.105.38.69:8438
+[19:50:01] [AioModule/Read/Completed/DEBUG]: Received contents(22bytes): ff ff 00 00 00 16 00 0c 00 00 03 fa 00 00 00 00 00 00 00 00 17 2c 
+[19:50:01] [ClientServer/ClientDecoder/INFO]: Receive a package 000C(所有玩家坐标更新)
+[19:50:01] [ClientServer/ClientDecoder/INFO]: package 000C: /id: 1018/posX: 0/posY: 0
+[19:50:01] [ClientServer/GameBox/UpdateThread---queue/INFO]: X: 0.0Y: 0.0
+[19:50:03] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to session/162.105.38.69:8438
+[19:50:03] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:50:03] [Client/GameBox/ActionThread/INFO]: nextX0.0nextY0.0
+[19:50:03] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 03 fa 00 00 00 00 00 00 00 00 3b ac 
+[19:50:03] [AioModule/Read/Completed/DEBUG]: Received 22 bytes from session/162.105.38.69:8438
+[19:50:03] [AioModule/Read/Completed/DEBUG]: Received contents(22bytes): ff ff 00 00 00 16 00 0c 00 00 03 fa 00 00 00 00 00 00 00 00 17 2c 
+[19:50:03] [ClientServer/ClientDecoder/INFO]: Receive a package 000C(所有玩家坐标更新)
+[19:50:03] [ClientServer/ClientDecoder/INFO]: package 000C: /id: 1018/posX: 0/posY: 0
+[19:50:03] [ClientServer/GameBox/UpdateThread---queue/INFO]: X: 0.0Y: 0.0
+[19:50:05] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to session/162.105.38.69:8438
+[19:50:05] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:50:05] [Client/GameBox/ActionThread/INFO]: nextX0.0nextY0.0
+[19:50:05] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 03 fa 00 00 00 00 00 00 00 00 3b ac 
+[19:50:05] [AioModule/Read/Completed/DEBUG]: Received 22 bytes from session/162.105.38.69:8438
+[19:50:05] [AioModule/Read/Completed/DEBUG]: Received contents(22bytes): ff ff 00 00 00 16 00 0c 00 00 03 fa 00 00 00 00 00 00 00 00 17 2c 
+[19:50:05] [ClientServer/ClientDecoder/INFO]: Receive a package 000C(所有玩家坐标更新)
+[19:50:05] [ClientServer/ClientDecoder/INFO]: package 000C: /id: 1018/posX: 0/posY: 0
+[19:50:05] [ClientServer/GameBox/UpdateThread---queue/INFO]: X: 0.0Y: 0.0
+[19:50:07] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to session/162.105.38.69:8438
+[19:50:07] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:50:07] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 03 fa 00 00 00 00 00 00 00 00 3b ac 
+[19:50:07] [Client/GameBox/ActionThread/INFO]: nextX0.0nextY0.0
+[19:50:07] [AioModule/Read/Completed/DEBUG]: Received 22 bytes from session/162.105.38.69:8438
+[19:50:07] [AioModule/Read/Completed/DEBUG]: Received contents(22bytes): ff ff 00 00 00 16 00 0c 00 00 03 fa 00 00 00 00 00 00 00 00 17 2c 
+[19:50:07] [ClientServer/ClientDecoder/INFO]: Receive a package 000C(所有玩家坐标更新)
+[19:50:07] [ClientServer/ClientDecoder/INFO]: package 000C: /id: 1018/posX: 0/posY: 0
+[19:50:07] [ClientServer/GameBox/UpdateThread---queue/INFO]: X: 0.0Y: 0.0
+[19:50:09] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to session/162.105.38.69:8438
+[19:50:09] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:50:09] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 03 fa 00 00 00 10 00 00 00 01 76 64 
+[19:50:09] [Client/GameBox/ActionThread/INFO]: nextX16.0nextY1.6300940438871474
+[19:50:11] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to session/162.105.38.69:8438
+[19:50:11] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:50:11] [Client/GameBox/ActionThread/INFO]: nextX16.0nextY1.6300940438871474
+[19:50:11] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 03 fa 00 00 00 10 00 00 00 01 76 64 
+[19:50:13] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to session/162.105.38.69:8438
+[19:50:13] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:50:13] [Client/GameBox/ActionThread/INFO]: nextX16.0nextY1.6300940438871474
+[19:50:13] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 03 fa 00 00 00 10 00 00 00 01 76 64 
+[19:50:15] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to session/162.105.38.69:8438
+[19:50:15] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:50:15] [Client/GameBox/ActionThread/INFO]: nextX16.0nextY1.6300940438871474
+[19:50:15] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 03 fa 00 00 00 10 00 00 00 01 76 64 
+[19:50:17] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to session/162.105.38.69:8438
+[19:50:17] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:50:17] [Client/GameBox/ActionThread/INFO]: nextX16.0nextY2.7641196013289036
+[19:50:17] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 03 fa 00 00 00 10 00 00 00 02 76 65 
+[19:50:19] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to session/162.105.38.69:8438
+[19:50:19] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:50:19] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 03 fa 00 00 00 10 00 00 00 02 76 65 
+[19:50:19] [Client/GameBox/ActionThread/INFO]: nextX16.0nextY2.7641196013289036
+[19:50:21] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to session/162.105.38.69:8438
+[19:50:21] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:50:21] [Client/GameBox/ActionThread/INFO]: nextX16.0nextY2.7641196013289036
+[19:50:21] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 03 fa 00 00 00 10 00 00 00 02 76 65 
+[19:50:23] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to session/162.105.38.69:8438
+[19:50:23] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:50:23] [Client/GameBox/ActionThread/INFO]: nextX16.0nextY2.7641196013289036
+[19:50:23] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 03 fa 00 00 00 10 00 00 00 02 76 65 
+[19:50:25] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to session/162.105.38.69:8438
+[19:50:25] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:50:25] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 03 fa 00 00 00 10 00 00 00 02 76 65 
+[19:50:25] [Client/GameBox/ActionThread/INFO]: nextX16.0nextY2.7641196013289036
+[19:50:27] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to session/162.105.38.69:8438
+[19:50:27] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:50:27] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 03 fa 00 00 00 10 00 00 00 02 76 65 
+[19:50:27] [Client/GameBox/ActionThread/INFO]: nextX16.0nextY2.7641196013289036
+[19:50:29] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:50:29] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to session/162.105.38.69:8438
+[19:50:29] [Client/GameBox/ActionThread/INFO]: nextX16.0nextY2.7641196013289036
+[19:50:29] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 03 fa 00 00 00 10 00 00 00 02 76 65 
+[19:50:31] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to session/162.105.38.69:8438
+[19:50:31] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:50:31] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 03 fa 00 00 00 10 00 00 00 02 76 65 
+[19:50:31] [Client/GameBox/ActionThread/INFO]: nextX16.0nextY2.7641196013289036
+[19:50:33] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to session/162.105.38.69:8438
+[19:50:33] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:50:33] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 03 fa 00 00 00 10 00 00 00 02 76 65 
+[19:50:33] [Client/GameBox/ActionThread/INFO]: nextX16.0nextY2.7641196013289036
+[19:50:35] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to session/162.105.38.69:8438
+[19:50:35] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:50:35] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 03 fa 00 00 00 10 00 00 00 02 76 65 
+[19:50:35] [Client/GameBox/ActionThread/INFO]: nextX16.0nextY2.7641196013289036
+[19:50:37] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:50:37] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to session/162.105.38.69:8438
+[19:50:37] [Client/GameBox/ActionThread/INFO]: nextX16.0nextY2.7641196013289036
+[19:50:37] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 03 fa 00 00 00 10 00 00 00 02 76 65 
+[19:50:39] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to session/162.105.38.69:8438
+[19:50:39] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:50:39] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 03 fa 00 00 00 10 00 00 00 02 76 65 
+[19:50:39] [Client/GameBox/ActionThread/INFO]: nextX16.0nextY2.7641196013289036
+[19:50:41] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to session/162.105.38.69:8438
+[19:50:41] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:50:41] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 03 fa 00 00 00 10 00 00 00 02 76 65 
+[19:50:41] [Client/GameBox/ActionThread/INFO]: nextX16.0nextY2.7641196013289036
+[19:50:43] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:50:43] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to session/162.105.38.69:8438
+[19:50:43] [Client/GameBox/ActionThread/INFO]: nextX16.0nextY2.7641196013289036
+[19:50:43] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 03 fa 00 00 00 10 00 00 00 02 76 65 
+[19:50:45] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:50:45] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to session/162.105.38.69:8438
+[19:50:45] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 03 fa 00 00 00 10 00 00 00 02 76 65 
+[19:50:45] [Client/GameBox/ActionThread/INFO]: nextX16.0nextY2.7641196013289036
+[19:50:47] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:50:47] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to session/162.105.38.69:8438
+[19:50:47] [Client/GameBox/ActionThread/INFO]: nextX16.0nextY2.7641196013289036
+[19:50:47] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 03 fa 00 00 00 10 00 00 00 02 76 65 
+[19:50:49] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:50:49] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to session/162.105.38.69:8438
+[19:50:49] [Client/GameBox/ActionThread/INFO]: nextX16.0nextY2.7641196013289036
+[19:50:49] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 03 fa 00 00 00 10 00 00 00 02 76 65 
+[19:50:51] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:50:51] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to session/162.105.38.69:8438
+[19:50:51] [Client/GameBox/ActionThread/INFO]: nextX16.0nextY2.7641196013289036
+[19:50:51] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 03 fa 00 00 00 10 00 00 00 02 76 65 
+[19:50:53] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:50:53] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to session/162.105.38.69:8438
+[19:50:53] [Client/GameBox/ActionThread/INFO]: nextX16.0nextY2.7641196013289036
+[19:50:53] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 03 fa 00 00 00 10 00 00 00 02 76 65 
+[19:50:55] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:50:55] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to session/162.105.38.69:8438
+[19:50:55] [Client/GameBox/ActionThread/INFO]: nextX16.0nextY2.7641196013289036
+[19:50:55] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 03 fa 00 00 00 10 00 00 00 02 76 65 
+[19:50:57] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:50:57] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to session/162.105.38.69:8438
+[19:50:57] [Client/GameBox/ActionThread/INFO]: nextX16.0nextY2.7641196013289036
+[19:50:57] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 03 fa 00 00 00 10 00 00 00 02 76 65 
+[19:50:59] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to session/162.105.38.69:8438
+[19:50:59] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:50:59] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 03 fa 00 00 00 10 00 00 00 02 76 65 
+[19:50:59] [Client/GameBox/ActionThread/INFO]: nextX16.0nextY2.7641196013289036
+[19:51:01] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to session/162.105.38.69:8438
+[19:51:01] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:51:01] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 03 fa 00 00 00 10 00 00 00 02 76 65 
+[19:51:01] [Client/GameBox/ActionThread/INFO]: nextX16.0nextY2.7641196013289036
+[19:51:03] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:51:03] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to session/162.105.38.69:8438
+[19:51:03] [Client/GameBox/ActionThread/INFO]: nextX16.0nextY2.7641196013289036
+[19:51:03] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 03 fa 00 00 00 10 00 00 00 02 76 65 
+[19:51:05] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to session/162.105.38.69:8438
+[19:51:05] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:51:05] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 03 fa 00 00 00 10 00 00 00 02 76 65 
+[19:51:05] [Client/GameBox/ActionThread/INFO]: nextX16.0nextY2.7641196013289036
+[19:51:07] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to session/162.105.38.69:8438
+[19:51:07] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:51:07] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 03 fa 00 00 00 10 00 00 00 02 76 65 
+[19:51:07] [Client/GameBox/ActionThread/INFO]: nextX16.0nextY2.7641196013289036
+[19:51:09] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to session/162.105.38.69:8438
+[19:51:09] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:51:09] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 03 fa 00 00 00 10 00 00 00 02 76 65 
+[19:51:09] [Client/GameBox/ActionThread/INFO]: nextX16.0nextY2.7641196013289036
+[19:51:11] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to session/162.105.38.69:8438
+[19:51:11] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:51:11] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 03 fa 00 00 00 10 00 00 00 02 76 65 
+[19:51:11] [Client/GameBox/ActionThread/INFO]: nextX16.0nextY2.7641196013289036
+[19:51:13] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:51:13] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to session/162.105.38.69:8438
+[19:51:13] [Client/GameBox/ActionThread/INFO]: nextX16.0nextY2.7641196013289036
+[19:51:13] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 03 fa 00 00 00 10 00 00 00 02 76 65 
+[19:51:15] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:51:15] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to session/162.105.38.69:8438
+[19:51:15] [Client/GameBox/ActionThread/INFO]: nextX16.0nextY2.7641196013289036
+[19:51:15] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 03 fa 00 00 00 10 00 00 00 02 76 65 
+[19:51:17] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:51:17] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to session/162.105.38.69:8438
+[19:51:17] [Client/GameBox/ActionThread/INFO]: nextX16.0nextY2.7641196013289036
+[19:51:17] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 03 fa 00 00 00 10 00 00 00 02 76 65 
+[19:51:19] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:51:19] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to session/162.105.38.69:8438
+[19:51:19] [Client/GameBox/ActionThread/INFO]: nextX16.0nextY2.7641196013289036
+[19:51:19] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 03 fa 00 00 00 10 00 00 00 02 76 65 
+[19:51:21] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:51:21] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to session/162.105.38.69:8438
+[19:51:21] [Client/GameBox/ActionThread/INFO]: nextX16.0nextY2.7641196013289036
+[19:51:21] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 03 fa 00 00 00 10 00 00 00 02 76 65 
+[19:51:23] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:51:23] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to session/162.105.38.69:8438
+[19:51:23] [Client/GameBox/ActionThread/INFO]: nextX16.0nextY2.7641196013289036
+[19:51:23] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 03 fa 00 00 00 10 00 00 00 02 76 65 
+[19:51:25] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to session/162.105.38.69:8438
+[19:51:25] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:51:25] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 03 fa 00 00 00 10 00 00 00 02 76 65 
+[19:51:25] [Client/GameBox/ActionThread/INFO]: nextX16.0nextY2.7641196013289036
+[19:51:27] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:51:27] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to session/162.105.38.69:8438
+[19:51:27] [Client/GameBox/ActionThread/INFO]: nextX16.0nextY2.7641196013289036
+[19:51:27] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 03 fa 00 00 00 10 00 00 00 02 76 65 
+[19:51:29] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:51:29] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to session/162.105.38.69:8438
+[19:51:29] [Client/GameBox/ActionThread/INFO]: nextX16.0nextY2.7641196013289036
+[19:51:29] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 03 fa 00 00 00 10 00 00 00 02 76 65 
+[19:51:31] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to session/162.105.38.69:8438
+[19:51:31] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:51:31] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 03 fa 00 00 00 10 00 00 00 02 76 65 
+[19:51:31] [Client/GameBox/ActionThread/INFO]: nextX16.0nextY2.7641196013289036
+[19:51:33] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to session/162.105.38.69:8438
+[19:51:33] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:51:33] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 03 fa 00 00 00 10 00 00 00 02 76 65 
+[19:51:33] [Client/GameBox/ActionThread/INFO]: nextX16.0nextY2.7641196013289036
+[19:51:35] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:51:35] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to session/162.105.38.69:8438
+[19:51:35] [Client/GameBox/ActionThread/INFO]: nextX16.0nextY2.7641196013289036
+[19:51:35] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 03 fa 00 00 00 10 00 00 00 02 76 65 
+[19:51:37] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:51:37] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to session/162.105.38.69:8438
+[19:51:37] [Client/GameBox/ActionThread/INFO]: nextX16.0nextY2.7641196013289036
+[19:51:37] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 03 fa 00 00 00 10 00 00 00 02 76 65 
+[19:51:39] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:51:39] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to session/162.105.38.69:8438
+[19:51:39] [Client/GameBox/ActionThread/INFO]: nextX16.0nextY2.7641196013289036
+[19:51:39] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 03 fa 00 00 00 10 00 00 00 02 76 65 
+[19:51:41] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:51:41] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to session/162.105.38.69:8438
+[19:51:41] [Client/GameBox/ActionThread/INFO]: nextX16.0nextY2.7641196013289036
+[19:51:41] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 03 fa 00 00 00 10 00 00 00 02 76 65 
+[19:51:43] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:51:43] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to session/162.105.38.69:8438
+[19:51:43] [Client/GameBox/ActionThread/INFO]: nextX16.0nextY2.7641196013289036
+[19:51:43] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 03 fa 00 00 00 10 00 00 00 02 76 65 
+[19:51:45] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to session/162.105.38.69:8438
+[19:51:45] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:51:45] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 03 fa 00 00 00 10 00 00 00 02 76 65 
+[19:51:45] [Client/GameBox/ActionThread/INFO]: nextX16.0nextY2.7641196013289036
+[19:51:47] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:51:47] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to session/162.105.38.69:8438
+[19:51:47] [Client/GameBox/ActionThread/INFO]: nextX16.0nextY2.7641196013289036
+[19:51:47] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 03 fa 00 00 00 10 00 00 00 02 76 65 
+[19:51:49] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:51:49] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to session/162.105.38.69:8438
+[19:51:49] [Client/GameBox/ActionThread/INFO]: nextX16.0nextY2.7641196013289036
+[19:51:49] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 03 fa 00 00 00 10 00 00 00 02 76 65 
+[19:51:51] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:51:51] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to session/162.105.38.69:8438
+[19:51:51] [Client/GameBox/ActionThread/INFO]: nextX16.0nextY2.7641196013289036
+[19:51:51] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 03 fa 00 00 00 10 00 00 00 02 76 65 
+[19:51:53] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:51:53] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to session/162.105.38.69:8438
+[19:51:53] [Client/GameBox/ActionThread/INFO]: nextX16.0nextY2.7641196013289036
+[19:51:53] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 03 fa 00 00 00 10 00 00 00 02 76 65 
+[19:51:55] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to session/162.105.38.69:8438
+[19:51:55] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:51:55] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 03 fa 00 00 00 10 00 00 00 02 76 65 
+[19:51:55] [Client/GameBox/ActionThread/INFO]: nextX16.0nextY2.7641196013289036
+[19:51:57] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:51:57] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to session/162.105.38.69:8438
+[19:51:57] [Client/GameBox/ActionThread/INFO]: nextX16.0nextY2.7641196013289036
+[19:51:57] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 03 fa 00 00 00 10 00 00 00 02 76 65 
+[19:51:59] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to session/162.105.38.69:8438
+[19:51:59] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:51:59] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 03 fa 00 00 00 10 00 00 00 02 76 65 
+[19:51:59] [Client/GameBox/ActionThread/INFO]: nextX16.0nextY2.7641196013289036
+[19:52:01] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:52:01] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to session/162.105.38.69:8438
+[19:52:02] [Client/GameBox/ActionThread/INFO]: nextX16.0nextY2.7641196013289036
+[19:52:02] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 03 fa 00 00 00 10 00 00 00 02 76 65 
+[19:52:04] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to session/162.105.38.69:8438
+[19:52:04] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:52:04] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 03 fa 00 00 00 10 00 00 00 02 76 65 
+[19:52:04] [Client/GameBox/ActionThread/INFO]: nextX16.0nextY2.7641196013289036
+[19:52:06] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:52:06] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to session/162.105.38.69:8438
+[19:52:06] [Client/GameBox/ActionThread/INFO]: nextX16.0nextY2.7641196013289036
+[19:52:06] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 03 fa 00 00 00 10 00 00 00 02 76 65 
+[19:52:08] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to session/162.105.38.69:8438
+[19:52:08] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:52:08] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 03 fa 00 00 00 10 00 00 00 02 76 65 
+[19:52:08] [Client/GameBox/ActionThread/INFO]: nextX16.0nextY2.7641196013289036
+[19:52:10] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to session/162.105.38.69:8438
+[19:52:10] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:52:10] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 03 fa 00 00 00 10 00 00 00 02 76 65 
+[19:52:10] [Client/GameBox/ActionThread/INFO]: nextX16.0nextY2.7641196013289036
+[19:52:12] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:52:12] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to session/162.105.38.69:8438
+[19:52:12] [Client/GameBox/ActionThread/INFO]: nextX16.0nextY2.7641196013289036
+[19:52:12] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 03 fa 00 00 00 10 00 00 00 02 76 65 
+[19:52:14] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:52:14] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to session/162.105.38.69:8438
+[19:52:14] [Client/GameBox/ActionThread/INFO]: nextX16.0nextY2.7641196013289036
+[19:52:14] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 03 fa 00 00 00 10 00 00 00 02 76 65 
+[19:52:16] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:52:16] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to session/162.105.38.69:8438
+[19:52:16] [Client/GameBox/ActionThread/INFO]: nextX16.0nextY2.7641196013289036
+[19:52:16] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 03 fa 00 00 00 10 00 00 00 02 76 65 
+[19:52:18] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:52:18] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to session/162.105.38.69:8438
+[19:52:18] [Client/GameBox/ActionThread/INFO]: nextX16.0nextY2.7641196013289036
+[19:52:18] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 03 fa 00 00 00 10 00 00 00 02 76 65 
+[19:52:20] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to session/162.105.38.69:8438
+[19:52:20] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:52:20] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 03 fa 00 00 00 10 00 00 00 02 76 65 
+[19:52:20] [Client/GameBox/ActionThread/INFO]: nextX16.0nextY2.7641196013289036
+[19:52:22] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to session/162.105.38.69:8438
+[19:52:22] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:52:22] [Client/GameBox/ActionThread/INFO]: nextX16.0nextY2.7641196013289036
+[19:52:22] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 03 fa 00 00 00 10 00 00 00 02 76 65 
+[19:52:24] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:52:24] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to session/162.105.38.69:8438
+[19:52:24] [Client/GameBox/ActionThread/INFO]: nextX16.0nextY2.7641196013289036
+[19:52:24] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 03 fa 00 00 00 10 00 00 00 02 76 65 
+[19:52:26] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:52:26] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to session/162.105.38.69:8438
+[19:52:26] [Client/GameBox/ActionThread/INFO]: nextX16.0nextY2.7641196013289036
+[19:52:26] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 03 fa 00 00 00 10 00 00 00 02 76 65 
+[19:52:28] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:52:28] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to session/162.105.38.69:8438
+[19:52:28] [Client/GameBox/ActionThread/INFO]: nextX16.0nextY2.7641196013289036
+[19:52:28] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 03 fa 00 00 00 10 00 00 00 02 76 65 
+[19:52:30] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:52:30] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to session/162.105.38.69:8438
+[19:52:30] [Client/GameBox/ActionThread/INFO]: nextX16.0nextY7.418181818181818
+[19:52:30] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 03 fa 00 00 00 10 00 00 00 07 76 6a 
+[19:52:32] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to session/162.105.38.69:8438
+[19:52:32] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:52:32] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 03 fa 00 00 00 10 00 00 00 07 76 6a 
+[19:52:32] [Client/GameBox/ActionThread/INFO]: nextX16.0nextY7.418181818181818
+[19:52:34] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:52:34] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to session/162.105.38.69:8438
+[19:52:34] [Client/GameBox/ActionThread/INFO]: nextX23.764705882352942nextY8.0
+[19:52:34] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 03 fa 00 00 00 17 00 00 00 08 b4 a3 
+[19:52:36] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:52:36] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to session/162.105.38.69:8438
+[19:52:36] [Client/GameBox/ActionThread/INFO]: nextX23.764705882352942nextY8.0
+[19:52:36] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 03 fa 00 00 00 17 00 00 00 08 b4 a3 
+[19:52:38] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:52:38] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to session/162.105.38.69:8438
+[19:52:38] [Client/GameBox/ActionThread/INFO]: nextX16.0nextY-3.234042553191489
+[19:52:38] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 03 fa 00 00 00 10 ff ff ff fd 5a 18 
+[19:52:40] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:52:40] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to session/162.105.38.69:8438
+[19:52:40] [Client/GameBox/ActionThread/INFO]: nextX0.0nextY8.0
+[19:52:40] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 03 fa 00 00 00 00 00 00 00 08 3b b4 
+[19:52:40] [AioModule/Read/Completed/DEBUG]: Received 22 bytes from session/162.105.38.69:8438
+[19:52:40] [AioModule/Read/Completed/DEBUG]: Received contents(22bytes): ff ff 00 00 00 16 00 0c 00 00 03 fa 00 00 00 00 00 00 00 08 17 34 
+[19:52:40] [ClientServer/ClientDecoder/INFO]: Receive a package 000C(所有玩家坐标更新)
+[19:52:40] [ClientServer/ClientDecoder/INFO]: package 000C: /id: 1018/posX: 0/posY: 8
+[19:52:40] [ClientServer/GameBox/UpdateThread---queue/INFO]: X: 0.0Y: 8.0
+[19:52:42] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to session/162.105.38.69:8438
+[19:52:42] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:52:42] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 03 fa 00 00 00 00 00 00 00 08 3b b4 
+[19:52:42] [Client/GameBox/ActionThread/INFO]: nextX0.0nextY8.0
+[19:52:42] [AioModule/Read/Completed/DEBUG]: Received 22 bytes from session/162.105.38.69:8438
+[19:52:42] [AioModule/Read/Completed/DEBUG]: Received contents(22bytes): ff ff 00 00 00 16 00 0c 00 00 03 fa 00 00 00 00 00 00 00 08 17 34 
+[19:52:42] [ClientServer/ClientDecoder/INFO]: Receive a package 000C(所有玩家坐标更新)
+[19:52:42] [ClientServer/ClientDecoder/INFO]: package 000C: /id: 1018/posX: 0/posY: 8
+[19:52:42] [ClientServer/GameBox/UpdateThread---queue/INFO]: X: 0.0Y: 8.0
+[19:52:44] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:52:44] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to session/162.105.38.69:8438
+[19:52:44] [Client/GameBox/ActionThread/INFO]: nextX0.0nextY8.0
+[19:52:44] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 03 fa 00 00 00 00 00 00 00 08 3b b4 
+[19:52:44] [AioModule/Read/Completed/DEBUG]: Received 22 bytes from session/162.105.38.69:8438
+[19:52:44] [AioModule/Read/Completed/DEBUG]: Received contents(22bytes): ff ff 00 00 00 16 00 0c 00 00 03 fa 00 00 00 00 00 00 00 08 17 34 
+[19:52:44] [ClientServer/ClientDecoder/INFO]: Receive a package 000C(所有玩家坐标更新)
+[19:52:44] [ClientServer/ClientDecoder/INFO]: package 000C: /id: 1018/posX: 0/posY: 8
+[19:52:44] [ClientServer/GameBox/UpdateThread---queue/INFO]: X: 0.0Y: 8.0
+[19:52:46] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to session/162.105.38.69:8438
+[19:52:46] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:52:46] [Client/GameBox/ActionThread/INFO]: nextX0.0nextY8.0
+[19:52:46] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 03 fa 00 00 00 00 00 00 00 08 3b b4 
+[19:52:46] [AioModule/Read/Completed/DEBUG]: Received 22 bytes from session/162.105.38.69:8438
+[19:52:46] [AioModule/Read/Completed/DEBUG]: Received contents(22bytes): ff ff 00 00 00 16 00 0c 00 00 03 fa 00 00 00 00 00 00 00 08 17 34 
+[19:52:46] [ClientServer/ClientDecoder/INFO]: Receive a package 000C(所有玩家坐标更新)
+[19:52:46] [ClientServer/ClientDecoder/INFO]: package 000C: /id: 1018/posX: 0/posY: 8
+[19:52:46] [ClientServer/GameBox/UpdateThread---queue/INFO]: X: 0.0Y: 8.0
+[19:52:48] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:52:48] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to session/162.105.38.69:8438
+[19:52:48] [Client/GameBox/ActionThread/INFO]: nextX16.0nextY-2.088888888888889
+[19:52:48] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 03 fa 00 00 00 10 ff ff ff fe 5a 19 
+[19:52:50] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:52:50] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to session/162.105.38.69:8438
+[19:52:50] [Client/GameBox/ActionThread/INFO]: nextX16.0nextY-2.088888888888889
+[19:52:50] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 03 fa 00 00 00 10 ff ff ff fe 5a 19 
+[19:52:52] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to session/162.105.38.69:8438
+[19:52:52] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:52:52] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 03 fa 00 00 00 10 ff ff ff fe 5a 19 
+[19:52:52] [Client/GameBox/ActionThread/INFO]: nextX16.0nextY-2.088888888888889
+[19:52:54] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:52:54] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to session/162.105.38.69:8438
+[19:52:54] [Client/GameBox/ActionThread/INFO]: nextX-19.076923076923077nextY8.0
+[19:52:54] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 03 fa ff ff ff ed 00 00 00 08 b0 03 
+[19:52:56] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:52:56] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to session/162.105.38.69:8438
+[19:52:56] [Client/GameBox/ActionThread/INFO]: nextX-19.076923076923077nextY8.0
+[19:52:56] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 03 fa ff ff ff ed 00 00 00 08 b0 03 
+[19:52:58] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:52:58] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to session/162.105.38.69:8438
+[19:52:58] [Client/GameBox/ActionThread/INFO]: nextX16.0nextY4.467532467532467
+[19:52:58] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 03 fa 00 00 00 10 00 00 00 04 76 67 
+[19:53:00] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to session/162.105.38.69:8438
+[19:53:00] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:53:00] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 03 fa 00 00 00 10 00 00 00 08 76 6b 
+[19:53:00] [Client/GameBox/ActionThread/INFO]: nextX16.195121951219512nextY8.0
+[19:53:02] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:53:02] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to session/162.105.38.69:8438
+[19:53:02] [Client/GameBox/ActionThread/INFO]: nextX16.195121951219512nextY8.0
+[19:53:02] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 03 fa 00 00 00 10 00 00 00 08 76 6b 
+[19:53:04] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:53:04] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to session/162.105.38.69:8438
+[19:53:04] [Client/GameBox/ActionThread/INFO]: nextX16.0nextY3.2618629173989455
+[19:53:04] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 03 fa 00 00 00 10 00 00 00 03 76 66 
+[19:53:06] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:53:06] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to session/162.105.38.69:8438
+[19:53:06] [Client/GameBox/ActionThread/INFO]: nextX16.0nextY3.2618629173989455
+[19:53:06] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 03 fa 00 00 00 10 00 00 00 03 76 66 
+[19:53:08] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:53:08] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to session/162.105.38.69:8438
+[19:53:08] [Client/GameBox/ActionThread/INFO]: nextX16.0nextY3.2618629173989455
+[19:53:08] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 03 fa 00 00 00 10 00 00 00 03 76 66 
+[19:53:10] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to session/162.105.38.69:8438
+[19:53:10] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:53:10] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 03 fa ff ff ff db 00 00 00 08 b7 05 
+[19:53:10] [Client/GameBox/ActionThread/INFO]: nextX-37.674418604651166nextY8.0
+[19:53:12] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to session/162.105.38.69:8438
+[19:53:12] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:53:12] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 03 fa 00 00 00 10 ff ff ff fe 5a 19 
+[19:53:12] [Client/GameBox/ActionThread/INFO]: nextX16.0nextY-2.1578947368421053
+[19:53:14] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:53:14] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to session/162.105.38.69:8438
+[19:53:14] [Client/GameBox/ActionThread/INFO]: nextX16.0nextY-2.1578947368421053
+[19:53:14] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 03 fa 00 00 00 10 ff ff ff fe 5a 19 
+[19:53:16] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:53:16] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to session/162.105.38.69:8438
+[19:53:16] [Client/GameBox/ActionThread/INFO]: nextX16.0nextY1.9104477611940298
+[19:53:16] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 03 fa 00 00 00 10 00 00 00 01 76 64 
+[19:53:18] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:53:18] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to session/162.105.38.69:8438
+[19:53:18] [Client/GameBox/ActionThread/INFO]: nextX16.0nextY1.9104477611940298
+[19:53:18] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 03 fa 00 00 00 10 00 00 00 01 76 64 
+[19:53:20] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:53:20] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to session/162.105.38.69:8438
+[19:53:20] [Client/GameBox/ActionThread/INFO]: nextX16.0nextY1.9104477611940298
+[19:53:20] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 03 fa 00 00 00 10 00 00 00 01 76 64 
+[19:53:22] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:53:22] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to session/162.105.38.69:8438
+[19:53:22] [Client/GameBox/ActionThread/INFO]: nextX16.0nextY1.9104477611940298
+[19:53:22] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 03 fa 00 00 00 10 00 00 00 01 76 64 
+[19:53:24] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:53:24] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to session/162.105.38.69:8438
+[19:53:24] [Client/GameBox/ActionThread/INFO]: nextX16.0nextY1.9104477611940298
+[19:53:24] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 03 fa 00 00 00 10 00 00 00 01 76 64 
+[19:53:26] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:53:26] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to session/162.105.38.69:8438
+[19:53:26] [Client/GameBox/ActionThread/INFO]: nextX16.0nextY1.9104477611940298
+[19:53:26] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 03 fa 00 00 00 10 00 00 00 01 76 64 
+[19:53:28] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:53:28] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to session/162.105.38.69:8438
+[19:53:28] [Client/GameBox/ActionThread/INFO]: nextX16.0nextY1.9104477611940298
+[19:53:28] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 03 fa 00 00 00 10 00 00 00 01 76 64 
+[19:53:30] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to session/162.105.38.69:8438
+[19:53:30] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:53:30] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 03 fa 00 00 00 10 00 00 00 01 76 64 
+[19:53:30] [Client/GameBox/ActionThread/INFO]: nextX16.0nextY1.9104477611940298
+[19:53:32] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:53:32] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to session/162.105.38.69:8438
+[19:53:32] [Client/GameBox/ActionThread/INFO]: nextX16.0nextY1.9104477611940298
+[19:53:32] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 03 fa 00 00 00 10 00 00 00 01 76 64 
+[19:53:34] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[19:53:34] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to session/162.105.38.69:8438
+[19:53:34] [Client/GameBox/ActionThread/INFO]: nextX16.0nextY1.9104477611940298
+[19:53:34] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 03 fa 00 00 00 10 00 00 00 01 76 64 

@@ -1,0 +1,2091 @@
+[19:59:45] [ClientServer/ClientMain/KERNEL]: 1.开始建立网络连接…………
+[19:59:45] [ClientServer/ClientMain/KERNEL]: 2.网络连接成功！启动loginBox
+[19:59:46] [ClientServer/ClientMain/KERNEL]: 2.同时发送0000包，确认对方是否为网关
+[19:59:46] [AioModule/Write/Completed/DEBUG]: Sent 14 bytes to session/162.105.38.69:8438
+[19:59:46] [AioModule/Write/Completed/DEBUG]: Sent contents(14bytes): ff ff 00 00 00 0e 00 00 00 00 30 39 20 db 
+[19:59:46] [AioModule/Read/Completed/DEBUG]: Received 11 bytes from session/162.105.38.69:8438
+[19:59:46] [AioModule/Read/Completed/DEBUG]: Received contents(11bytes): ff ff 00 00 00 0b 00 01 01 2a 46 
+[19:59:46] [ClientServer/ClientDecoder/INFO]: Receive a package 0001(回应连接请求)
+[19:59:46] [ClientServer/ClientDecoder/INFO]: package 0001: 1
+[19:59:46] [ClientSever/LoginBox/serverState/INFO]: Receive a package 0001(回应连接请求)
+[19:59:46] [ClientSever/LoginBox/serverState/INFO]: package 0001: 1
+[19:59:49] [ClientServer/LoginBox/INFO]: package 0002(登陆信息) send!
+[19:59:49] [AioModule/Write/Completed/DEBUG]: Sent 45 bytes to session/162.105.38.69:8438
+[19:59:49] [AioModule/Write/Completed/DEBUG]: Sent contents(45bytes): ff ff 00 00 00 2d 00 02 38 00 43 39 46 30 46 38 39 35 46 42 39 38 41 42 39 31 35 39 46 35 31 46 44 30 32 39 37 45 32 33 36 44 00 6b 4a 
+[19:59:50] [AioModule/Read/Completed/DEBUG]: Received 11 bytes from session/162.105.38.69:8438
+[19:59:50] [AioModule/Read/Completed/DEBUG]: Received contents(11bytes): ff ff 00 00 00 0b 00 03 01 2a 58 
+[19:59:50] [ClientServer/ClientDecoder/INFO]: Receive a package 0003(登陆反馈)
+[19:59:50] [ClientServer/ClientDecoder/INFO]: package 0003: true
+[19:59:50] [ClientServer/LoginBox/onLoginResponse/INFO]: Receive a package 0003(登陆反馈)
+[19:59:50] [ClientServer/LoginBox/onLoginResponse/INFO]: package 0003: true
+[19:59:51] [AioModule/Read/Completed/DEBUG]: Received 54 bytes from session/162.105.38.69:8438
+[19:59:51] [AioModule/Read/Completed/DEBUG]: Received contents(54bytes): ff ff 00 00 00 1b 00 06 00 00 03 f7 64 69 79 69 20 20 20 20 20 20 00 01 01 a5 72 ff ff 00 00 00 1b 00 06 00 00 03 f8 64 69 65 72 20 20 20 20 20 20 00 01 01 3f 3c 
+[19:59:51] [ClientServer/ClientDecoder/INFO]: Receive a package 0006(角色预加载)
+[19:59:51] [ClientServer/ClientDecoder/INFO]: package 0006: /id: 1015/name: diyi      /level: 1/gender: 1
+[19:59:51] [ClientSever/LoginBox/addCharacter/INFO]: Receive a package 0006(角色预加载)
+[19:59:51] [ClientServer/ClientDecoder/INFO]: Receive a package 0006(角色预加载)
+[19:59:51] [ClientServer/ClientDecoder/INFO]: package 0006: /id: 1016/name: dier      /level: 1/gender: 1
+[19:59:51] [ClientSever/LoginBox/addCharacter/INFO]: Receive a package 0006(角色预加载)
+[19:59:51] [AioModule/Read/Completed/DEBUG]: Received 10 bytes from session/162.105.38.69:8438
+[19:59:51] [AioModule/Read/Completed/DEBUG]: Received contents(10bytes): ff ff 00 00 00 0a 00 06 45 71 
+[19:59:51] [ClientServer/ClientDecoder/INFO]: Receive a package 0006(角色预加载)
+[19:59:51] [ClientServer/ClientDecoder/INFO]: package 0006: 这是最后一个空包
+[19:59:51] [ClientServer/LoginBox/noMorePackage/INFO]: Receive a package 0006(角色预加载)
+[19:59:51] [ClientServer/LoginBox/noMorePackage/INFO]: package 0006: 这是最后一个空包
+[19:59:55] [ClientServer/LoginBox/INFO]: package 0007(角色选择) send!
+[19:59:55] [AioModule/Write/Completed/DEBUG]: Sent 14 bytes to session/162.105.38.69:8438
+[19:59:55] [AioModule/Write/Completed/DEBUG]: Sent contents(14bytes): ff ff 00 00 00 0e 00 07 00 00 03 f8 a0 81 
+[19:59:55] [AioModule/Read/Completed/DEBUG]: Received 35 bytes from session/162.105.38.69:8438
+[19:59:55] [AioModule/Read/Completed/DEBUG]: Received contents(35bytes): ff ff 00 00 00 23 00 0a 00 00 03 f8 64 69 65 72 20 20 20 20 20 20 00 01 01 00 00 00 00 00 00 00 00 48 44 
+[19:59:55] [ClientServer/ClientDecoder/INFO]: Receive a package 000A(游戏中所有玩家信息)
+[19:59:55] [ClientServer/ClientDecoder/INFO]: package 000A: /id: 1016/name: dier      /level: 1/gender: 1/posX: 0/posY: 0
+[19:59:55] [ClientServer/GameBox/addCharacter/INFO]: Receive a package 000A(游戏中所有玩家信息)
+[19:59:59] [ClientServer/ClientMain/KERNEL]: 3.登陆结束
+[19:59:59] [ClientServer/ClientMain/KERNEL]: 4.开始游戏，启动gameBox
+[20:00:02] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to session/162.105.38.69:8438
+[20:00:02] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[20:00:02] [Client/GameBox/ActionThread/INFO]: nextX0.0nextY0.0
+[20:00:02] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 03 f8 00 00 00 00 00 00 00 00 aa 26 
+[20:00:02] [AioModule/Read/Completed/DEBUG]: Received 22 bytes from session/162.105.38.69:8438
+[20:00:02] [AioModule/Read/Completed/DEBUG]: Received contents(22bytes): ff ff 00 00 00 16 00 0c 00 00 03 f8 00 00 00 00 00 00 00 00 85 a6 
+[20:00:02] [ClientServer/ClientDecoder/INFO]: Receive a package 000C(所有玩家坐标更新)
+[20:00:02] [ClientServer/ClientDecoder/INFO]: package 000C: /id: 1016/posX: 0/posY: 0
+[20:00:02] [ClientServer/GameBox/UpdateThread---queue/INFO]: X: 0.0Y: 0.0
+[20:00:04] [ClientServer/GameBox/mouseClick/INFO]: screenX960.0screenY543.0
+[20:00:04] [ClientServer/GameBox/mouseClick/INFO]: middleX683.0middleY384.0
+[20:00:04] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to session/162.105.38.69:8438
+[20:00:04] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[20:00:04] [Client/GameBox/ActionThread/INFO]: nextX3.0nextY1.7220216606498195
+[20:00:04] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 03 f8 00 00 00 03 00 00 00 01 a8 fc 
+[20:00:04] [AioModule/Read/Completed/DEBUG]: Received 22 bytes from session/162.105.38.69:8438
+[20:00:04] [AioModule/Read/Completed/DEBUG]: Received contents(22bytes): ff ff 00 00 00 16 00 0c 00 00 03 f8 00 00 00 03 00 00 00 01 84 7c 
+[20:00:04] [ClientServer/ClientDecoder/INFO]: Receive a package 000C(所有玩家坐标更新)
+[20:00:04] [ClientServer/ClientDecoder/INFO]: package 000C: /id: 1016/posX: 3/posY: 1
+[20:00:04] [ClientServer/GameBox/UpdateThread---queue/INFO]: X: 3.0Y: 1.0
+[20:00:06] [ClientServer/GameBox/mouseClick/INFO]: screenX870.0screenY545.0
+[20:00:06] [ClientServer/GameBox/mouseClick/INFO]: middleX683.0middleY384.0
+[20:00:06] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to session/162.105.38.69:8438
+[20:00:06] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[20:00:06] [Client/GameBox/ActionThread/INFO]: nextX3.0nextY2.5828877005347595
+[20:00:06] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 03 f8 00 00 00 03 00 00 00 02 a8 fd 
+[20:00:06] [AioModule/Read/Completed/DEBUG]: Received 22 bytes from session/162.105.38.69:8438
+[20:00:06] [AioModule/Read/Completed/DEBUG]: Received contents(22bytes): ff ff 00 00 00 16 00 0c 00 00 03 f8 00 00 00 03 00 00 00 02 84 7d 
+[20:00:06] [ClientServer/ClientDecoder/INFO]: Receive a package 000C(所有玩家坐标更新)
+[20:00:06] [ClientServer/ClientDecoder/INFO]: package 000C: /id: 1016/posX: 3/posY: 2
+[20:00:06] [ClientServer/GameBox/UpdateThread---queue/INFO]: X: 3.0Y: 2.0
+[20:00:08] [ClientServer/GameBox/mouseClick/INFO]: screenX874.0screenY571.0
+[20:00:08] [ClientServer/GameBox/mouseClick/INFO]: middleX683.0middleY384.0
+[20:00:08] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to session/162.105.38.69:8438
+[20:00:08] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[20:00:08] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 03 f8 00 00 00 03 00 00 00 02 a8 fd 
+[20:00:08] [Client/GameBox/ActionThread/INFO]: nextX3.0nextY2.93717277486911
+[20:00:08] [AioModule/Read/Completed/DEBUG]: Received 22 bytes from session/162.105.38.69:8438
+[20:00:08] [AioModule/Read/Completed/DEBUG]: Received contents(22bytes): ff ff 00 00 00 16 00 0c 00 00 03 f8 00 00 00 03 00 00 00 02 84 7d 
+[20:00:08] [ClientServer/ClientDecoder/INFO]: Receive a package 000C(所有玩家坐标更新)
+[20:00:08] [ClientServer/ClientDecoder/INFO]: package 000C: /id: 1016/posX: 3/posY: 2
+[20:00:08] [ClientServer/GameBox/UpdateThread---queue/INFO]: X: 3.0Y: 2.0
+[20:00:10] [ClientServer/GameBox/mouseClick/INFO]: screenX1175.0screenY506.0
+[20:00:10] [ClientServer/GameBox/mouseClick/INFO]: middleX683.0middleY384.0
+[20:00:10] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[20:00:10] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to session/162.105.38.69:8438
+[20:00:10] [Client/GameBox/ActionThread/INFO]: nextX3.0nextY0.7439024390243902
+[20:00:10] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 03 f8 00 00 00 03 00 00 00 00 a8 fb 
+[20:00:10] [AioModule/Read/Completed/DEBUG]: Received 22 bytes from session/162.105.38.69:8438
+[20:00:10] [AioModule/Read/Completed/DEBUG]: Received contents(22bytes): ff ff 00 00 00 16 00 0c 00 00 03 f8 00 00 00 03 00 00 00 00 84 7b 
+[20:00:10] [ClientServer/ClientDecoder/INFO]: Receive a package 000C(所有玩家坐标更新)
+[20:00:10] [ClientServer/ClientDecoder/INFO]: package 000C: /id: 1016/posX: 3/posY: 0
+[20:00:10] [ClientServer/GameBox/UpdateThread---queue/INFO]: X: 3.0Y: 0.0
+[20:00:12] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to session/162.105.38.69:8438
+[20:00:12] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[20:00:12] [Client/GameBox/ActionThread/INFO]: nextX3.0nextY0.7439024390243902
+[20:00:12] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 03 f8 00 00 00 03 00 00 00 00 a8 fb 
+[20:00:12] [AioModule/Read/Completed/DEBUG]: Received 22 bytes from session/162.105.38.69:8438
+[20:00:12] [AioModule/Read/Completed/DEBUG]: Received contents(22bytes): ff ff 00 00 00 16 00 0c 00 00 03 f8 00 00 00 03 00 00 00 00 84 7b 
+[20:00:12] [ClientServer/ClientDecoder/INFO]: Receive a package 000C(所有玩家坐标更新)
+[20:00:12] [ClientServer/ClientDecoder/INFO]: package 000C: /id: 1016/posX: 3/posY: 0
+[20:00:12] [ClientServer/GameBox/UpdateThread---queue/INFO]: X: 3.0Y: 0.0
+[20:00:14] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[20:00:14] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to session/162.105.38.69:8438
+[20:00:14] [Client/GameBox/ActionThread/INFO]: nextX3.0nextY0.7439024390243902
+[20:00:14] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 03 f8 00 00 00 03 00 00 00 00 a8 fb 
+[20:00:14] [AioModule/Read/Completed/DEBUG]: Received 22 bytes from session/162.105.38.69:8438
+[20:00:14] [AioModule/Read/Completed/DEBUG]: Received contents(22bytes): ff ff 00 00 00 16 00 0c 00 00 03 f8 00 00 00 03 00 00 00 00 84 7b 
+[20:00:14] [ClientServer/ClientDecoder/INFO]: Receive a package 000C(所有玩家坐标更新)
+[20:00:14] [ClientServer/ClientDecoder/INFO]: package 000C: /id: 1016/posX: 3/posY: 0
+[20:00:14] [ClientServer/GameBox/UpdateThread---queue/INFO]: X: 3.0Y: 0.0
+[20:00:15] [ClientServer/GameBox/mouseClick/INFO]: screenX478.0screenY230.0
+[20:00:15] [ClientServer/GameBox/mouseClick/INFO]: middleX683.0middleY384.0
+[20:00:16] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[20:00:16] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to session/162.105.38.69:8438
+[20:00:16] [Client/GameBox/ActionThread/INFO]: nextX3.9935064935064934nextY3.0
+[20:00:16] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 03 f8 00 00 00 03 00 00 00 03 a8 fe 
+[20:00:16] [AioModule/Read/Completed/DEBUG]: Received 22 bytes from session/162.105.38.69:8438
+[20:00:16] [AioModule/Read/Completed/DEBUG]: Received contents(22bytes): ff ff 00 00 00 16 00 0c 00 00 03 f8 00 00 00 03 00 00 00 03 84 7e 
+[20:00:16] [ClientServer/ClientDecoder/INFO]: Receive a package 000C(所有玩家坐标更新)
+[20:00:16] [ClientServer/ClientDecoder/INFO]: package 000C: /id: 1016/posX: 3/posY: 3
+[20:00:16] [ClientServer/GameBox/UpdateThread---queue/INFO]: X: 3.0Y: 3.0
+[20:00:18] [ClientServer/GameBox/mouseClick/INFO]: screenX464.0screenY231.0
+[20:00:18] [ClientServer/GameBox/mouseClick/INFO]: middleX683.0middleY384.0
+[20:00:18] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[20:00:18] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to session/162.105.38.69:8438
+[20:00:18] [Client/GameBox/ActionThread/INFO]: nextX4.294117647058823nextY3.0
+[20:00:18] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 03 f8 00 00 00 04 00 00 00 03 26 b7 
+[20:00:18] [AioModule/Read/Completed/DEBUG]: Received 22 bytes from session/162.105.38.69:8438
+[20:00:18] [AioModule/Read/Completed/DEBUG]: Received contents(22bytes): ff ff 00 00 00 16 00 0c 00 00 03 f8 00 00 00 04 00 00 00 03 02 37 
+[20:00:18] [ClientServer/ClientDecoder/INFO]: Receive a package 000C(所有玩家坐标更新)
+[20:00:18] [ClientServer/ClientDecoder/INFO]: package 000C: /id: 1016/posX: 4/posY: 3
+[20:00:18] [ClientServer/GameBox/UpdateThread---queue/INFO]: X: 4.0Y: 3.0
+[20:00:19] [ClientServer/GameBox/mouseClick/INFO]: screenX464.0screenY231.0
+[20:00:19] [ClientServer/GameBox/mouseClick/INFO]: middleX683.0middleY384.0
+[20:00:20] [ClientServer/GameBox/mouseClick/INFO]: screenX464.0screenY231.0
+[20:00:20] [ClientServer/GameBox/mouseClick/INFO]: middleX683.0middleY384.0
+[20:00:20] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[20:00:20] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to session/162.105.38.69:8438
+[20:00:20] [Client/GameBox/ActionThread/INFO]: nextX4.294117647058823nextY3.0
+[20:00:20] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 03 f8 00 00 00 04 00 00 00 03 26 b7 
+[20:00:20] [AioModule/Read/Completed/DEBUG]: Received 22 bytes from session/162.105.38.69:8438
+[20:00:20] [AioModule/Read/Completed/DEBUG]: Received contents(22bytes): ff ff 00 00 00 16 00 0c 00 00 03 f8 00 00 00 04 00 00 00 03 02 37 
+[20:00:20] [ClientServer/ClientDecoder/INFO]: Receive a package 000C(所有玩家坐标更新)
+[20:00:20] [ClientServer/ClientDecoder/INFO]: package 000C: /id: 1016/posX: 4/posY: 3
+[20:00:20] [ClientServer/GameBox/UpdateThread---queue/INFO]: X: 4.0Y: 3.0
+[20:00:20] [ClientServer/GameBox/mouseClick/INFO]: screenX464.0screenY231.0
+[20:00:20] [ClientServer/GameBox/mouseClick/INFO]: middleX683.0middleY384.0
+[20:00:21] [ClientServer/GameBox/mouseClick/INFO]: screenX1032.0screenY582.0
+[20:00:21] [ClientServer/GameBox/mouseClick/INFO]: middleX683.0middleY384.0
+[20:00:22] [ClientServer/GameBox/mouseClick/INFO]: screenX1128.0screenY393.0
+[20:00:22] [ClientServer/GameBox/mouseClick/INFO]: middleX683.0middleY384.0
+[20:00:22] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[20:00:22] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to session/162.105.38.69:8438
+[20:00:22] [Client/GameBox/ActionThread/INFO]: nextX3.0nextY0.06067415730337078
+[20:00:22] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 03 f8 00 00 00 03 00 00 00 00 a8 fb 
+[20:00:22] [AioModule/Read/Completed/DEBUG]: Received 22 bytes from session/162.105.38.69:8438
+[20:00:22] [AioModule/Read/Completed/DEBUG]: Received contents(22bytes): ff ff 00 00 00 16 00 0c 00 00 03 f8 00 00 00 03 00 00 00 00 84 7b 
+[20:00:22] [ClientServer/ClientDecoder/INFO]: Receive a package 000C(所有玩家坐标更新)
+[20:00:22] [ClientServer/ClientDecoder/INFO]: package 000C: /id: 1016/posX: 3/posY: 0
+[20:00:22] [ClientServer/GameBox/UpdateThread---queue/INFO]: X: 3.0Y: 0.0
+[20:00:24] [ClientServer/GameBox/mouseClick/INFO]: screenX298.0screenY159.0
+[20:00:24] [ClientServer/GameBox/mouseClick/INFO]: middleX683.0middleY384.0
+[20:00:24] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[20:00:24] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to session/162.105.38.69:8438
+[20:00:24] [Client/GameBox/ActionThread/INFO]: nextX5.133333333333334nextY3.0
+[20:00:24] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 03 f8 00 00 00 05 00 00 00 03 67 45 
+[20:00:24] [AioModule/Read/Completed/DEBUG]: Received 22 bytes from session/162.105.38.69:8438
+[20:00:24] [AioModule/Read/Completed/DEBUG]: Received contents(22bytes): ff ff 00 00 00 16 00 0c 00 00 03 f8 00 00 00 05 00 00 00 03 42 c5 
+[20:00:24] [ClientServer/ClientDecoder/INFO]: Receive a package 000C(所有玩家坐标更新)
+[20:00:24] [ClientServer/ClientDecoder/INFO]: package 000C: /id: 1016/posX: 5/posY: 3
+[20:00:24] [ClientServer/GameBox/UpdateThread---queue/INFO]: X: 5.0Y: 3.0
+[20:00:25] [ClientServer/GameBox/mouseClick/INFO]: screenX1151.0screenY196.0
+[20:00:25] [ClientServer/GameBox/mouseClick/INFO]: middleX683.0middleY384.0
+[20:00:26] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[20:00:26] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to session/162.105.38.69:8438
+[20:00:26] [Client/GameBox/ActionThread/INFO]: nextX3.0nextY-1.205128205128205
+[20:00:26] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 03 f8 00 00 00 03 ff ff ff ff 8c b2 
+[20:00:26] [ClientServer/GameBox/mouseClick/INFO]: screenX307.0screenY95.0
+[20:00:26] [ClientServer/GameBox/mouseClick/INFO]: middleX683.0middleY384.0
+[20:00:26] [AioModule/Read/Completed/DEBUG]: Received 22 bytes from session/162.105.38.69:8438
+[20:00:26] [AioModule/Read/Completed/DEBUG]: Received contents(22bytes): ff ff 00 00 00 16 00 0c 00 00 03 f8 00 00 00 03 ff ff ff ff 68 32 
+[20:00:26] [ClientServer/ClientDecoder/INFO]: Receive a package 000C(所有玩家坐标更新)
+[20:00:26] [ClientServer/ClientDecoder/INFO]: package 000C: /id: 1016/posX: 3/posY: -1
+[20:00:26] [ClientServer/GameBox/UpdateThread---queue/INFO]: X: 3.0Y: -1.0
+[20:00:27] [ClientServer/GameBox/mouseClick/INFO]: screenX285.0screenY72.0
+[20:00:27] [ClientServer/GameBox/mouseClick/INFO]: middleX683.0middleY384.0
+[20:00:28] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[20:00:28] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to session/162.105.38.69:8438
+[20:00:28] [Client/GameBox/ActionThread/INFO]: nextX3.826923076923077nextY3.0
+[20:00:28] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 03 f8 00 00 00 03 00 00 00 03 a8 fe 
+[20:00:28] [AioModule/Read/Completed/DEBUG]: Received 22 bytes from session/162.105.38.69:8438
+[20:00:28] [AioModule/Read/Completed/DEBUG]: Received contents(22bytes): ff ff 00 00 00 16 00 0c 00 00 03 f8 00 00 00 03 00 00 00 03 84 7e 
+[20:00:28] [ClientServer/ClientDecoder/INFO]: Receive a package 000C(所有玩家坐标更新)
+[20:00:28] [ClientServer/ClientDecoder/INFO]: package 000C: /id: 1016/posX: 3/posY: 3
+[20:00:28] [ClientServer/GameBox/UpdateThread---queue/INFO]: X: 3.0Y: 3.0
+[20:00:30] [ClientServer/GameBox/mouseClick/INFO]: screenX1216.0screenY641.0
+[20:00:30] [ClientServer/GameBox/mouseClick/INFO]: middleX683.0middleY384.0
+[20:00:30] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[20:00:30] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to session/162.105.38.69:8438
+[20:00:30] [Client/GameBox/ActionThread/INFO]: nextX3.0nextY1.4465290806754223
+[20:00:30] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 03 f8 00 00 00 03 00 00 00 01 a8 fc 
+[20:00:30] [AioModule/Read/Completed/DEBUG]: Received 22 bytes from session/162.105.38.69:8438
+[20:00:30] [AioModule/Read/Completed/DEBUG]: Received contents(22bytes): ff ff 00 00 00 16 00 0c 00 00 03 f8 00 00 00 03 00 00 00 01 84 7c 
+[20:00:30] [ClientServer/ClientDecoder/INFO]: Receive a package 000C(所有玩家坐标更新)
+[20:00:30] [ClientServer/ClientDecoder/INFO]: package 000C: /id: 1016/posX: 3/posY: 1
+[20:00:30] [ClientServer/GameBox/UpdateThread---queue/INFO]: X: 3.0Y: 1.0
+[20:00:31] [ClientServer/GameBox/mouseClick/INFO]: screenX1216.0screenY641.0
+[20:00:31] [ClientServer/GameBox/mouseClick/INFO]: middleX683.0middleY384.0
+[20:00:32] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[20:00:32] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to session/162.105.38.69:8438
+[20:00:32] [Client/GameBox/ActionThread/INFO]: nextX3.0nextY1.4465290806754223
+[20:00:32] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 03 f8 00 00 00 03 00 00 00 01 a8 fc 
+[20:00:32] [AioModule/Read/Completed/DEBUG]: Received 22 bytes from session/162.105.38.69:8438
+[20:00:32] [AioModule/Read/Completed/DEBUG]: Received contents(22bytes): ff ff 00 00 00 16 00 0c 00 00 03 f8 00 00 00 03 00 00 00 01 84 7c 
+[20:00:32] [ClientServer/ClientDecoder/INFO]: Receive a package 000C(所有玩家坐标更新)
+[20:00:32] [ClientServer/ClientDecoder/INFO]: package 000C: /id: 1016/posX: 3/posY: 1
+[20:00:32] [ClientServer/GameBox/UpdateThread---queue/INFO]: X: 3.0Y: 1.0
+[20:00:34] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[20:00:34] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to session/162.105.38.69:8438
+[20:00:34] [Client/GameBox/ActionThread/INFO]: nextX3.0nextY1.4465290806754223
+[20:00:34] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 03 f8 00 00 00 03 00 00 00 01 a8 fc 
+[20:00:34] [AioModule/Read/Completed/DEBUG]: Received 22 bytes from session/162.105.38.69:8438
+[20:00:34] [AioModule/Read/Completed/DEBUG]: Received contents(22bytes): ff ff 00 00 00 16 00 0c 00 00 03 f8 00 00 00 03 00 00 00 01 84 7c 
+[20:00:34] [ClientServer/ClientDecoder/INFO]: Receive a package 000C(所有玩家坐标更新)
+[20:00:34] [ClientServer/ClientDecoder/INFO]: package 000C: /id: 1016/posX: 3/posY: 1
+[20:00:34] [ClientServer/GameBox/UpdateThread---queue/INFO]: X: 3.0Y: 1.0
+[20:00:36] [ClientServer/GameBox/mouseClick/INFO]: screenX1216.0screenY641.0
+[20:00:36] [ClientServer/GameBox/mouseClick/INFO]: middleX683.0middleY384.0
+[20:00:36] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[20:00:36] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to session/162.105.38.69:8438
+[20:00:36] [Client/GameBox/ActionThread/INFO]: nextX3.0nextY1.4465290806754223
+[20:00:36] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 03 f8 00 00 00 03 00 00 00 01 a8 fc 
+[20:00:36] [AioModule/Read/Completed/DEBUG]: Received 22 bytes from session/162.105.38.69:8438
+[20:00:36] [AioModule/Read/Completed/DEBUG]: Received contents(22bytes): ff ff 00 00 00 16 00 0c 00 00 03 f8 00 00 00 03 00 00 00 01 84 7c 
+[20:00:36] [ClientServer/ClientDecoder/INFO]: Receive a package 000C(所有玩家坐标更新)
+[20:00:36] [ClientServer/ClientDecoder/INFO]: package 000C: /id: 1016/posX: 3/posY: 1
+[20:00:36] [ClientServer/GameBox/UpdateThread---queue/INFO]: X: 3.0Y: 1.0
+[20:00:38] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[20:00:38] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to session/162.105.38.69:8438
+[20:00:38] [Client/GameBox/ActionThread/INFO]: nextX3.0nextY1.4465290806754223
+[20:00:38] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 03 f8 00 00 00 03 00 00 00 01 a8 fc 
+[20:00:38] [AioModule/Read/Completed/DEBUG]: Received 22 bytes from session/162.105.38.69:8438
+[20:00:38] [AioModule/Read/Completed/DEBUG]: Received contents(22bytes): ff ff 00 00 00 16 00 0c 00 00 03 f8 00 00 00 03 00 00 00 01 84 7c 
+[20:00:38] [ClientServer/ClientDecoder/INFO]: Receive a package 000C(所有玩家坐标更新)
+[20:00:38] [ClientServer/ClientDecoder/INFO]: package 000C: /id: 1016/posX: 3/posY: 1
+[20:00:38] [ClientServer/GameBox/UpdateThread---queue/INFO]: X: 3.0Y: 1.0
+[20:00:40] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to session/162.105.38.69:8438
+[20:00:40] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[20:00:40] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 03 f8 00 00 00 03 00 00 00 01 a8 fc 
+[20:00:40] [Client/GameBox/ActionThread/INFO]: nextX3.0nextY1.4465290806754223
+[20:00:40] [ClientServer/GameBox/mouseClick/INFO]: screenX1169.0screenY639.0
+[20:00:40] [ClientServer/GameBox/mouseClick/INFO]: middleX683.0middleY384.0
+[20:00:40] [AioModule/Read/Completed/DEBUG]: Received 22 bytes from session/162.105.38.69:8438
+[20:00:40] [AioModule/Read/Completed/DEBUG]: Received contents(22bytes): ff ff 00 00 00 16 00 0c 00 00 03 f8 00 00 00 03 00 00 00 01 84 7c 
+[20:00:40] [ClientServer/ClientDecoder/INFO]: Receive a package 000C(所有玩家坐标更新)
+[20:00:40] [ClientServer/ClientDecoder/INFO]: package 000C: /id: 1016/posX: 3/posY: 1
+[20:00:40] [ClientServer/GameBox/UpdateThread---queue/INFO]: X: 3.0Y: 1.0
+[20:00:42] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[20:00:42] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to session/162.105.38.69:8438
+[20:00:42] [Client/GameBox/ActionThread/INFO]: nextX3.0nextY1.5740740740740742
+[20:00:42] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 03 f8 00 00 00 03 00 00 00 01 a8 fc 
+[20:00:43] [AioModule/Read/Completed/DEBUG]: Received 22 bytes from session/162.105.38.69:8438
+[20:00:43] [AioModule/Read/Completed/DEBUG]: Received contents(22bytes): ff ff 00 00 00 16 00 0c 00 00 03 f8 00 00 00 03 00 00 00 01 84 7c 
+[20:00:43] [ClientServer/ClientDecoder/INFO]: Receive a package 000C(所有玩家坐标更新)
+[20:00:43] [ClientServer/ClientDecoder/INFO]: package 000C: /id: 1016/posX: 3/posY: 1
+[20:00:43] [ClientServer/GameBox/UpdateThread---queue/INFO]: X: 3.0Y: 1.0
+[20:00:44] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[20:00:44] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to session/162.105.38.69:8438
+[20:00:44] [Client/GameBox/ActionThread/INFO]: nextX3.0nextY1.5740740740740742
+[20:00:44] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 03 f8 00 00 00 03 00 00 00 01 a8 fc 
+[20:00:44] [AioModule/Read/Completed/DEBUG]: Received 22 bytes from session/162.105.38.69:8438
+[20:00:44] [AioModule/Read/Completed/DEBUG]: Received contents(22bytes): ff ff 00 00 00 16 00 0c 00 00 03 f8 00 00 00 03 00 00 00 01 84 7c 
+[20:00:44] [ClientServer/ClientDecoder/INFO]: Receive a package 000C(所有玩家坐标更新)
+[20:00:44] [ClientServer/ClientDecoder/INFO]: package 000C: /id: 1016/posX: 3/posY: 1
+[20:00:44] [ClientServer/GameBox/UpdateThread---queue/INFO]: X: 3.0Y: 1.0
+[20:00:46] [ClientServer/GameBox/mouseClick/INFO]: screenX1132.0screenY643.0
+[20:00:46] [ClientServer/GameBox/mouseClick/INFO]: middleX683.0middleY384.0
+[20:00:46] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[20:00:46] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to session/162.105.38.69:8438
+[20:00:46] [Client/GameBox/ActionThread/INFO]: nextX3.0nextY1.7305122494432073
+[20:00:46] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 03 f8 00 00 00 03 00 00 00 01 a8 fc 
+[20:00:47] [AioModule/Read/Completed/DEBUG]: Received 22 bytes from session/162.105.38.69:8438
+[20:00:47] [AioModule/Read/Completed/DEBUG]: Received contents(22bytes): ff ff 00 00 00 16 00 0c 00 00 03 f8 00 00 00 03 00 00 00 01 84 7c 
+[20:00:47] [ClientServer/ClientDecoder/INFO]: Receive a package 000C(所有玩家坐标更新)
+[20:00:47] [ClientServer/ClientDecoder/INFO]: package 000C: /id: 1016/posX: 3/posY: 1
+[20:00:47] [ClientServer/GameBox/UpdateThread---queue/INFO]: X: 3.0Y: 1.0
+[20:00:48] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to session/162.105.38.69:8438
+[20:00:48] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[20:00:48] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 03 f8 00 00 00 03 00 00 00 01 a8 fc 
+[20:00:48] [Client/GameBox/ActionThread/INFO]: nextX3.0nextY1.7305122494432073
+[20:00:48] [AioModule/Read/Completed/DEBUG]: Received 22 bytes from session/162.105.38.69:8438
+[20:00:48] [AioModule/Read/Completed/DEBUG]: Received contents(22bytes): ff ff 00 00 00 16 00 0c 00 00 03 f8 00 00 00 03 00 00 00 01 84 7c 
+[20:00:48] [ClientServer/ClientDecoder/INFO]: Receive a package 000C(所有玩家坐标更新)
+[20:00:48] [ClientServer/ClientDecoder/INFO]: package 000C: /id: 1016/posX: 3/posY: 1
+[20:00:48] [ClientServer/GameBox/UpdateThread---queue/INFO]: X: 3.0Y: 1.0
+[20:00:49] [ClientServer/GameBox/mouseClick/INFO]: screenX1132.0screenY643.0
+[20:00:49] [ClientServer/GameBox/mouseClick/INFO]: middleX683.0middleY384.0
+[20:00:50] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to session/162.105.38.69:8438
+[20:00:50] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 03 f8 00 00 00 03 00 00 00 01 a8 fc 
+[20:00:50] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[20:00:50] [Client/GameBox/ActionThread/INFO]: nextX3.0nextY1.7305122494432073
+[20:00:51] [AioModule/Read/Completed/DEBUG]: Received 22 bytes from session/162.105.38.69:8438
+[20:00:51] [AioModule/Read/Completed/DEBUG]: Received contents(22bytes): ff ff 00 00 00 16 00 0c 00 00 03 f8 00 00 00 03 00 00 00 01 84 7c 
+[20:00:51] [ClientServer/ClientDecoder/INFO]: Receive a package 000C(所有玩家坐标更新)
+[20:00:51] [ClientServer/ClientDecoder/INFO]: package 000C: /id: 1016/posX: 3/posY: 1
+[20:00:51] [ClientServer/GameBox/UpdateThread---queue/INFO]: X: 3.0Y: 1.0
+[20:00:52] [ClientServer/GameBox/mouseClick/INFO]: screenX1132.0screenY643.0
+[20:00:52] [ClientServer/GameBox/mouseClick/INFO]: middleX683.0middleY384.0
+[20:00:52] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to session/162.105.38.69:8438
+[20:00:52] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[20:00:52] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 03 f8 00 00 00 03 00 00 00 01 a8 fc 
+[20:00:52] [Client/GameBox/ActionThread/INFO]: nextX3.0nextY1.7305122494432073
+[20:00:53] [AioModule/Read/Completed/DEBUG]: Received 22 bytes from session/162.105.38.69:8438
+[20:00:53] [AioModule/Read/Completed/DEBUG]: Received contents(22bytes): ff ff 00 00 00 16 00 0c 00 00 03 f8 00 00 00 03 00 00 00 01 84 7c 
+[20:00:53] [ClientServer/ClientDecoder/INFO]: Receive a package 000C(所有玩家坐标更新)
+[20:00:53] [ClientServer/ClientDecoder/INFO]: package 000C: /id: 1016/posX: 3/posY: 1
+[20:00:53] [ClientServer/GameBox/UpdateThread---queue/INFO]: X: 3.0Y: 1.0
+[20:00:54] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[20:00:54] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to session/162.105.38.69:8438
+[20:00:54] [Client/GameBox/ActionThread/INFO]: nextX3.0nextY1.7305122494432073
+[20:00:54] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 03 f8 00 00 00 03 00 00 00 01 a8 fc 
+[20:00:55] [AioModule/Read/Completed/DEBUG]: Received 22 bytes from session/162.105.38.69:8438
+[20:00:55] [AioModule/Read/Completed/DEBUG]: Received contents(22bytes): ff ff 00 00 00 16 00 0c 00 00 03 f8 00 00 00 03 00 00 00 01 84 7c 
+[20:00:55] [ClientServer/ClientDecoder/INFO]: Receive a package 000C(所有玩家坐标更新)
+[20:00:55] [ClientServer/ClientDecoder/INFO]: package 000C: /id: 1016/posX: 3/posY: 1
+[20:00:55] [ClientServer/GameBox/UpdateThread---queue/INFO]: X: 3.0Y: 1.0
+[20:00:56] [ClientServer/GameBox/mouseClick/INFO]: screenX1132.0screenY643.0
+[20:00:56] [ClientServer/GameBox/mouseClick/INFO]: middleX683.0middleY384.0
+[20:00:56] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to session/162.105.38.69:8438
+[20:00:56] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[20:00:56] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 03 f8 00 00 00 03 00 00 00 01 a8 fc 
+[20:00:56] [Client/GameBox/ActionThread/INFO]: nextX3.0nextY1.7305122494432073
+[20:00:57] [AioModule/Read/Completed/DEBUG]: Received 22 bytes from session/162.105.38.69:8438
+[20:00:57] [AioModule/Read/Completed/DEBUG]: Received contents(22bytes): ff ff 00 00 00 16 00 0c 00 00 03 f8 00 00 00 03 00 00 00 01 84 7c 
+[20:00:57] [ClientServer/ClientDecoder/INFO]: Receive a package 000C(所有玩家坐标更新)
+[20:00:57] [ClientServer/ClientDecoder/INFO]: package 000C: /id: 1016/posX: 3/posY: 1
+[20:00:57] [ClientServer/GameBox/UpdateThread---queue/INFO]: X: 3.0Y: 1.0
+[20:00:58] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[20:00:58] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to session/162.105.38.69:8438
+[20:00:58] [Client/GameBox/ActionThread/INFO]: nextX3.0nextY1.7305122494432073
+[20:00:58] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 03 f8 00 00 00 03 00 00 00 01 a8 fc 
+[20:00:59] [AioModule/Read/Completed/DEBUG]: Received 22 bytes from session/162.105.38.69:8438
+[20:00:59] [AioModule/Read/Completed/DEBUG]: Received contents(22bytes): ff ff 00 00 00 16 00 0c 00 00 03 f8 00 00 00 03 00 00 00 01 84 7c 
+[20:00:59] [ClientServer/ClientDecoder/INFO]: Receive a package 000C(所有玩家坐标更新)
+[20:00:59] [ClientServer/ClientDecoder/INFO]: package 000C: /id: 1016/posX: 3/posY: 1
+[20:00:59] [ClientServer/GameBox/UpdateThread---queue/INFO]: X: 3.0Y: 1.0
+[20:01:00] [ClientServer/GameBox/mouseClick/INFO]: screenX1132.0screenY643.0
+[20:01:00] [ClientServer/GameBox/mouseClick/INFO]: middleX683.0middleY384.0
+[20:01:00] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to session/162.105.38.69:8438
+[20:01:00] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[20:01:00] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 03 f8 00 00 00 03 00 00 00 01 a8 fc 
+[20:01:00] [Client/GameBox/ActionThread/INFO]: nextX3.0nextY1.7305122494432073
+[20:01:01] [AioModule/Read/Completed/DEBUG]: Received 22 bytes from session/162.105.38.69:8438
+[20:01:01] [AioModule/Read/Completed/DEBUG]: Received contents(22bytes): ff ff 00 00 00 16 00 0c 00 00 03 f8 00 00 00 03 00 00 00 01 84 7c 
+[20:01:01] [ClientServer/ClientDecoder/INFO]: Receive a package 000C(所有玩家坐标更新)
+[20:01:01] [ClientServer/ClientDecoder/INFO]: package 000C: /id: 1016/posX: 3/posY: 1
+[20:01:01] [ClientServer/GameBox/UpdateThread---queue/INFO]: X: 3.0Y: 1.0
+[20:01:02] [ClientServer/GameBox/mouseClick/INFO]: screenX1132.0screenY643.0
+[20:01:02] [ClientServer/GameBox/mouseClick/INFO]: middleX683.0middleY384.0
+[20:01:02] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to session/162.105.38.69:8438
+[20:01:02] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[20:01:02] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 03 f8 00 00 00 03 00 00 00 01 a8 fc 
+[20:01:02] [Client/GameBox/ActionThread/INFO]: nextX3.0nextY1.7305122494432073
+[20:01:03] [AioModule/Read/Completed/DEBUG]: Received 22 bytes from session/162.105.38.69:8438
+[20:01:03] [AioModule/Read/Completed/DEBUG]: Received contents(22bytes): ff ff 00 00 00 16 00 0c 00 00 03 f8 00 00 00 03 00 00 00 01 84 7c 
+[20:01:03] [ClientServer/ClientDecoder/INFO]: Receive a package 000C(所有玩家坐标更新)
+[20:01:03] [ClientServer/ClientDecoder/INFO]: package 000C: /id: 1016/posX: 3/posY: 1
+[20:01:03] [ClientServer/GameBox/UpdateThread---queue/INFO]: X: 3.0Y: 1.0
+[20:01:04] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to session/162.105.38.69:8438
+[20:01:04] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[20:01:04] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 03 f8 00 00 00 03 00 00 00 01 a8 fc 
+[20:01:04] [Client/GameBox/ActionThread/INFO]: nextX3.0nextY1.7305122494432073
+[20:01:05] [AioModule/Read/Completed/DEBUG]: Received 22 bytes from session/162.105.38.69:8438
+[20:01:05] [AioModule/Read/Completed/DEBUG]: Received contents(22bytes): ff ff 00 00 00 16 00 0c 00 00 03 f8 00 00 00 03 00 00 00 01 84 7c 
+[20:01:05] [ClientServer/ClientDecoder/INFO]: Receive a package 000C(所有玩家坐标更新)
+[20:01:05] [ClientServer/ClientDecoder/INFO]: package 000C: /id: 1016/posX: 3/posY: 1
+[20:01:05] [ClientServer/GameBox/UpdateThread---queue/INFO]: X: 3.0Y: 1.0
+[20:01:06] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[20:01:06] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to session/162.105.38.69:8438
+[20:01:06] [Client/GameBox/ActionThread/INFO]: nextX3.0nextY1.7305122494432073
+[20:01:06] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 03 f8 00 00 00 03 00 00 00 01 a8 fc 
+[20:01:07] [AioModule/Read/Completed/DEBUG]: Received 22 bytes from session/162.105.38.69:8438
+[20:01:07] [AioModule/Read/Completed/DEBUG]: Received contents(22bytes): ff ff 00 00 00 16 00 0c 00 00 03 f8 00 00 00 03 00 00 00 01 84 7c 
+[20:01:07] [ClientServer/ClientDecoder/INFO]: Receive a package 000C(所有玩家坐标更新)
+[20:01:07] [ClientServer/ClientDecoder/INFO]: package 000C: /id: 1016/posX: 3/posY: 1
+[20:01:07] [ClientServer/GameBox/UpdateThread---queue/INFO]: X: 3.0Y: 1.0
+[20:01:08] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[20:01:08] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to session/162.105.38.69:8438
+[20:01:08] [Client/GameBox/ActionThread/INFO]: nextX3.0nextY1.7305122494432073
+[20:01:08] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 03 f8 00 00 00 03 00 00 00 01 a8 fc 
+[20:01:09] [AioModule/Read/Completed/DEBUG]: Received 22 bytes from session/162.105.38.69:8438
+[20:01:09] [AioModule/Read/Completed/DEBUG]: Received contents(22bytes): ff ff 00 00 00 16 00 0c 00 00 03 f8 00 00 00 03 00 00 00 01 84 7c 
+[20:01:09] [ClientServer/ClientDecoder/INFO]: Receive a package 000C(所有玩家坐标更新)
+[20:01:09] [ClientServer/ClientDecoder/INFO]: package 000C: /id: 1016/posX: 3/posY: 1
+[20:01:09] [ClientServer/GameBox/UpdateThread---queue/INFO]: X: 3.0Y: 1.0
+[20:01:10] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[20:01:10] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to session/162.105.38.69:8438
+[20:01:10] [Client/GameBox/ActionThread/INFO]: nextX3.0nextY1.7305122494432073
+[20:01:10] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 03 f8 00 00 00 03 00 00 00 01 a8 fc 
+[20:01:11] [AioModule/Read/Completed/DEBUG]: Received 22 bytes from session/162.105.38.69:8438
+[20:01:11] [AioModule/Read/Completed/DEBUG]: Received contents(22bytes): ff ff 00 00 00 16 00 0c 00 00 03 f8 00 00 00 03 00 00 00 01 84 7c 
+[20:01:11] [ClientServer/ClientDecoder/INFO]: Receive a package 000C(所有玩家坐标更新)
+[20:01:11] [ClientServer/ClientDecoder/INFO]: package 000C: /id: 1016/posX: 3/posY: 1
+[20:01:11] [ClientServer/GameBox/UpdateThread---queue/INFO]: X: 3.0Y: 1.0
+[20:01:12] [ClientServer/GameBox/mouseClick/INFO]: screenX1132.0screenY643.0
+[20:01:12] [ClientServer/GameBox/mouseClick/INFO]: middleX683.0middleY384.0
+[20:01:12] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[20:01:12] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to session/162.105.38.69:8438
+[20:01:12] [Client/GameBox/ActionThread/INFO]: nextX3.0nextY1.7305122494432073
+[20:01:12] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 03 f8 00 00 00 03 00 00 00 01 a8 fc 
+[20:01:13] [AioModule/Read/Completed/DEBUG]: Received 22 bytes from session/162.105.38.69:8438
+[20:01:13] [AioModule/Read/Completed/DEBUG]: Received contents(22bytes): ff ff 00 00 00 16 00 0c 00 00 03 f8 00 00 00 03 00 00 00 01 84 7c 
+[20:01:13] [ClientServer/ClientDecoder/INFO]: Receive a package 000C(所有玩家坐标更新)
+[20:01:13] [ClientServer/ClientDecoder/INFO]: package 000C: /id: 1016/posX: 3/posY: 1
+[20:01:13] [ClientServer/GameBox/UpdateThread---queue/INFO]: X: 3.0Y: 1.0
+[20:01:14] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[20:01:14] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to session/162.105.38.69:8438
+[20:01:15] [Client/GameBox/ActionThread/INFO]: nextX3.0nextY1.7305122494432073
+[20:01:15] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 03 f8 00 00 00 03 00 00 00 01 a8 fc 
+[20:01:15] [AioModule/Read/Completed/DEBUG]: Received 22 bytes from session/162.105.38.69:8438
+[20:01:15] [AioModule/Read/Completed/DEBUG]: Received contents(22bytes): ff ff 00 00 00 16 00 0c 00 00 03 f8 00 00 00 03 00 00 00 01 84 7c 
+[20:01:15] [ClientServer/ClientDecoder/INFO]: Receive a package 000C(所有玩家坐标更新)
+[20:01:15] [ClientServer/ClientDecoder/INFO]: package 000C: /id: 1016/posX: 3/posY: 1
+[20:01:15] [ClientServer/GameBox/UpdateThread---queue/INFO]: X: 3.0Y: 1.0
+[20:01:17] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[20:01:17] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to session/162.105.38.69:8438
+[20:01:17] [Client/GameBox/ActionThread/INFO]: nextX3.0nextY1.7305122494432073
+[20:01:17] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 03 f8 00 00 00 03 00 00 00 01 a8 fc 
+[20:01:17] [AioModule/Read/Completed/DEBUG]: Received 22 bytes from session/162.105.38.69:8438
+[20:01:17] [AioModule/Read/Completed/DEBUG]: Received contents(22bytes): ff ff 00 00 00 16 00 0c 00 00 03 f8 00 00 00 03 00 00 00 01 84 7c 
+[20:01:17] [ClientServer/ClientDecoder/INFO]: Receive a package 000C(所有玩家坐标更新)
+[20:01:17] [ClientServer/ClientDecoder/INFO]: package 000C: /id: 1016/posX: 3/posY: 1
+[20:01:17] [ClientServer/GameBox/UpdateThread---queue/INFO]: X: 3.0Y: 1.0
+[20:01:19] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[20:01:19] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to session/162.105.38.69:8438
+[20:01:19] [Client/GameBox/ActionThread/INFO]: nextX3.0nextY1.7305122494432073
+[20:01:19] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 03 f8 00 00 00 03 00 00 00 01 a8 fc 
+[20:01:19] [AioModule/Read/Completed/DEBUG]: Received 22 bytes from session/162.105.38.69:8438
+[20:01:19] [AioModule/Read/Completed/DEBUG]: Received contents(22bytes): ff ff 00 00 00 16 00 0c 00 00 03 f8 00 00 00 03 00 00 00 01 84 7c 
+[20:01:19] [ClientServer/ClientDecoder/INFO]: Receive a package 000C(所有玩家坐标更新)
+[20:01:19] [ClientServer/ClientDecoder/INFO]: package 000C: /id: 1016/posX: 3/posY: 1
+[20:01:19] [ClientServer/GameBox/UpdateThread---queue/INFO]: X: 3.0Y: 1.0
+[20:01:21] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to session/162.105.38.69:8438
+[20:01:21] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[20:01:21] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 03 f8 00 00 00 03 00 00 00 01 a8 fc 
+[20:01:21] [Client/GameBox/ActionThread/INFO]: nextX3.0nextY1.7305122494432073
+[20:01:21] [AioModule/Read/Completed/DEBUG]: Received 22 bytes from session/162.105.38.69:8438
+[20:01:21] [AioModule/Read/Completed/DEBUG]: Received contents(22bytes): ff ff 00 00 00 16 00 0c 00 00 03 f8 00 00 00 03 00 00 00 01 84 7c 
+[20:01:21] [ClientServer/ClientDecoder/INFO]: Receive a package 000C(所有玩家坐标更新)
+[20:01:21] [ClientServer/ClientDecoder/INFO]: package 000C: /id: 1016/posX: 3/posY: 1
+[20:01:21] [ClientServer/GameBox/UpdateThread---queue/INFO]: X: 3.0Y: 1.0
+[20:01:23] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to session/162.105.38.69:8438
+[20:01:23] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[20:01:23] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 03 f8 00 00 00 03 00 00 00 01 a8 fc 
+[20:01:23] [Client/GameBox/ActionThread/INFO]: nextX3.0nextY1.7305122494432073
+[20:01:23] [AioModule/Read/Completed/DEBUG]: Received 22 bytes from session/162.105.38.69:8438
+[20:01:23] [AioModule/Read/Completed/DEBUG]: Received contents(22bytes): ff ff 00 00 00 16 00 0c 00 00 03 f8 00 00 00 03 00 00 00 01 84 7c 
+[20:01:23] [ClientServer/ClientDecoder/INFO]: Receive a package 000C(所有玩家坐标更新)
+[20:01:23] [ClientServer/ClientDecoder/INFO]: package 000C: /id: 1016/posX: 3/posY: 1
+[20:01:23] [ClientServer/GameBox/UpdateThread---queue/INFO]: X: 3.0Y: 1.0
+[20:01:25] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[20:01:25] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to session/162.105.38.69:8438
+[20:01:25] [Client/GameBox/ActionThread/INFO]: nextX3.0nextY1.7305122494432073
+[20:01:25] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 03 f8 00 00 00 03 00 00 00 01 a8 fc 
+[20:01:25] [AioModule/Read/Completed/DEBUG]: Received 22 bytes from session/162.105.38.69:8438
+[20:01:25] [AioModule/Read/Completed/DEBUG]: Received contents(22bytes): ff ff 00 00 00 16 00 0c 00 00 03 f8 00 00 00 03 00 00 00 01 84 7c 
+[20:01:25] [ClientServer/ClientDecoder/INFO]: Receive a package 000C(所有玩家坐标更新)
+[20:01:25] [ClientServer/ClientDecoder/INFO]: package 000C: /id: 1016/posX: 3/posY: 1
+[20:01:25] [ClientServer/GameBox/UpdateThread---queue/INFO]: X: 3.0Y: 1.0
+[20:01:27] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[20:01:27] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to session/162.105.38.69:8438
+[20:01:27] [Client/GameBox/ActionThread/INFO]: nextX3.0nextY1.7305122494432073
+[20:01:27] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 03 f8 00 00 00 03 00 00 00 01 a8 fc 
+[20:01:27] [AioModule/Read/Completed/DEBUG]: Received 22 bytes from session/162.105.38.69:8438
+[20:01:27] [AioModule/Read/Completed/DEBUG]: Received contents(22bytes): ff ff 00 00 00 16 00 0c 00 00 03 f8 00 00 00 03 00 00 00 01 84 7c 
+[20:01:27] [ClientServer/ClientDecoder/INFO]: Receive a package 000C(所有玩家坐标更新)
+[20:01:27] [ClientServer/ClientDecoder/INFO]: package 000C: /id: 1016/posX: 3/posY: 1
+[20:01:27] [ClientServer/GameBox/UpdateThread---queue/INFO]: X: 3.0Y: 1.0
+[20:01:29] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[20:01:29] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to session/162.105.38.69:8438
+[20:01:29] [Client/GameBox/ActionThread/INFO]: nextX3.0nextY1.7305122494432073
+[20:01:29] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 03 f8 00 00 00 03 00 00 00 01 a8 fc 
+[20:01:29] [AioModule/Read/Completed/DEBUG]: Received 22 bytes from session/162.105.38.69:8438
+[20:01:29] [AioModule/Read/Completed/DEBUG]: Received contents(22bytes): ff ff 00 00 00 16 00 0c 00 00 03 f8 00 00 00 03 00 00 00 01 84 7c 
+[20:01:29] [ClientServer/ClientDecoder/INFO]: Receive a package 000C(所有玩家坐标更新)
+[20:01:29] [ClientServer/ClientDecoder/INFO]: package 000C: /id: 1016/posX: 3/posY: 1
+[20:01:29] [ClientServer/GameBox/UpdateThread---queue/INFO]: X: 3.0Y: 1.0
+[20:01:31] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to session/162.105.38.69:8438
+[20:01:31] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[20:01:31] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 03 f8 00 00 00 03 00 00 00 01 a8 fc 
+[20:01:31] [Client/GameBox/ActionThread/INFO]: nextX3.0nextY1.7305122494432073
+[20:01:31] [AioModule/Read/Completed/DEBUG]: Received 22 bytes from session/162.105.38.69:8438
+[20:01:31] [AioModule/Read/Completed/DEBUG]: Received contents(22bytes): ff ff 00 00 00 16 00 0c 00 00 03 f8 00 00 00 03 00 00 00 01 84 7c 
+[20:01:31] [ClientServer/ClientDecoder/INFO]: Receive a package 000C(所有玩家坐标更新)
+[20:01:31] [ClientServer/ClientDecoder/INFO]: package 000C: /id: 1016/posX: 3/posY: 1
+[20:01:31] [ClientServer/GameBox/UpdateThread---queue/INFO]: X: 3.0Y: 1.0
+[20:01:33] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[20:01:33] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to session/162.105.38.69:8438
+[20:01:33] [Client/GameBox/ActionThread/INFO]: nextX3.0nextY1.7305122494432073
+[20:01:33] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 03 f8 00 00 00 03 00 00 00 01 a8 fc 
+[20:01:33] [AioModule/Read/Completed/DEBUG]: Received 22 bytes from session/162.105.38.69:8438
+[20:01:33] [AioModule/Read/Completed/DEBUG]: Received contents(22bytes): ff ff 00 00 00 16 00 0c 00 00 03 f8 00 00 00 03 00 00 00 01 84 7c 
+[20:01:33] [ClientServer/ClientDecoder/INFO]: Receive a package 000C(所有玩家坐标更新)
+[20:01:33] [ClientServer/ClientDecoder/INFO]: package 000C: /id: 1016/posX: 3/posY: 1
+[20:01:33] [ClientServer/GameBox/UpdateThread---queue/INFO]: X: 3.0Y: 1.0
+[20:01:35] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[20:01:35] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to session/162.105.38.69:8438
+[20:01:35] [Client/GameBox/ActionThread/INFO]: nextX3.0nextY1.7305122494432073
+[20:01:35] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 03 f8 00 00 00 03 00 00 00 01 a8 fc 
+[20:01:35] [AioModule/Read/Completed/DEBUG]: Received 22 bytes from session/162.105.38.69:8438
+[20:01:35] [AioModule/Read/Completed/DEBUG]: Received contents(22bytes): ff ff 00 00 00 16 00 0c 00 00 03 f8 00 00 00 03 00 00 00 01 84 7c 
+[20:01:35] [ClientServer/ClientDecoder/INFO]: Receive a package 000C(所有玩家坐标更新)
+[20:01:35] [ClientServer/ClientDecoder/INFO]: package 000C: /id: 1016/posX: 3/posY: 1
+[20:01:35] [ClientServer/GameBox/UpdateThread---queue/INFO]: X: 3.0Y: 1.0
+[20:01:37] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to session/162.105.38.69:8438
+[20:01:37] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[20:01:37] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 03 f8 00 00 00 03 00 00 00 01 a8 fc 
+[20:01:37] [Client/GameBox/ActionThread/INFO]: nextX3.0nextY1.7305122494432073
+[20:01:37] [AioModule/Read/Completed/DEBUG]: Received 22 bytes from session/162.105.38.69:8438
+[20:01:37] [AioModule/Read/Completed/DEBUG]: Received contents(22bytes): ff ff 00 00 00 16 00 0c 00 00 03 f8 00 00 00 03 00 00 00 01 84 7c 
+[20:01:37] [ClientServer/ClientDecoder/INFO]: Receive a package 000C(所有玩家坐标更新)
+[20:01:37] [ClientServer/ClientDecoder/INFO]: package 000C: /id: 1016/posX: 3/posY: 1
+[20:01:37] [ClientServer/GameBox/UpdateThread---queue/INFO]: X: 3.0Y: 1.0
+[20:01:39] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to session/162.105.38.69:8438
+[20:01:39] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[20:01:39] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 03 f8 00 00 00 03 00 00 00 01 a8 fc 
+[20:01:39] [Client/GameBox/ActionThread/INFO]: nextX3.0nextY1.7305122494432073
+[20:01:39] [AioModule/Read/Completed/DEBUG]: Received 22 bytes from session/162.105.38.69:8438
+[20:01:39] [AioModule/Read/Completed/DEBUG]: Received contents(22bytes): ff ff 00 00 00 16 00 0c 00 00 03 f8 00 00 00 03 00 00 00 01 84 7c 
+[20:01:39] [ClientServer/ClientDecoder/INFO]: Receive a package 000C(所有玩家坐标更新)
+[20:01:39] [ClientServer/ClientDecoder/INFO]: package 000C: /id: 1016/posX: 3/posY: 1
+[20:01:39] [ClientServer/GameBox/UpdateThread---queue/INFO]: X: 3.0Y: 1.0
+[20:01:41] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[20:01:41] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to session/162.105.38.69:8438
+[20:01:41] [Client/GameBox/ActionThread/INFO]: nextX3.0nextY1.7305122494432073
+[20:01:41] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 03 f8 00 00 00 03 00 00 00 01 a8 fc 
+[20:01:41] [AioModule/Read/Completed/DEBUG]: Received 22 bytes from session/162.105.38.69:8438
+[20:01:41] [AioModule/Read/Completed/DEBUG]: Received contents(22bytes): ff ff 00 00 00 16 00 0c 00 00 03 f8 00 00 00 03 00 00 00 01 84 7c 
+[20:01:41] [ClientServer/ClientDecoder/INFO]: Receive a package 000C(所有玩家坐标更新)
+[20:01:41] [ClientServer/ClientDecoder/INFO]: package 000C: /id: 1016/posX: 3/posY: 1
+[20:01:41] [ClientServer/GameBox/UpdateThread---queue/INFO]: X: 3.0Y: 1.0
+[20:01:43] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to session/162.105.38.69:8438
+[20:01:43] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[20:01:43] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 03 f8 00 00 00 03 00 00 00 01 a8 fc 
+[20:01:43] [Client/GameBox/ActionThread/INFO]: nextX3.0nextY1.7305122494432073
+[20:01:43] [AioModule/Read/Completed/DEBUG]: Received 22 bytes from session/162.105.38.69:8438
+[20:01:43] [AioModule/Read/Completed/DEBUG]: Received contents(22bytes): ff ff 00 00 00 16 00 0c 00 00 03 f8 00 00 00 03 00 00 00 01 84 7c 
+[20:01:43] [ClientServer/ClientDecoder/INFO]: Receive a package 000C(所有玩家坐标更新)
+[20:01:43] [ClientServer/ClientDecoder/INFO]: package 000C: /id: 1016/posX: 3/posY: 1
+[20:01:43] [ClientServer/GameBox/UpdateThread---queue/INFO]: X: 3.0Y: 1.0
+[20:01:45] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to session/162.105.38.69:8438
+[20:01:45] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[20:01:45] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 03 f8 00 00 00 03 00 00 00 01 a8 fc 
+[20:01:45] [Client/GameBox/ActionThread/INFO]: nextX3.0nextY1.7305122494432073
+[20:01:45] [AioModule/Read/Completed/DEBUG]: Received 22 bytes from session/162.105.38.69:8438
+[20:01:45] [AioModule/Read/Completed/DEBUG]: Received contents(22bytes): ff ff 00 00 00 16 00 0c 00 00 03 f8 00 00 00 03 00 00 00 01 84 7c 
+[20:01:45] [ClientServer/ClientDecoder/INFO]: Receive a package 000C(所有玩家坐标更新)
+[20:01:45] [ClientServer/ClientDecoder/INFO]: package 000C: /id: 1016/posX: 3/posY: 1
+[20:01:45] [ClientServer/GameBox/UpdateThread---queue/INFO]: X: 3.0Y: 1.0
+[20:01:47] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[20:01:47] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to session/162.105.38.69:8438
+[20:01:47] [Client/GameBox/ActionThread/INFO]: nextX3.0nextY1.7305122494432073
+[20:01:47] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 03 f8 00 00 00 03 00 00 00 01 a8 fc 
+[20:01:47] [AioModule/Read/Completed/DEBUG]: Received 22 bytes from session/162.105.38.69:8438
+[20:01:47] [AioModule/Read/Completed/DEBUG]: Received contents(22bytes): ff ff 00 00 00 16 00 0c 00 00 03 f8 00 00 00 03 00 00 00 01 84 7c 
+[20:01:47] [ClientServer/ClientDecoder/INFO]: Receive a package 000C(所有玩家坐标更新)
+[20:01:47] [ClientServer/ClientDecoder/INFO]: package 000C: /id: 1016/posX: 3/posY: 1
+[20:01:47] [ClientServer/GameBox/UpdateThread---queue/INFO]: X: 3.0Y: 1.0
+[20:01:49] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[20:01:49] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to session/162.105.38.69:8438
+[20:01:49] [Client/GameBox/ActionThread/INFO]: nextX3.0nextY1.7305122494432073
+[20:01:49] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 03 f8 00 00 00 03 00 00 00 01 a8 fc 
+[20:01:49] [AioModule/Read/Completed/DEBUG]: Received 22 bytes from session/162.105.38.69:8438
+[20:01:49] [AioModule/Read/Completed/DEBUG]: Received contents(22bytes): ff ff 00 00 00 16 00 0c 00 00 03 f8 00 00 00 03 00 00 00 01 84 7c 
+[20:01:49] [ClientServer/ClientDecoder/INFO]: Receive a package 000C(所有玩家坐标更新)
+[20:01:49] [ClientServer/ClientDecoder/INFO]: package 000C: /id: 1016/posX: 3/posY: 1
+[20:01:49] [ClientServer/GameBox/UpdateThread---queue/INFO]: X: 3.0Y: 1.0
+[20:01:51] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[20:01:51] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to session/162.105.38.69:8438
+[20:01:51] [Client/GameBox/ActionThread/INFO]: nextX3.0nextY1.7305122494432073
+[20:01:51] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 03 f8 00 00 00 03 00 00 00 01 a8 fc 
+[20:01:51] [AioModule/Read/Completed/DEBUG]: Received 22 bytes from session/162.105.38.69:8438
+[20:01:51] [AioModule/Read/Completed/DEBUG]: Received contents(22bytes): ff ff 00 00 00 16 00 0c 00 00 03 f8 00 00 00 03 00 00 00 01 84 7c 
+[20:01:51] [ClientServer/ClientDecoder/INFO]: Receive a package 000C(所有玩家坐标更新)
+[20:01:51] [ClientServer/ClientDecoder/INFO]: package 000C: /id: 1016/posX: 3/posY: 1
+[20:01:51] [ClientServer/GameBox/UpdateThread---queue/INFO]: X: 3.0Y: 1.0
+[20:01:53] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[20:01:53] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to session/162.105.38.69:8438
+[20:01:53] [Client/GameBox/ActionThread/INFO]: nextX3.0nextY1.7305122494432073
+[20:01:53] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 03 f8 00 00 00 03 00 00 00 01 a8 fc 
+[20:01:53] [AioModule/Read/Completed/DEBUG]: Received 22 bytes from session/162.105.38.69:8438
+[20:01:53] [AioModule/Read/Completed/DEBUG]: Received contents(22bytes): ff ff 00 00 00 16 00 0c 00 00 03 f8 00 00 00 03 00 00 00 01 84 7c 
+[20:01:53] [ClientServer/ClientDecoder/INFO]: Receive a package 000C(所有玩家坐标更新)
+[20:01:53] [ClientServer/ClientDecoder/INFO]: package 000C: /id: 1016/posX: 3/posY: 1
+[20:01:53] [ClientServer/GameBox/UpdateThread---queue/INFO]: X: 3.0Y: 1.0
+[20:01:55] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[20:01:55] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to session/162.105.38.69:8438
+[20:01:55] [Client/GameBox/ActionThread/INFO]: nextX3.0nextY1.7305122494432073
+[20:01:55] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 03 f8 00 00 00 03 00 00 00 01 a8 fc 
+[20:01:55] [AioModule/Read/Completed/DEBUG]: Received 22 bytes from session/162.105.38.69:8438
+[20:01:55] [AioModule/Read/Completed/DEBUG]: Received contents(22bytes): ff ff 00 00 00 16 00 0c 00 00 03 f8 00 00 00 03 00 00 00 01 84 7c 
+[20:01:55] [ClientServer/ClientDecoder/INFO]: Receive a package 000C(所有玩家坐标更新)
+[20:01:55] [ClientServer/ClientDecoder/INFO]: package 000C: /id: 1016/posX: 3/posY: 1
+[20:01:55] [ClientServer/GameBox/UpdateThread---queue/INFO]: X: 3.0Y: 1.0
+[20:01:56] [ClientServer/GameBox/mouseClick/INFO]: screenX1208.0screenY138.0
+[20:01:56] [ClientServer/GameBox/mouseClick/INFO]: middleX683.0middleY384.0
+[20:01:57] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[20:01:57] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to session/162.105.38.69:8438
+[20:01:57] [Client/GameBox/ActionThread/INFO]: nextX3.0nextY-1.4057142857142857
+[20:01:57] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 03 f8 00 00 00 03 ff ff ff ff 8c b2 
+[20:01:57] [AioModule/Read/Completed/DEBUG]: Received 22 bytes from session/162.105.38.69:8438
+[20:01:57] [AioModule/Read/Completed/DEBUG]: Received contents(22bytes): ff ff 00 00 00 16 00 0c 00 00 03 f8 00 00 00 03 ff ff ff ff 68 32 
+[20:01:57] [ClientServer/ClientDecoder/INFO]: Receive a package 000C(所有玩家坐标更新)
+[20:01:57] [ClientServer/ClientDecoder/INFO]: package 000C: /id: 1016/posX: 3/posY: -1
+[20:01:57] [ClientServer/GameBox/UpdateThread---queue/INFO]: X: 3.0Y: -1.0
+[20:01:59] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[20:01:59] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to session/162.105.38.69:8438
+[20:01:59] [Client/GameBox/ActionThread/INFO]: nextX3.0nextY-1.4057142857142857
+[20:01:59] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 03 f8 00 00 00 03 ff ff ff ff 8c b2 
+[20:01:59] [AioModule/Read/Completed/DEBUG]: Received 22 bytes from session/162.105.38.69:8438
+[20:01:59] [AioModule/Read/Completed/DEBUG]: Received contents(22bytes): ff ff 00 00 00 16 00 0c 00 00 03 f8 00 00 00 03 ff ff ff ff 68 32 
+[20:01:59] [ClientServer/ClientDecoder/INFO]: Receive a package 000C(所有玩家坐标更新)
+[20:01:59] [ClientServer/ClientDecoder/INFO]: package 000C: /id: 1016/posX: 3/posY: -1
+[20:01:59] [ClientServer/GameBox/UpdateThread---queue/INFO]: X: 3.0Y: -1.0
+[20:02:00] [ClientServer/GameBox/mouseClick/INFO]: screenX1357.0screenY32.0
+[20:02:00] [ClientServer/GameBox/mouseClick/INFO]: middleX683.0middleY384.0
+[20:02:01] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[20:02:01] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to session/162.105.38.69:8438
+[20:02:01] [Client/GameBox/ActionThread/INFO]: nextX3.0nextY-1.566765578635015
+[20:02:01] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 03 f8 00 00 00 03 ff ff ff ff 8c b2 
+[20:02:01] [AioModule/Read/Completed/DEBUG]: Received 22 bytes from session/162.105.38.69:8438
+[20:02:01] [AioModule/Read/Completed/DEBUG]: Received contents(22bytes): ff ff 00 00 00 16 00 0c 00 00 03 f8 00 00 00 03 ff ff ff ff 68 32 
+[20:02:01] [ClientServer/ClientDecoder/INFO]: Receive a package 000C(所有玩家坐标更新)
+[20:02:01] [ClientServer/ClientDecoder/INFO]: package 000C: /id: 1016/posX: 3/posY: -1
+[20:02:01] [ClientServer/GameBox/UpdateThread---queue/INFO]: X: 3.0Y: -1.0
+[20:02:01] [ClientServer/GameBox/mouseClick/INFO]: screenX1336.0screenY707.0
+[20:02:01] [ClientServer/GameBox/mouseClick/INFO]: middleX683.0middleY384.0
+[20:02:03] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[20:02:03] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to session/162.105.38.69:8438
+[20:02:03] [Client/GameBox/ActionThread/INFO]: nextX3.0nextY1.4839203675344563
+[20:02:03] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 03 f8 00 00 00 03 00 00 00 01 a8 fc 
+[20:02:03] [AioModule/Read/Completed/DEBUG]: Received 22 bytes from session/162.105.38.69:8438
+[20:02:03] [AioModule/Read/Completed/DEBUG]: Received contents(22bytes): ff ff 00 00 00 16 00 0c 00 00 03 f8 00 00 00 03 00 00 00 01 84 7c 
+[20:02:03] [ClientServer/ClientDecoder/INFO]: Receive a package 000C(所有玩家坐标更新)
+[20:02:03] [ClientServer/ClientDecoder/INFO]: package 000C: /id: 1016/posX: 3/posY: 1
+[20:02:03] [ClientServer/GameBox/UpdateThread---queue/INFO]: X: 3.0Y: 1.0
+[20:02:05] [ClientServer/GameBox/mouseClick/INFO]: screenX1336.0screenY707.0
+[20:02:05] [ClientServer/GameBox/mouseClick/INFO]: middleX683.0middleY384.0
+[20:02:05] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[20:02:05] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to session/162.105.38.69:8438
+[20:02:05] [Client/GameBox/ActionThread/INFO]: nextX3.0nextY1.4839203675344563
+[20:02:05] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 03 f8 00 00 00 03 00 00 00 01 a8 fc 
+[20:02:05] [AioModule/Read/Completed/DEBUG]: Received 22 bytes from session/162.105.38.69:8438
+[20:02:05] [AioModule/Read/Completed/DEBUG]: Received contents(22bytes): ff ff 00 00 00 16 00 0c 00 00 03 f8 00 00 00 03 00 00 00 01 84 7c 
+[20:02:05] [ClientServer/ClientDecoder/INFO]: Receive a package 000C(所有玩家坐标更新)
+[20:02:05] [ClientServer/ClientDecoder/INFO]: package 000C: /id: 1016/posX: 3/posY: 1
+[20:02:05] [ClientServer/GameBox/UpdateThread---queue/INFO]: X: 3.0Y: 1.0
+[20:02:07] [ClientServer/GameBox/mouseClick/INFO]: screenX1328.0screenY707.0
+[20:02:07] [ClientServer/GameBox/mouseClick/INFO]: middleX683.0middleY384.0
+[20:02:07] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to session/162.105.38.69:8438
+[20:02:07] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[20:02:07] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 03 f8 00 00 00 03 00 00 00 01 a8 fc 
+[20:02:07] [Client/GameBox/ActionThread/INFO]: nextX3.0nextY1.5023255813953489
+[20:02:07] [AioModule/Read/Completed/DEBUG]: Received 22 bytes from session/162.105.38.69:8438
+[20:02:07] [AioModule/Read/Completed/DEBUG]: Received contents(22bytes): ff ff 00 00 00 16 00 0c 00 00 03 f8 00 00 00 03 00 00 00 01 84 7c 
+[20:02:07] [ClientServer/ClientDecoder/INFO]: Receive a package 000C(所有玩家坐标更新)
+[20:02:07] [ClientServer/ClientDecoder/INFO]: package 000C: /id: 1016/posX: 3/posY: 1
+[20:02:07] [ClientServer/GameBox/UpdateThread---queue/INFO]: X: 3.0Y: 1.0
+[20:02:08] [ClientServer/GameBox/mouseClick/INFO]: screenX1328.0screenY707.0
+[20:02:08] [ClientServer/GameBox/mouseClick/INFO]: middleX683.0middleY384.0
+[20:02:09] [ClientServer/GameBox/mouseClick/INFO]: screenX1300.0screenY692.0
+[20:02:09] [ClientServer/GameBox/mouseClick/INFO]: middleX683.0middleY384.0
+[20:02:09] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[20:02:09] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to session/162.105.38.69:8438
+[20:02:09] [Client/GameBox/ActionThread/INFO]: nextX3.0nextY1.4975688816855754
+[20:02:09] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 03 f8 00 00 00 03 00 00 00 01 a8 fc 
+[20:02:09] [AioModule/Read/Completed/DEBUG]: Received 22 bytes from session/162.105.38.69:8438
+[20:02:09] [AioModule/Read/Completed/DEBUG]: Received contents(22bytes): ff ff 00 00 00 16 00 0c 00 00 03 f8 00 00 00 03 00 00 00 01 84 7c 
+[20:02:09] [ClientServer/ClientDecoder/INFO]: Receive a package 000C(所有玩家坐标更新)
+[20:02:09] [ClientServer/ClientDecoder/INFO]: package 000C: /id: 1016/posX: 3/posY: 1
+[20:02:09] [ClientServer/GameBox/UpdateThread---queue/INFO]: X: 3.0Y: 1.0
+[20:02:09] [ClientServer/GameBox/mouseClick/INFO]: screenX1331.0screenY413.0
+[20:02:09] [ClientServer/GameBox/mouseClick/INFO]: middleX683.0middleY384.0
+[20:02:10] [ClientServer/GameBox/mouseClick/INFO]: screenX1305.0screenY199.0
+[20:02:10] [ClientServer/GameBox/mouseClick/INFO]: middleX683.0middleY384.0
+[20:02:11] [ClientServer/GameBox/mouseClick/INFO]: screenX1305.0screenY199.0
+[20:02:11] [ClientServer/GameBox/mouseClick/INFO]: middleX683.0middleY384.0
+[20:02:11] [ClientServer/GameBox/mouseClick/INFO]: screenX1305.0screenY199.0
+[20:02:11] [ClientServer/GameBox/mouseClick/INFO]: middleX683.0middleY384.0
+[20:02:11] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[20:02:11] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to session/162.105.38.69:8438
+[20:02:11] [Client/GameBox/ActionThread/INFO]: nextX3.0nextY-0.8922829581993569
+[20:02:11] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 03 f8 00 00 00 03 00 00 00 00 a8 fb 
+[20:02:11] [AioModule/Read/Completed/DEBUG]: Received 22 bytes from session/162.105.38.69:8438
+[20:02:11] [AioModule/Read/Completed/DEBUG]: Received contents(22bytes): ff ff 00 00 00 16 00 0c 00 00 03 f8 00 00 00 03 00 00 00 00 84 7b 
+[20:02:11] [ClientServer/ClientDecoder/INFO]: Receive a package 000C(所有玩家坐标更新)
+[20:02:11] [ClientServer/ClientDecoder/INFO]: package 000C: /id: 1016/posX: 3/posY: 0
+[20:02:11] [ClientServer/GameBox/UpdateThread---queue/INFO]: X: 3.0Y: 0.0
+[20:02:13] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[20:02:13] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to session/162.105.38.69:8438
+[20:02:13] [Client/GameBox/ActionThread/INFO]: nextX3.0nextY-0.8922829581993569
+[20:02:13] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 03 f8 00 00 00 03 00 00 00 00 a8 fb 
+[20:02:13] [ClientServer/GameBox/mouseClick/INFO]: screenX203.0screenY309.0
+[20:02:13] [ClientServer/GameBox/mouseClick/INFO]: middleX683.0middleY384.0
+[20:02:13] [AioModule/Read/Completed/DEBUG]: Received 22 bytes from session/162.105.38.69:8438
+[20:02:13] [AioModule/Read/Completed/DEBUG]: Received contents(22bytes): ff ff 00 00 00 16 00 0c 00 00 03 f8 00 00 00 03 00 00 00 00 84 7b 
+[20:02:13] [ClientServer/ClientDecoder/INFO]: Receive a package 000C(所有玩家坐标更新)
+[20:02:13] [ClientServer/ClientDecoder/INFO]: package 000C: /id: 1016/posX: 3/posY: 0
+[20:02:13] [ClientServer/GameBox/UpdateThread---queue/INFO]: X: 3.0Y: 0.0
+[20:02:13] [ClientServer/GameBox/mouseClick/INFO]: screenX203.0screenY309.0
+[20:02:13] [ClientServer/GameBox/mouseClick/INFO]: middleX683.0middleY384.0
+[20:02:14] [ClientServer/GameBox/mouseClick/INFO]: screenX229.0screenY190.0
+[20:02:14] [ClientServer/GameBox/mouseClick/INFO]: middleX683.0middleY384.0
+[20:02:14] [ClientServer/GameBox/mouseClick/INFO]: screenX229.0screenY190.0
+[20:02:14] [ClientServer/GameBox/mouseClick/INFO]: middleX683.0middleY384.0
+[20:02:14] [ClientServer/GameBox/mouseClick/INFO]: screenX94.0screenY26.0
+[20:02:14] [ClientServer/GameBox/mouseClick/INFO]: middleX683.0middleY384.0
+[20:02:15] [ClientServer/GameBox/mouseClick/INFO]: screenX130.0screenY85.0
+[20:02:15] [ClientServer/GameBox/mouseClick/INFO]: middleX683.0middleY384.0
+[20:02:15] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to session/162.105.38.69:8438
+[20:02:15] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[20:02:15] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 03 f8 00 00 00 05 00 00 00 03 67 45 
+[20:02:15] [Client/GameBox/ActionThread/INFO]: nextX5.548494983277592nextY3.0
+[20:02:15] [AioModule/Read/Completed/DEBUG]: Received 22 bytes from session/162.105.38.69:8438
+[20:02:15] [AioModule/Read/Completed/DEBUG]: Received contents(22bytes): ff ff 00 00 00 16 00 0c 00 00 03 f8 00 00 00 05 00 00 00 03 42 c5 
+[20:02:15] [ClientServer/ClientDecoder/INFO]: Receive a package 000C(所有玩家坐标更新)
+[20:02:15] [ClientServer/ClientDecoder/INFO]: package 000C: /id: 1016/posX: 5/posY: 3
+[20:02:15] [ClientServer/GameBox/UpdateThread---queue/INFO]: X: 5.0Y: 3.0
+[20:02:15] [ClientServer/GameBox/mouseClick/INFO]: screenX987.0screenY584.0
+[20:02:15] [ClientServer/GameBox/mouseClick/INFO]: middleX683.0middleY384.0
+[20:02:15] [ClientServer/GameBox/mouseClick/INFO]: screenX987.0screenY584.0
+[20:02:15] [ClientServer/GameBox/mouseClick/INFO]: middleX683.0middleY384.0
+[20:02:16] [ClientServer/GameBox/mouseClick/INFO]: screenX782.0screenY516.0
+[20:02:16] [ClientServer/GameBox/mouseClick/INFO]: middleX683.0middleY384.0
+[20:02:16] [ClientServer/GameBox/mouseClick/INFO]: screenX544.0screenY466.0
+[20:02:16] [ClientServer/GameBox/mouseClick/INFO]: middleX683.0middleY384.0
+[20:02:17] [ClientServer/GameBox/mouseClick/INFO]: screenX958.0screenY518.0
+[20:02:17] [ClientServer/GameBox/mouseClick/INFO]: middleX683.0middleY384.0
+[20:02:17] [ClientServer/GameBox/mouseClick/INFO]: screenX958.0screenY518.0
+[20:02:17] [ClientServer/GameBox/mouseClick/INFO]: middleX683.0middleY384.0
+[20:02:17] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[20:02:17] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to session/162.105.38.69:8438
+[20:02:17] [Client/GameBox/ActionThread/INFO]: nextX3.0nextY1.4618181818181817
+[20:02:17] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 03 f8 00 00 00 03 00 00 00 01 a8 fc 
+[20:02:17] [ClientServer/GameBox/mouseClick/INFO]: screenX958.0screenY518.0
+[20:02:17] [ClientServer/GameBox/mouseClick/INFO]: middleX683.0middleY384.0
+[20:02:17] [AioModule/Read/Completed/DEBUG]: Received 22 bytes from session/162.105.38.69:8438
+[20:02:17] [AioModule/Read/Completed/DEBUG]: Received contents(22bytes): ff ff 00 00 00 16 00 0c 00 00 03 f8 00 00 00 03 00 00 00 01 84 7c 
+[20:02:17] [ClientServer/ClientDecoder/INFO]: Receive a package 000C(所有玩家坐标更新)
+[20:02:17] [ClientServer/ClientDecoder/INFO]: package 000C: /id: 1016/posX: 3/posY: 1
+[20:02:17] [ClientServer/GameBox/UpdateThread---queue/INFO]: X: 3.0Y: 1.0
+[20:02:17] [ClientServer/GameBox/mouseClick/INFO]: screenX958.0screenY518.0
+[20:02:17] [ClientServer/GameBox/mouseClick/INFO]: middleX683.0middleY384.0
+[20:02:17] [ClientServer/GameBox/mouseClick/INFO]: screenX958.0screenY518.0
+[20:02:17] [ClientServer/GameBox/mouseClick/INFO]: middleX683.0middleY384.0
+[20:02:18] [ClientServer/GameBox/mouseClick/INFO]: screenX958.0screenY518.0
+[20:02:18] [ClientServer/GameBox/mouseClick/INFO]: middleX683.0middleY384.0
+[20:02:18] [ClientServer/GameBox/mouseClick/INFO]: screenX958.0screenY518.0
+[20:02:18] [ClientServer/GameBox/mouseClick/INFO]: middleX683.0middleY384.0
+[20:02:18] [ClientServer/GameBox/mouseClick/INFO]: screenX958.0screenY518.0
+[20:02:18] [ClientServer/GameBox/mouseClick/INFO]: middleX683.0middleY384.0
+[20:02:18] [ClientServer/GameBox/mouseClick/INFO]: screenX958.0screenY518.0
+[20:02:18] [ClientServer/GameBox/mouseClick/INFO]: middleX683.0middleY384.0
+[20:02:18] [ClientServer/GameBox/mouseClick/INFO]: screenX958.0screenY518.0
+[20:02:18] [ClientServer/GameBox/mouseClick/INFO]: middleX683.0middleY384.0
+[20:02:18] [ClientServer/GameBox/mouseClick/INFO]: screenX958.0screenY518.0
+[20:02:18] [ClientServer/GameBox/mouseClick/INFO]: middleX683.0middleY384.0
+[20:02:18] [ClientServer/GameBox/mouseClick/INFO]: screenX958.0screenY518.0
+[20:02:18] [ClientServer/GameBox/mouseClick/INFO]: middleX683.0middleY384.0
+[20:02:19] [ClientServer/GameBox/mouseClick/INFO]: screenX958.0screenY518.0
+[20:02:19] [ClientServer/GameBox/mouseClick/INFO]: middleX683.0middleY384.0
+[20:02:19] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[20:02:19] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to session/162.105.38.69:8438
+[20:02:19] [Client/GameBox/ActionThread/INFO]: nextX3.0nextY1.4618181818181817
+[20:02:19] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 03 f8 00 00 00 03 00 00 00 01 a8 fc 
+[20:02:19] [ClientServer/GameBox/mouseClick/INFO]: screenX908.0screenY595.0
+[20:02:19] [ClientServer/GameBox/mouseClick/INFO]: middleX683.0middleY384.0
+[20:02:19] [AioModule/Read/Completed/DEBUG]: Received 22 bytes from session/162.105.38.69:8438
+[20:02:19] [AioModule/Read/Completed/DEBUG]: Received contents(22bytes): ff ff 00 00 00 16 00 0c 00 00 03 f8 00 00 00 03 00 00 00 01 84 7c 
+[20:02:19] [ClientServer/ClientDecoder/INFO]: Receive a package 000C(所有玩家坐标更新)
+[20:02:19] [ClientServer/ClientDecoder/INFO]: package 000C: /id: 1016/posX: 3/posY: 1
+[20:02:19] [ClientServer/GameBox/UpdateThread---queue/INFO]: X: 3.0Y: 1.0
+[20:02:19] [ClientServer/GameBox/mouseClick/INFO]: screenX908.0screenY595.0
+[20:02:19] [ClientServer/GameBox/mouseClick/INFO]: middleX683.0middleY384.0
+[20:02:19] [ClientServer/GameBox/mouseClick/INFO]: screenX908.0screenY595.0
+[20:02:19] [ClientServer/GameBox/mouseClick/INFO]: middleX683.0middleY384.0
+[20:02:19] [ClientServer/GameBox/mouseClick/INFO]: screenX908.0screenY595.0
+[20:02:19] [ClientServer/GameBox/mouseClick/INFO]: middleX683.0middleY384.0
+[20:02:21] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[20:02:21] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to session/162.105.38.69:8438
+[20:02:21] [Client/GameBox/ActionThread/INFO]: nextX3.0nextY2.8133333333333335
+[20:02:21] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 03 f8 00 00 00 03 00 00 00 02 a8 fd 
+[20:02:21] [AioModule/Read/Completed/DEBUG]: Received 22 bytes from session/162.105.38.69:8438
+[20:02:21] [AioModule/Read/Completed/DEBUG]: Received contents(22bytes): ff ff 00 00 00 16 00 0c 00 00 03 f8 00 00 00 03 00 00 00 02 84 7d 
+[20:02:21] [ClientServer/ClientDecoder/INFO]: Receive a package 000C(所有玩家坐标更新)
+[20:02:21] [ClientServer/ClientDecoder/INFO]: package 000C: /id: 1016/posX: 3/posY: 2
+[20:02:21] [ClientServer/GameBox/UpdateThread---queue/INFO]: X: 3.0Y: 2.0
+[20:02:23] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[20:02:23] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to session/162.105.38.69:8438
+[20:02:23] [Client/GameBox/ActionThread/INFO]: nextX3.0nextY2.8133333333333335
+[20:02:23] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 03 f8 00 00 00 03 00 00 00 02 a8 fd 
+[20:02:23] [AioModule/Read/Completed/DEBUG]: Received 22 bytes from session/162.105.38.69:8438
+[20:02:23] [AioModule/Read/Completed/DEBUG]: Received contents(22bytes): ff ff 00 00 00 16 00 0c 00 00 03 f8 00 00 00 03 00 00 00 02 84 7d 
+[20:02:23] [ClientServer/ClientDecoder/INFO]: Receive a package 000C(所有玩家坐标更新)
+[20:02:23] [ClientServer/ClientDecoder/INFO]: package 000C: /id: 1016/posX: 3/posY: 2
+[20:02:23] [ClientServer/GameBox/UpdateThread---queue/INFO]: X: 3.0Y: 2.0
+[20:02:23] [ClientServer/GameBox/mouseClick/INFO]: screenX1060.0screenY604.0
+[20:02:23] [ClientServer/GameBox/mouseClick/INFO]: middleX683.0middleY384.0
+[20:02:24] [ClientServer/GameBox/mouseClick/INFO]: screenX976.0screenY653.0
+[20:02:24] [ClientServer/GameBox/mouseClick/INFO]: middleX683.0middleY384.0
+[20:02:24] [ClientServer/GameBox/mouseClick/INFO]: screenX976.0screenY653.0
+[20:02:24] [ClientServer/GameBox/mouseClick/INFO]: middleX683.0middleY384.0
+[20:02:24] [ClientServer/GameBox/mouseClick/INFO]: screenX1013.0screenY645.0
+[20:02:24] [ClientServer/GameBox/mouseClick/INFO]: middleX683.0middleY384.0
+[20:02:25] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[20:02:25] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to session/162.105.38.69:8438
+[20:02:25] [Client/GameBox/ActionThread/INFO]: nextX3.0nextY2.3727272727272726
+[20:02:25] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 03 f8 00 00 00 03 00 00 00 02 a8 fd 
+[20:02:25] [ClientServer/GameBox/mouseClick/INFO]: screenX1013.0screenY645.0
+[20:02:25] [ClientServer/GameBox/mouseClick/INFO]: middleX683.0middleY384.0
+[20:02:25] [AioModule/Read/Completed/DEBUG]: Received 22 bytes from session/162.105.38.69:8438
+[20:02:25] [AioModule/Read/Completed/DEBUG]: Received contents(22bytes): ff ff 00 00 00 16 00 0c 00 00 03 f8 00 00 00 03 00 00 00 02 84 7d 
+[20:02:25] [ClientServer/ClientDecoder/INFO]: Receive a package 000C(所有玩家坐标更新)
+[20:02:25] [ClientServer/ClientDecoder/INFO]: package 000C: /id: 1016/posX: 3/posY: 2
+[20:02:25] [ClientServer/GameBox/UpdateThread---queue/INFO]: X: 3.0Y: 2.0
+[20:02:25] [ClientServer/GameBox/mouseClick/INFO]: screenX1010.0screenY641.0
+[20:02:25] [ClientServer/GameBox/mouseClick/INFO]: middleX683.0middleY384.0
+[20:02:26] [ClientServer/GameBox/mouseClick/INFO]: screenX1010.0screenY641.0
+[20:02:26] [ClientServer/GameBox/mouseClick/INFO]: middleX683.0middleY384.0
+[20:02:26] [ClientServer/GameBox/mouseClick/INFO]: screenX1010.0screenY641.0
+[20:02:26] [ClientServer/GameBox/mouseClick/INFO]: middleX683.0middleY384.0
+[20:02:26] [ClientServer/GameBox/mouseClick/INFO]: screenX1010.0screenY641.0
+[20:02:26] [ClientServer/GameBox/mouseClick/INFO]: middleX683.0middleY384.0
+[20:02:26] [ClientServer/GameBox/mouseClick/INFO]: screenX1010.0screenY641.0
+[20:02:26] [ClientServer/GameBox/mouseClick/INFO]: middleX683.0middleY384.0
+[20:02:26] [ClientServer/GameBox/mouseClick/INFO]: screenX1010.0screenY641.0
+[20:02:26] [ClientServer/GameBox/mouseClick/INFO]: middleX683.0middleY384.0
+[20:02:26] [ClientServer/GameBox/mouseClick/INFO]: screenX1010.0screenY641.0
+[20:02:26] [ClientServer/GameBox/mouseClick/INFO]: middleX683.0middleY384.0
+[20:02:27] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[20:02:27] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to session/162.105.38.69:8438
+[20:02:27] [Client/GameBox/ActionThread/INFO]: nextX3.0nextY2.3577981651376145
+[20:02:27] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 03 f8 00 00 00 03 00 00 00 02 a8 fd 
+[20:02:27] [AioModule/Read/Completed/DEBUG]: Received 22 bytes from session/162.105.38.69:8438
+[20:02:27] [AioModule/Read/Completed/DEBUG]: Received contents(22bytes): ff ff 00 00 00 16 00 0c 00 00 03 f8 00 00 00 03 00 00 00 02 84 7d 
+[20:02:27] [ClientServer/ClientDecoder/INFO]: Receive a package 000C(所有玩家坐标更新)
+[20:02:27] [ClientServer/ClientDecoder/INFO]: package 000C: /id: 1016/posX: 3/posY: 2
+[20:02:27] [ClientServer/GameBox/UpdateThread---queue/INFO]: X: 3.0Y: 2.0
+[20:02:29] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[20:02:29] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to session/162.105.38.69:8438
+[20:02:29] [Client/GameBox/ActionThread/INFO]: nextX3.0nextY2.3577981651376145
+[20:02:29] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 03 f8 00 00 00 03 00 00 00 02 a8 fd 
+[20:02:29] [AioModule/Read/Completed/DEBUG]: Received 22 bytes from session/162.105.38.69:8438
+[20:02:29] [AioModule/Read/Completed/DEBUG]: Received contents(22bytes): ff ff 00 00 00 16 00 0c 00 00 03 f8 00 00 00 03 00 00 00 02 84 7d 
+[20:02:29] [ClientServer/ClientDecoder/INFO]: Receive a package 000C(所有玩家坐标更新)
+[20:02:29] [ClientServer/ClientDecoder/INFO]: package 000C: /id: 1016/posX: 3/posY: 2
+[20:02:29] [ClientServer/GameBox/UpdateThread---queue/INFO]: X: 3.0Y: 2.0
+[20:02:29] [ClientServer/GameBox/mouseClick/INFO]: screenX1038.0screenY671.0
+[20:02:29] [ClientServer/GameBox/mouseClick/INFO]: middleX683.0middleY384.0
+[20:02:31] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[20:02:31] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to session/162.105.38.69:8438
+[20:02:31] [Client/GameBox/ActionThread/INFO]: nextX3.0nextY2.425352112676056
+[20:02:31] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 03 f8 00 00 00 03 00 00 00 02 a8 fd 
+[20:02:31] [AioModule/Read/Completed/DEBUG]: Received 22 bytes from session/162.105.38.69:8438
+[20:02:31] [AioModule/Read/Completed/DEBUG]: Received contents(22bytes): ff ff 00 00 00 16 00 0c 00 00 03 f8 00 00 00 03 00 00 00 02 84 7d 
+[20:02:31] [ClientServer/ClientDecoder/INFO]: Receive a package 000C(所有玩家坐标更新)
+[20:02:31] [ClientServer/ClientDecoder/INFO]: package 000C: /id: 1016/posX: 3/posY: 2
+[20:02:31] [ClientServer/GameBox/UpdateThread---queue/INFO]: X: 3.0Y: 2.0
+[20:02:33] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[20:02:33] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to session/162.105.38.69:8438
+[20:02:33] [Client/GameBox/ActionThread/INFO]: nextX3.0nextY2.425352112676056
+[20:02:33] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 03 f8 00 00 00 03 00 00 00 02 a8 fd 
+[20:02:33] [AioModule/Read/Completed/DEBUG]: Received 22 bytes from session/162.105.38.69:8438
+[20:02:33] [AioModule/Read/Completed/DEBUG]: Received contents(22bytes): ff ff 00 00 00 16 00 0c 00 00 03 f8 00 00 00 03 00 00 00 02 84 7d 
+[20:02:33] [ClientServer/ClientDecoder/INFO]: Receive a package 000C(所有玩家坐标更新)
+[20:02:33] [ClientServer/ClientDecoder/INFO]: package 000C: /id: 1016/posX: 3/posY: 2
+[20:02:33] [ClientServer/GameBox/UpdateThread---queue/INFO]: X: 3.0Y: 2.0
+[20:02:35] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[20:02:35] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to session/162.105.38.69:8438
+[20:02:35] [Client/GameBox/ActionThread/INFO]: nextX3.0nextY2.425352112676056
+[20:02:35] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 03 f8 00 00 00 03 00 00 00 02 a8 fd 
+[20:02:35] [AioModule/Read/Completed/DEBUG]: Received 22 bytes from session/162.105.38.69:8438
+[20:02:35] [AioModule/Read/Completed/DEBUG]: Received contents(22bytes): ff ff 00 00 00 16 00 0c 00 00 03 f8 00 00 00 03 00 00 00 02 84 7d 
+[20:02:35] [ClientServer/ClientDecoder/INFO]: Receive a package 000C(所有玩家坐标更新)
+[20:02:35] [ClientServer/ClientDecoder/INFO]: package 000C: /id: 1016/posX: 3/posY: 2
+[20:02:35] [ClientServer/GameBox/UpdateThread---queue/INFO]: X: 3.0Y: 2.0
+[20:02:37] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[20:02:37] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to session/162.105.38.69:8438
+[20:02:37] [Client/GameBox/ActionThread/INFO]: nextX3.0nextY2.425352112676056
+[20:02:37] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 03 f8 00 00 00 03 00 00 00 02 a8 fd 
+[20:02:37] [AioModule/Read/Completed/DEBUG]: Received 22 bytes from session/162.105.38.69:8438
+[20:02:37] [AioModule/Read/Completed/DEBUG]: Received contents(22bytes): ff ff 00 00 00 16 00 0c 00 00 03 f8 00 00 00 03 00 00 00 02 84 7d 
+[20:02:37] [ClientServer/ClientDecoder/INFO]: Receive a package 000C(所有玩家坐标更新)
+[20:02:37] [ClientServer/ClientDecoder/INFO]: package 000C: /id: 1016/posX: 3/posY: 2
+[20:02:37] [ClientServer/GameBox/UpdateThread---queue/INFO]: X: 3.0Y: 2.0
+[20:02:39] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[20:02:39] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to session/162.105.38.69:8438
+[20:02:39] [Client/GameBox/ActionThread/INFO]: nextX3.0nextY2.425352112676056
+[20:02:39] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 03 f8 00 00 00 03 00 00 00 02 a8 fd 
+[20:02:39] [AioModule/Read/Completed/DEBUG]: Received 22 bytes from session/162.105.38.69:8438
+[20:02:39] [AioModule/Read/Completed/DEBUG]: Received contents(22bytes): ff ff 00 00 00 16 00 0c 00 00 03 f8 00 00 00 03 00 00 00 02 84 7d 
+[20:02:39] [ClientServer/ClientDecoder/INFO]: Receive a package 000C(所有玩家坐标更新)
+[20:02:39] [ClientServer/ClientDecoder/INFO]: package 000C: /id: 1016/posX: 3/posY: 2
+[20:02:39] [ClientServer/GameBox/UpdateThread---queue/INFO]: X: 3.0Y: 2.0
+[20:02:41] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to session/162.105.38.69:8438
+[20:02:41] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[20:02:41] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 03 f8 00 00 00 03 00 00 00 02 a8 fd 
+[20:02:41] [Client/GameBox/ActionThread/INFO]: nextX3.0nextY2.425352112676056
+[20:02:41] [AioModule/Read/Completed/DEBUG]: Received 22 bytes from session/162.105.38.69:8438
+[20:02:41] [AioModule/Read/Completed/DEBUG]: Received contents(22bytes): ff ff 00 00 00 16 00 0c 00 00 03 f8 00 00 00 03 00 00 00 02 84 7d 
+[20:02:41] [ClientServer/ClientDecoder/INFO]: Receive a package 000C(所有玩家坐标更新)
+[20:02:41] [ClientServer/ClientDecoder/INFO]: package 000C: /id: 1016/posX: 3/posY: 2
+[20:02:41] [ClientServer/GameBox/UpdateThread---queue/INFO]: X: 3.0Y: 2.0
+[20:02:43] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[20:02:43] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to session/162.105.38.69:8438
+[20:02:43] [Client/GameBox/ActionThread/INFO]: nextX3.0nextY2.425352112676056
+[20:02:43] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 03 f8 00 00 00 03 00 00 00 02 a8 fd 
+[20:02:43] [AioModule/Read/Completed/DEBUG]: Received 22 bytes from session/162.105.38.69:8438
+[20:02:43] [AioModule/Read/Completed/DEBUG]: Received contents(22bytes): ff ff 00 00 00 16 00 0c 00 00 03 f8 00 00 00 03 00 00 00 02 84 7d 
+[20:02:43] [ClientServer/ClientDecoder/INFO]: Receive a package 000C(所有玩家坐标更新)
+[20:02:43] [ClientServer/ClientDecoder/INFO]: package 000C: /id: 1016/posX: 3/posY: 2
+[20:02:43] [ClientServer/GameBox/UpdateThread---queue/INFO]: X: 3.0Y: 2.0
+[20:02:45] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to session/162.105.38.69:8438
+[20:02:45] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[20:02:45] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 03 f8 00 00 00 03 00 00 00 02 a8 fd 
+[20:02:45] [Client/GameBox/ActionThread/INFO]: nextX3.0nextY2.425352112676056
+[20:02:45] [AioModule/Read/Completed/DEBUG]: Received 22 bytes from session/162.105.38.69:8438
+[20:02:45] [AioModule/Read/Completed/DEBUG]: Received contents(22bytes): ff ff 00 00 00 16 00 0c 00 00 03 f8 00 00 00 03 00 00 00 02 84 7d 
+[20:02:45] [ClientServer/ClientDecoder/INFO]: Receive a package 000C(所有玩家坐标更新)
+[20:02:45] [ClientServer/ClientDecoder/INFO]: package 000C: /id: 1016/posX: 3/posY: 2
+[20:02:45] [ClientServer/GameBox/UpdateThread---queue/INFO]: X: 3.0Y: 2.0
+[20:02:47] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to session/162.105.38.69:8438
+[20:02:47] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[20:02:47] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 03 f8 00 00 00 03 00 00 00 02 a8 fd 
+[20:02:47] [Client/GameBox/ActionThread/INFO]: nextX3.0nextY2.425352112676056
+[20:02:47] [AioModule/Read/Completed/DEBUG]: Received 22 bytes from session/162.105.38.69:8438
+[20:02:47] [AioModule/Read/Completed/DEBUG]: Received contents(22bytes): ff ff 00 00 00 16 00 0c 00 00 03 f8 00 00 00 03 00 00 00 02 84 7d 
+[20:02:47] [ClientServer/ClientDecoder/INFO]: Receive a package 000C(所有玩家坐标更新)
+[20:02:47] [ClientServer/ClientDecoder/INFO]: package 000C: /id: 1016/posX: 3/posY: 2
+[20:02:47] [ClientServer/GameBox/UpdateThread---queue/INFO]: X: 3.0Y: 2.0
+[20:02:49] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[20:02:49] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to session/162.105.38.69:8438
+[20:02:49] [Client/GameBox/ActionThread/INFO]: nextX3.0nextY2.425352112676056
+[20:02:49] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 03 f8 00 00 00 03 00 00 00 02 a8 fd 
+[20:02:49] [AioModule/Read/Completed/DEBUG]: Received 22 bytes from session/162.105.38.69:8438
+[20:02:49] [AioModule/Read/Completed/DEBUG]: Received contents(22bytes): ff ff 00 00 00 16 00 0c 00 00 03 f8 00 00 00 03 00 00 00 02 84 7d 
+[20:02:49] [ClientServer/ClientDecoder/INFO]: Receive a package 000C(所有玩家坐标更新)
+[20:02:49] [ClientServer/ClientDecoder/INFO]: package 000C: /id: 1016/posX: 3/posY: 2
+[20:02:49] [ClientServer/GameBox/UpdateThread---queue/INFO]: X: 3.0Y: 2.0
+[20:02:51] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to session/162.105.38.69:8438
+[20:02:51] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[20:02:51] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 03 f8 00 00 00 03 00 00 00 02 a8 fd 
+[20:02:51] [Client/GameBox/ActionThread/INFO]: nextX3.0nextY2.425352112676056
+[20:02:51] [AioModule/Read/Completed/DEBUG]: Received 22 bytes from session/162.105.38.69:8438
+[20:02:51] [AioModule/Read/Completed/DEBUG]: Received contents(22bytes): ff ff 00 00 00 16 00 0c 00 00 03 f8 00 00 00 03 00 00 00 02 84 7d 
+[20:02:51] [ClientServer/ClientDecoder/INFO]: Receive a package 000C(所有玩家坐标更新)
+[20:02:51] [ClientServer/ClientDecoder/INFO]: package 000C: /id: 1016/posX: 3/posY: 2
+[20:02:51] [ClientServer/GameBox/UpdateThread---queue/INFO]: X: 3.0Y: 2.0
+[20:02:53] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[20:02:53] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to session/162.105.38.69:8438
+[20:02:53] [Client/GameBox/ActionThread/INFO]: nextX3.0nextY2.425352112676056
+[20:02:53] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 03 f8 00 00 00 03 00 00 00 02 a8 fd 
+[20:02:53] [AioModule/Read/Completed/DEBUG]: Received 22 bytes from session/162.105.38.69:8438
+[20:02:53] [AioModule/Read/Completed/DEBUG]: Received contents(22bytes): ff ff 00 00 00 16 00 0c 00 00 03 f8 00 00 00 03 00 00 00 02 84 7d 
+[20:02:53] [ClientServer/ClientDecoder/INFO]: Receive a package 000C(所有玩家坐标更新)
+[20:02:53] [ClientServer/ClientDecoder/INFO]: package 000C: /id: 1016/posX: 3/posY: 2
+[20:02:53] [ClientServer/GameBox/UpdateThread---queue/INFO]: X: 3.0Y: 2.0
+[20:02:55] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[20:02:55] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to session/162.105.38.69:8438
+[20:02:55] [Client/GameBox/ActionThread/INFO]: nextX3.0nextY2.425352112676056
+[20:02:55] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 03 f8 00 00 00 03 00 00 00 02 a8 fd 
+[20:02:55] [AioModule/Read/Completed/DEBUG]: Received 22 bytes from session/162.105.38.69:8438
+[20:02:55] [AioModule/Read/Completed/DEBUG]: Received contents(22bytes): ff ff 00 00 00 16 00 0c 00 00 03 f8 00 00 00 03 00 00 00 02 84 7d 
+[20:02:55] [ClientServer/ClientDecoder/INFO]: Receive a package 000C(所有玩家坐标更新)
+[20:02:55] [ClientServer/ClientDecoder/INFO]: package 000C: /id: 1016/posX: 3/posY: 2
+[20:02:55] [ClientServer/GameBox/UpdateThread---queue/INFO]: X: 3.0Y: 2.0
+[20:02:57] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[20:02:57] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to session/162.105.38.69:8438
+[20:02:57] [Client/GameBox/ActionThread/INFO]: nextX3.0nextY2.425352112676056
+[20:02:57] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 03 f8 00 00 00 03 00 00 00 02 a8 fd 
+[20:02:57] [AioModule/Read/Completed/DEBUG]: Received 22 bytes from session/162.105.38.69:8438
+[20:02:57] [AioModule/Read/Completed/DEBUG]: Received contents(22bytes): ff ff 00 00 00 16 00 0c 00 00 03 f8 00 00 00 03 00 00 00 02 84 7d 
+[20:02:57] [ClientServer/ClientDecoder/INFO]: Receive a package 000C(所有玩家坐标更新)
+[20:02:57] [ClientServer/ClientDecoder/INFO]: package 000C: /id: 1016/posX: 3/posY: 2
+[20:02:57] [ClientServer/GameBox/UpdateThread---queue/INFO]: X: 3.0Y: 2.0
+[20:02:59] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[20:02:59] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to session/162.105.38.69:8438
+[20:02:59] [Client/GameBox/ActionThread/INFO]: nextX3.0nextY2.425352112676056
+[20:02:59] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 03 f8 00 00 00 03 00 00 00 02 a8 fd 
+[20:02:59] [AioModule/Read/Completed/DEBUG]: Received 22 bytes from session/162.105.38.69:8438
+[20:02:59] [AioModule/Read/Completed/DEBUG]: Received contents(22bytes): ff ff 00 00 00 16 00 0c 00 00 03 f8 00 00 00 03 00 00 00 02 84 7d 
+[20:02:59] [ClientServer/ClientDecoder/INFO]: Receive a package 000C(所有玩家坐标更新)
+[20:02:59] [ClientServer/ClientDecoder/INFO]: package 000C: /id: 1016/posX: 3/posY: 2
+[20:02:59] [ClientServer/GameBox/UpdateThread---queue/INFO]: X: 3.0Y: 2.0
+[20:03:00] [ClientServer/GameBox/mouseClick/INFO]: screenX1339.0screenY714.0
+[20:03:00] [ClientServer/GameBox/mouseClick/INFO]: middleX683.0middleY384.0
+[20:03:01] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[20:03:01] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to session/162.105.38.69:8438
+[20:03:01] [Client/GameBox/ActionThread/INFO]: nextX3.0nextY1.5091463414634148
+[20:03:01] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 03 f8 00 00 00 03 00 00 00 01 a8 fc 
+[20:03:01] [AioModule/Read/Completed/DEBUG]: Received 22 bytes from session/162.105.38.69:8438
+[20:03:01] [AioModule/Read/Completed/DEBUG]: Received contents(22bytes): ff ff 00 00 00 16 00 0c 00 00 03 f8 00 00 00 03 00 00 00 01 84 7c 
+[20:03:01] [ClientServer/ClientDecoder/INFO]: Receive a package 000C(所有玩家坐标更新)
+[20:03:01] [ClientServer/ClientDecoder/INFO]: package 000C: /id: 1016/posX: 3/posY: 1
+[20:03:01] [ClientServer/GameBox/UpdateThread---queue/INFO]: X: 3.0Y: 1.0
+[20:03:03] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[20:03:03] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to session/162.105.38.69:8438
+[20:03:03] [Client/GameBox/ActionThread/INFO]: nextX3.0nextY1.5091463414634148
+[20:03:03] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 03 f8 00 00 00 03 00 00 00 01 a8 fc 
+[20:03:03] [AioModule/Read/Completed/DEBUG]: Received 22 bytes from session/162.105.38.69:8438
+[20:03:03] [AioModule/Read/Completed/DEBUG]: Received contents(22bytes): ff ff 00 00 00 16 00 0c 00 00 03 f8 00 00 00 03 00 00 00 01 84 7c 
+[20:03:03] [ClientServer/ClientDecoder/INFO]: Receive a package 000C(所有玩家坐标更新)
+[20:03:03] [ClientServer/ClientDecoder/INFO]: package 000C: /id: 1016/posX: 3/posY: 1
+[20:03:03] [ClientServer/GameBox/UpdateThread---queue/INFO]: X: 3.0Y: 1.0
+[20:03:04] [ClientServer/GameBox/mouseClick/INFO]: screenX1312.0screenY699.0
+[20:03:04] [ClientServer/GameBox/mouseClick/INFO]: middleX683.0middleY384.0
+[20:03:04] [ClientServer/GameBox/mouseClick/INFO]: screenX1312.0screenY699.0
+[20:03:04] [ClientServer/GameBox/mouseClick/INFO]: middleX683.0middleY384.0
+[20:03:05] [ClientServer/GameBox/mouseClick/INFO]: screenX1312.0screenY699.0
+[20:03:05] [ClientServer/GameBox/mouseClick/INFO]: middleX683.0middleY384.0
+[20:03:05] [ClientServer/GameBox/mouseClick/INFO]: screenX1312.0screenY699.0
+[20:03:05] [ClientServer/GameBox/mouseClick/INFO]: middleX683.0middleY384.0
+[20:03:05] [ClientServer/GameBox/mouseClick/INFO]: screenX1312.0screenY699.0
+[20:03:05] [ClientServer/GameBox/mouseClick/INFO]: middleX683.0middleY384.0
+[20:03:05] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to session/162.105.38.69:8438
+[20:03:05] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[20:03:05] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 03 f8 00 00 00 03 00 00 00 01 a8 fc 
+[20:03:05] [Client/GameBox/ActionThread/INFO]: nextX3.0nextY1.5023847376788555
+[20:03:05] [AioModule/Read/Completed/DEBUG]: Received 22 bytes from session/162.105.38.69:8438
+[20:03:05] [AioModule/Read/Completed/DEBUG]: Received contents(22bytes): ff ff 00 00 00 16 00 0c 00 00 03 f8 00 00 00 03 00 00 00 01 84 7c 
+[20:03:05] [ClientServer/ClientDecoder/INFO]: Receive a package 000C(所有玩家坐标更新)
+[20:03:05] [ClientServer/ClientDecoder/INFO]: package 000C: /id: 1016/posX: 3/posY: 1
+[20:03:05] [ClientServer/GameBox/UpdateThread---queue/INFO]: X: 3.0Y: 1.0
+[20:03:07] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[20:03:07] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to session/162.105.38.69:8438
+[20:03:07] [Client/GameBox/ActionThread/INFO]: nextX3.0nextY1.5023847376788555
+[20:03:07] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 03 f8 00 00 00 03 00 00 00 01 a8 fc 
+[20:03:07] [AioModule/Read/Completed/DEBUG]: Received 22 bytes from session/162.105.38.69:8438
+[20:03:07] [AioModule/Read/Completed/DEBUG]: Received contents(22bytes): ff ff 00 00 00 16 00 0c 00 00 03 f8 00 00 00 03 00 00 00 01 84 7c 
+[20:03:07] [ClientServer/ClientDecoder/INFO]: Receive a package 000C(所有玩家坐标更新)
+[20:03:07] [ClientServer/ClientDecoder/INFO]: package 000C: /id: 1016/posX: 3/posY: 1
+[20:03:07] [ClientServer/GameBox/UpdateThread---queue/INFO]: X: 3.0Y: 1.0
+[20:03:09] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[20:03:09] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to session/162.105.38.69:8438
+[20:03:09] [Client/GameBox/ActionThread/INFO]: nextX3.0nextY1.5023847376788555
+[20:03:09] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 03 f8 00 00 00 03 00 00 00 01 a8 fc 
+[20:03:09] [AioModule/Read/Completed/DEBUG]: Received 22 bytes from session/162.105.38.69:8438
+[20:03:09] [AioModule/Read/Completed/DEBUG]: Received contents(22bytes): ff ff 00 00 00 16 00 0c 00 00 03 f8 00 00 00 03 00 00 00 01 84 7c 
+[20:03:09] [ClientServer/ClientDecoder/INFO]: Receive a package 000C(所有玩家坐标更新)
+[20:03:09] [ClientServer/ClientDecoder/INFO]: package 000C: /id: 1016/posX: 3/posY: 1
+[20:03:09] [ClientServer/GameBox/UpdateThread---queue/INFO]: X: 3.0Y: 1.0
+[20:03:11] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[20:03:11] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to session/162.105.38.69:8438
+[20:03:11] [Client/GameBox/ActionThread/INFO]: nextX3.0nextY1.5023847376788555
+[20:03:11] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 03 f8 00 00 00 03 00 00 00 01 a8 fc 
+[20:03:11] [AioModule/Read/Completed/DEBUG]: Received 22 bytes from session/162.105.38.69:8438
+[20:03:11] [AioModule/Read/Completed/DEBUG]: Received contents(22bytes): ff ff 00 00 00 16 00 0c 00 00 03 f8 00 00 00 03 00 00 00 01 84 7c 
+[20:03:11] [ClientServer/ClientDecoder/INFO]: Receive a package 000C(所有玩家坐标更新)
+[20:03:11] [ClientServer/ClientDecoder/INFO]: package 000C: /id: 1016/posX: 3/posY: 1
+[20:03:11] [ClientServer/GameBox/UpdateThread---queue/INFO]: X: 3.0Y: 1.0
+[20:03:13] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[20:03:13] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to session/162.105.38.69:8438
+[20:03:13] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 03 f8 00 00 00 03 00 00 00 01 a8 fc 
+[20:03:13] [Client/GameBox/ActionThread/INFO]: nextX3.0nextY1.5023847376788555
+[20:03:13] [AioModule/Read/Completed/DEBUG]: Received 22 bytes from session/162.105.38.69:8438
+[20:03:13] [AioModule/Read/Completed/DEBUG]: Received contents(22bytes): ff ff 00 00 00 16 00 0c 00 00 03 f8 00 00 00 03 00 00 00 01 84 7c 
+[20:03:13] [ClientServer/ClientDecoder/INFO]: Receive a package 000C(所有玩家坐标更新)
+[20:03:13] [ClientServer/ClientDecoder/INFO]: package 000C: /id: 1016/posX: 3/posY: 1
+[20:03:13] [ClientServer/GameBox/UpdateThread---queue/INFO]: X: 3.0Y: 1.0
+[20:03:15] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[20:03:15] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to session/162.105.38.69:8438
+[20:03:15] [Client/GameBox/ActionThread/INFO]: nextX3.0nextY1.5023847376788555
+[20:03:15] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 03 f8 00 00 00 03 00 00 00 01 a8 fc 
+[20:03:15] [AioModule/Read/Completed/DEBUG]: Received 22 bytes from session/162.105.38.69:8438
+[20:03:15] [AioModule/Read/Completed/DEBUG]: Received contents(22bytes): ff ff 00 00 00 16 00 0c 00 00 03 f8 00 00 00 03 00 00 00 01 84 7c 
+[20:03:15] [ClientServer/ClientDecoder/INFO]: Receive a package 000C(所有玩家坐标更新)
+[20:03:15] [ClientServer/ClientDecoder/INFO]: package 000C: /id: 1016/posX: 3/posY: 1
+[20:03:15] [ClientServer/GameBox/UpdateThread---queue/INFO]: X: 3.0Y: 1.0
+[20:03:16] [ClientServer/GameBox/mouseClick/INFO]: screenX1313.0screenY28.0
+[20:03:16] [ClientServer/GameBox/mouseClick/INFO]: middleX683.0middleY384.0
+[20:03:16] [ClientServer/GameBox/mouseClick/INFO]: screenX1313.0screenY28.0
+[20:03:16] [ClientServer/GameBox/mouseClick/INFO]: middleX683.0middleY384.0
+[20:03:16] [ClientServer/GameBox/mouseClick/INFO]: screenX1313.0screenY28.0
+[20:03:16] [ClientServer/GameBox/mouseClick/INFO]: middleX683.0middleY384.0
+[20:03:16] [ClientServer/GameBox/mouseClick/INFO]: screenX1313.0screenY28.0
+[20:03:16] [ClientServer/GameBox/mouseClick/INFO]: middleX683.0middleY384.0
+[20:03:16] [ClientServer/GameBox/mouseClick/INFO]: screenX1313.0screenY28.0
+[20:03:16] [ClientServer/GameBox/mouseClick/INFO]: middleX683.0middleY384.0
+[20:03:17] [ClientServer/GameBox/mouseClick/INFO]: screenX1313.0screenY28.0
+[20:03:17] [ClientServer/GameBox/mouseClick/INFO]: middleX683.0middleY384.0
+[20:03:17] [ClientServer/GameBox/mouseClick/INFO]: screenX1313.0screenY28.0
+[20:03:17] [ClientServer/GameBox/mouseClick/INFO]: middleX683.0middleY384.0
+[20:03:17] [ClientServer/GameBox/mouseClick/INFO]: screenX1313.0screenY28.0
+[20:03:17] [ClientServer/GameBox/mouseClick/INFO]: middleX683.0middleY384.0
+[20:03:17] [ClientServer/GameBox/mouseClick/INFO]: screenX1313.0screenY28.0
+[20:03:17] [ClientServer/GameBox/mouseClick/INFO]: middleX683.0middleY384.0
+[20:03:17] [ClientServer/GameBox/mouseClick/INFO]: screenX1313.0screenY28.0
+[20:03:17] [ClientServer/GameBox/mouseClick/INFO]: middleX683.0middleY384.0
+[20:03:17] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[20:03:17] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to session/162.105.38.69:8438
+[20:03:17] [Client/GameBox/ActionThread/INFO]: nextX3.0nextY-1.6952380952380952
+[20:03:17] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 03 f8 00 00 00 03 ff ff ff ff 8c b2 
+[20:03:17] [AioModule/Read/Completed/DEBUG]: Received 22 bytes from session/162.105.38.69:8438
+[20:03:17] [AioModule/Read/Completed/DEBUG]: Received contents(22bytes): ff ff 00 00 00 16 00 0c 00 00 03 f8 00 00 00 03 ff ff ff ff 68 32 
+[20:03:17] [ClientServer/ClientDecoder/INFO]: Receive a package 000C(所有玩家坐标更新)
+[20:03:17] [ClientServer/ClientDecoder/INFO]: package 000C: /id: 1016/posX: 3/posY: -1
+[20:03:17] [ClientServer/GameBox/UpdateThread---queue/INFO]: X: 3.0Y: -1.0
+[20:03:19] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[20:03:19] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to session/162.105.38.69:8438
+[20:03:19] [Client/GameBox/ActionThread/INFO]: nextX3.0nextY-1.6952380952380952
+[20:03:19] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 03 f8 00 00 00 03 ff ff ff ff 8c b2 
+[20:03:19] [AioModule/Read/Completed/DEBUG]: Received 22 bytes from session/162.105.38.69:8438
+[20:03:19] [AioModule/Read/Completed/DEBUG]: Received contents(22bytes): ff ff 00 00 00 16 00 0c 00 00 03 f8 00 00 00 03 ff ff ff ff 68 32 
+[20:03:19] [ClientServer/ClientDecoder/INFO]: Receive a package 000C(所有玩家坐标更新)
+[20:03:19] [ClientServer/ClientDecoder/INFO]: package 000C: /id: 1016/posX: 3/posY: -1
+[20:03:19] [ClientServer/GameBox/UpdateThread---queue/INFO]: X: 3.0Y: -1.0
+[20:03:21] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[20:03:21] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to session/162.105.38.69:8438
+[20:03:21] [Client/GameBox/ActionThread/INFO]: nextX3.0nextY-1.6952380952380952
+[20:03:21] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 03 f8 00 00 00 03 ff ff ff ff 8c b2 
+[20:03:21] [AioModule/Read/Completed/DEBUG]: Received 22 bytes from session/162.105.38.69:8438
+[20:03:21] [AioModule/Read/Completed/DEBUG]: Received contents(22bytes): ff ff 00 00 00 16 00 0c 00 00 03 f8 00 00 00 03 ff ff ff ff 68 32 
+[20:03:21] [ClientServer/ClientDecoder/INFO]: Receive a package 000C(所有玩家坐标更新)
+[20:03:21] [ClientServer/ClientDecoder/INFO]: package 000C: /id: 1016/posX: 3/posY: -1
+[20:03:21] [ClientServer/GameBox/UpdateThread---queue/INFO]: X: 3.0Y: -1.0
+[20:03:23] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[20:03:23] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to session/162.105.38.69:8438
+[20:03:23] [Client/GameBox/ActionThread/INFO]: nextX3.0nextY-1.6952380952380952
+[20:03:23] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 03 f8 00 00 00 03 ff ff ff ff 8c b2 
+[20:03:23] [AioModule/Read/Completed/DEBUG]: Received 22 bytes from session/162.105.38.69:8438
+[20:03:23] [AioModule/Read/Completed/DEBUG]: Received contents(22bytes): ff ff 00 00 00 16 00 0c 00 00 03 f8 00 00 00 03 ff ff ff ff 68 32 
+[20:03:23] [ClientServer/ClientDecoder/INFO]: Receive a package 000C(所有玩家坐标更新)
+[20:03:23] [ClientServer/ClientDecoder/INFO]: package 000C: /id: 1016/posX: 3/posY: -1
+[20:03:23] [ClientServer/GameBox/UpdateThread---queue/INFO]: X: 3.0Y: -1.0
+[20:03:25] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[20:03:25] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to session/162.105.38.69:8438
+[20:03:25] [Client/GameBox/ActionThread/INFO]: nextX3.0nextY-1.6952380952380952
+[20:03:25] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 03 f8 00 00 00 03 ff ff ff ff 8c b2 
+[20:03:25] [AioModule/Read/Completed/DEBUG]: Received 22 bytes from session/162.105.38.69:8438
+[20:03:25] [AioModule/Read/Completed/DEBUG]: Received contents(22bytes): ff ff 00 00 00 16 00 0c 00 00 03 f8 00 00 00 03 ff ff ff ff 68 32 
+[20:03:25] [ClientServer/ClientDecoder/INFO]: Receive a package 000C(所有玩家坐标更新)
+[20:03:25] [ClientServer/ClientDecoder/INFO]: package 000C: /id: 1016/posX: 3/posY: -1
+[20:03:25] [ClientServer/GameBox/UpdateThread---queue/INFO]: X: 3.0Y: -1.0
+[20:03:27] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[20:03:27] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to session/162.105.38.69:8438
+[20:03:27] [Client/GameBox/ActionThread/INFO]: nextX3.0nextY-1.6952380952380952
+[20:03:27] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 03 f8 00 00 00 03 ff ff ff ff 8c b2 
+[20:03:27] [AioModule/Read/Completed/DEBUG]: Received 22 bytes from session/162.105.38.69:8438
+[20:03:27] [AioModule/Read/Completed/DEBUG]: Received contents(22bytes): ff ff 00 00 00 16 00 0c 00 00 03 f8 00 00 00 03 ff ff ff ff 68 32 
+[20:03:27] [ClientServer/ClientDecoder/INFO]: Receive a package 000C(所有玩家坐标更新)
+[20:03:27] [ClientServer/ClientDecoder/INFO]: package 000C: /id: 1016/posX: 3/posY: -1
+[20:03:27] [ClientServer/GameBox/UpdateThread---queue/INFO]: X: 3.0Y: -1.0
+[20:03:29] [ClientServer/GameBox/mouseClick/INFO]: screenX21.0screenY23.0
+[20:03:29] [ClientServer/GameBox/mouseClick/INFO]: middleX683.0middleY384.0
+[20:03:29] [ClientServer/GameBox/mouseClick/INFO]: screenX21.0screenY23.0
+[20:03:29] [ClientServer/GameBox/mouseClick/INFO]: middleX683.0middleY384.0
+[20:03:29] [ClientServer/GameBox/mouseClick/INFO]: screenX21.0screenY23.0
+[20:03:29] [ClientServer/GameBox/mouseClick/INFO]: middleX683.0middleY384.0
+[20:03:29] [ClientServer/GameBox/mouseClick/INFO]: screenX21.0screenY23.0
+[20:03:29] [ClientServer/GameBox/mouseClick/INFO]: middleX683.0middleY384.0
+[20:03:29] [ClientServer/GameBox/mouseClick/INFO]: screenX21.0screenY23.0
+[20:03:29] [ClientServer/GameBox/mouseClick/INFO]: middleX683.0middleY384.0
+[20:03:29] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[20:03:29] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to session/162.105.38.69:8438
+[20:03:29] [Client/GameBox/ActionThread/INFO]: nextX5.501385041551247nextY3.0
+[20:03:29] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 03 f8 00 00 00 05 00 00 00 03 67 45 
+[20:03:29] [ClientServer/GameBox/mouseClick/INFO]: screenX21.0screenY23.0
+[20:03:29] [ClientServer/GameBox/mouseClick/INFO]: middleX683.0middleY384.0
+[20:03:29] [ClientServer/GameBox/mouseClick/INFO]: screenX21.0screenY23.0
+[20:03:29] [ClientServer/GameBox/mouseClick/INFO]: middleX683.0middleY384.0
+[20:03:29] [AioModule/Read/Completed/DEBUG]: Received 22 bytes from session/162.105.38.69:8438
+[20:03:29] [AioModule/Read/Completed/DEBUG]: Received contents(22bytes): ff ff 00 00 00 16 00 0c 00 00 03 f8 00 00 00 05 00 00 00 03 42 c5 
+[20:03:29] [ClientServer/ClientDecoder/INFO]: Receive a package 000C(所有玩家坐标更新)
+[20:03:29] [ClientServer/ClientDecoder/INFO]: package 000C: /id: 1016/posX: 5/posY: 3
+[20:03:29] [ClientServer/GameBox/UpdateThread---queue/INFO]: X: 5.0Y: 3.0
+[20:03:29] [ClientServer/GameBox/mouseClick/INFO]: screenX21.0screenY23.0
+[20:03:29] [ClientServer/GameBox/mouseClick/INFO]: middleX683.0middleY384.0
+[20:03:31] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[20:03:31] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to session/162.105.38.69:8438
+[20:03:31] [Client/GameBox/ActionThread/INFO]: nextX5.501385041551247nextY3.0
+[20:03:31] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 03 f8 00 00 00 05 00 00 00 03 67 45 
+[20:03:31] [AioModule/Read/Completed/DEBUG]: Received 22 bytes from session/162.105.38.69:8438
+[20:03:31] [AioModule/Read/Completed/DEBUG]: Received contents(22bytes): ff ff 00 00 00 16 00 0c 00 00 03 f8 00 00 00 05 00 00 00 03 42 c5 
+[20:03:31] [ClientServer/ClientDecoder/INFO]: Receive a package 000C(所有玩家坐标更新)
+[20:03:31] [ClientServer/ClientDecoder/INFO]: package 000C: /id: 1016/posX: 5/posY: 3
+[20:03:31] [ClientServer/GameBox/UpdateThread---queue/INFO]: X: 5.0Y: 3.0
+[20:03:33] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[20:03:33] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to session/162.105.38.69:8438
+[20:03:33] [Client/GameBox/ActionThread/INFO]: nextX5.501385041551247nextY3.0
+[20:03:33] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 03 f8 00 00 00 05 00 00 00 03 67 45 
+[20:03:33] [AioModule/Read/Completed/DEBUG]: Received 22 bytes from session/162.105.38.69:8438
+[20:03:33] [AioModule/Read/Completed/DEBUG]: Received contents(22bytes): ff ff 00 00 00 16 00 0c 00 00 03 f8 00 00 00 05 00 00 00 03 42 c5 
+[20:03:33] [ClientServer/ClientDecoder/INFO]: Receive a package 000C(所有玩家坐标更新)
+[20:03:33] [ClientServer/ClientDecoder/INFO]: package 000C: /id: 1016/posX: 5/posY: 3
+[20:03:33] [ClientServer/GameBox/UpdateThread---queue/INFO]: X: 5.0Y: 3.0
+[20:03:35] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[20:03:35] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to session/162.105.38.69:8438
+[20:03:35] [Client/GameBox/ActionThread/INFO]: nextX5.501385041551247nextY3.0
+[20:03:35] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 03 f8 00 00 00 05 00 00 00 03 67 45 
+[20:03:35] [AioModule/Read/Completed/DEBUG]: Received 22 bytes from session/162.105.38.69:8438
+[20:03:35] [AioModule/Read/Completed/DEBUG]: Received contents(22bytes): ff ff 00 00 00 16 00 0c 00 00 03 f8 00 00 00 05 00 00 00 03 42 c5 
+[20:03:35] [ClientServer/ClientDecoder/INFO]: Receive a package 000C(所有玩家坐标更新)
+[20:03:35] [ClientServer/ClientDecoder/INFO]: package 000C: /id: 1016/posX: 5/posY: 3
+[20:03:35] [ClientServer/GameBox/UpdateThread---queue/INFO]: X: 5.0Y: 3.0
+[20:03:37] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[20:03:37] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to session/162.105.38.69:8438
+[20:03:37] [Client/GameBox/ActionThread/INFO]: nextX5.501385041551247nextY3.0
+[20:03:37] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 03 f8 00 00 00 05 00 00 00 03 67 45 
+[20:03:37] [AioModule/Read/Completed/DEBUG]: Received 22 bytes from session/162.105.38.69:8438
+[20:03:37] [AioModule/Read/Completed/DEBUG]: Received contents(22bytes): ff ff 00 00 00 16 00 0c 00 00 03 f8 00 00 00 05 00 00 00 03 42 c5 
+[20:03:37] [ClientServer/ClientDecoder/INFO]: Receive a package 000C(所有玩家坐标更新)
+[20:03:37] [ClientServer/ClientDecoder/INFO]: package 000C: /id: 1016/posX: 5/posY: 3
+[20:03:37] [ClientServer/GameBox/UpdateThread---queue/INFO]: X: 5.0Y: 3.0
+[20:03:39] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[20:03:39] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to session/162.105.38.69:8438
+[20:03:39] [Client/GameBox/ActionThread/INFO]: nextX5.501385041551247nextY3.0
+[20:03:39] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 03 f8 00 00 00 05 00 00 00 03 67 45 
+[20:03:39] [AioModule/Read/Completed/DEBUG]: Received 22 bytes from session/162.105.38.69:8438
+[20:03:39] [AioModule/Read/Completed/DEBUG]: Received contents(22bytes): ff ff 00 00 00 16 00 0c 00 00 03 f8 00 00 00 05 00 00 00 03 42 c5 
+[20:03:39] [ClientServer/ClientDecoder/INFO]: Receive a package 000C(所有玩家坐标更新)
+[20:03:39] [ClientServer/ClientDecoder/INFO]: package 000C: /id: 1016/posX: 5/posY: 3
+[20:03:39] [ClientServer/GameBox/UpdateThread---queue/INFO]: X: 5.0Y: 3.0
+[20:03:41] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[20:03:41] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to session/162.105.38.69:8438
+[20:03:41] [Client/GameBox/ActionThread/INFO]: nextX5.501385041551247nextY3.0
+[20:03:41] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 03 f8 00 00 00 05 00 00 00 03 67 45 
+[20:03:41] [AioModule/Read/Completed/DEBUG]: Received 22 bytes from session/162.105.38.69:8438
+[20:03:41] [AioModule/Read/Completed/DEBUG]: Received contents(22bytes): ff ff 00 00 00 16 00 0c 00 00 03 f8 00 00 00 05 00 00 00 03 42 c5 
+[20:03:41] [ClientServer/ClientDecoder/INFO]: Receive a package 000C(所有玩家坐标更新)
+[20:03:41] [ClientServer/ClientDecoder/INFO]: package 000C: /id: 1016/posX: 5/posY: 3
+[20:03:41] [ClientServer/GameBox/UpdateThread---queue/INFO]: X: 5.0Y: 3.0
+[20:03:43] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[20:03:43] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to session/162.105.38.69:8438
+[20:03:43] [Client/GameBox/ActionThread/INFO]: nextX5.501385041551247nextY3.0
+[20:03:43] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 03 f8 00 00 00 05 00 00 00 03 67 45 
+[20:03:43] [AioModule/Read/Completed/DEBUG]: Received 22 bytes from session/162.105.38.69:8438
+[20:03:43] [AioModule/Read/Completed/DEBUG]: Received contents(22bytes): ff ff 00 00 00 16 00 0c 00 00 03 f8 00 00 00 05 00 00 00 03 42 c5 
+[20:03:43] [ClientServer/ClientDecoder/INFO]: Receive a package 000C(所有玩家坐标更新)
+[20:03:43] [ClientServer/ClientDecoder/INFO]: package 000C: /id: 1016/posX: 5/posY: 3
+[20:03:43] [ClientServer/GameBox/UpdateThread---queue/INFO]: X: 5.0Y: 3.0
+[20:03:45] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[20:03:45] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to session/162.105.38.69:8438
+[20:03:45] [Client/GameBox/ActionThread/INFO]: nextX5.501385041551247nextY3.0
+[20:03:45] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 03 f8 00 00 00 05 00 00 00 03 67 45 
+[20:03:45] [AioModule/Read/Completed/DEBUG]: Received 22 bytes from session/162.105.38.69:8438
+[20:03:45] [AioModule/Read/Completed/DEBUG]: Received contents(22bytes): ff ff 00 00 00 16 00 0c 00 00 03 f8 00 00 00 05 00 00 00 03 42 c5 
+[20:03:45] [ClientServer/ClientDecoder/INFO]: Receive a package 000C(所有玩家坐标更新)
+[20:03:45] [ClientServer/ClientDecoder/INFO]: package 000C: /id: 1016/posX: 5/posY: 3
+[20:03:45] [ClientServer/GameBox/UpdateThread---queue/INFO]: X: 5.0Y: 3.0
+[20:03:47] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[20:03:47] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to session/162.105.38.69:8438
+[20:03:47] [Client/GameBox/ActionThread/INFO]: nextX5.501385041551247nextY3.0
+[20:03:47] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 03 f8 00 00 00 05 00 00 00 03 67 45 
+[20:03:47] [AioModule/Read/Completed/DEBUG]: Received 22 bytes from session/162.105.38.69:8438
+[20:03:47] [AioModule/Read/Completed/DEBUG]: Received contents(22bytes): ff ff 00 00 00 16 00 0c 00 00 03 f8 00 00 00 05 00 00 00 03 42 c5 
+[20:03:47] [ClientServer/ClientDecoder/INFO]: Receive a package 000C(所有玩家坐标更新)
+[20:03:47] [ClientServer/ClientDecoder/INFO]: package 000C: /id: 1016/posX: 5/posY: 3
+[20:03:47] [ClientServer/GameBox/UpdateThread---queue/INFO]: X: 5.0Y: 3.0
+[20:03:49] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to session/162.105.38.69:8438
+[20:03:49] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[20:03:49] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 03 f8 00 00 00 05 00 00 00 03 67 45 
+[20:03:49] [Client/GameBox/ActionThread/INFO]: nextX5.501385041551247nextY3.0
+[20:03:50] [AioModule/Read/Completed/DEBUG]: Received 22 bytes from session/162.105.38.69:8438
+[20:03:50] [AioModule/Read/Completed/DEBUG]: Received contents(22bytes): ff ff 00 00 00 16 00 0c 00 00 03 f8 00 00 00 05 00 00 00 03 42 c5 
+[20:03:50] [ClientServer/ClientDecoder/INFO]: Receive a package 000C(所有玩家坐标更新)
+[20:03:50] [ClientServer/ClientDecoder/INFO]: package 000C: /id: 1016/posX: 5/posY: 3
+[20:03:50] [ClientServer/GameBox/UpdateThread---queue/INFO]: X: 5.0Y: 3.0
+[20:03:51] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[20:03:51] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to session/162.105.38.69:8438
+[20:03:51] [Client/GameBox/ActionThread/INFO]: nextX5.501385041551247nextY3.0
+[20:03:51] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 03 f8 00 00 00 05 00 00 00 03 67 45 
+[20:03:52] [AioModule/Read/Completed/DEBUG]: Received 22 bytes from session/162.105.38.69:8438
+[20:03:52] [AioModule/Read/Completed/DEBUG]: Received contents(22bytes): ff ff 00 00 00 16 00 0c 00 00 03 f8 00 00 00 05 00 00 00 03 42 c5 
+[20:03:52] [ClientServer/ClientDecoder/INFO]: Receive a package 000C(所有玩家坐标更新)
+[20:03:52] [ClientServer/ClientDecoder/INFO]: package 000C: /id: 1016/posX: 5/posY: 3
+[20:03:52] [ClientServer/GameBox/UpdateThread---queue/INFO]: X: 5.0Y: 3.0
+[20:03:53] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[20:03:53] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to session/162.105.38.69:8438
+[20:03:53] [Client/GameBox/ActionThread/INFO]: nextX5.501385041551247nextY3.0
+[20:03:53] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 03 f8 00 00 00 05 00 00 00 03 67 45 
+[20:03:54] [AioModule/Read/Completed/DEBUG]: Received 22 bytes from session/162.105.38.69:8438
+[20:03:54] [AioModule/Read/Completed/DEBUG]: Received contents(22bytes): ff ff 00 00 00 16 00 0c 00 00 03 f8 00 00 00 05 00 00 00 03 42 c5 
+[20:03:54] [ClientServer/ClientDecoder/INFO]: Receive a package 000C(所有玩家坐标更新)
+[20:03:54] [ClientServer/ClientDecoder/INFO]: package 000C: /id: 1016/posX: 5/posY: 3
+[20:03:54] [ClientServer/GameBox/UpdateThread---queue/INFO]: X: 5.0Y: 3.0
+[20:03:55] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[20:03:55] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to session/162.105.38.69:8438
+[20:03:55] [Client/GameBox/ActionThread/INFO]: nextX5.501385041551247nextY3.0
+[20:03:55] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 03 f8 00 00 00 05 00 00 00 03 67 45 
+[20:03:56] [AioModule/Read/Completed/DEBUG]: Received 22 bytes from session/162.105.38.69:8438
+[20:03:56] [AioModule/Read/Completed/DEBUG]: Received contents(22bytes): ff ff 00 00 00 16 00 0c 00 00 03 f8 00 00 00 05 00 00 00 03 42 c5 
+[20:03:56] [ClientServer/ClientDecoder/INFO]: Receive a package 000C(所有玩家坐标更新)
+[20:03:56] [ClientServer/ClientDecoder/INFO]: package 000C: /id: 1016/posX: 5/posY: 3
+[20:03:56] [ClientServer/GameBox/UpdateThread---queue/INFO]: X: 5.0Y: 3.0
+[20:03:57] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[20:03:57] [Client/GameBox/ActionThread/INFO]: nextX5.501385041551247nextY3.0
+[20:03:57] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to session/162.105.38.69:8438
+[20:03:57] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 03 f8 00 00 00 05 00 00 00 03 67 45 
+[20:03:58] [AioModule/Read/Completed/DEBUG]: Received 22 bytes from session/162.105.38.69:8438
+[20:03:58] [AioModule/Read/Completed/DEBUG]: Received contents(22bytes): ff ff 00 00 00 16 00 0c 00 00 03 f8 00 00 00 05 00 00 00 03 42 c5 
+[20:03:58] [ClientServer/ClientDecoder/INFO]: Receive a package 000C(所有玩家坐标更新)
+[20:03:58] [ClientServer/ClientDecoder/INFO]: package 000C: /id: 1016/posX: 5/posY: 3
+[20:03:58] [ClientServer/GameBox/UpdateThread---queue/INFO]: X: 5.0Y: 3.0
+[20:03:59] [ClientServer/GameBox/mouseClick/INFO]: screenX1328.0screenY687.0
+[20:03:59] [ClientServer/GameBox/mouseClick/INFO]: middleX683.0middleY384.0
+[20:03:59] [ClientServer/GameBox/mouseClick/INFO]: screenX1328.0screenY687.0
+[20:03:59] [ClientServer/GameBox/mouseClick/INFO]: middleX683.0middleY384.0
+[20:03:59] [ClientServer/GameBox/mouseClick/INFO]: screenX1328.0screenY687.0
+[20:03:59] [ClientServer/GameBox/mouseClick/INFO]: middleX683.0middleY384.0
+[20:03:59] [ClientServer/GameBox/mouseClick/INFO]: screenX1350.0screenY582.0
+[20:03:59] [ClientServer/GameBox/mouseClick/INFO]: middleX683.0middleY384.0
+[20:03:59] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to session/162.105.38.69:8438
+[20:03:59] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[20:03:59] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 03 f8 00 00 00 03 00 00 00 00 a8 fb 
+[20:03:59] [Client/GameBox/ActionThread/INFO]: nextX3.0nextY0.8905547226386806
+[20:03:59] [ClientServer/GameBox/mouseClick/INFO]: screenX1350.0screenY582.0
+[20:03:59] [ClientServer/GameBox/mouseClick/INFO]: middleX683.0middleY384.0
+[20:04:00] [AioModule/Read/Completed/DEBUG]: Received 22 bytes from session/162.105.38.69:8438
+[20:04:00] [AioModule/Read/Completed/DEBUG]: Received contents(22bytes): ff ff 00 00 00 16 00 0c 00 00 03 f8 00 00 00 03 00 00 00 00 84 7b 
+[20:04:00] [ClientServer/ClientDecoder/INFO]: Receive a package 000C(所有玩家坐标更新)
+[20:04:00] [ClientServer/ClientDecoder/INFO]: package 000C: /id: 1016/posX: 3/posY: 0
+[20:04:00] [ClientServer/GameBox/UpdateThread---queue/INFO]: X: 3.0Y: 0.0
+[20:04:00] [ClientServer/GameBox/mouseClick/INFO]: screenX1350.0screenY582.0
+[20:04:00] [ClientServer/GameBox/mouseClick/INFO]: middleX683.0middleY384.0
+[20:04:00] [ClientServer/GameBox/mouseClick/INFO]: screenX1350.0screenY582.0
+[20:04:00] [ClientServer/GameBox/mouseClick/INFO]: middleX683.0middleY384.0
+[20:04:00] [ClientServer/GameBox/mouseClick/INFO]: screenX1350.0screenY582.0
+[20:04:00] [ClientServer/GameBox/mouseClick/INFO]: middleX683.0middleY384.0
+[20:04:00] [ClientServer/GameBox/mouseClick/INFO]: screenX1350.0screenY582.0
+[20:04:00] [ClientServer/GameBox/mouseClick/INFO]: middleX683.0middleY384.0
+[20:04:00] [ClientServer/GameBox/mouseClick/INFO]: screenX1350.0screenY582.0
+[20:04:00] [ClientServer/GameBox/mouseClick/INFO]: middleX683.0middleY384.0
+[20:04:00] [ClientServer/GameBox/mouseClick/INFO]: screenX1350.0screenY582.0
+[20:04:00] [ClientServer/GameBox/mouseClick/INFO]: middleX683.0middleY384.0
+[20:04:00] [ClientServer/GameBox/mouseClick/INFO]: screenX1350.0screenY582.0
+[20:04:00] [ClientServer/GameBox/mouseClick/INFO]: middleX683.0middleY384.0
+[20:04:01] [ClientServer/GameBox/mouseClick/INFO]: screenX1350.0screenY582.0
+[20:04:01] [ClientServer/GameBox/mouseClick/INFO]: middleX683.0middleY384.0
+[20:04:01] [ClientServer/GameBox/mouseClick/INFO]: screenX1350.0screenY582.0
+[20:04:01] [ClientServer/GameBox/mouseClick/INFO]: middleX683.0middleY384.0
+[20:04:01] [ClientServer/GameBox/mouseClick/INFO]: screenX1350.0screenY582.0
+[20:04:01] [ClientServer/GameBox/mouseClick/INFO]: middleX683.0middleY384.0
+[20:04:01] [ClientServer/GameBox/mouseClick/INFO]: screenX1350.0screenY582.0
+[20:04:01] [ClientServer/GameBox/mouseClick/INFO]: middleX683.0middleY384.0
+[20:04:01] [ClientServer/GameBox/mouseClick/INFO]: screenX1350.0screenY582.0
+[20:04:01] [ClientServer/GameBox/mouseClick/INFO]: middleX683.0middleY384.0
+[20:04:01] [ClientServer/GameBox/mouseClick/INFO]: screenX1350.0screenY582.0
+[20:04:01] [ClientServer/GameBox/mouseClick/INFO]: middleX683.0middleY384.0
+[20:04:01] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[20:04:01] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to session/162.105.38.69:8438
+[20:04:01] [Client/GameBox/ActionThread/INFO]: nextX3.0nextY0.8905547226386806
+[20:04:01] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 03 f8 00 00 00 03 00 00 00 00 a8 fb 
+[20:04:02] [AioModule/Read/Completed/DEBUG]: Received 22 bytes from session/162.105.38.69:8438
+[20:04:02] [AioModule/Read/Completed/DEBUG]: Received contents(22bytes): ff ff 00 00 00 16 00 0c 00 00 03 f8 00 00 00 03 00 00 00 00 84 7b 
+[20:04:02] [ClientServer/ClientDecoder/INFO]: Receive a package 000C(所有玩家坐标更新)
+[20:04:02] [ClientServer/ClientDecoder/INFO]: package 000C: /id: 1016/posX: 3/posY: 0
+[20:04:02] [ClientServer/GameBox/UpdateThread---queue/INFO]: X: 3.0Y: 0.0
+[20:04:02] [ClientServer/GameBox/mouseClick/INFO]: screenX88.0screenY440.0
+[20:04:02] [ClientServer/GameBox/mouseClick/INFO]: middleX683.0middleY384.0
+[20:04:02] [ClientServer/GameBox/mouseClick/INFO]: screenX88.0screenY440.0
+[20:04:02] [ClientServer/GameBox/mouseClick/INFO]: middleX683.0middleY384.0
+[20:04:02] [ClientServer/GameBox/mouseClick/INFO]: screenX88.0screenY440.0
+[20:04:02] [ClientServer/GameBox/mouseClick/INFO]: middleX683.0middleY384.0
+[20:04:02] [ClientServer/GameBox/mouseClick/INFO]: screenX88.0screenY440.0
+[20:04:02] [ClientServer/GameBox/mouseClick/INFO]: middleX683.0middleY384.0
+[20:04:02] [ClientServer/GameBox/mouseClick/INFO]: screenX88.0screenY440.0
+[20:04:02] [ClientServer/GameBox/mouseClick/INFO]: middleX683.0middleY384.0
+[20:04:03] [ClientServer/GameBox/mouseClick/INFO]: screenX88.0screenY440.0
+[20:04:03] [ClientServer/GameBox/mouseClick/INFO]: middleX683.0middleY384.0
+[20:04:03] [ClientServer/GameBox/mouseClick/INFO]: screenX88.0screenY440.0
+[20:04:03] [ClientServer/GameBox/mouseClick/INFO]: middleX683.0middleY384.0
+[20:04:03] [ClientServer/GameBox/mouseClick/INFO]: screenX1289.0screenY439.0
+[20:04:03] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to session/162.105.38.69:8438
+[20:04:03] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[20:04:03] [ClientServer/GameBox/mouseClick/INFO]: middleX683.0middleY384.0
+[20:04:03] [Client/GameBox/ActionThread/INFO]: nextX3.0nextY0.2722772277227723
+[20:04:03] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 03 f8 00 00 00 03 00 00 00 00 a8 fb 
+[20:04:03] [ClientServer/GameBox/mouseClick/INFO]: screenX1311.0screenY442.0
+[20:04:04] [ClientServer/GameBox/mouseClick/INFO]: middleX683.0middleY384.0
+[20:04:04] [AioModule/Read/Completed/DEBUG]: Received 22 bytes from session/162.105.38.69:8438
+[20:04:04] [AioModule/Read/Completed/DEBUG]: Received contents(22bytes): ff ff 00 00 00 16 00 0c 00 00 03 f8 00 00 00 03 00 00 00 00 84 7b 
+[20:04:04] [ClientServer/ClientDecoder/INFO]: Receive a package 000C(所有玩家坐标更新)
+[20:04:04] [ClientServer/ClientDecoder/INFO]: package 000C: /id: 1016/posX: 3/posY: 0
+[20:04:04] [ClientServer/GameBox/UpdateThread---queue/INFO]: X: 3.0Y: 0.0
+[20:04:04] [ClientServer/GameBox/mouseClick/INFO]: screenX1311.0screenY442.0
+[20:04:04] [ClientServer/GameBox/mouseClick/INFO]: middleX683.0middleY384.0
+[20:04:04] [ClientServer/GameBox/mouseClick/INFO]: screenX1311.0screenY442.0
+[20:04:04] [ClientServer/GameBox/mouseClick/INFO]: middleX683.0middleY384.0
+[20:04:04] [ClientServer/GameBox/mouseClick/INFO]: screenX1311.0screenY442.0
+[20:04:04] [ClientServer/GameBox/mouseClick/INFO]: middleX683.0middleY384.0
+[20:04:04] [ClientServer/GameBox/mouseClick/INFO]: screenX1311.0screenY442.0
+[20:04:04] [ClientServer/GameBox/mouseClick/INFO]: middleX683.0middleY384.0
+[20:04:04] [ClientServer/GameBox/mouseClick/INFO]: screenX1311.0screenY442.0
+[20:04:04] [ClientServer/GameBox/mouseClick/INFO]: middleX683.0middleY384.0
+[20:04:04] [ClientServer/GameBox/mouseClick/INFO]: screenX1311.0screenY442.0
+[20:04:04] [ClientServer/GameBox/mouseClick/INFO]: middleX683.0middleY384.0
+[20:04:05] [ClientServer/GameBox/mouseClick/INFO]: screenX1311.0screenY442.0
+[20:04:05] [ClientServer/GameBox/mouseClick/INFO]: middleX683.0middleY384.0
+[20:04:05] [ClientServer/GameBox/mouseClick/INFO]: screenX1311.0screenY442.0
+[20:04:05] [ClientServer/GameBox/mouseClick/INFO]: middleX683.0middleY384.0
+[20:04:05] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[20:04:05] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to session/162.105.38.69:8438
+[20:04:05] [Client/GameBox/ActionThread/INFO]: nextX3.0nextY0.2770700636942675
+[20:04:05] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 03 f8 00 00 00 03 00 00 00 00 a8 fb 
+[20:04:06] [AioModule/Read/Completed/DEBUG]: Received 22 bytes from session/162.105.38.69:8438
+[20:04:06] [AioModule/Read/Completed/DEBUG]: Received contents(22bytes): ff ff 00 00 00 16 00 0c 00 00 03 f8 00 00 00 03 00 00 00 00 84 7b 
+[20:04:06] [ClientServer/ClientDecoder/INFO]: Receive a package 000C(所有玩家坐标更新)
+[20:04:06] [ClientServer/ClientDecoder/INFO]: package 000C: /id: 1016/posX: 3/posY: 0
+[20:04:06] [ClientServer/GameBox/UpdateThread---queue/INFO]: X: 3.0Y: 0.0
+[20:04:07] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[20:04:07] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to session/162.105.38.69:8438
+[20:04:07] [Client/GameBox/ActionThread/INFO]: nextX3.0nextY0.2770700636942675
+[20:04:07] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 03 f8 00 00 00 03 00 00 00 00 a8 fb 
+[20:04:08] [AioModule/Read/Completed/DEBUG]: Received 22 bytes from session/162.105.38.69:8438
+[20:04:08] [AioModule/Read/Completed/DEBUG]: Received contents(22bytes): ff ff 00 00 00 16 00 0c 00 00 03 f8 00 00 00 03 00 00 00 00 84 7b 
+[20:04:08] [ClientServer/ClientDecoder/INFO]: Receive a package 000C(所有玩家坐标更新)
+[20:04:08] [ClientServer/ClientDecoder/INFO]: package 000C: /id: 1016/posX: 3/posY: 0
+[20:04:08] [ClientServer/GameBox/UpdateThread---queue/INFO]: X: 3.0Y: 0.0
+[20:04:08] [ClientServer/GameBox/mouseClick/INFO]: screenX1311.0screenY442.0
+[20:04:08] [ClientServer/GameBox/mouseClick/INFO]: middleX683.0middleY384.0
+[20:04:08] [ClientServer/GameBox/mouseClick/INFO]: screenX1311.0screenY442.0
+[20:04:08] [ClientServer/GameBox/mouseClick/INFO]: middleX683.0middleY384.0
+[20:04:08] [ClientServer/GameBox/mouseClick/INFO]: screenX1311.0screenY442.0
+[20:04:08] [ClientServer/GameBox/mouseClick/INFO]: middleX683.0middleY384.0
+[20:04:09] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[20:04:09] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to session/162.105.38.69:8438
+[20:04:09] [Client/GameBox/ActionThread/INFO]: nextX3.0nextY0.2770700636942675
+[20:04:09] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 03 f8 00 00 00 03 00 00 00 00 a8 fb 
+[20:04:10] [AioModule/Read/Completed/DEBUG]: Received 22 bytes from session/162.105.38.69:8438
+[20:04:10] [AioModule/Read/Completed/DEBUG]: Received contents(22bytes): ff ff 00 00 00 16 00 0c 00 00 03 f8 00 00 00 03 00 00 00 00 84 7b 
+[20:04:10] [ClientServer/ClientDecoder/INFO]: Receive a package 000C(所有玩家坐标更新)
+[20:04:10] [ClientServer/ClientDecoder/INFO]: package 000C: /id: 1016/posX: 3/posY: 0
+[20:04:10] [ClientServer/GameBox/UpdateThread---queue/INFO]: X: 3.0Y: 0.0
+[20:04:11] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[20:04:11] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to session/162.105.38.69:8438
+[20:04:11] [Client/GameBox/ActionThread/INFO]: nextX3.0nextY0.2770700636942675
+[20:04:11] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 03 f8 00 00 00 03 00 00 00 00 a8 fb 
+[20:04:12] [AioModule/Read/Completed/DEBUG]: Received 22 bytes from session/162.105.38.69:8438
+[20:04:12] [AioModule/Read/Completed/DEBUG]: Received contents(22bytes): ff ff 00 00 00 16 00 0c 00 00 03 f8 00 00 00 03 00 00 00 00 84 7b 
+[20:04:12] [ClientServer/ClientDecoder/INFO]: Receive a package 000C(所有玩家坐标更新)
+[20:04:12] [ClientServer/ClientDecoder/INFO]: package 000C: /id: 1016/posX: 3/posY: 0
+[20:04:12] [ClientServer/GameBox/UpdateThread---queue/INFO]: X: 3.0Y: 0.0
+[20:04:13] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[20:04:13] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to session/162.105.38.69:8438
+[20:04:13] [Client/GameBox/ActionThread/INFO]: nextX3.0nextY0.2770700636942675
+[20:04:13] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 03 f8 00 00 00 03 00 00 00 00 a8 fb 
+[20:04:14] [AioModule/Read/Completed/DEBUG]: Received 22 bytes from session/162.105.38.69:8438
+[20:04:14] [AioModule/Read/Completed/DEBUG]: Received contents(22bytes): ff ff 00 00 00 16 00 0c 00 00 03 f8 00 00 00 03 00 00 00 00 84 7b 
+[20:04:14] [ClientServer/ClientDecoder/INFO]: Receive a package 000C(所有玩家坐标更新)
+[20:04:14] [ClientServer/ClientDecoder/INFO]: package 000C: /id: 1016/posX: 3/posY: 0
+[20:04:14] [ClientServer/GameBox/UpdateThread---queue/INFO]: X: 3.0Y: 0.0
+[20:04:15] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to session/162.105.38.69:8438
+[20:04:15] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[20:04:15] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 03 f8 00 00 00 03 00 00 00 00 a8 fb 
+[20:04:15] [Client/GameBox/ActionThread/INFO]: nextX3.0nextY0.2770700636942675
+[20:04:16] [AioModule/Read/Completed/DEBUG]: Received 22 bytes from session/162.105.38.69:8438
+[20:04:16] [AioModule/Read/Completed/DEBUG]: Received contents(22bytes): ff ff 00 00 00 16 00 0c 00 00 03 f8 00 00 00 03 00 00 00 00 84 7b 
+[20:04:16] [ClientServer/ClientDecoder/INFO]: Receive a package 000C(所有玩家坐标更新)
+[20:04:16] [ClientServer/ClientDecoder/INFO]: package 000C: /id: 1016/posX: 3/posY: 0
+[20:04:16] [ClientServer/GameBox/UpdateThread---queue/INFO]: X: 3.0Y: 0.0
+[20:04:17] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[20:04:17] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to session/162.105.38.69:8438
+[20:04:17] [Client/GameBox/ActionThread/INFO]: nextX3.0nextY0.2770700636942675
+[20:04:17] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 03 f8 00 00 00 03 00 00 00 00 a8 fb 
+[20:04:18] [AioModule/Read/Completed/DEBUG]: Received 22 bytes from session/162.105.38.69:8438
+[20:04:18] [AioModule/Read/Completed/DEBUG]: Received contents(22bytes): ff ff 00 00 00 16 00 0c 00 00 03 f8 00 00 00 03 00 00 00 00 84 7b 
+[20:04:18] [ClientServer/ClientDecoder/INFO]: Receive a package 000C(所有玩家坐标更新)
+[20:04:18] [ClientServer/ClientDecoder/INFO]: package 000C: /id: 1016/posX: 3/posY: 0
+[20:04:18] [ClientServer/GameBox/UpdateThread---queue/INFO]: X: 3.0Y: 0.0
+[20:04:19] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[20:04:19] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to session/162.105.38.69:8438
+[20:04:19] [Client/GameBox/ActionThread/INFO]: nextX3.0nextY0.2770700636942675
+[20:04:19] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 03 f8 00 00 00 03 00 00 00 00 a8 fb 
+[20:04:20] [AioModule/Read/Completed/DEBUG]: Received 22 bytes from session/162.105.38.69:8438
+[20:04:20] [AioModule/Read/Completed/DEBUG]: Received contents(22bytes): ff ff 00 00 00 16 00 0c 00 00 03 f8 00 00 00 03 00 00 00 00 84 7b 
+[20:04:20] [ClientServer/ClientDecoder/INFO]: Receive a package 000C(所有玩家坐标更新)
+[20:04:20] [ClientServer/ClientDecoder/INFO]: package 000C: /id: 1016/posX: 3/posY: 0
+[20:04:20] [ClientServer/GameBox/UpdateThread---queue/INFO]: X: 3.0Y: 0.0
+[20:04:21] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[20:04:21] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to session/162.105.38.69:8438
+[20:04:21] [Client/GameBox/ActionThread/INFO]: nextX3.0nextY0.2770700636942675
+[20:04:21] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 03 f8 00 00 00 03 00 00 00 00 a8 fb 
+[20:04:22] [AioModule/Read/Completed/DEBUG]: Received 22 bytes from session/162.105.38.69:8438
+[20:04:22] [AioModule/Read/Completed/DEBUG]: Received contents(22bytes): ff ff 00 00 00 16 00 0c 00 00 03 f8 00 00 00 03 00 00 00 00 84 7b 
+[20:04:22] [ClientServer/ClientDecoder/INFO]: Receive a package 000C(所有玩家坐标更新)
+[20:04:22] [ClientServer/ClientDecoder/INFO]: package 000C: /id: 1016/posX: 3/posY: 0
+[20:04:22] [ClientServer/GameBox/UpdateThread---queue/INFO]: X: 3.0Y: 0.0
+[20:04:23] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[20:04:23] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to session/162.105.38.69:8438
+[20:04:23] [Client/GameBox/ActionThread/INFO]: nextX3.0nextY0.2770700636942675
+[20:04:23] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 03 f8 00 00 00 03 00 00 00 00 a8 fb 
+[20:04:24] [AioModule/Read/Completed/DEBUG]: Received 22 bytes from session/162.105.38.69:8438
+[20:04:24] [AioModule/Read/Completed/DEBUG]: Received contents(22bytes): ff ff 00 00 00 16 00 0c 00 00 03 f8 00 00 00 03 00 00 00 00 84 7b 
+[20:04:24] [ClientServer/ClientDecoder/INFO]: Receive a package 000C(所有玩家坐标更新)
+[20:04:24] [ClientServer/ClientDecoder/INFO]: package 000C: /id: 1016/posX: 3/posY: 0
+[20:04:24] [ClientServer/GameBox/UpdateThread---queue/INFO]: X: 3.0Y: 0.0
+[20:04:25] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[20:04:25] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to session/162.105.38.69:8438
+[20:04:25] [Client/GameBox/ActionThread/INFO]: nextX3.0nextY0.2770700636942675
+[20:04:25] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 03 f8 00 00 00 03 00 00 00 00 a8 fb 
+[20:04:26] [AioModule/Read/Completed/DEBUG]: Received 22 bytes from session/162.105.38.69:8438
+[20:04:26] [AioModule/Read/Completed/DEBUG]: Received contents(22bytes): ff ff 00 00 00 16 00 0c 00 00 03 f8 00 00 00 03 00 00 00 00 84 7b 
+[20:04:26] [ClientServer/ClientDecoder/INFO]: Receive a package 000C(所有玩家坐标更新)
+[20:04:26] [ClientServer/ClientDecoder/INFO]: package 000C: /id: 1016/posX: 3/posY: 0
+[20:04:26] [ClientServer/GameBox/UpdateThread---queue/INFO]: X: 3.0Y: 0.0
+[20:04:27] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[20:04:27] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to session/162.105.38.69:8438
+[20:04:27] [Client/GameBox/ActionThread/INFO]: nextX3.0nextY0.2770700636942675
+[20:04:27] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 03 f8 00 00 00 03 00 00 00 00 a8 fb 
+[20:04:28] [AioModule/Read/Completed/DEBUG]: Received 22 bytes from session/162.105.38.69:8438
+[20:04:28] [AioModule/Read/Completed/DEBUG]: Received contents(22bytes): ff ff 00 00 00 16 00 0c 00 00 03 f8 00 00 00 03 00 00 00 00 84 7b 
+[20:04:28] [ClientServer/ClientDecoder/INFO]: Receive a package 000C(所有玩家坐标更新)
+[20:04:28] [ClientServer/ClientDecoder/INFO]: package 000C: /id: 1016/posX: 3/posY: 0
+[20:04:28] [ClientServer/GameBox/UpdateThread---queue/INFO]: X: 3.0Y: 0.0
+[20:04:29] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[20:04:29] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to session/162.105.38.69:8438
+[20:04:29] [Client/GameBox/ActionThread/INFO]: nextX3.0nextY0.2770700636942675
+[20:04:29] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 03 f8 00 00 00 03 00 00 00 00 a8 fb 
+[20:04:30] [AioModule/Read/Completed/DEBUG]: Received 22 bytes from session/162.105.38.69:8438
+[20:04:30] [AioModule/Read/Completed/DEBUG]: Received contents(22bytes): ff ff 00 00 00 16 00 0c 00 00 03 f8 00 00 00 03 00 00 00 00 84 7b 
+[20:04:30] [ClientServer/ClientDecoder/INFO]: Receive a package 000C(所有玩家坐标更新)
+[20:04:30] [ClientServer/ClientDecoder/INFO]: package 000C: /id: 1016/posX: 3/posY: 0
+[20:04:30] [ClientServer/GameBox/UpdateThread---queue/INFO]: X: 3.0Y: 0.0
+[20:04:31] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[20:04:31] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to session/162.105.38.69:8438
+[20:04:31] [Client/GameBox/ActionThread/INFO]: nextX3.0nextY0.2770700636942675
+[20:04:31] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 03 f8 00 00 00 03 00 00 00 00 a8 fb 
+[20:04:32] [AioModule/Read/Completed/DEBUG]: Received 22 bytes from session/162.105.38.69:8438
+[20:04:32] [AioModule/Read/Completed/DEBUG]: Received contents(22bytes): ff ff 00 00 00 16 00 0c 00 00 03 f8 00 00 00 03 00 00 00 00 84 7b 
+[20:04:32] [ClientServer/ClientDecoder/INFO]: Receive a package 000C(所有玩家坐标更新)
+[20:04:32] [ClientServer/ClientDecoder/INFO]: package 000C: /id: 1016/posX: 3/posY: 0
+[20:04:32] [ClientServer/GameBox/UpdateThread---queue/INFO]: X: 3.0Y: 0.0
+[20:04:33] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to session/162.105.38.69:8438
+[20:04:33] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[20:04:33] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 03 f8 00 00 00 03 00 00 00 00 a8 fb 
+[20:04:33] [Client/GameBox/ActionThread/INFO]: nextX3.0nextY0.2770700636942675
+[20:04:34] [AioModule/Read/Completed/DEBUG]: Received 22 bytes from session/162.105.38.69:8438
+[20:04:34] [AioModule/Read/Completed/DEBUG]: Received contents(22bytes): ff ff 00 00 00 16 00 0c 00 00 03 f8 00 00 00 03 00 00 00 00 84 7b 
+[20:04:34] [ClientServer/ClientDecoder/INFO]: Receive a package 000C(所有玩家坐标更新)
+[20:04:34] [ClientServer/ClientDecoder/INFO]: package 000C: /id: 1016/posX: 3/posY: 0
+[20:04:34] [ClientServer/GameBox/UpdateThread---queue/INFO]: X: 3.0Y: 0.0
+[20:04:35] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[20:04:35] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to session/162.105.38.69:8438
+[20:04:35] [Client/GameBox/ActionThread/INFO]: nextX3.0nextY0.2770700636942675
+[20:04:35] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 03 f8 00 00 00 03 00 00 00 00 a8 fb 
+[20:04:36] [AioModule/Read/Completed/DEBUG]: Received 22 bytes from session/162.105.38.69:8438
+[20:04:36] [AioModule/Read/Completed/DEBUG]: Received contents(22bytes): ff ff 00 00 00 16 00 0c 00 00 03 f8 00 00 00 03 00 00 00 00 84 7b 
+[20:04:36] [ClientServer/ClientDecoder/INFO]: Receive a package 000C(所有玩家坐标更新)
+[20:04:36] [ClientServer/ClientDecoder/INFO]: package 000C: /id: 1016/posX: 3/posY: 0
+[20:04:36] [ClientServer/GameBox/UpdateThread---queue/INFO]: X: 3.0Y: 0.0
+[20:04:37] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[20:04:37] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to session/162.105.38.69:8438
+[20:04:37] [Client/GameBox/ActionThread/INFO]: nextX3.0nextY0.2770700636942675
+[20:04:38] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 03 f8 00 00 00 03 00 00 00 00 a8 fb 
+[20:04:38] [AioModule/Read/Completed/DEBUG]: Received 22 bytes from session/162.105.38.69:8438
+[20:04:38] [AioModule/Read/Completed/DEBUG]: Received contents(22bytes): ff ff 00 00 00 16 00 0c 00 00 03 f8 00 00 00 03 00 00 00 00 84 7b 
+[20:04:38] [ClientServer/ClientDecoder/INFO]: Receive a package 000C(所有玩家坐标更新)
+[20:04:38] [ClientServer/ClientDecoder/INFO]: package 000C: /id: 1016/posX: 3/posY: 0
+[20:04:38] [ClientServer/GameBox/UpdateThread---queue/INFO]: X: 3.0Y: 0.0
+[20:04:40] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[20:04:40] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to session/162.105.38.69:8438
+[20:04:40] [Client/GameBox/ActionThread/INFO]: nextX3.0nextY0.2770700636942675
+[20:04:40] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 03 f8 00 00 00 03 00 00 00 00 a8 fb 
+[20:04:40] [AioModule/Read/Completed/DEBUG]: Received 22 bytes from session/162.105.38.69:8438
+[20:04:40] [AioModule/Read/Completed/DEBUG]: Received contents(22bytes): ff ff 00 00 00 16 00 0c 00 00 03 f8 00 00 00 03 00 00 00 00 84 7b 
+[20:04:40] [ClientServer/ClientDecoder/INFO]: Receive a package 000C(所有玩家坐标更新)
+[20:04:40] [ClientServer/ClientDecoder/INFO]: package 000C: /id: 1016/posX: 3/posY: 0
+[20:04:40] [ClientServer/GameBox/UpdateThread---queue/INFO]: X: 3.0Y: 0.0
+[20:04:42] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[20:04:42] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to session/162.105.38.69:8438
+[20:04:42] [Client/GameBox/ActionThread/INFO]: nextX3.0nextY0.2770700636942675
+[20:04:42] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 03 f8 00 00 00 03 00 00 00 00 a8 fb 
+[20:04:42] [AioModule/Read/Completed/DEBUG]: Received 22 bytes from session/162.105.38.69:8438
+[20:04:42] [AioModule/Read/Completed/DEBUG]: Received contents(22bytes): ff ff 00 00 00 16 00 0c 00 00 03 f8 00 00 00 03 00 00 00 00 84 7b 
+[20:04:42] [ClientServer/ClientDecoder/INFO]: Receive a package 000C(所有玩家坐标更新)
+[20:04:42] [ClientServer/ClientDecoder/INFO]: package 000C: /id: 1016/posX: 3/posY: 0
+[20:04:42] [ClientServer/GameBox/UpdateThread---queue/INFO]: X: 3.0Y: 0.0
+[20:04:44] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[20:04:44] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to session/162.105.38.69:8438
+[20:04:44] [Client/GameBox/ActionThread/INFO]: nextX3.0nextY0.2770700636942675
+[20:04:44] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 03 f8 00 00 00 03 00 00 00 00 a8 fb 
+[20:04:44] [AioModule/Read/Completed/DEBUG]: Received 22 bytes from session/162.105.38.69:8438
+[20:04:44] [AioModule/Read/Completed/DEBUG]: Received contents(22bytes): ff ff 00 00 00 16 00 0c 00 00 03 f8 00 00 00 03 00 00 00 00 84 7b 
+[20:04:44] [ClientServer/ClientDecoder/INFO]: Receive a package 000C(所有玩家坐标更新)
+[20:04:44] [ClientServer/ClientDecoder/INFO]: package 000C: /id: 1016/posX: 3/posY: 0
+[20:04:44] [ClientServer/GameBox/UpdateThread---queue/INFO]: X: 3.0Y: 0.0
+[20:04:46] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[20:04:46] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to session/162.105.38.69:8438
+[20:04:46] [Client/GameBox/ActionThread/INFO]: nextX3.0nextY0.2770700636942675
+[20:04:46] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 03 f8 00 00 00 03 00 00 00 00 a8 fb 
+[20:04:46] [AioModule/Read/Completed/DEBUG]: Received 22 bytes from session/162.105.38.69:8438
+[20:04:46] [AioModule/Read/Completed/DEBUG]: Received contents(22bytes): ff ff 00 00 00 16 00 0c 00 00 03 f8 00 00 00 03 00 00 00 00 84 7b 
+[20:04:46] [ClientServer/ClientDecoder/INFO]: Receive a package 000C(所有玩家坐标更新)
+[20:04:46] [ClientServer/ClientDecoder/INFO]: package 000C: /id: 1016/posX: 3/posY: 0
+[20:04:46] [ClientServer/GameBox/UpdateThread---queue/INFO]: X: 3.0Y: 0.0
+[20:04:48] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[20:04:48] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to session/162.105.38.69:8438
+[20:04:48] [Client/GameBox/ActionThread/INFO]: nextX3.0nextY0.2770700636942675
+[20:04:48] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 03 f8 00 00 00 03 00 00 00 00 a8 fb 
+[20:04:48] [AioModule/Read/Completed/DEBUG]: Received 22 bytes from session/162.105.38.69:8438
+[20:04:48] [AioModule/Read/Completed/DEBUG]: Received contents(22bytes): ff ff 00 00 00 16 00 0c 00 00 03 f8 00 00 00 03 00 00 00 00 84 7b 
+[20:04:48] [ClientServer/ClientDecoder/INFO]: Receive a package 000C(所有玩家坐标更新)
+[20:04:48] [ClientServer/ClientDecoder/INFO]: package 000C: /id: 1016/posX: 3/posY: 0
+[20:04:48] [ClientServer/GameBox/UpdateThread---queue/INFO]: X: 3.0Y: 0.0
+[20:04:50] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[20:04:50] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to session/162.105.38.69:8438
+[20:04:50] [Client/GameBox/ActionThread/INFO]: nextX3.0nextY0.2770700636942675
+[20:04:50] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 03 f8 00 00 00 03 00 00 00 00 a8 fb 
+[20:04:50] [AioModule/Read/Completed/DEBUG]: Received 22 bytes from session/162.105.38.69:8438
+[20:04:50] [AioModule/Read/Completed/DEBUG]: Received contents(22bytes): ff ff 00 00 00 16 00 0c 00 00 03 f8 00 00 00 03 00 00 00 00 84 7b 
+[20:04:50] [ClientServer/ClientDecoder/INFO]: Receive a package 000C(所有玩家坐标更新)
+[20:04:50] [ClientServer/ClientDecoder/INFO]: package 000C: /id: 1016/posX: 3/posY: 0
+[20:04:50] [ClientServer/GameBox/UpdateThread---queue/INFO]: X: 3.0Y: 0.0
+[20:04:52] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[20:04:52] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to session/162.105.38.69:8438
+[20:04:52] [Client/GameBox/ActionThread/INFO]: nextX3.0nextY0.2770700636942675
+[20:04:52] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 03 f8 00 00 00 03 00 00 00 00 a8 fb 
+[20:04:52] [AioModule/Read/Completed/DEBUG]: Received 22 bytes from session/162.105.38.69:8438
+[20:04:52] [AioModule/Read/Completed/DEBUG]: Received contents(22bytes): ff ff 00 00 00 16 00 0c 00 00 03 f8 00 00 00 03 00 00 00 00 84 7b 
+[20:04:52] [ClientServer/ClientDecoder/INFO]: Receive a package 000C(所有玩家坐标更新)
+[20:04:52] [ClientServer/ClientDecoder/INFO]: package 000C: /id: 1016/posX: 3/posY: 0
+[20:04:52] [ClientServer/GameBox/UpdateThread---queue/INFO]: X: 3.0Y: 0.0
+[20:04:54] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to session/162.105.38.69:8438
+[20:04:54] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[20:04:54] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 03 f8 00 00 00 03 00 00 00 00 a8 fb 
+[20:04:54] [Client/GameBox/ActionThread/INFO]: nextX3.0nextY0.2770700636942675
+[20:04:54] [AioModule/Read/Completed/DEBUG]: Received 22 bytes from session/162.105.38.69:8438
+[20:04:54] [AioModule/Read/Completed/DEBUG]: Received contents(22bytes): ff ff 00 00 00 16 00 0c 00 00 03 f8 00 00 00 03 00 00 00 00 84 7b 
+[20:04:54] [ClientServer/ClientDecoder/INFO]: Receive a package 000C(所有玩家坐标更新)
+[20:04:54] [ClientServer/ClientDecoder/INFO]: package 000C: /id: 1016/posX: 3/posY: 0
+[20:04:54] [ClientServer/GameBox/UpdateThread---queue/INFO]: X: 3.0Y: 0.0
+[20:04:56] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[20:04:56] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to session/162.105.38.69:8438
+[20:04:56] [Client/GameBox/ActionThread/INFO]: nextX3.0nextY0.2770700636942675
+[20:04:56] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 03 f8 00 00 00 03 00 00 00 00 a8 fb 
+[20:04:56] [AioModule/Read/Completed/DEBUG]: Received 22 bytes from session/162.105.38.69:8438
+[20:04:56] [AioModule/Read/Completed/DEBUG]: Received contents(22bytes): ff ff 00 00 00 16 00 0c 00 00 03 f8 00 00 00 03 00 00 00 00 84 7b 
+[20:04:56] [ClientServer/ClientDecoder/INFO]: Receive a package 000C(所有玩家坐标更新)
+[20:04:56] [ClientServer/ClientDecoder/INFO]: package 000C: /id: 1016/posX: 3/posY: 0
+[20:04:56] [ClientServer/GameBox/UpdateThread---queue/INFO]: X: 3.0Y: 0.0
+[20:04:58] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to session/162.105.38.69:8438
+[20:04:58] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 03 f8 00 00 00 03 00 00 00 00 a8 fb 
+[20:04:58] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[20:04:58] [Client/GameBox/ActionThread/INFO]: nextX3.0nextY0.2770700636942675
+[20:04:58] [AioModule/Read/Completed/DEBUG]: Received 22 bytes from session/162.105.38.69:8438
+[20:04:58] [AioModule/Read/Completed/DEBUG]: Received contents(22bytes): ff ff 00 00 00 16 00 0c 00 00 03 f8 00 00 00 03 00 00 00 00 84 7b 
+[20:04:58] [ClientServer/ClientDecoder/INFO]: Receive a package 000C(所有玩家坐标更新)
+[20:04:58] [ClientServer/ClientDecoder/INFO]: package 000C: /id: 1016/posX: 3/posY: 0
+[20:04:58] [ClientServer/GameBox/UpdateThread---queue/INFO]: X: 3.0Y: 0.0
+[20:05:00] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to session/162.105.38.69:8438
+[20:05:00] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[20:05:00] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 03 f8 00 00 00 03 00 00 00 00 a8 fb 
+[20:05:00] [Client/GameBox/ActionThread/INFO]: nextX3.0nextY0.2770700636942675
+[20:05:00] [AioModule/Read/Completed/DEBUG]: Received 22 bytes from session/162.105.38.69:8438
+[20:05:00] [AioModule/Read/Completed/DEBUG]: Received contents(22bytes): ff ff 00 00 00 16 00 0c 00 00 03 f8 00 00 00 03 00 00 00 00 84 7b 
+[20:05:00] [ClientServer/ClientDecoder/INFO]: Receive a package 000C(所有玩家坐标更新)
+[20:05:00] [ClientServer/ClientDecoder/INFO]: package 000C: /id: 1016/posX: 3/posY: 0
+[20:05:00] [ClientServer/GameBox/UpdateThread---queue/INFO]: X: 3.0Y: 0.0
+[20:05:02] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[20:05:02] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to session/162.105.38.69:8438
+[20:05:02] [Client/GameBox/ActionThread/INFO]: nextX3.0nextY0.2770700636942675
+[20:05:02] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 03 f8 00 00 00 03 00 00 00 00 a8 fb 
+[20:05:02] [AioModule/Read/Completed/DEBUG]: Received 22 bytes from session/162.105.38.69:8438
+[20:05:02] [AioModule/Read/Completed/DEBUG]: Received contents(22bytes): ff ff 00 00 00 16 00 0c 00 00 03 f8 00 00 00 03 00 00 00 00 84 7b 
+[20:05:02] [ClientServer/ClientDecoder/INFO]: Receive a package 000C(所有玩家坐标更新)
+[20:05:02] [ClientServer/ClientDecoder/INFO]: package 000C: /id: 1016/posX: 3/posY: 0
+[20:05:02] [ClientServer/GameBox/UpdateThread---queue/INFO]: X: 3.0Y: 0.0
+[20:05:04] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[20:05:04] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to session/162.105.38.69:8438
+[20:05:04] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 03 f8 00 00 00 03 00 00 00 00 a8 fb 
+[20:05:04] [Client/GameBox/ActionThread/INFO]: nextX3.0nextY0.2770700636942675
+[20:05:04] [AioModule/Read/Completed/DEBUG]: Received 22 bytes from session/162.105.38.69:8438
+[20:05:04] [AioModule/Read/Completed/DEBUG]: Received contents(22bytes): ff ff 00 00 00 16 00 0c 00 00 03 f8 00 00 00 03 00 00 00 00 84 7b 
+[20:05:04] [ClientServer/ClientDecoder/INFO]: Receive a package 000C(所有玩家坐标更新)
+[20:05:04] [ClientServer/ClientDecoder/INFO]: package 000C: /id: 1016/posX: 3/posY: 0
+[20:05:04] [ClientServer/GameBox/UpdateThread---queue/INFO]: X: 3.0Y: 0.0
+[20:05:06] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to session/162.105.38.69:8438
+[20:05:06] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[20:05:06] [Client/GameBox/ActionThread/INFO]: nextX3.0nextY0.2770700636942675
+[20:05:06] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 03 f8 00 00 00 03 00 00 00 00 a8 fb 
+[20:05:06] [AioModule/Read/Completed/DEBUG]: Received 22 bytes from session/162.105.38.69:8438
+[20:05:06] [AioModule/Read/Completed/DEBUG]: Received contents(22bytes): ff ff 00 00 00 16 00 0c 00 00 03 f8 00 00 00 03 00 00 00 00 84 7b 
+[20:05:06] [ClientServer/ClientDecoder/INFO]: Receive a package 000C(所有玩家坐标更新)
+[20:05:06] [ClientServer/ClientDecoder/INFO]: package 000C: /id: 1016/posX: 3/posY: 0
+[20:05:06] [ClientServer/GameBox/UpdateThread---queue/INFO]: X: 3.0Y: 0.0
+[20:05:08] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[20:05:08] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to session/162.105.38.69:8438
+[20:05:08] [Client/GameBox/ActionThread/INFO]: nextX3.0nextY0.2770700636942675
+[20:05:08] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 03 f8 00 00 00 03 00 00 00 00 a8 fb 
+[20:05:08] [AioModule/Read/Completed/DEBUG]: Received 22 bytes from session/162.105.38.69:8438
+[20:05:08] [AioModule/Read/Completed/DEBUG]: Received contents(22bytes): ff ff 00 00 00 16 00 0c 00 00 03 f8 00 00 00 03 00 00 00 00 84 7b 
+[20:05:08] [ClientServer/ClientDecoder/INFO]: Receive a package 000C(所有玩家坐标更新)
+[20:05:08] [ClientServer/ClientDecoder/INFO]: package 000C: /id: 1016/posX: 3/posY: 0
+[20:05:08] [ClientServer/GameBox/UpdateThread---queue/INFO]: X: 3.0Y: 0.0
+[20:05:10] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[20:05:10] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to session/162.105.38.69:8438
+[20:05:10] [Client/GameBox/ActionThread/INFO]: nextX3.0nextY0.2770700636942675
+[20:05:10] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 03 f8 00 00 00 03 00 00 00 00 a8 fb 
+[20:05:10] [AioModule/Read/Completed/DEBUG]: Received 22 bytes from session/162.105.38.69:8438
+[20:05:10] [AioModule/Read/Completed/DEBUG]: Received contents(22bytes): ff ff 00 00 00 16 00 0c 00 00 03 f8 00 00 00 03 00 00 00 00 84 7b 
+[20:05:10] [ClientServer/ClientDecoder/INFO]: Receive a package 000C(所有玩家坐标更新)
+[20:05:10] [ClientServer/ClientDecoder/INFO]: package 000C: /id: 1016/posX: 3/posY: 0
+[20:05:10] [ClientServer/GameBox/UpdateThread---queue/INFO]: X: 3.0Y: 0.0
+[20:05:12] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to session/162.105.38.69:8438
+[20:05:12] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[20:05:12] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 03 f8 00 00 00 03 00 00 00 00 a8 fb 
+[20:05:12] [Client/GameBox/ActionThread/INFO]: nextX3.0nextY0.2770700636942675
+[20:05:12] [AioModule/Read/Completed/DEBUG]: Received 22 bytes from session/162.105.38.69:8438
+[20:05:12] [AioModule/Read/Completed/DEBUG]: Received contents(22bytes): ff ff 00 00 00 16 00 0c 00 00 03 f8 00 00 00 03 00 00 00 00 84 7b 
+[20:05:12] [ClientServer/ClientDecoder/INFO]: Receive a package 000C(所有玩家坐标更新)
+[20:05:12] [ClientServer/ClientDecoder/INFO]: package 000C: /id: 1016/posX: 3/posY: 0
+[20:05:12] [ClientServer/GameBox/UpdateThread---queue/INFO]: X: 3.0Y: 0.0
+[20:05:14] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[20:05:14] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to session/162.105.38.69:8438
+[20:05:14] [Client/GameBox/ActionThread/INFO]: nextX3.0nextY0.2770700636942675
+[20:05:14] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 03 f8 00 00 00 03 00 00 00 00 a8 fb 
+[20:05:14] [AioModule/Read/Completed/DEBUG]: Received 22 bytes from session/162.105.38.69:8438
+[20:05:14] [AioModule/Read/Completed/DEBUG]: Received contents(22bytes): ff ff 00 00 00 16 00 0c 00 00 03 f8 00 00 00 03 00 00 00 00 84 7b 
+[20:05:14] [ClientServer/ClientDecoder/INFO]: Receive a package 000C(所有玩家坐标更新)
+[20:05:14] [ClientServer/ClientDecoder/INFO]: package 000C: /id: 1016/posX: 3/posY: 0
+[20:05:14] [ClientServer/GameBox/UpdateThread---queue/INFO]: X: 3.0Y: 0.0
+[20:05:15] [ClientServer/GameBox/mouseClick/INFO]: screenX1093.0screenY638.0
+[20:05:15] [ClientServer/GameBox/mouseClick/INFO]: middleX683.0middleY384.0
+[20:05:16] [ClientServer/GameBox/mouseClick/INFO]: screenX1093.0screenY638.0
+[20:05:16] [ClientServer/GameBox/mouseClick/INFO]: middleX683.0middleY384.0
+[20:05:16] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to session/162.105.38.69:8438
+[20:05:16] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[20:05:16] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 03 f8 00 00 00 03 00 00 00 01 a8 fc 
+[20:05:16] [Client/GameBox/ActionThread/INFO]: nextX3.0nextY1.8585365853658538
+[20:05:16] [ClientServer/GameBox/mouseClick/INFO]: screenX1093.0screenY638.0
+[20:05:16] [ClientServer/GameBox/mouseClick/INFO]: middleX683.0middleY384.0
+[20:05:16] [ClientServer/GameBox/mouseClick/INFO]: screenX1093.0screenY638.0
+[20:05:16] [ClientServer/GameBox/mouseClick/INFO]: middleX683.0middleY384.0
+[20:05:16] [AioModule/Read/Completed/DEBUG]: Received 22 bytes from session/162.105.38.69:8438
+[20:05:16] [AioModule/Read/Completed/DEBUG]: Received contents(22bytes): ff ff 00 00 00 16 00 0c 00 00 03 f8 00 00 00 03 00 00 00 01 84 7c 
+[20:05:16] [ClientServer/ClientDecoder/INFO]: Receive a package 000C(所有玩家坐标更新)
+[20:05:16] [ClientServer/ClientDecoder/INFO]: package 000C: /id: 1016/posX: 3/posY: 1
+[20:05:16] [ClientServer/GameBox/UpdateThread---queue/INFO]: X: 3.0Y: 1.0
+[20:05:16] [ClientServer/GameBox/mouseClick/INFO]: screenX1093.0screenY638.0
+[20:05:16] [ClientServer/GameBox/mouseClick/INFO]: middleX683.0middleY384.0
+[20:05:16] [ClientServer/GameBox/mouseClick/INFO]: screenX1093.0screenY638.0
+[20:05:16] [ClientServer/GameBox/mouseClick/INFO]: middleX683.0middleY384.0
+[20:05:16] [ClientServer/GameBox/mouseClick/INFO]: screenX1093.0screenY638.0
+[20:05:16] [ClientServer/GameBox/mouseClick/INFO]: middleX683.0middleY384.0
+[20:05:16] [ClientServer/GameBox/mouseClick/INFO]: screenX1093.0screenY638.0
+[20:05:16] [ClientServer/GameBox/mouseClick/INFO]: middleX683.0middleY384.0
+[20:05:17] [ClientServer/GameBox/mouseClick/INFO]: screenX1093.0screenY638.0
+[20:05:17] [ClientServer/GameBox/mouseClick/INFO]: middleX683.0middleY384.0
+[20:05:17] [ClientServer/GameBox/mouseClick/INFO]: screenX1140.0screenY596.0
+[20:05:17] [ClientServer/GameBox/mouseClick/INFO]: middleX683.0middleY384.0
+[20:05:18] [ClientServer/GameBox/mouseClick/INFO]: screenX1140.0screenY596.0
+[20:05:18] [ClientServer/GameBox/mouseClick/INFO]: middleX683.0middleY384.0
+[20:05:18] [ClientServer/GameBox/mouseClick/INFO]: screenX1140.0screenY596.0
+[20:05:18] [ClientServer/GameBox/mouseClick/INFO]: middleX683.0middleY384.0
+[20:05:18] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[20:05:18] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to session/162.105.38.69:8438
+[20:05:18] [Client/GameBox/ActionThread/INFO]: nextX3.0nextY1.3916849015317285
+[20:05:18] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 03 f8 00 00 00 03 00 00 00 01 a8 fc 
+[20:05:18] [ClientServer/GameBox/mouseClick/INFO]: screenX1140.0screenY596.0
+[20:05:18] [ClientServer/GameBox/mouseClick/INFO]: middleX683.0middleY384.0
+[20:05:18] [AioModule/Read/Completed/DEBUG]: Received 22 bytes from session/162.105.38.69:8438
+[20:05:18] [AioModule/Read/Completed/DEBUG]: Received contents(22bytes): ff ff 00 00 00 16 00 0c 00 00 03 f8 00 00 00 03 00 00 00 01 84 7c 
+[20:05:18] [ClientServer/ClientDecoder/INFO]: Receive a package 000C(所有玩家坐标更新)
+[20:05:18] [ClientServer/ClientDecoder/INFO]: package 000C: /id: 1016/posX: 3/posY: 1
+[20:05:18] [ClientServer/GameBox/UpdateThread---queue/INFO]: X: 3.0Y: 1.0
+[20:05:18] [ClientServer/GameBox/mouseClick/INFO]: screenX1140.0screenY596.0
+[20:05:18] [ClientServer/GameBox/mouseClick/INFO]: middleX683.0middleY384.0
+[20:05:18] [ClientServer/GameBox/mouseClick/INFO]: screenX1140.0screenY596.0
+[20:05:18] [ClientServer/GameBox/mouseClick/INFO]: middleX683.0middleY384.0
+[20:05:19] [ClientServer/GameBox/mouseClick/INFO]: screenX130.0screenY483.0
+[20:05:19] [ClientServer/GameBox/mouseClick/INFO]: middleX683.0middleY384.0
+[20:05:19] [ClientServer/GameBox/mouseClick/INFO]: screenX130.0screenY483.0
+[20:05:19] [ClientServer/GameBox/mouseClick/INFO]: middleX683.0middleY384.0
+[20:05:20] [ClientServer/GameBox/mouseClick/INFO]: screenX114.0screenY245.0
+[20:05:20] [ClientServer/GameBox/mouseClick/INFO]: middleX683.0middleY384.0
+[20:05:20] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[20:05:20] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to session/162.105.38.69:8438
+[20:05:20] [Client/GameBox/ActionThread/INFO]: nextX12.280575539568344nextY3.0
+[20:05:20] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 03 f8 00 00 00 0c 00 00 00 03 a5 7d 
+[20:05:20] [AioModule/Read/Completed/DEBUG]: Received 22 bytes from session/162.105.38.69:8438
+[20:05:20] [AioModule/Read/Completed/DEBUG]: Received contents(22bytes): ff ff 00 00 00 16 00 0c 00 00 03 f8 00 00 00 0c 00 00 00 03 80 fd 
+[20:05:20] [ClientServer/ClientDecoder/INFO]: Receive a package 000C(所有玩家坐标更新)
+[20:05:20] [ClientServer/ClientDecoder/INFO]: package 000C: /id: 1016/posX: 12/posY: 3
+[20:05:20] [ClientServer/GameBox/UpdateThread---queue/INFO]: X: 12.0Y: 3.0
+[20:05:20] [ClientServer/GameBox/mouseClick/INFO]: screenX772.0screenY197.0
+[20:05:20] [ClientServer/GameBox/mouseClick/INFO]: middleX683.0middleY384.0
+[20:05:21] [ClientServer/GameBox/mouseClick/INFO]: screenX772.0screenY197.0
+[20:05:21] [ClientServer/GameBox/mouseClick/INFO]: middleX683.0middleY384.0
+[20:05:21] [ClientServer/GameBox/mouseClick/INFO]: screenX772.0screenY197.0
+[20:05:21] [ClientServer/GameBox/mouseClick/INFO]: middleX683.0middleY384.0
+[20:05:21] [ClientServer/GameBox/mouseClick/INFO]: screenX772.0screenY197.0
+[20:05:21] [ClientServer/GameBox/mouseClick/INFO]: middleX683.0middleY384.0
+[20:05:21] [ClientServer/GameBox/mouseClick/INFO]: screenX772.0screenY197.0
+[20:05:21] [ClientServer/GameBox/mouseClick/INFO]: middleX683.0middleY384.0
+[20:05:21] [ClientServer/GameBox/mouseClick/INFO]: screenX772.0screenY197.0
+[20:05:21] [ClientServer/GameBox/mouseClick/INFO]: middleX683.0middleY384.0
+[20:05:22] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[20:05:22] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to session/162.105.38.69:8438
+[20:05:22] [Client/GameBox/ActionThread/INFO]: nextX3.0nextY-6.303370786516854
+[20:05:22] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 03 f8 00 00 00 03 ff ff ff fa 8c ad 
+[20:05:22] [AioModule/Read/Completed/DEBUG]: Received 22 bytes from session/162.105.38.69:8438
+[20:05:22] [AioModule/Read/Completed/DEBUG]: Received contents(22bytes): ff ff 00 00 00 16 00 0c 00 00 03 f8 00 00 00 03 ff ff ff fa 68 2d 
+[20:05:22] [ClientServer/ClientDecoder/INFO]: Receive a package 000C(所有玩家坐标更新)
+[20:05:22] [ClientServer/ClientDecoder/INFO]: package 000C: /id: 1016/posX: 3/posY: -6
+[20:05:22] [ClientServer/GameBox/UpdateThread---queue/INFO]: X: 3.0Y: -6.0
+[20:05:22] [ClientServer/GameBox/mouseClick/INFO]: screenX109.0screenY72.0
+[20:05:22] [ClientServer/GameBox/mouseClick/INFO]: middleX683.0middleY384.0
+[20:05:22] [ClientServer/GameBox/mouseClick/INFO]: screenX106.0screenY55.0
+[20:05:22] [ClientServer/GameBox/mouseClick/INFO]: middleX683.0middleY384.0
+[20:05:22] [ClientServer/GameBox/mouseClick/INFO]: screenX103.0screenY53.0
+[20:05:22] [ClientServer/GameBox/mouseClick/INFO]: middleX683.0middleY384.0
+[20:05:23] [ClientServer/GameBox/mouseClick/INFO]: screenX103.0screenY53.0
+[20:05:23] [ClientServer/GameBox/mouseClick/INFO]: middleX683.0middleY384.0
+[20:05:23] [ClientServer/GameBox/mouseClick/INFO]: screenX103.0screenY53.0
+[20:05:23] [ClientServer/GameBox/mouseClick/INFO]: middleX683.0middleY384.0
+[20:05:23] [ClientServer/GameBox/mouseClick/INFO]: screenX103.0screenY53.0
+[20:05:23] [ClientServer/GameBox/mouseClick/INFO]: middleX683.0middleY384.0
+[20:05:23] [ClientServer/GameBox/mouseClick/INFO]: screenX103.0screenY53.0
+[20:05:23] [ClientServer/GameBox/mouseClick/INFO]: middleX683.0middleY384.0
+[20:05:23] [ClientServer/GameBox/mouseClick/INFO]: screenX103.0screenY53.0
+[20:05:23] [ClientServer/GameBox/mouseClick/INFO]: middleX683.0middleY384.0
+[20:05:23] [ClientServer/GameBox/mouseClick/INFO]: screenX103.0screenY53.0
+[20:05:23] [ClientServer/GameBox/mouseClick/INFO]: middleX683.0middleY384.0
+[20:05:23] [ClientServer/GameBox/mouseClick/INFO]: screenX108.0screenY53.0
+[20:05:23] [ClientServer/GameBox/mouseClick/INFO]: middleX683.0middleY384.0
+[20:05:24] [ClientServer/GameBox/mouseClick/INFO]: screenX108.0screenY53.0
+[20:05:24] [ClientServer/GameBox/mouseClick/INFO]: middleX683.0middleY384.0
+[20:05:24] [ClientServer/GameBox/mouseClick/INFO]: screenX108.0screenY53.0
+[20:05:24] [ClientServer/GameBox/mouseClick/INFO]: middleX683.0middleY384.0
+[20:05:24] [ClientServer/GameBox/mouseClick/INFO]: screenX108.0screenY53.0
+[20:05:24] [ClientServer/GameBox/mouseClick/INFO]: middleX683.0middleY384.0
+[20:05:24] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[20:05:24] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to session/162.105.38.69:8438
+[20:05:24] [Client/GameBox/ActionThread/INFO]: nextX5.211480362537764nextY3.0
+[20:05:24] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 03 f8 00 00 00 05 00 00 00 03 67 45 
+[20:05:24] [ClientServer/GameBox/mouseClick/INFO]: screenX108.0screenY53.0
+[20:05:24] [ClientServer/GameBox/mouseClick/INFO]: middleX683.0middleY384.0
+[20:05:24] [AioModule/Read/Completed/DEBUG]: Received 22 bytes from session/162.105.38.69:8438
+[20:05:24] [AioModule/Read/Completed/DEBUG]: Received contents(22bytes): ff ff 00 00 00 16 00 0c 00 00 03 f8 00 00 00 05 00 00 00 03 42 c5 
+[20:05:24] [ClientServer/ClientDecoder/INFO]: Receive a package 000C(所有玩家坐标更新)
+[20:05:24] [ClientServer/ClientDecoder/INFO]: package 000C: /id: 1016/posX: 5/posY: 3
+[20:05:24] [ClientServer/GameBox/UpdateThread---queue/INFO]: X: 5.0Y: 3.0
+[20:05:24] [ClientServer/GameBox/mouseClick/INFO]: screenX108.0screenY53.0
+[20:05:24] [ClientServer/GameBox/mouseClick/INFO]: middleX683.0middleY384.0
+[20:05:24] [ClientServer/GameBox/mouseClick/INFO]: screenX108.0screenY53.0
+[20:05:24] [ClientServer/GameBox/mouseClick/INFO]: middleX683.0middleY384.0
+[20:05:26] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[20:05:26] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to session/162.105.38.69:8438
+[20:05:26] [Client/GameBox/ActionThread/INFO]: nextX5.211480362537764nextY3.0
+[20:05:26] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 03 f8 00 00 00 05 00 00 00 03 67 45 
+[20:05:26] [AioModule/Read/Completed/DEBUG]: Received 22 bytes from session/162.105.38.69:8438
+[20:05:26] [AioModule/Read/Completed/DEBUG]: Received contents(22bytes): ff ff 00 00 00 16 00 0c 00 00 03 f8 00 00 00 05 00 00 00 03 42 c5 
+[20:05:26] [ClientServer/ClientDecoder/INFO]: Receive a package 000C(所有玩家坐标更新)
+[20:05:26] [ClientServer/ClientDecoder/INFO]: package 000C: /id: 1016/posX: 5/posY: 3
+[20:05:26] [ClientServer/GameBox/UpdateThread---queue/INFO]: X: 5.0Y: 3.0
+[20:05:28] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[20:05:28] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to session/162.105.38.69:8438
+[20:05:28] [Client/GameBox/ActionThread/INFO]: nextX5.211480362537764nextY3.0
+[20:05:28] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 03 f8 00 00 00 05 00 00 00 03 67 45 
+[20:05:28] [AioModule/Read/Completed/DEBUG]: Received 22 bytes from session/162.105.38.69:8438
+[20:05:28] [AioModule/Read/Completed/DEBUG]: Received contents(22bytes): ff ff 00 00 00 16 00 0c 00 00 03 f8 00 00 00 05 00 00 00 03 42 c5 
+[20:05:28] [ClientServer/ClientDecoder/INFO]: Receive a package 000C(所有玩家坐标更新)
+[20:05:28] [ClientServer/ClientDecoder/INFO]: package 000C: /id: 1016/posX: 5/posY: 3
+[20:05:28] [ClientServer/GameBox/UpdateThread---queue/INFO]: X: 5.0Y: 3.0
+[20:05:30] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[20:05:30] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to session/162.105.38.69:8438
+[20:05:30] [Client/GameBox/ActionThread/INFO]: nextX5.211480362537764nextY3.0
+[20:05:30] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 03 f8 00 00 00 05 00 00 00 03 67 45 
+[20:05:30] [AioModule/Read/Completed/DEBUG]: Received 22 bytes from session/162.105.38.69:8438
+[20:05:30] [AioModule/Read/Completed/DEBUG]: Received contents(22bytes): ff ff 00 00 00 16 00 0c 00 00 03 f8 00 00 00 05 00 00 00 03 42 c5 
+[20:05:30] [ClientServer/ClientDecoder/INFO]: Receive a package 000C(所有玩家坐标更新)
+[20:05:30] [ClientServer/ClientDecoder/INFO]: package 000C: /id: 1016/posX: 5/posY: 3
+[20:05:30] [ClientServer/GameBox/UpdateThread---queue/INFO]: X: 5.0Y: 3.0
+[20:05:32] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[20:05:32] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to session/162.105.38.69:8438
+[20:05:32] [Client/GameBox/ActionThread/INFO]: nextX5.211480362537764nextY3.0
+[20:05:32] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 03 f8 00 00 00 05 00 00 00 03 67 45 
+[20:05:32] [AioModule/Read/Completed/DEBUG]: Received 22 bytes from session/162.105.38.69:8438
+[20:05:32] [AioModule/Read/Completed/DEBUG]: Received contents(22bytes): ff ff 00 00 00 16 00 0c 00 00 03 f8 00 00 00 05 00 00 00 03 42 c5 
+[20:05:32] [ClientServer/ClientDecoder/INFO]: Receive a package 000C(所有玩家坐标更新)
+[20:05:32] [ClientServer/ClientDecoder/INFO]: package 000C: /id: 1016/posX: 5/posY: 3
+[20:05:32] [ClientServer/GameBox/UpdateThread---queue/INFO]: X: 5.0Y: 3.0
+[20:05:34] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[20:05:34] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to session/162.105.38.69:8438
+[20:05:34] [Client/GameBox/ActionThread/INFO]: nextX5.211480362537764nextY3.0
+[20:05:34] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 03 f8 00 00 00 05 00 00 00 03 67 45 
+[20:05:34] [AioModule/Read/Completed/DEBUG]: Received 22 bytes from session/162.105.38.69:8438
+[20:05:34] [AioModule/Read/Completed/DEBUG]: Received contents(22bytes): ff ff 00 00 00 16 00 0c 00 00 03 f8 00 00 00 05 00 00 00 03 42 c5 
+[20:05:34] [ClientServer/ClientDecoder/INFO]: Receive a package 000C(所有玩家坐标更新)
+[20:05:34] [ClientServer/ClientDecoder/INFO]: package 000C: /id: 1016/posX: 5/posY: 3
+[20:05:34] [ClientServer/GameBox/UpdateThread---queue/INFO]: X: 5.0Y: 3.0
+[20:05:36] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to session/162.105.38.69:8438
+[20:05:36] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[20:05:36] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 03 f8 00 00 00 05 00 00 00 03 67 45 
+[20:05:36] [Client/GameBox/ActionThread/INFO]: nextX5.211480362537764nextY3.0
+[20:05:36] [AioModule/Read/Completed/DEBUG]: Received 22 bytes from session/162.105.38.69:8438
+[20:05:36] [AioModule/Read/Completed/DEBUG]: Received contents(22bytes): ff ff 00 00 00 16 00 0c 00 00 03 f8 00 00 00 05 00 00 00 03 42 c5 
+[20:05:36] [ClientServer/ClientDecoder/INFO]: Receive a package 000C(所有玩家坐标更新)
+[20:05:36] [ClientServer/ClientDecoder/INFO]: package 000C: /id: 1016/posX: 5/posY: 3
+[20:05:36] [ClientServer/GameBox/UpdateThread---queue/INFO]: X: 5.0Y: 3.0
+[20:05:38] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[20:05:38] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to session/162.105.38.69:8438
+[20:05:38] [Client/GameBox/ActionThread/INFO]: nextX5.211480362537764nextY3.0
+[20:05:38] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 03 f8 00 00 00 05 00 00 00 03 67 45 
+[20:05:38] [AioModule/Read/Completed/DEBUG]: Received 22 bytes from session/162.105.38.69:8438
+[20:05:38] [AioModule/Read/Completed/DEBUG]: Received contents(22bytes): ff ff 00 00 00 16 00 0c 00 00 03 f8 00 00 00 05 00 00 00 03 42 c5 
+[20:05:38] [ClientServer/ClientDecoder/INFO]: Receive a package 000C(所有玩家坐标更新)
+[20:05:38] [ClientServer/ClientDecoder/INFO]: package 000C: /id: 1016/posX: 5/posY: 3
+[20:05:38] [ClientServer/GameBox/UpdateThread---queue/INFO]: X: 5.0Y: 3.0
+[20:05:40] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[20:05:40] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to session/162.105.38.69:8438
+[20:05:40] [Client/GameBox/ActionThread/INFO]: nextX5.211480362537764nextY3.0
+[20:05:40] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 03 f8 00 00 00 05 00 00 00 03 67 45 
+[20:05:40] [AioModule/Read/Completed/DEBUG]: Received 22 bytes from session/162.105.38.69:8438
+[20:05:40] [AioModule/Read/Completed/DEBUG]: Received contents(22bytes): ff ff 00 00 00 16 00 0c 00 00 03 f8 00 00 00 05 00 00 00 03 42 c5 
+[20:05:40] [ClientServer/ClientDecoder/INFO]: Receive a package 000C(所有玩家坐标更新)
+[20:05:40] [ClientServer/ClientDecoder/INFO]: package 000C: /id: 1016/posX: 5/posY: 3
+[20:05:40] [ClientServer/GameBox/UpdateThread---queue/INFO]: X: 5.0Y: 3.0
+[20:05:42] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[20:05:42] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to session/162.105.38.69:8438
+[20:05:42] [Client/GameBox/ActionThread/INFO]: nextX5.211480362537764nextY3.0
+[20:05:42] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 03 f8 00 00 00 05 00 00 00 03 67 45 
+[20:05:42] [AioModule/Read/Completed/DEBUG]: Received 22 bytes from session/162.105.38.69:8438
+[20:05:42] [AioModule/Read/Completed/DEBUG]: Received contents(22bytes): ff ff 00 00 00 16 00 0c 00 00 03 f8 00 00 00 05 00 00 00 03 42 c5 
+[20:05:42] [ClientServer/ClientDecoder/INFO]: Receive a package 000C(所有玩家坐标更新)
+[20:05:42] [ClientServer/ClientDecoder/INFO]: package 000C: /id: 1016/posX: 5/posY: 3
+[20:05:42] [ClientServer/GameBox/UpdateThread---queue/INFO]: X: 5.0Y: 3.0
+[20:05:44] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to session/162.105.38.69:8438
+[20:05:44] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[20:05:44] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 03 f8 00 00 00 05 00 00 00 03 67 45 
+[20:05:44] [Client/GameBox/ActionThread/INFO]: nextX5.211480362537764nextY3.0
+[20:05:44] [AioModule/Read/Completed/DEBUG]: Received 22 bytes from session/162.105.38.69:8438
+[20:05:44] [AioModule/Read/Completed/DEBUG]: Received contents(22bytes): ff ff 00 00 00 16 00 0c 00 00 03 f8 00 00 00 05 00 00 00 03 42 c5 
+[20:05:44] [ClientServer/ClientDecoder/INFO]: Receive a package 000C(所有玩家坐标更新)
+[20:05:44] [ClientServer/ClientDecoder/INFO]: package 000C: /id: 1016/posX: 5/posY: 3
+[20:05:44] [ClientServer/GameBox/UpdateThread---queue/INFO]: X: 5.0Y: 3.0
+[20:05:46] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[20:05:46] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to session/162.105.38.69:8438
+[20:05:46] [Client/GameBox/ActionThread/INFO]: nextX5.211480362537764nextY3.0
+[20:05:46] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 03 f8 00 00 00 05 00 00 00 03 67 45 
+[20:05:46] [AioModule/Read/Completed/DEBUG]: Received 22 bytes from session/162.105.38.69:8438
+[20:05:46] [AioModule/Read/Completed/DEBUG]: Received contents(22bytes): ff ff 00 00 00 16 00 0c 00 00 03 f8 00 00 00 05 00 00 00 03 42 c5 
+[20:05:46] [ClientServer/ClientDecoder/INFO]: Receive a package 000C(所有玩家坐标更新)
+[20:05:46] [ClientServer/ClientDecoder/INFO]: package 000C: /id: 1016/posX: 5/posY: 3
+[20:05:46] [ClientServer/GameBox/UpdateThread---queue/INFO]: X: 5.0Y: 3.0
+[20:05:48] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[20:05:48] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to session/162.105.38.69:8438
+[20:05:48] [Client/GameBox/ActionThread/INFO]: nextX5.211480362537764nextY3.0
+[20:05:48] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 03 f8 00 00 00 05 00 00 00 03 67 45 
+[20:05:48] [AioModule/Read/Completed/DEBUG]: Received 22 bytes from session/162.105.38.69:8438
+[20:05:48] [AioModule/Read/Completed/DEBUG]: Received contents(22bytes): ff ff 00 00 00 16 00 0c 00 00 03 f8 00 00 00 05 00 00 00 03 42 c5 
+[20:05:48] [ClientServer/ClientDecoder/INFO]: Receive a package 000C(所有玩家坐标更新)
+[20:05:48] [ClientServer/ClientDecoder/INFO]: package 000C: /id: 1016/posX: 5/posY: 3
+[20:05:48] [ClientServer/GameBox/UpdateThread---queue/INFO]: X: 5.0Y: 3.0
+[20:05:50] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[20:05:50] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to session/162.105.38.69:8438
+[20:05:50] [Client/GameBox/ActionThread/INFO]: nextX5.211480362537764nextY3.0
+[20:05:50] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 03 f8 00 00 00 05 00 00 00 03 67 45 
+[20:05:50] [AioModule/Read/Completed/DEBUG]: Received 22 bytes from session/162.105.38.69:8438
+[20:05:50] [AioModule/Read/Completed/DEBUG]: Received contents(22bytes): ff ff 00 00 00 16 00 0c 00 00 03 f8 00 00 00 05 00 00 00 03 42 c5 
+[20:05:50] [ClientServer/ClientDecoder/INFO]: Receive a package 000C(所有玩家坐标更新)
+[20:05:50] [ClientServer/ClientDecoder/INFO]: package 000C: /id: 1016/posX: 5/posY: 3
+[20:05:50] [ClientServer/GameBox/UpdateThread---queue/INFO]: X: 5.0Y: 3.0
+[20:05:52] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[20:05:52] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to session/162.105.38.69:8438
+[20:05:52] [Client/GameBox/ActionThread/INFO]: nextX5.211480362537764nextY3.0
+[20:05:52] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 03 f8 00 00 00 05 00 00 00 03 67 45 
+[20:05:52] [AioModule/Read/Completed/DEBUG]: Received 22 bytes from session/162.105.38.69:8438
+[20:05:52] [AioModule/Read/Completed/DEBUG]: Received contents(22bytes): ff ff 00 00 00 16 00 0c 00 00 03 f8 00 00 00 05 00 00 00 03 42 c5 
+[20:05:52] [ClientServer/ClientDecoder/INFO]: Receive a package 000C(所有玩家坐标更新)
+[20:05:52] [ClientServer/ClientDecoder/INFO]: package 000C: /id: 1016/posX: 5/posY: 3
+[20:05:52] [ClientServer/GameBox/UpdateThread---queue/INFO]: X: 5.0Y: 3.0
+[20:05:54] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[20:05:54] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to session/162.105.38.69:8438
+[20:05:54] [Client/GameBox/ActionThread/INFO]: nextX5.211480362537764nextY3.0
+[20:05:54] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 03 f8 00 00 00 05 00 00 00 03 67 45 
+[20:05:54] [AioModule/Read/Completed/DEBUG]: Received 22 bytes from session/162.105.38.69:8438
+[20:05:54] [AioModule/Read/Completed/DEBUG]: Received contents(22bytes): ff ff 00 00 00 16 00 0c 00 00 03 f8 00 00 00 05 00 00 00 03 42 c5 
+[20:05:54] [ClientServer/ClientDecoder/INFO]: Receive a package 000C(所有玩家坐标更新)
+[20:05:54] [ClientServer/ClientDecoder/INFO]: package 000C: /id: 1016/posX: 5/posY: 3
+[20:05:54] [ClientServer/GameBox/UpdateThread---queue/INFO]: X: 5.0Y: 3.0
+[20:05:56] [ClientServer/GameBox/mouseClick/INFO]: screenX107.0screenY105.0
+[20:05:56] [ClientServer/GameBox/mouseClick/INFO]: middleX683.0middleY384.0
+[20:05:56] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to session/162.105.38.69:8438
+[20:05:56] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[20:05:56] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 03 f8 00 00 00 06 00 00 00 03 a7 d3 
+[20:05:56] [Client/GameBox/ActionThread/INFO]: nextX6.193548387096774nextY3.0
+[20:05:56] [AioModule/Read/Completed/DEBUG]: Received 22 bytes from session/162.105.38.69:8438
+[20:05:56] [AioModule/Read/Completed/DEBUG]: Received contents(22bytes): ff ff 00 00 00 16 00 0c 00 00 03 f8 00 00 00 06 00 00 00 03 83 53 
+[20:05:56] [ClientServer/ClientDecoder/INFO]: Receive a package 000C(所有玩家坐标更新)
+[20:05:56] [ClientServer/ClientDecoder/INFO]: package 000C: /id: 1016/posX: 6/posY: 3
+[20:05:56] [ClientServer/GameBox/UpdateThread---queue/INFO]: X: 6.0Y: 3.0
+[20:05:56] [ClientServer/GameBox/mouseClick/INFO]: screenX49.0screenY95.0
+[20:05:56] [ClientServer/GameBox/mouseClick/INFO]: middleX683.0middleY384.0
+[20:05:56] [ClientServer/GameBox/mouseClick/INFO]: screenX49.0screenY95.0
+[20:05:56] [ClientServer/GameBox/mouseClick/INFO]: middleX683.0middleY384.0
+[20:05:57] [ClientServer/GameBox/mouseClick/INFO]: screenX49.0screenY95.0
+[20:05:57] [ClientServer/GameBox/mouseClick/INFO]: middleX683.0middleY384.0
+[20:05:57] [ClientServer/GameBox/mouseClick/INFO]: screenX49.0screenY95.0
+[20:05:57] [ClientServer/GameBox/mouseClick/INFO]: middleX683.0middleY384.0
+[20:05:57] [ClientServer/GameBox/mouseClick/INFO]: screenX49.0screenY95.0
+[20:05:57] [ClientServer/GameBox/mouseClick/INFO]: middleX683.0middleY384.0
+[20:05:57] [ClientServer/GameBox/mouseClick/INFO]: screenX49.0screenY95.0
+[20:05:57] [ClientServer/GameBox/mouseClick/INFO]: middleX683.0middleY384.0
+[20:05:57] [ClientServer/GameBox/mouseClick/INFO]: screenX49.0screenY95.0
+[20:05:57] [ClientServer/GameBox/mouseClick/INFO]: middleX683.0middleY384.0
+[20:05:57] [ClientServer/GameBox/mouseClick/INFO]: screenX49.0screenY95.0
+[20:05:57] [ClientServer/GameBox/mouseClick/INFO]: middleX683.0middleY384.0
+[20:05:57] [ClientServer/GameBox/mouseClick/INFO]: screenX49.0screenY95.0
+[20:05:57] [ClientServer/GameBox/mouseClick/INFO]: middleX683.0middleY384.0
+[20:05:58] [ClientServer/GameBox/mouseClick/INFO]: screenX49.0screenY95.0
+[20:05:58] [ClientServer/GameBox/mouseClick/INFO]: middleX683.0middleY384.0
+[20:05:58] [ClientServer/GameBox/mouseClick/INFO]: screenX49.0screenY95.0
+[20:05:58] [ClientServer/GameBox/mouseClick/INFO]: middleX683.0middleY384.0
+[20:05:58] [ClientServer/GameBox/mouseClick/INFO]: screenX49.0screenY95.0
+[20:05:58] [ClientServer/GameBox/mouseClick/INFO]: middleX683.0middleY384.0
+[20:05:58] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[20:05:58] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to session/162.105.38.69:8438
+[20:05:58] [Client/GameBox/ActionThread/INFO]: nextX6.581314878892734nextY3.0
+[20:05:58] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 03 f8 00 00 00 06 00 00 00 03 a7 d3 
+[20:05:58] [AioModule/Read/Completed/DEBUG]: Received 22 bytes from session/162.105.38.69:8438
+[20:05:58] [AioModule/Read/Completed/DEBUG]: Received contents(22bytes): ff ff 00 00 00 16 00 0c 00 00 03 f8 00 00 00 06 00 00 00 03 83 53 
+[20:05:58] [ClientServer/ClientDecoder/INFO]: Receive a package 000C(所有玩家坐标更新)
+[20:05:58] [ClientServer/ClientDecoder/INFO]: package 000C: /id: 1016/posX: 6/posY: 3
+[20:05:58] [ClientServer/GameBox/UpdateThread---queue/INFO]: X: 6.0Y: 3.0
+[20:05:58] [ClientServer/GameBox/mouseClick/INFO]: screenX42.0screenY42.0
+[20:05:58] [ClientServer/GameBox/mouseClick/INFO]: middleX683.0middleY384.0
+[20:05:58] [ClientServer/GameBox/mouseClick/INFO]: screenX42.0screenY42.0
+[20:05:58] [ClientServer/GameBox/mouseClick/INFO]: middleX683.0middleY384.0
+[20:05:58] [ClientServer/GameBox/mouseClick/INFO]: screenX42.0screenY42.0
+[20:05:58] [ClientServer/GameBox/mouseClick/INFO]: middleX683.0middleY384.0
+[20:05:59] [ClientServer/GameBox/mouseClick/INFO]: screenX42.0screenY42.0
+[20:05:59] [ClientServer/GameBox/mouseClick/INFO]: middleX683.0middleY384.0
+[20:05:59] [ClientServer/GameBox/mouseClick/INFO]: screenX42.0screenY42.0
+[20:05:59] [ClientServer/GameBox/mouseClick/INFO]: middleX683.0middleY384.0
+[20:05:59] [ClientServer/GameBox/mouseClick/INFO]: screenX42.0screenY42.0
+[20:05:59] [ClientServer/GameBox/mouseClick/INFO]: middleX683.0middleY384.0
+[20:05:59] [ClientServer/GameBox/mouseClick/INFO]: screenX42.0screenY42.0
+[20:05:59] [ClientServer/GameBox/mouseClick/INFO]: middleX683.0middleY384.0
+[20:05:59] [ClientServer/GameBox/mouseClick/INFO]: screenX42.0screenY42.0
+[20:05:59] [ClientServer/GameBox/mouseClick/INFO]: middleX683.0middleY384.0
+[20:06:00] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[20:06:00] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to session/162.105.38.69:8438
+[20:06:00] [Client/GameBox/ActionThread/INFO]: nextX5.62280701754386nextY3.0
+[20:06:00] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 03 f8 00 00 00 05 00 00 00 03 67 45 
+[20:06:00] [AioModule/Read/Completed/DEBUG]: Received 22 bytes from session/162.105.38.69:8438
+[20:06:00] [AioModule/Read/Completed/DEBUG]: Received contents(22bytes): ff ff 00 00 00 16 00 0c 00 00 03 f8 00 00 00 05 00 00 00 03 42 c5 
+[20:06:00] [ClientServer/ClientDecoder/INFO]: Receive a package 000C(所有玩家坐标更新)
+[20:06:00] [ClientServer/ClientDecoder/INFO]: package 000C: /id: 1016/posX: 5/posY: 3
+[20:06:00] [ClientServer/GameBox/UpdateThread---queue/INFO]: X: 5.0Y: 3.0
+[20:06:02] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[20:06:02] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to session/162.105.38.69:8438
+[20:06:02] [Client/GameBox/ActionThread/INFO]: nextX5.62280701754386nextY3.0
+[20:06:02] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 03 f8 00 00 00 05 00 00 00 03 67 45 
+[20:06:02] [AioModule/Read/Completed/DEBUG]: Received 22 bytes from session/162.105.38.69:8438
+[20:06:02] [AioModule/Read/Completed/DEBUG]: Received contents(22bytes): ff ff 00 00 00 16 00 0c 00 00 03 f8 00 00 00 05 00 00 00 03 42 c5 
+[20:06:02] [ClientServer/ClientDecoder/INFO]: Receive a package 000C(所有玩家坐标更新)
+[20:06:02] [ClientServer/ClientDecoder/INFO]: package 000C: /id: 1016/posX: 5/posY: 3
+[20:06:02] [ClientServer/GameBox/UpdateThread---queue/INFO]: X: 5.0Y: 3.0
+[20:06:04] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to session/162.105.38.69:8438
+[20:06:04] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[20:06:04] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 03 f8 00 00 00 05 00 00 00 03 67 45 
+[20:06:04] [Client/GameBox/ActionThread/INFO]: nextX5.62280701754386nextY3.0
+[20:06:04] [AioModule/Read/Completed/DEBUG]: Received 22 bytes from session/162.105.38.69:8438
+[20:06:04] [AioModule/Read/Completed/DEBUG]: Received contents(22bytes): ff ff 00 00 00 16 00 0c 00 00 03 f8 00 00 00 05 00 00 00 03 42 c5 
+[20:06:04] [ClientServer/ClientDecoder/INFO]: Receive a package 000C(所有玩家坐标更新)
+[20:06:04] [ClientServer/ClientDecoder/INFO]: package 000C: /id: 1016/posX: 5/posY: 3
+[20:06:04] [ClientServer/GameBox/UpdateThread---queue/INFO]: X: 5.0Y: 3.0
+[20:06:06] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[20:06:06] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to session/162.105.38.69:8438
+[20:06:06] [Client/GameBox/ActionThread/INFO]: nextX5.62280701754386nextY3.0
+[20:06:06] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 03 f8 00 00 00 05 00 00 00 03 67 45 
+[20:06:06] [AioModule/Read/Completed/DEBUG]: Received 22 bytes from session/162.105.38.69:8438
+[20:06:06] [AioModule/Read/Completed/DEBUG]: Received contents(22bytes): ff ff 00 00 00 16 00 0c 00 00 03 f8 00 00 00 05 00 00 00 03 42 c5 
+[20:06:06] [ClientServer/ClientDecoder/INFO]: Receive a package 000C(所有玩家坐标更新)
+[20:06:06] [ClientServer/ClientDecoder/INFO]: package 000C: /id: 1016/posX: 5/posY: 3
+[20:06:06] [ClientServer/GameBox/UpdateThread---queue/INFO]: X: 5.0Y: 3.0
+[20:06:08] [Client/GameBox/ActionThread/INFO]: package 000B(角色移动意图) send!
+[20:06:08] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to session/162.105.38.69:8438
+[20:06:08] [Client/GameBox/ActionThread/INFO]: nextX5.62280701754386nextY3.0
+[20:06:08] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 03 f8 00 00 00 05 00 00 00 03 67 45 
+[20:06:08] [AioModule/Read/Completed/DEBUG]: Received 22 bytes from session/162.105.38.69:8438
+[20:06:08] [AioModule/Read/Completed/DEBUG]: Received contents(22bytes): ff ff 00 00 00 16 00 0c 00 00 03 f8 00 00 00 05 00 00 00 03 42 c5 
+[20:06:08] [ClientServer/ClientDecoder/INFO]: Receive a package 000C(所有玩家坐标更新)
+[20:06:08] [ClientServer/ClientDecoder/INFO]: package 000C: /id: 1016/posX: 5/posY: 3
+[20:06:08] [ClientServer/GameBox/UpdateThread---queue/INFO]: X: 5.0Y: 3.0

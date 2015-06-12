@@ -1,0 +1,7 @@
+[15:24:11] [ClientServer/ClientMain/KERNEL]: 1.开始建立网络连接…………
+[15:24:11] [ClientServer/ClientMain/KERNEL]: 2.网络连接成功！启动loginBox
+[15:24:11] [ClientServer/ClientMain/KERNEL]: 2.同时发送0000包，确认对方是否为网关
+[15:24:11] [AioModule/Write/Completed/DEBUG]: Sent 14 bytes to sessionwww.baidu.com/119.75.217.109:80
+[15:24:11] [AioModule/Write/Completed/DEBUG]: Sent contents(14bytes): ff ff 00 00 00 0e 00 00 00 00 30 39 20 db 
+[15:24:21] [ClientSever/LoginBox/serverState/INFO]: Receive a package 0001(回应连接请求)
+[15:24:21] [ClientSever/LoginBox/serverState/INFO]: package 0001: 1

@@ -1,0 +1,440 @@
+[18:43:04] [ClientServer/ClientMain/KERNEL]: 1.开始建立网络连接…………
+[18:43:04] [ClientServer/ClientMain/KERNEL]: 2.网络连接成功！启动loginBox
+[18:43:05] [ClientServer/ClientMain/KERNEL]: 2.同时发送0000包，确认对方是否为网关
+[18:43:05] [AioModule/Write/Completed/DEBUG]: Sent 14 bytes to session/162.105.38.69:8438
+[18:43:05] [AioModule/Write/Completed/DEBUG]: Sent contents(14bytes): ff ff 00 00 00 0e 00 00 00 00 30 39 20 db 
+[18:43:05] [AioModule/Read/Completed/DEBUG]: Received 11 bytes from session/162.105.38.69:8438
+[18:43:05] [AioModule/Read/Completed/DEBUG]: Received contents(11bytes): ff ff 00 00 00 0b 00 01 01 2a 46 
+[18:43:05] [ClientServer/ClientDecoder/INFO]: Receive a package 0001(回应连接请求)
+[18:43:05] [ClientServer/ClientDecoder/INFO]: package 0001: 1
+[18:43:05] [ClientSever/LoginBox/serverState/INFO]: Receive a package 0001(回应连接请求)
+[18:43:05] [ClientSever/LoginBox/serverState/INFO]: package 0001: 1
+[18:43:05] [AioModule/Read/Completed/DEBUG]: Received 11 bytes from session/162.105.38.69:8438
+[18:43:05] [AioModule/Read/Completed/DEBUG]: Received contents(11bytes): ff ff 00 00 00 0b 00 01 01 2a 46 
+[18:43:05] [ClientServer/ClientDecoder/INFO]: Receive a package 0001(回应连接请求)
+[18:43:05] [ClientServer/ClientDecoder/INFO]: package 0001: 1
+[18:43:05] [ClientSever/LoginBox/serverState/INFO]: Receive a package 0001(回应连接请求)
+[18:43:05] [ClientSever/LoginBox/serverState/INFO]: package 0001: 1
+[18:43:05] [AioModule/Read/Completed/DEBUG]: Received 11 bytes from session/162.105.38.69:8438
+[18:43:05] [AioModule/Read/Completed/DEBUG]: Received contents(11bytes): ff ff 00 00 00 0b 00 01 01 2a 46 
+[18:43:05] [ClientServer/ClientDecoder/INFO]: Receive a package 0001(回应连接请求)
+[18:43:05] [ClientServer/ClientDecoder/INFO]: package 0001: 1
+[18:43:05] [ClientSever/LoginBox/serverState/INFO]: Receive a package 0001(回应连接请求)
+[18:43:05] [ClientSever/LoginBox/serverState/INFO]: package 0001: 1
+[18:43:05] [AioModule/Read/Completed/DEBUG]: Received 11 bytes from session/162.105.38.69:8438
+[18:43:05] [AioModule/Read/Completed/DEBUG]: Received contents(11bytes): ff ff 00 00 00 0b 00 01 01 2a 46 
+[18:43:05] [ClientServer/ClientDecoder/INFO]: Receive a package 0001(回应连接请求)
+[18:43:05] [ClientServer/ClientDecoder/INFO]: package 0001: 1
+[18:43:05] [ClientSever/LoginBox/serverState/INFO]: Receive a package 0001(回应连接请求)
+[18:43:05] [ClientSever/LoginBox/serverState/INFO]: package 0001: 1
+[18:43:05] [AioModule/Read/Completed/DEBUG]: Received 11 bytes from session/162.105.38.69:8438
+[18:43:05] [AioModule/Read/Completed/DEBUG]: Received contents(11bytes): ff ff 00 00 00 0b 00 01 01 2a 46 
+[18:43:05] [ClientServer/ClientDecoder/INFO]: Receive a package 0001(回应连接请求)
+[18:43:05] [ClientServer/ClientDecoder/INFO]: package 0001: 1
+[18:43:05] [ClientSever/LoginBox/serverState/INFO]: Receive a package 0001(回应连接请求)
+[18:43:05] [ClientSever/LoginBox/serverState/INFO]: package 0001: 1
+[18:43:06] [AioModule/Read/Completed/DEBUG]: Received 11 bytes from session/162.105.38.69:8438
+[18:43:06] [AioModule/Read/Completed/DEBUG]: Received contents(11bytes): ff ff 00 00 00 0b 00 01 01 2a 46 
+[18:43:06] [ClientServer/ClientDecoder/INFO]: Receive a package 0001(回应连接请求)
+[18:43:06] [ClientServer/ClientDecoder/INFO]: package 0001: 1
+[18:43:06] [ClientSever/LoginBox/serverState/INFO]: Receive a package 0001(回应连接请求)
+[18:43:06] [ClientSever/LoginBox/serverState/INFO]: package 0001: 1
+[18:43:06] [AioModule/Read/Completed/DEBUG]: Received 11 bytes from session/162.105.38.69:8438
+[18:43:06] [AioModule/Read/Completed/DEBUG]: Received contents(11bytes): ff ff 00 00 00 0b 00 01 01 2a 46 
+[18:43:06] [ClientServer/ClientDecoder/INFO]: Receive a package 0001(回应连接请求)
+[18:43:06] [ClientServer/ClientDecoder/INFO]: package 0001: 1
+[18:43:06] [ClientSever/LoginBox/serverState/INFO]: Receive a package 0001(回应连接请求)
+[18:43:06] [ClientSever/LoginBox/serverState/INFO]: package 0001: 1
+[18:43:06] [AioModule/Read/Completed/DEBUG]: Received 11 bytes from session/162.105.38.69:8438
+[18:43:06] [AioModule/Read/Completed/DEBUG]: Received contents(11bytes): ff ff 00 00 00 0b 00 01 01 2a 46 
+[18:43:06] [ClientServer/ClientDecoder/INFO]: Receive a package 0001(回应连接请求)
+[18:43:06] [ClientServer/ClientDecoder/INFO]: package 0001: 1
+[18:43:06] [ClientSever/LoginBox/serverState/INFO]: Receive a package 0001(回应连接请求)
+[18:43:06] [ClientSever/LoginBox/serverState/INFO]: package 0001: 1
+[18:43:06] [AioModule/Read/Completed/DEBUG]: Received 11 bytes from session/162.105.38.69:8438
+[18:43:06] [AioModule/Read/Completed/DEBUG]: Received contents(11bytes): ff ff 00 00 00 0b 00 01 01 2a 46 
+[18:43:06] [ClientServer/ClientDecoder/INFO]: Receive a package 0001(回应连接请求)
+[18:43:06] [ClientServer/ClientDecoder/INFO]: package 0001: 1
+[18:43:06] [ClientSever/LoginBox/serverState/INFO]: Receive a package 0001(回应连接请求)
+[18:43:06] [ClientSever/LoginBox/serverState/INFO]: package 0001: 1
+[18:43:06] [AioModule/Read/Completed/DEBUG]: Received 11 bytes from session/162.105.38.69:8438
+[18:43:06] [AioModule/Read/Completed/DEBUG]: Received contents(11bytes): ff ff 00 00 00 0b 00 01 01 2a 46 
+[18:43:06] [ClientServer/ClientDecoder/INFO]: Receive a package 0001(回应连接请求)
+[18:43:06] [ClientServer/ClientDecoder/INFO]: package 0001: 1
+[18:43:06] [ClientSever/LoginBox/serverState/INFO]: Receive a package 0001(回应连接请求)
+[18:43:06] [ClientSever/LoginBox/serverState/INFO]: package 0001: 1
+[18:43:06] [AioModule/Read/Completed/DEBUG]: Received 11 bytes from session/162.105.38.69:8438
+[18:43:06] [AioModule/Read/Completed/DEBUG]: Received contents(11bytes): ff ff 00 00 00 0b 00 01 01 2a 46 
+[18:43:06] [ClientServer/ClientDecoder/INFO]: Receive a package 0001(回应连接请求)
+[18:43:06] [ClientServer/ClientDecoder/INFO]: package 0001: 1
+[18:43:06] [ClientSever/LoginBox/serverState/INFO]: Receive a package 0001(回应连接请求)
+[18:43:06] [ClientSever/LoginBox/serverState/INFO]: package 0001: 1
+[18:43:07] [AioModule/Read/Completed/DEBUG]: Received 11 bytes from session/162.105.38.69:8438
+[18:43:07] [AioModule/Read/Completed/DEBUG]: Received contents(11bytes): ff ff 00 00 00 0b 00 01 01 2a 46 
+[18:43:07] [ClientServer/ClientDecoder/INFO]: Receive a package 0001(回应连接请求)
+[18:43:07] [ClientServer/ClientDecoder/INFO]: package 0001: 1
+[18:43:07] [ClientSever/LoginBox/serverState/INFO]: Receive a package 0001(回应连接请求)
+[18:43:07] [ClientSever/LoginBox/serverState/INFO]: package 0001: 1
+[18:43:07] [AioModule/Write/Completed/DEBUG]: Sent 46 bytes to session/162.105.38.69:8438
+[18:43:07] [ClientServer/LoginBox/INFO]: package 0002(登陆信息) send!
+[18:43:07] [AioModule/Write/Completed/DEBUG]: Sent contents(46bytes): ff ff 00 00 00 2e 00 02 31 31 00 36 35 31 32 42 44 34 33 44 39 43 41 41 36 45 30 32 43 39 39 30 42 30 41 38 32 36 35 32 44 43 41 00 63 82 
+[18:43:07] [AioModule/Read/Completed/DEBUG]: Received 11 bytes from session/162.105.38.69:8438
+[18:43:07] [AioModule/Read/Completed/DEBUG]: Received contents(11bytes): ff ff 00 00 00 0b 00 01 01 2a 46 
+[18:43:07] [ClientServer/ClientDecoder/INFO]: Receive a package 0001(回应连接请求)
+[18:43:07] [ClientServer/ClientDecoder/INFO]: package 0001: 1
+[18:43:07] [ClientSever/LoginBox/serverState/INFO]: Receive a package 0001(回应连接请求)
+[18:43:07] [ClientSever/LoginBox/serverState/INFO]: package 0001: 1
+[18:43:07] [AioModule/Read/Completed/DEBUG]: Received 11 bytes from session/162.105.38.69:8438
+[18:43:07] [AioModule/Read/Completed/DEBUG]: Received contents(11bytes): ff ff 00 00 00 0b 00 01 01 2a 46 
+[18:43:07] [ClientServer/ClientDecoder/INFO]: Receive a package 0001(回应连接请求)
+[18:43:07] [ClientServer/ClientDecoder/INFO]: package 0001: 1
+[18:43:07] [ClientSever/LoginBox/serverState/INFO]: Receive a package 0001(回应连接请求)
+[18:43:07] [ClientSever/LoginBox/serverState/INFO]: package 0001: 1
+[18:43:07] [AioModule/Read/Completed/DEBUG]: Received 11 bytes from session/162.105.38.69:8438
+[18:43:07] [AioModule/Read/Completed/DEBUG]: Received contents(11bytes): ff ff 00 00 00 0b 00 01 01 2a 46 
+[18:43:07] [ClientServer/ClientDecoder/INFO]: Receive a package 0001(回应连接请求)
+[18:43:07] [ClientServer/ClientDecoder/INFO]: package 0001: 1
+[18:43:07] [ClientSever/LoginBox/serverState/INFO]: Receive a package 0001(回应连接请求)
+[18:43:07] [ClientSever/LoginBox/serverState/INFO]: package 0001: 1
+[18:43:07] [AioModule/Read/Completed/DEBUG]: Received 11 bytes from session/162.105.38.69:8438
+[18:43:07] [AioModule/Read/Completed/DEBUG]: Received contents(11bytes): ff ff 00 00 00 0b 00 01 01 2a 46 
+[18:43:07] [ClientServer/ClientDecoder/INFO]: Receive a package 0001(回应连接请求)
+[18:43:07] [ClientServer/ClientDecoder/INFO]: package 0001: 1
+[18:43:07] [ClientSever/LoginBox/serverState/INFO]: Receive a package 0001(回应连接请求)
+[18:43:07] [ClientSever/LoginBox/serverState/INFO]: package 0001: 1
+[18:43:07] [AioModule/Read/Completed/DEBUG]: Received 11 bytes from session/162.105.38.69:8438
+[18:43:07] [AioModule/Read/Completed/DEBUG]: Received contents(11bytes): ff ff 00 00 00 0b 00 01 01 2a 46 
+[18:43:07] [ClientServer/ClientDecoder/INFO]: Receive a package 0001(回应连接请求)
+[18:43:07] [ClientServer/ClientDecoder/INFO]: package 0001: 1
+[18:43:07] [ClientSever/LoginBox/serverState/INFO]: Receive a package 0001(回应连接请求)
+[18:43:07] [ClientSever/LoginBox/serverState/INFO]: package 0001: 1
+[18:43:07] [AioModule/Read/Completed/DEBUG]: Received 11 bytes from session/162.105.38.69:8438
+[18:43:07] [AioModule/Read/Completed/DEBUG]: Received contents(11bytes): ff ff 00 00 00 0b 00 01 01 2a 46 
+[18:43:07] [ClientServer/ClientDecoder/INFO]: Receive a package 0001(回应连接请求)
+[18:43:07] [ClientServer/ClientDecoder/INFO]: package 0001: 1
+[18:43:08] [ClientSever/LoginBox/serverState/INFO]: Receive a package 0001(回应连接请求)
+[18:43:08] [ClientSever/LoginBox/serverState/INFO]: package 0001: 1
+[18:43:08] [AioModule/Read/Completed/DEBUG]: Received 11 bytes from session/162.105.38.69:8438
+[18:43:08] [AioModule/Read/Completed/DEBUG]: Received contents(11bytes): ff ff 00 00 00 0b 00 01 01 2a 46 
+[18:43:08] [ClientServer/ClientDecoder/INFO]: Receive a package 0001(回应连接请求)
+[18:43:08] [ClientServer/ClientDecoder/INFO]: package 0001: 1
+[18:43:08] [ClientSever/LoginBox/serverState/INFO]: Receive a package 0001(回应连接请求)
+[18:43:08] [ClientSever/LoginBox/serverState/INFO]: package 0001: 1
+[18:43:08] [AioModule/Read/Completed/DEBUG]: Received 11 bytes from session/162.105.38.69:8438
+[18:43:08] [AioModule/Read/Completed/DEBUG]: Received contents(11bytes): ff ff 00 00 00 0b 00 01 01 2a 46 
+[18:43:08] [ClientServer/ClientDecoder/INFO]: Receive a package 0001(回应连接请求)
+[18:43:08] [ClientServer/ClientDecoder/INFO]: package 0001: 1
+[18:43:08] [ClientSever/LoginBox/serverState/INFO]: Receive a package 0001(回应连接请求)
+[18:43:08] [ClientSever/LoginBox/serverState/INFO]: package 0001: 1
+[18:43:08] [AioModule/Read/Completed/DEBUG]: Received 11 bytes from session/162.105.38.69:8438
+[18:43:08] [AioModule/Read/Completed/DEBUG]: Received contents(11bytes): ff ff 00 00 00 0b 00 01 01 2a 46 
+[18:43:08] [ClientServer/ClientDecoder/INFO]: Receive a package 0001(回应连接请求)
+[18:43:08] [ClientServer/ClientDecoder/INFO]: package 0001: 1
+[18:43:08] [ClientSever/LoginBox/serverState/INFO]: Receive a package 0001(回应连接请求)
+[18:43:08] [ClientSever/LoginBox/serverState/INFO]: package 0001: 1
+[18:43:08] [AioModule/Read/Completed/DEBUG]: Received 11 bytes from session/162.105.38.69:8438
+[18:43:08] [AioModule/Read/Completed/DEBUG]: Received contents(11bytes): ff ff 00 00 00 0b 00 01 01 2a 46 
+[18:43:08] [ClientServer/ClientDecoder/INFO]: Receive a package 0001(回应连接请求)
+[18:43:08] [ClientServer/ClientDecoder/INFO]: package 0001: 1
+[18:43:08] [ClientSever/LoginBox/serverState/INFO]: Receive a package 0001(回应连接请求)
+[18:43:08] [ClientSever/LoginBox/serverState/INFO]: package 0001: 1
+[18:43:08] [AioModule/Read/Completed/DEBUG]: Received 11 bytes from session/162.105.38.69:8438
+[18:43:08] [AioModule/Read/Completed/DEBUG]: Received contents(11bytes): ff ff 00 00 00 0b 00 01 01 2a 46 
+[18:43:08] [ClientServer/ClientDecoder/INFO]: Receive a package 0001(回应连接请求)
+[18:43:08] [ClientServer/ClientDecoder/INFO]: package 0001: 1
+[18:43:08] [ClientSever/LoginBox/serverState/INFO]: Receive a package 0001(回应连接请求)
+[18:43:08] [ClientSever/LoginBox/serverState/INFO]: package 0001: 1
+[18:43:08] [AioModule/Read/Completed/DEBUG]: Received 11 bytes from session/162.105.38.69:8438
+[18:43:08] [AioModule/Read/Completed/DEBUG]: Received contents(11bytes): ff ff 00 00 00 0b 00 01 01 2a 46 
+[18:43:08] [ClientServer/ClientDecoder/INFO]: Receive a package 0001(回应连接请求)
+[18:43:08] [ClientServer/ClientDecoder/INFO]: package 0001: 1
+[18:43:08] [ClientSever/LoginBox/serverState/INFO]: Receive a package 0001(回应连接请求)
+[18:43:08] [ClientSever/LoginBox/serverState/INFO]: package 0001: 1
+[18:43:09] [AioModule/Read/Completed/DEBUG]: Received 11 bytes from session/162.105.38.69:8438
+[18:43:09] [AioModule/Read/Completed/DEBUG]: Received contents(11bytes): ff ff 00 00 00 0b 00 01 01 2a 46 
+[18:43:09] [ClientServer/ClientDecoder/INFO]: Receive a package 0001(回应连接请求)
+[18:43:09] [ClientServer/ClientDecoder/INFO]: package 0001: 1
+[18:43:09] [ClientSever/LoginBox/serverState/INFO]: Receive a package 0001(回应连接请求)
+[18:43:09] [ClientSever/LoginBox/serverState/INFO]: package 0001: 1
+[18:43:09] [AioModule/Read/Completed/DEBUG]: Received 11 bytes from session/162.105.38.69:8438
+[18:43:09] [AioModule/Read/Completed/DEBUG]: Received contents(11bytes): ff ff 00 00 00 0b 00 01 01 2a 46 
+[18:43:09] [ClientServer/ClientDecoder/INFO]: Receive a package 0001(回应连接请求)
+[18:43:09] [ClientServer/ClientDecoder/INFO]: package 0001: 1
+[18:43:09] [ClientSever/LoginBox/serverState/INFO]: Receive a package 0001(回应连接请求)
+[18:43:09] [ClientSever/LoginBox/serverState/INFO]: package 0001: 1
+[18:43:09] [AioModule/Read/Completed/DEBUG]: Received 11 bytes from session/162.105.38.69:8438
+[18:43:09] [AioModule/Read/Completed/DEBUG]: Received contents(11bytes): ff ff 00 00 00 0b 00 01 01 2a 46 
+[18:43:09] [ClientServer/ClientDecoder/INFO]: Receive a package 0001(回应连接请求)
+[18:43:09] [ClientServer/ClientDecoder/INFO]: package 0001: 1
+[18:43:09] [ClientSever/LoginBox/serverState/INFO]: Receive a package 0001(回应连接请求)
+[18:43:09] [ClientSever/LoginBox/serverState/INFO]: package 0001: 1
+[18:43:09] [AioModule/Read/Completed/DEBUG]: Received 11 bytes from session/162.105.38.69:8438
+[18:43:09] [AioModule/Read/Completed/DEBUG]: Received contents(11bytes): ff ff 00 00 00 0b 00 01 01 2a 46 
+[18:43:09] [ClientServer/ClientDecoder/INFO]: Receive a package 0001(回应连接请求)
+[18:43:09] [ClientServer/ClientDecoder/INFO]: package 0001: 1
+[18:43:09] [ClientSever/LoginBox/serverState/INFO]: Receive a package 0001(回应连接请求)
+[18:43:09] [ClientSever/LoginBox/serverState/INFO]: package 0001: 1
+[18:43:09] [AioModule/Read/Completed/DEBUG]: Received 11 bytes from session/162.105.38.69:8438
+[18:43:09] [AioModule/Read/Completed/DEBUG]: Received contents(11bytes): ff ff 00 00 00 0b 00 01 01 2a 46 
+[18:43:09] [ClientServer/ClientDecoder/INFO]: Receive a package 0001(回应连接请求)
+[18:43:09] [ClientServer/ClientDecoder/INFO]: package 0001: 1
+[18:43:09] [ClientSever/LoginBox/serverState/INFO]: Receive a package 0001(回应连接请求)
+[18:43:09] [ClientSever/LoginBox/serverState/INFO]: package 0001: 1
+[18:43:10] [AioModule/Read/Completed/DEBUG]: Received 11 bytes from session/162.105.38.69:8438
+[18:43:10] [AioModule/Read/Completed/DEBUG]: Received contents(11bytes): ff ff 00 00 00 0b 00 01 01 2a 46 
+[18:43:10] [ClientServer/ClientDecoder/INFO]: Receive a package 0001(回应连接请求)
+[18:43:10] [ClientServer/ClientDecoder/INFO]: package 0001: 1
+[18:43:10] [ClientSever/LoginBox/serverState/INFO]: Receive a package 0001(回应连接请求)
+[18:43:10] [ClientSever/LoginBox/serverState/INFO]: package 0001: 1
+[18:43:10] [AioModule/Read/Completed/DEBUG]: Received 11 bytes from session/162.105.38.69:8438
+[18:43:10] [AioModule/Read/Completed/DEBUG]: Received contents(11bytes): ff ff 00 00 00 0b 00 01 01 2a 46 
+[18:43:10] [ClientServer/ClientDecoder/INFO]: Receive a package 0001(回应连接请求)
+[18:43:10] [ClientServer/ClientDecoder/INFO]: package 0001: 1
+[18:43:10] [ClientSever/LoginBox/serverState/INFO]: Receive a package 0001(回应连接请求)
+[18:43:10] [ClientSever/LoginBox/serverState/INFO]: package 0001: 1
+[18:43:10] [AioModule/Read/Completed/DEBUG]: Received 11 bytes from session/162.105.38.69:8438
+[18:43:10] [AioModule/Read/Completed/DEBUG]: Received contents(11bytes): ff ff 00 00 00 0b 00 01 01 2a 46 
+[18:43:10] [ClientServer/ClientDecoder/INFO]: Receive a package 0001(回应连接请求)
+[18:43:10] [ClientServer/ClientDecoder/INFO]: package 0001: 1
+[18:43:10] [ClientSever/LoginBox/serverState/INFO]: Receive a package 0001(回应连接请求)
+[18:43:10] [ClientSever/LoginBox/serverState/INFO]: package 0001: 1
+[18:43:10] [AioModule/Read/Completed/DEBUG]: Received 11 bytes from session/162.105.38.69:8438
+[18:43:10] [AioModule/Read/Completed/DEBUG]: Received contents(11bytes): ff ff 00 00 00 0b 00 01 01 2a 46 
+[18:43:10] [ClientServer/ClientDecoder/INFO]: Receive a package 0001(回应连接请求)
+[18:43:10] [ClientServer/ClientDecoder/INFO]: package 0001: 1
+[18:43:10] [ClientSever/LoginBox/serverState/INFO]: Receive a package 0001(回应连接请求)
+[18:43:10] [ClientSever/LoginBox/serverState/INFO]: package 0001: 1
+[18:43:10] [AioModule/Read/Completed/DEBUG]: Received 11 bytes from session/162.105.38.69:8438
+[18:43:10] [AioModule/Read/Completed/DEBUG]: Received contents(11bytes): ff ff 00 00 00 0b 00 01 01 2a 46 
+[18:43:10] [ClientServer/ClientDecoder/INFO]: Receive a package 0001(回应连接请求)
+[18:43:10] [ClientServer/ClientDecoder/INFO]: package 0001: 1
+[18:43:10] [ClientSever/LoginBox/serverState/INFO]: Receive a package 0001(回应连接请求)
+[18:43:10] [ClientSever/LoginBox/serverState/INFO]: package 0001: 1
+[18:43:11] [AioModule/Read/Completed/DEBUG]: Received 11 bytes from session/162.105.38.69:8438
+[18:43:11] [AioModule/Read/Completed/DEBUG]: Received contents(11bytes): ff ff 00 00 00 0b 00 01 01 2a 46 
+[18:43:11] [ClientServer/ClientDecoder/INFO]: Receive a package 0001(回应连接请求)
+[18:43:11] [ClientServer/ClientDecoder/INFO]: package 0001: 1
+[18:43:11] [ClientSever/LoginBox/serverState/INFO]: Receive a package 0001(回应连接请求)
+[18:43:11] [ClientSever/LoginBox/serverState/INFO]: package 0001: 1
+[18:43:11] [AioModule/Read/Completed/DEBUG]: Received 11 bytes from session/162.105.38.69:8438
+[18:43:11] [AioModule/Read/Completed/DEBUG]: Received contents(11bytes): ff ff 00 00 00 0b 00 01 01 2a 46 
+[18:43:11] [ClientServer/ClientDecoder/INFO]: Receive a package 0001(回应连接请求)
+[18:43:11] [ClientServer/ClientDecoder/INFO]: package 0001: 1
+[18:43:11] [ClientSever/LoginBox/serverState/INFO]: Receive a package 0001(回应连接请求)
+[18:43:11] [ClientSever/LoginBox/serverState/INFO]: package 0001: 1
+[18:43:11] [AioModule/Read/Completed/DEBUG]: Received 11 bytes from session/162.105.38.69:8438
+[18:43:11] [AioModule/Read/Completed/DEBUG]: Received contents(11bytes): ff ff 00 00 00 0b 00 01 01 2a 46 
+[18:43:11] [ClientServer/ClientDecoder/INFO]: Receive a package 0001(回应连接请求)
+[18:43:11] [ClientServer/ClientDecoder/INFO]: package 0001: 1
+[18:43:11] [ClientSever/LoginBox/serverState/INFO]: Receive a package 0001(回应连接请求)
+[18:43:11] [ClientSever/LoginBox/serverState/INFO]: package 0001: 1
+[18:43:11] [AioModule/Read/Completed/DEBUG]: Received 11 bytes from session/162.105.38.69:8438
+[18:43:11] [AioModule/Read/Completed/DEBUG]: Received contents(11bytes): ff ff 00 00 00 0b 00 01 01 2a 46 
+[18:43:11] [ClientServer/ClientDecoder/INFO]: Receive a package 0001(回应连接请求)
+[18:43:11] [ClientServer/ClientDecoder/INFO]: package 0001: 1
+[18:43:11] [ClientSever/LoginBox/serverState/INFO]: Receive a package 0001(回应连接请求)
+[18:43:11] [ClientSever/LoginBox/serverState/INFO]: package 0001: 1
+[18:43:11] [AioModule/Read/Completed/DEBUG]: Received 11 bytes from session/162.105.38.69:8438
+[18:43:11] [AioModule/Read/Completed/DEBUG]: Received contents(11bytes): ff ff 00 00 00 0b 00 01 01 2a 46 
+[18:43:11] [ClientServer/ClientDecoder/INFO]: Receive a package 0001(回应连接请求)
+[18:43:11] [ClientServer/ClientDecoder/INFO]: package 0001: 1
+[18:43:11] [ClientSever/LoginBox/serverState/INFO]: Receive a package 0001(回应连接请求)
+[18:43:11] [ClientSever/LoginBox/serverState/INFO]: package 0001: 1
+[18:43:11] [AioModule/Read/Completed/DEBUG]: Received 11 bytes from session/162.105.38.69:8438
+[18:43:11] [AioModule/Read/Completed/DEBUG]: Received contents(11bytes): ff ff 00 00 00 0b 00 01 01 2a 46 
+[18:43:11] [ClientServer/ClientDecoder/INFO]: Receive a package 0001(回应连接请求)
+[18:43:11] [ClientServer/ClientDecoder/INFO]: package 0001: 1
+[18:43:11] [ClientSever/LoginBox/serverState/INFO]: Receive a package 0001(回应连接请求)
+[18:43:11] [ClientSever/LoginBox/serverState/INFO]: package 0001: 1
+[18:43:12] [AioModule/Read/Completed/DEBUG]: Received 11 bytes from session/162.105.38.69:8438
+[18:43:12] [AioModule/Read/Completed/DEBUG]: Received contents(11bytes): ff ff 00 00 00 0b 00 01 01 2a 46 
+[18:43:12] [ClientServer/ClientDecoder/INFO]: Receive a package 0001(回应连接请求)
+[18:43:12] [ClientServer/ClientDecoder/INFO]: package 0001: 1
+[18:43:12] [ClientSever/LoginBox/serverState/INFO]: Receive a package 0001(回应连接请求)
+[18:43:12] [ClientSever/LoginBox/serverState/INFO]: package 0001: 1
+[18:43:12] [AioModule/Read/Completed/DEBUG]: Received 11 bytes from session/162.105.38.69:8438
+[18:43:12] [AioModule/Read/Completed/DEBUG]: Received contents(11bytes): ff ff 00 00 00 0b 00 01 01 2a 46 
+[18:43:12] [ClientServer/ClientDecoder/INFO]: Receive a package 0001(回应连接请求)
+[18:43:12] [ClientServer/ClientDecoder/INFO]: package 0001: 1
+[18:43:12] [ClientSever/LoginBox/serverState/INFO]: Receive a package 0001(回应连接请求)
+[18:43:12] [ClientSever/LoginBox/serverState/INFO]: package 0001: 1
+[18:43:12] [AioModule/Read/Completed/DEBUG]: Received 11 bytes from session/162.105.38.69:8438
+[18:43:12] [AioModule/Read/Completed/DEBUG]: Received contents(11bytes): ff ff 00 00 00 0b 00 01 01 2a 46 
+[18:43:12] [ClientServer/ClientDecoder/INFO]: Receive a package 0001(回应连接请求)
+[18:43:12] [ClientServer/ClientDecoder/INFO]: package 0001: 1
+[18:43:12] [ClientSever/LoginBox/serverState/INFO]: Receive a package 0001(回应连接请求)
+[18:43:12] [ClientSever/LoginBox/serverState/INFO]: package 0001: 1
+[18:43:12] [AioModule/Read/Completed/DEBUG]: Received 11 bytes from session/162.105.38.69:8438
+[18:43:12] [AioModule/Read/Completed/DEBUG]: Received contents(11bytes): ff ff 00 00 00 0b 00 01 01 2a 46 
+[18:43:12] [ClientServer/ClientDecoder/INFO]: Receive a package 0001(回应连接请求)
+[18:43:12] [ClientServer/ClientDecoder/INFO]: package 0001: 1
+[18:43:12] [ClientSever/LoginBox/serverState/INFO]: Receive a package 0001(回应连接请求)
+[18:43:12] [ClientSever/LoginBox/serverState/INFO]: package 0001: 1
+[18:43:12] [AioModule/Read/Completed/DEBUG]: Received 11 bytes from session/162.105.38.69:8438
+[18:43:12] [AioModule/Read/Completed/DEBUG]: Received contents(11bytes): ff ff 00 00 00 0b 00 01 01 2a 46 
+[18:43:12] [ClientServer/ClientDecoder/INFO]: Receive a package 0001(回应连接请求)
+[18:43:12] [ClientServer/ClientDecoder/INFO]: package 0001: 1
+[18:43:12] [ClientSever/LoginBox/serverState/INFO]: Receive a package 0001(回应连接请求)
+[18:43:12] [ClientSever/LoginBox/serverState/INFO]: package 0001: 1
+[18:43:13] [AioModule/Read/Completed/DEBUG]: Received 11 bytes from session/162.105.38.69:8438
+[18:43:13] [AioModule/Read/Completed/DEBUG]: Received contents(11bytes): ff ff 00 00 00 0b 00 01 01 2a 46 
+[18:43:13] [ClientServer/ClientDecoder/INFO]: Receive a package 0001(回应连接请求)
+[18:43:13] [ClientServer/ClientDecoder/INFO]: package 0001: 1
+[18:43:13] [ClientSever/LoginBox/serverState/INFO]: Receive a package 0001(回应连接请求)
+[18:43:13] [ClientSever/LoginBox/serverState/INFO]: package 0001: 1
+[18:43:13] [AioModule/Read/Completed/DEBUG]: Received 11 bytes from session/162.105.38.69:8438
+[18:43:13] [AioModule/Read/Completed/DEBUG]: Received contents(11bytes): ff ff 00 00 00 0b 00 01 01 2a 46 
+[18:43:13] [ClientServer/ClientDecoder/INFO]: Receive a package 0001(回应连接请求)
+[18:43:13] [ClientServer/ClientDecoder/INFO]: package 0001: 1
+[18:43:13] [ClientSever/LoginBox/serverState/INFO]: Receive a package 0001(回应连接请求)
+[18:43:13] [ClientSever/LoginBox/serverState/INFO]: package 0001: 1
+[18:43:13] [AioModule/Read/Completed/DEBUG]: Received 11 bytes from session/162.105.38.69:8438
+[18:43:13] [AioModule/Read/Completed/DEBUG]: Received contents(11bytes): ff ff 00 00 00 0b 00 01 01 2a 46 
+[18:43:13] [ClientServer/ClientDecoder/INFO]: Receive a package 0001(回应连接请求)
+[18:43:13] [ClientServer/ClientDecoder/INFO]: package 0001: 1
+[18:43:13] [ClientSever/LoginBox/serverState/INFO]: Receive a package 0001(回应连接请求)
+[18:43:13] [ClientSever/LoginBox/serverState/INFO]: package 0001: 1
+[18:43:13] [AioModule/Read/Completed/DEBUG]: Received 11 bytes from session/162.105.38.69:8438
+[18:43:13] [AioModule/Read/Completed/DEBUG]: Received contents(11bytes): ff ff 00 00 00 0b 00 01 01 2a 46 
+[18:43:13] [ClientServer/ClientDecoder/INFO]: Receive a package 0001(回应连接请求)
+[18:43:13] [ClientServer/ClientDecoder/INFO]: package 0001: 1
+[18:43:13] [ClientSever/LoginBox/serverState/INFO]: Receive a package 0001(回应连接请求)
+[18:43:13] [ClientSever/LoginBox/serverState/INFO]: package 0001: 1
+[18:43:13] [AioModule/Read/Completed/DEBUG]: Received 11 bytes from session/162.105.38.69:8438
+[18:43:13] [AioModule/Read/Completed/DEBUG]: Received contents(11bytes): ff ff 00 00 00 0b 00 01 01 2a 46 
+[18:43:13] [ClientServer/ClientDecoder/INFO]: Receive a package 0001(回应连接请求)
+[18:43:13] [ClientServer/ClientDecoder/INFO]: package 0001: 1
+[18:43:13] [ClientSever/LoginBox/serverState/INFO]: Receive a package 0001(回应连接请求)
+[18:43:13] [ClientSever/LoginBox/serverState/INFO]: package 0001: 1
+[18:43:13] [AioModule/Read/Completed/DEBUG]: Received 11 bytes from session/162.105.38.69:8438
+[18:43:13] [AioModule/Read/Completed/DEBUG]: Received contents(11bytes): ff ff 00 00 00 0b 00 01 01 2a 46 
+[18:43:13] [ClientServer/ClientDecoder/INFO]: Receive a package 0001(回应连接请求)
+[18:43:13] [ClientServer/ClientDecoder/INFO]: package 0001: 1
+[18:43:13] [ClientSever/LoginBox/serverState/INFO]: Receive a package 0001(回应连接请求)
+[18:43:13] [ClientSever/LoginBox/serverState/INFO]: package 0001: 1
+[18:43:13] [AioModule/Read/Completed/DEBUG]: Received 11 bytes from session/162.105.38.69:8438
+[18:43:13] [AioModule/Read/Completed/DEBUG]: Received contents(11bytes): ff ff 00 00 00 0b 00 01 01 2a 46 
+[18:43:13] [ClientServer/ClientDecoder/INFO]: Receive a package 0001(回应连接请求)
+[18:43:13] [ClientServer/ClientDecoder/INFO]: package 0001: 1
+[18:43:13] [ClientSever/LoginBox/serverState/INFO]: Receive a package 0001(回应连接请求)
+[18:43:13] [ClientSever/LoginBox/serverState/INFO]: package 0001: 1
+[18:43:14] [AioModule/Read/Completed/DEBUG]: Received 11 bytes from session/162.105.38.69:8438
+[18:43:14] [AioModule/Read/Completed/DEBUG]: Received contents(11bytes): ff ff 00 00 00 0b 00 01 01 2a 46 
+[18:43:14] [ClientServer/ClientDecoder/INFO]: Receive a package 0001(回应连接请求)
+[18:43:14] [ClientServer/ClientDecoder/INFO]: package 0001: 1
+[18:43:14] [ClientSever/LoginBox/serverState/INFO]: Receive a package 0001(回应连接请求)
+[18:43:14] [ClientSever/LoginBox/serverState/INFO]: package 0001: 1
+[18:43:14] [AioModule/Read/Completed/DEBUG]: Received 11 bytes from session/162.105.38.69:8438
+[18:43:14] [AioModule/Read/Completed/DEBUG]: Received contents(11bytes): ff ff 00 00 00 0b 00 01 01 2a 46 
+[18:43:14] [ClientServer/ClientDecoder/INFO]: Receive a package 0001(回应连接请求)
+[18:43:14] [ClientServer/ClientDecoder/INFO]: package 0001: 1
+[18:43:14] [ClientSever/LoginBox/serverState/INFO]: Receive a package 0001(回应连接请求)
+[18:43:14] [ClientSever/LoginBox/serverState/INFO]: package 0001: 1
+[18:43:14] [AioModule/Read/Completed/DEBUG]: Received 11 bytes from session/162.105.38.69:8438
+[18:43:14] [AioModule/Read/Completed/DEBUG]: Received contents(11bytes): ff ff 00 00 00 0b 00 01 01 2a 46 
+[18:43:14] [ClientServer/ClientDecoder/INFO]: Receive a package 0001(回应连接请求)
+[18:43:14] [ClientServer/ClientDecoder/INFO]: package 0001: 1
+[18:43:14] [ClientSever/LoginBox/serverState/INFO]: Receive a package 0001(回应连接请求)
+[18:43:14] [ClientSever/LoginBox/serverState/INFO]: package 0001: 1
+[18:43:14] [AioModule/Read/Completed/DEBUG]: Received 11 bytes from session/162.105.38.69:8438
+[18:43:14] [AioModule/Read/Completed/DEBUG]: Received contents(11bytes): ff ff 00 00 00 0b 00 01 01 2a 46 
+[18:43:14] [ClientServer/ClientDecoder/INFO]: Receive a package 0001(回应连接请求)
+[18:43:14] [ClientServer/ClientDecoder/INFO]: package 0001: 1
+[18:43:14] [ClientSever/LoginBox/serverState/INFO]: Receive a package 0001(回应连接请求)
+[18:43:14] [ClientSever/LoginBox/serverState/INFO]: package 0001: 1
+[18:43:14] [AioModule/Read/Completed/DEBUG]: Received 11 bytes from session/162.105.38.69:8438
+[18:43:14] [AioModule/Read/Completed/DEBUG]: Received contents(11bytes): ff ff 00 00 00 0b 00 01 01 2a 46 
+[18:43:14] [ClientServer/ClientDecoder/INFO]: Receive a package 0001(回应连接请求)
+[18:43:14] [ClientServer/ClientDecoder/INFO]: package 0001: 1
+[18:43:14] [ClientSever/LoginBox/serverState/INFO]: Receive a package 0001(回应连接请求)
+[18:43:14] [ClientSever/LoginBox/serverState/INFO]: package 0001: 1
+[18:43:14] [AioModule/Read/Completed/DEBUG]: Received 11 bytes from session/162.105.38.69:8438
+[18:43:14] [AioModule/Read/Completed/DEBUG]: Received contents(11bytes): ff ff 00 00 00 0b 00 01 01 2a 46 
+[18:43:14] [ClientServer/ClientDecoder/INFO]: Receive a package 0001(回应连接请求)
+[18:43:14] [ClientServer/ClientDecoder/INFO]: package 0001: 1
+[18:43:14] [ClientSever/LoginBox/serverState/INFO]: Receive a package 0001(回应连接请求)
+[18:43:14] [ClientSever/LoginBox/serverState/INFO]: package 0001: 1
+[18:43:15] [AioModule/Read/Completed/DEBUG]: Received 11 bytes from session/162.105.38.69:8438
+[18:43:15] [AioModule/Read/Completed/DEBUG]: Received contents(11bytes): ff ff 00 00 00 0b 00 01 01 2a 46 
+[18:43:15] [ClientServer/ClientDecoder/INFO]: Receive a package 0001(回应连接请求)
+[18:43:15] [ClientServer/ClientDecoder/INFO]: package 0001: 1
+[18:43:15] [ClientSever/LoginBox/serverState/INFO]: Receive a package 0001(回应连接请求)
+[18:43:15] [ClientSever/LoginBox/serverState/INFO]: package 0001: 1
+[18:43:15] [AioModule/Read/Completed/DEBUG]: Received 11 bytes from session/162.105.38.69:8438
+[18:43:15] [AioModule/Read/Completed/DEBUG]: Received contents(11bytes): ff ff 00 00 00 0b 00 01 01 2a 46 
+[18:43:15] [ClientServer/ClientDecoder/INFO]: Receive a package 0001(回应连接请求)
+[18:43:15] [ClientServer/ClientDecoder/INFO]: package 0001: 1
+[18:43:15] [ClientSever/LoginBox/serverState/INFO]: Receive a package 0001(回应连接请求)
+[18:43:15] [ClientSever/LoginBox/serverState/INFO]: package 0001: 1
+[18:43:15] [AioModule/Read/Completed/DEBUG]: Received 11 bytes from session/162.105.38.69:8438
+[18:43:15] [AioModule/Read/Completed/DEBUG]: Received contents(11bytes): ff ff 00 00 00 0b 00 01 01 2a 46 
+[18:43:15] [ClientServer/ClientDecoder/INFO]: Receive a package 0001(回应连接请求)
+[18:43:15] [ClientServer/ClientDecoder/INFO]: package 0001: 1
+[18:43:15] [ClientSever/LoginBox/serverState/INFO]: Receive a package 0001(回应连接请求)
+[18:43:15] [ClientSever/LoginBox/serverState/INFO]: package 0001: 1
+[18:43:15] [AioModule/Read/Completed/DEBUG]: Received 11 bytes from session/162.105.38.69:8438
+[18:43:15] [AioModule/Read/Completed/DEBUG]: Received contents(11bytes): ff ff 00 00 00 0b 00 01 01 2a 46 
+[18:43:15] [ClientServer/ClientDecoder/INFO]: Receive a package 0001(回应连接请求)
+[18:43:15] [ClientServer/ClientDecoder/INFO]: package 0001: 1
+[18:43:15] [ClientSever/LoginBox/serverState/INFO]: Receive a package 0001(回应连接请求)
+[18:43:15] [ClientSever/LoginBox/serverState/INFO]: package 0001: 1
+[18:43:16] [AioModule/Read/Completed/DEBUG]: Received 11 bytes from session/162.105.38.69:8438
+[18:43:16] [AioModule/Read/Completed/DEBUG]: Received contents(11bytes): ff ff 00 00 00 0b 00 01 01 2a 46 
+[18:43:16] [ClientServer/ClientDecoder/INFO]: Receive a package 0001(回应连接请求)
+[18:43:16] [ClientServer/ClientDecoder/INFO]: package 0001: 1
+[18:43:16] [ClientSever/LoginBox/serverState/INFO]: Receive a package 0001(回应连接请求)
+[18:43:16] [ClientSever/LoginBox/serverState/INFO]: package 0001: 1
+[18:43:16] [AioModule/Read/Completed/DEBUG]: Received 11 bytes from session/162.105.38.69:8438
+[18:43:16] [AioModule/Read/Completed/DEBUG]: Received contents(11bytes): ff ff 00 00 00 0b 00 01 01 2a 46 
+[18:43:16] [ClientServer/ClientDecoder/INFO]: Receive a package 0001(回应连接请求)
+[18:43:16] [ClientServer/ClientDecoder/INFO]: package 0001: 1
+[18:43:16] [ClientSever/LoginBox/serverState/INFO]: Receive a package 0001(回应连接请求)
+[18:43:16] [ClientSever/LoginBox/serverState/INFO]: package 0001: 1
+[18:43:16] [AioModule/Read/Completed/DEBUG]: Received 11 bytes from session/162.105.38.69:8438
+[18:43:16] [AioModule/Read/Completed/DEBUG]: Received contents(11bytes): ff ff 00 00 00 0b 00 01 01 2a 46 
+[18:43:16] [ClientServer/ClientDecoder/INFO]: Receive a package 0001(回应连接请求)
+[18:43:16] [ClientServer/ClientDecoder/INFO]: package 0001: 1
+[18:43:16] [ClientSever/LoginBox/serverState/INFO]: Receive a package 0001(回应连接请求)
+[18:43:16] [ClientSever/LoginBox/serverState/INFO]: package 0001: 1
+[18:43:16] [AioModule/Read/Completed/DEBUG]: Received 11 bytes from session/162.105.38.69:8438
+[18:43:16] [AioModule/Read/Completed/DEBUG]: Received contents(11bytes): ff ff 00 00 00 0b 00 01 01 2a 46 
+[18:43:16] [ClientServer/ClientDecoder/INFO]: Receive a package 0001(回应连接请求)
+[18:43:16] [ClientServer/ClientDecoder/INFO]: package 0001: 1
+[18:43:16] [ClientSever/LoginBox/serverState/INFO]: Receive a package 0001(回应连接请求)
+[18:43:16] [ClientSever/LoginBox/serverState/INFO]: package 0001: 1
+[18:43:16] [AioModule/Read/Completed/DEBUG]: Received 11 bytes from session/162.105.38.69:8438
+[18:43:16] [AioModule/Read/Completed/DEBUG]: Received contents(11bytes): ff ff 00 00 00 0b 00 01 01 2a 46 
+[18:43:16] [ClientServer/ClientDecoder/INFO]: Receive a package 0001(回应连接请求)
+[18:43:16] [ClientServer/ClientDecoder/INFO]: package 0001: 1
+[18:43:16] [ClientSever/LoginBox/serverState/INFO]: Receive a package 0001(回应连接请求)
+[18:43:16] [ClientSever/LoginBox/serverState/INFO]: package 0001: 1
+[18:43:17] [AioModule/Read/Completed/DEBUG]: Received 11 bytes from session/162.105.38.69:8438
+[18:43:17] [AioModule/Read/Completed/DEBUG]: Received contents(11bytes): ff ff 00 00 00 0b 00 01 01 2a 46 
+[18:43:17] [ClientServer/ClientDecoder/INFO]: Receive a package 0001(回应连接请求)
+[18:43:17] [ClientServer/ClientDecoder/INFO]: package 0001: 1
+[18:43:17] [ClientSever/LoginBox/serverState/INFO]: Receive a package 0001(回应连接请求)
+[18:43:17] [ClientSever/LoginBox/serverState/INFO]: package 0001: 1
+[18:43:17] [AioModule/Read/Completed/DEBUG]: Received 11 bytes from session/162.105.38.69:8438
+[18:43:17] [AioModule/Read/Completed/DEBUG]: Received contents(11bytes): ff ff 00 00 00 0b 00 01 01 2a 46 
+[18:43:17] [ClientServer/ClientDecoder/INFO]: Receive a package 0001(回应连接请求)
+[18:43:17] [ClientServer/ClientDecoder/INFO]: package 0001: 1
+[18:43:17] [ClientSever/LoginBox/serverState/INFO]: Receive a package 0001(回应连接请求)
+[18:43:17] [ClientSever/LoginBox/serverState/INFO]: package 0001: 1
+[18:43:17] [AioModule/Read/Completed/DEBUG]: Received 11 bytes from session/162.105.38.69:8438
+[18:43:17] [AioModule/Read/Completed/DEBUG]: Received contents(11bytes): ff ff 00 00 00 0b 00 01 01 2a 46 
+[18:43:17] [ClientServer/ClientDecoder/INFO]: Receive a package 0001(回应连接请求)
+[18:43:17] [ClientServer/ClientDecoder/INFO]: package 0001: 1
+[18:43:17] [ClientSever/LoginBox/serverState/INFO]: Receive a package 0001(回应连接请求)
+[18:43:17] [ClientSever/LoginBox/serverState/INFO]: package 0001: 1
+[18:43:17] [AioModule/Read/Completed/DEBUG]: Received 11 bytes from session/162.105.38.69:8438
+[18:43:17] [AioModule/Read/Completed/DEBUG]: Received contents(11bytes): ff ff 00 00 00 0b 00 01 01 2a 46 
+[18:43:17] [ClientServer/ClientDecoder/INFO]: Receive a package 0001(回应连接请求)
+[18:43:17] [ClientServer/ClientDecoder/INFO]: package 0001: 1
+[18:43:17] [ClientSever/LoginBox/serverState/INFO]: Receive a package 0001(回应连接请求)
+[18:43:17] [ClientSever/LoginBox/serverState/INFO]: package 0001: 1
+[18:43:17] [AioModule/Read/Completed/DEBUG]: Received 11 bytes from session/162.105.38.69:8438
+[18:43:17] [AioModule/Read/Completed/DEBUG]: Received contents(11bytes): ff ff 00 00 00 0b 00 01 01 2a 46 
+[18:43:17] [ClientServer/ClientDecoder/INFO]: Receive a package 0001(回应连接请求)
+[18:43:17] [ClientServer/ClientDecoder/INFO]: package 0001: 1
+[18:43:17] [ClientSever/LoginBox/serverState/INFO]: Receive a package 0001(回应连接请求)
+[18:43:17] [ClientSever/LoginBox/serverState/INFO]: package 0001: 1

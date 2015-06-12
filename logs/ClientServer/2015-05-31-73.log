@@ -1,0 +1,72 @@
+[14:44:46] [ClientServer/ClientMain/KERNEL]: 0.开始建立网络连接…………
+[14:44:46] [ClientServer/ClientMain/KERNEL]: 1.网络连接成功!
+[14:44:46] [ClientServer/ClientMain/KERNEL]: 2.发送0000包，确认对方是否为服务器Gate端
+[14:44:46] [ClientSever/LoginBox/serverState/INFO]: Receive a package 0001(回应连接请求)
+[14:44:46] [ClientSever/LoginBox/serverState/INFO]: package 0001: 1
+[14:44:46] [ClientServer/ClientMain/KERNEL]: 3.收到0001包，确认对方为服务器Gate端
+[14:44:46] [ClientServer/ClientMain/KERNEL]: 4.初始化loginBox登陆界面
+[14:44:46] [ClientServer/LoginBox/onLoginResponse/INFO]: Receive a package 0003(登陆反馈)
+[14:44:46] [ClientServer/LoginBox/onLoginResponse/INFO]: package 0003: true
+[14:44:47] [ClientSever/LoginBox/addCharacter/INFO]: Receive a package 0006(角色预加载)
+[14:44:47] [ClientSever/LoginBox/addCharacter/INFO]: Receive a package 0006(角色预加载)
+[14:44:47] [ClientServer/LoginBox/noMorePackage/INFO]: Receive a package 0006(角色预加载: 这是最后一个空包
+[14:44:47] [ClientServer/LoginBox/onCreatResponse/INFO]: Receive a package 0009(角色创建结果)
+[14:44:49] [ClientSever/LoginBox/addCharacter/INFO]: Receive a package 0006(角色预加载)
+[14:44:49] [ClientServer/ClientMain/KERNEL]: 5.登陆结束
+[14:44:49] [ClientServer/ClientMain/KERNEL]: 6.开始游戏，启动gameBox
+[14:44:49] [ClientServer/GameBox/startGame/KERNEL]: 接收主角详细信息(000A):关闭加载窗口,开始游戏!
+[14:44:49] [Client/GameBox/updateTarget/INFO]: receive Package 000C(角色目标)
+[14:44:49] [Client/GameBox/updateTarget/INFO]: targetX: 10000/targetY 20000
+[14:44:52] [Client/GameBox/updateTarget/INFO]: receive Package 000C(角色目标)
+[14:44:52] [Client/GameBox/updateTarget/INFO]: targetX: 408/targetY 271
+[14:44:52] [Client/GameBox/sendTargetPos/INFO]: package 000B(角色移动意图) send!
+[14:44:52] [Client/GameBox/sendTargetPos/INFO]: targetX: 408.0/targetY: 271.0
+[14:44:59] [Client/GameBox/updateTarget/INFO]: receive Package 000C(角色目标)
+[14:44:59] [Client/GameBox/updateTarget/INFO]: targetX: 22/targetY 268
+[14:44:59] [Client/GameBox/sendTargetPos/INFO]: package 000B(角色移动意图) send!
+[14:44:59] [Client/GameBox/sendTargetPos/INFO]: targetX: 22.0/targetY: 268.0
+[14:44:59] [AioModule/Write/Failed/WARNING]: Failed to send to sessionnull. java.nio.channels.ClosedChannelException
+[14:45:01] [Client/GameBox/updateTarget/INFO]: receive Package 000C(角色目标)
+[14:45:01] [Client/GameBox/updateTarget/INFO]: targetX: 735/targetY 277
+[14:45:01] [Client/GameBox/sendTargetPos/INFO]: package 000B(角色移动意图) send!
+[14:45:01] [Client/GameBox/sendTargetPos/INFO]: targetX: 735.0/targetY: 277.0
+[14:45:02] [Client/GameBox/updateTarget/INFO]: receive Package 000C(角色目标)
+[14:45:02] [Client/GameBox/updateTarget/INFO]: targetX: 684/targetY 597
+[14:45:02] [Client/GameBox/sendTargetPos/INFO]: package 000B(角色移动意图) send!
+[14:45:02] [Client/GameBox/sendTargetPos/INFO]: targetX: 684.0/targetY: 597.0
+[14:45:04] [Client/GameBox/updateTarget/INFO]: receive Package 000C(角色目标)
+[14:45:04] [Client/GameBox/updateTarget/INFO]: targetX: 940/targetY 297
+[14:45:04] [Client/GameBox/sendTargetPos/INFO]: package 000B(角色移动意图) send!
+[14:45:04] [Client/GameBox/sendTargetPos/INFO]: targetX: 940.0/targetY: 297.0
+[14:45:05] [Client/GameBox/updateTarget/INFO]: receive Package 000C(角色目标)
+[14:45:05] [Client/GameBox/updateTarget/INFO]: targetX: 1062/targetY 606
+[14:45:05] [Client/GameBox/sendTargetPos/INFO]: package 000B(角色移动意图) send!
+[14:45:05] [Client/GameBox/sendTargetPos/INFO]: targetX: 1062.0/targetY: 606.0
+[14:45:16] [Client/GameBox/updateTarget/INFO]: receive Package 000C(角色目标)
+[14:45:16] [Client/GameBox/updateTarget/INFO]: targetX: 1518/targetY 773
+[14:45:16] [Client/GameBox/sendTargetPos/INFO]: package 000B(角色移动意图) send!
+[14:45:16] [Client/GameBox/sendTargetPos/INFO]: targetX: 1518.0/targetY: 773.0
+[14:45:23] [Client/GameBox/updateTarget/INFO]: receive Package 000C(角色目标)
+[14:45:23] [Client/GameBox/updateTarget/INFO]: targetX: 1698/targetY 1084
+[14:45:23] [Client/GameBox/sendTargetPos/INFO]: package 000B(角色移动意图) send!
+[14:45:23] [Client/GameBox/sendTargetPos/INFO]: targetX: 1698.0/targetY: 1084.0
+[14:45:32] [Client/GameBox/updateTarget/INFO]: receive Package 000C(角色目标)
+[14:45:32] [Client/GameBox/updateTarget/INFO]: targetX: 1217/targetY 1342
+[14:45:33] [Client/GameBox/sendTargetPos/INFO]: package 000B(角色移动意图) send!
+[14:45:33] [Client/GameBox/sendTargetPos/INFO]: targetX: 1217.0/targetY: 1342.0
+[14:45:39] [Client/GameBox/updateTarget/INFO]: receive Package 000C(角色目标)
+[14:45:39] [Client/GameBox/updateTarget/INFO]: targetX: 682/targetY 1405
+[14:45:39] [Client/GameBox/sendTargetPos/INFO]: package 000B(角色移动意图) send!
+[14:45:39] [Client/GameBox/sendTargetPos/INFO]: targetX: 682.0/targetY: 1405.0
+[14:45:42] [Client/GameBox/updateTarget/INFO]: receive Package 000C(角色目标)
+[14:45:42] [Client/GameBox/updateTarget/INFO]: targetX: 482/targetY 1102
+[14:45:42] [Client/GameBox/sendTargetPos/INFO]: package 000B(角色移动意图) send!
+[14:45:42] [Client/GameBox/sendTargetPos/INFO]: targetX: 482.0/targetY: 1102.0
+[14:45:47] [Client/GameBox/updateTarget/INFO]: receive Package 000C(角色目标)
+[14:45:48] [Client/GameBox/updateTarget/INFO]: targetX: 105/targetY 820
+[14:45:48] [Client/GameBox/sendTargetPos/INFO]: package 000B(角色移动意图) send!
+[14:45:48] [Client/GameBox/sendTargetPos/INFO]: targetX: 105.0/targetY: 820.0
+[14:45:50] [Client/GameBox/updateTarget/INFO]: receive Package 000C(角色目标)
+[14:45:50] [Client/GameBox/updateTarget/INFO]: targetX: 891/targetY 1141
+[14:45:50] [Client/GameBox/sendTargetPos/INFO]: package 000B(角色移动意图) send!
+[14:45:50] [Client/GameBox/sendTargetPos/INFO]: targetX: 891.0/targetY: 1141.0

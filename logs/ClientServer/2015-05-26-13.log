@@ -1,0 +1,11 @@
+[15:56:53] [ClientServer/ClientMain/KERNEL]: 1.开始建立网络连接…………
+[15:56:53] [ClientServer/ClientMain/KERNEL]: 2.网络连接成功！启动loginBox
+[15:56:53] [AioModule/Write/Completed/DEBUG]: Sent 14 bytes to session/162.105.38.69:8438
+[15:56:53] [ClientServer/ClientMain/KERNEL]: 2.同时发送0000包，确认对方是否为网关
+[15:56:53] [AioModule/Write/Completed/DEBUG]: Sent contents(14bytes): ff ff 00 00 00 0e 00 00 00 00 30 39 20 db 
+[15:57:16] [AioModule/Write/Completed/DEBUG]: Sent 47 bytes to session/162.105.38.69:8438
+[15:57:16] [ClientServer/LoginBox/INFO]: package 0004(注册信息) send!
+[15:57:16] [AioModule/Write/Completed/DEBUG]: Sent contents(47bytes): ff ff 00 00 00 2f 00 04 64 64 64 00 37 37 39 36 33 42 37 41 39 33 31 33 37 37 41 44 34 41 42 35 41 44 36 41 39 43 44 37 31 38 41 41 00 10 5a 
+[15:58:01] [AioModule/Write/Completed/DEBUG]: Sent 47 bytes to session/162.105.38.69:8438
+[15:58:01] [ClientServer/LoginBox/INFO]: package 0002(登陆信息) send!
+[15:58:01] [AioModule/Write/Completed/DEBUG]: Sent contents(47bytes): ff ff 00 00 00 2f 00 02 64 64 64 00 37 37 39 36 33 42 37 41 39 33 31 33 37 37 41 44 34 41 42 35 41 44 36 41 39 43 44 37 31 38 41 41 00 9b 89 

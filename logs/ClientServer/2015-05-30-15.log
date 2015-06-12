@@ -1,0 +1,25 @@
+[22:08:31] [ClientServer/ClientMain/KERNEL]: 0.开始建立网络连接…………
+[22:08:31] [ClientServer/ClientMain/KERNEL]: 1.网络连接成功!
+[22:08:31] [ClientServer/ClientMain/KERNEL]: 2.发送0000包，确认对方是否为服务器Gate端
+[22:08:31] [ClientServer/ClientDecoder/INFO]: Receive a package 0001(回应连接请求)
+[22:08:31] [ClientServer/ClientDecoder/INFO]: package 0001: 1
+[22:08:31] [ClientSever/LoginBox/serverState/INFO]: Receive a package 0001(回应连接请求)
+[22:08:31] [ClientSever/LoginBox/serverState/INFO]: package 0001: 1
+[22:08:31] [ClientServer/ClientMain/KERNEL]: 3.收到0001包，确认对方为服务器Gate端
+[22:08:31] [ClientServer/ClientMain/KERNEL]: 4.初始化loginBox登陆界面
+[22:08:48] [ClientServer/LoginBox/INFO]: package 0004(注册信息) send!
+[22:08:49] [ClientServer/ClientDecoder/INFO]: Receive a package 0005(注册结果)
+[22:08:49] [ClientServer/ClientDecoder/INFO]: package 0005: true
+[22:08:49] [ClientServer/LoginBox/onRegistResponse/INFO]: Receive a package 0005(注册结果)
+[22:08:49] [ClientServer/LoginBox/onRegistResponse/INFO]: package 0005: true
+[22:08:52] [ClientServer/LoginBox/INFO]: package 0002(登陆信息) send!
+[22:08:53] [ClientServer/ClientDecoder/INFO]: Receive a package 0003(登陆反馈)
+[22:08:53] [ClientServer/ClientDecoder/INFO]: package 0003: true
+[22:08:53] [ClientServer/LoginBox/onLoginResponse/INFO]: Receive a package 0003(登陆反馈)
+[22:08:53] [ClientServer/LoginBox/onLoginResponse/INFO]: package 0003: true
+[22:08:53] [ClientServer/ClientDecoder/INFO]: Receive a package 0006(角色预加载——空包)
+[22:08:53] [ClientServer/LoginBox/noMorePackage/INFO]: Receive a package 0006(角色预加载)
+[22:08:53] [ClientServer/LoginBox/noMorePackage/INFO]: package 0006: 这是最后一个空包
+[22:09:09] [ClientServer/ClientDecoder/INFO]: Receive a package 0009(角色创建结果)
+[22:09:09] [ClientServer/ClientDecoder/INFO]: package 0009: false
+[22:09:09] [ClientServer/LoginBox/onCreatResponse/INFO]: Receive a package 0009(角色创建结果)

@@ -1,0 +1,170 @@
+[17:09:32] [ClientServer/ClientMain/init/DEBUG]: address: baidu.com:80
+[17:09:33] [ClientServer/ClientMain/init/DEBUG]: init over
+[17:09:33] [ClientServer/ClientMain/KERNEL]: 0.开始建立网络连接…………
+[17:09:33] [ClientServer/ClientMain/setUpConnection/DEBUG]: setUpConnection over
+[17:09:33] [ClientServer/ClientMain/KERNEL]: 1.网络连接成功!
+[17:09:33] [ClientServer/ClientMain/KERNEL]: 2.发送0000包，确认对方是否为服务器Gate端
+[17:09:33] [ClientServer/ClientMain/send00Package/DEBUG]: send00Package over
+[17:09:33] [AioModule/Write/Completed/DEBUG]: Sent 14 bytes to sessionbaidu.com/123.125.114.144:80
+[17:09:33] [ClientSever/LoginBox/serverState/INFO]: Receive a package 0001(回应连接请求)
+[17:09:33] [AioModule/Write/Completed/DEBUG]: Sent contents(14bytes): ff ff 00 00 00 0e 00 00 00 00 30 39 20 db 
+[17:09:33] [ClientSever/LoginBox/serverState/INFO]: package 0001: 1
+[17:09:33] [ClientServer/ClientMain/KERNEL]: 3.收到0001包，确认对方为服务器Gate端
+[17:09:33] [ClientServer/ClientMain/KERNEL]: 4.初始化loginBox登陆界面
+[17:09:33] [ClientServer/LoginBox/onLoginResponse/INFO]: Receive a package 0003(登陆反馈)
+[17:09:33] [ClientServer/LoginBox/onLoginResponse/INFO]: package 0003: true
+[17:09:34] [ClientSever/LoginBox/addCharacter/INFO]: Receive a package 0006(角色预加载)
+[17:09:34] [ClientSever/LoginBox/addCharacter/INFO]: Receive a package 0006(角色预加载)
+[17:09:34] [ClientServer/LoginBox/noMorePackage/INFO]: Receive a package 0006(角色预加载: 这是最后一个空包
+[17:09:35] [ClientServer/LoginBox/onCreatResponse/INFO]: Receive a package 0009(角色创建结果)
+[17:09:35] [AioModule/Write/Completed/DEBUG]: Sent 19 bytes to sessionbaidu.com/123.125.114.144:80
+[17:09:35] [AioModule/Write/Completed/DEBUG]: Sent contents(19bytes): ff ff 00 00 00 13 00 08 31 31 00 64 64 64 64 00 01 1a f0 
+[17:09:36] [ClientSever/LoginBox/addCharacter/INFO]: Receive a package 0006(角色预加载)
+[17:09:36] [ClientServer/GameBox/addCharacter/DEBUG]: Receive a package 000A(游戏中所有玩家信息)
+[17:09:36] [ClientServer/GameBox/addCharacter/DEBUG]: 000A:加入一个主角玩家:third role
+[17:09:36] [ClientServer/GameBox/addCharacter/DEBUG]: Receive a package 000A(游戏中所有玩家信息)
+[17:09:36] [ClientServer/GameBox/addCharacter/DEBUG]: 000A:加入一个非主角玩家:another role
+[17:09:36] [ClientServer/ClientMain/KERNEL]: 5.登陆结束
+[17:09:36] [ClientServer/ClientMain/KERNEL]: 6.开始游戏，启动gameBox
+[17:09:36] [ClientServer/GameBox/startGame/KERNEL]: 接收主角详细信息(000A):关闭加载窗口,开始游戏!
+[17:09:36] [Client/GameBox/updateTarget/INFO]: receive Package 000C(角色目标)
+[17:09:37] [Client/GameBox/updateTarget/INFO]: targetX: 1000/targetY 2000
+[17:09:37] [Client/GameBox/updateTarget/INFO]: receive Package 000C(角色目标)
+[17:09:37] [Client/GameBox/updateTarget/INFO]: targetX: 318/targetY 217
+[17:09:37] [Client/GameBox/sendTargetPos/INFO]: package 000B(角色移动意图) send!
+[17:09:37] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to sessionbaidu.com/123.125.114.144:80
+[17:09:37] [Client/GameBox/sendTargetPos/INFO]: targetX: 318.0/targetY: 217.0
+[17:09:37] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 00 03 00 00 01 3e 00 00 00 d9 9c c3 
+[17:09:37] [Client/GameBox/updateTarget/INFO]: receive Package 000C(角色目标)
+[17:09:38] [Client/GameBox/updateTarget/INFO]: targetX: 351/targetY 242
+[17:09:38] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to sessionbaidu.com/123.125.114.144:80
+[17:09:38] [Client/GameBox/sendTargetPos/INFO]: package 000B(角色移动意图) send!
+[17:09:38] [Client/GameBox/sendTargetPos/INFO]: targetX: 351.0/targetY: 242.0
+[17:09:38] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 00 03 00 00 01 5f 00 00 00 f2 90 03 
+[17:09:38] [Client/GameBox/updateTarget/INFO]: receive Package 000C(角色目标)
+[17:09:38] [Client/GameBox/updateTarget/INFO]: targetX: 376/targetY 265
+[17:09:38] [Client/GameBox/sendTargetPos/INFO]: package 000B(角色移动意图) send!
+[17:09:38] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to sessionbaidu.com/123.125.114.144:80
+[17:09:38] [Client/GameBox/sendTargetPos/INFO]: targetX: 376.0/targetY: 265.0
+[17:09:38] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 00 03 00 00 01 78 00 00 01 09 04 8f 
+[17:09:38] [Client/GameBox/updateTarget/INFO]: receive Package 000C(角色目标)
+[17:09:38] [Client/GameBox/updateTarget/INFO]: targetX: 404/targetY 290
+[17:09:38] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to sessionbaidu.com/123.125.114.144:80
+[17:09:38] [Client/GameBox/sendTargetPos/INFO]: package 000B(角色移动意图) send!
+[17:09:38] [Client/GameBox/sendTargetPos/INFO]: targetX: 404.0/targetY: 290.0
+[17:09:38] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 00 03 00 00 01 94 00 00 01 22 5d 6c 
+[17:09:39] [Client/GameBox/updateTarget/INFO]: receive Package 000C(角色目标)
+[17:09:39] [Client/GameBox/updateTarget/INFO]: targetX: 599/targetY 427
+[17:09:39] [Client/GameBox/sendTargetPos/INFO]: package 000B(角色移动意图) send!
+[17:09:39] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to sessionbaidu.com/123.125.114.144:80
+[17:09:39] [Client/GameBox/sendTargetPos/INFO]: targetX: 599.0/targetY: 427.0
+[17:09:39] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 00 03 00 00 02 57 00 00 01 ab 4b c1 
+[17:09:39] [Client/GameBox/updateTarget/INFO]: receive Package 000C(角色目标)
+[17:09:39] [Client/GameBox/updateTarget/INFO]: targetX: 632/targetY 450
+[17:09:39] [Client/GameBox/sendTargetPos/INFO]: package 000B(角色移动意图) send!
+[17:09:39] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to sessionbaidu.com/123.125.114.144:80
+[17:09:39] [Client/GameBox/sendTargetPos/INFO]: targetX: 632.0/targetY: 450.0
+[17:09:39] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 00 03 00 00 02 78 00 00 01 c2 3e ff 
+[17:09:39] [Client/GameBox/updateTarget/INFO]: receive Package 000C(角色目标)
+[17:09:39] [Client/GameBox/updateTarget/INFO]: targetX: 660/targetY 470
+[17:09:39] [Client/GameBox/sendTargetPos/INFO]: package 000B(角色移动意图) send!
+[17:09:39] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to sessionbaidu.com/123.125.114.144:80
+[17:09:39] [Client/GameBox/sendTargetPos/INFO]: targetX: 660.0/targetY: 470.0
+[17:09:39] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 00 03 00 00 02 94 00 00 01 d6 97 d7 
+[17:09:39] [Client/GameBox/updateTarget/INFO]: receive Package 000C(角色目标)
+[17:09:39] [Client/GameBox/updateTarget/INFO]: targetX: 689/targetY 491
+[17:09:39] [Client/GameBox/sendTargetPos/INFO]: package 000B(角色移动意图) send!
+[17:09:39] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to sessionbaidu.com/123.125.114.144:80
+[17:09:39] [Client/GameBox/sendTargetPos/INFO]: targetX: 689.0/targetY: 491.0
+[17:09:39] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 00 03 00 00 02 b1 00 00 01 eb 4b b0 
+[17:09:39] [Client/GameBox/updateTarget/INFO]: receive Package 000C(角色目标)
+[17:09:39] [Client/GameBox/updateTarget/INFO]: targetX: 721/targetY 514
+[17:09:39] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to sessionbaidu.com/123.125.114.144:80
+[17:09:39] [Client/GameBox/sendTargetPos/INFO]: package 000B(角色移动意图) send!
+[17:09:39] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 00 03 00 00 02 d1 00 00 02 02 c1 49 
+[17:09:39] [Client/GameBox/sendTargetPos/INFO]: targetX: 721.0/targetY: 514.0
+[17:09:39] [Client/GameBox/updateTarget/INFO]: receive Package 000C(角色目标)
+[17:09:39] [Client/GameBox/updateTarget/INFO]: targetX: 750/targetY 534
+[17:09:40] [Client/GameBox/sendTargetPos/INFO]: package 000B(角色移动意图) send!
+[17:09:40] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to sessionbaidu.com/123.125.114.144:80
+[17:09:40] [Client/GameBox/sendTargetPos/INFO]: targetX: 750.0/targetY: 534.0
+[17:09:40] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 00 03 00 00 02 ee 00 00 02 16 75 21 
+[17:09:40] [Client/GameBox/updateTarget/INFO]: receive Package 000C(角色目标)
+[17:09:40] [Client/GameBox/updateTarget/INFO]: targetX: 774/targetY 552
+[17:09:40] [Client/GameBox/sendTargetPos/INFO]: package 000B(角色移动意图) send!
+[17:09:40] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to sessionbaidu.com/123.125.114.144:80
+[17:09:40] [Client/GameBox/sendTargetPos/INFO]: targetX: 774.0/targetY: 552.0
+[17:09:40] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 00 03 00 00 03 06 00 00 02 28 a6 92 
+[17:09:40] [Client/GameBox/updateTarget/INFO]: receive Package 000C(角色目标)
+[17:09:40] [Client/GameBox/updateTarget/INFO]: targetX: 807/targetY 575
+[17:09:40] [Client/GameBox/sendTargetPos/INFO]: package 000B(角色移动意图) send!
+[17:09:40] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to sessionbaidu.com/123.125.114.144:80
+[17:09:40] [Client/GameBox/sendTargetPos/INFO]: targetX: 807.0/targetY: 575.0
+[17:09:40] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 00 03 00 00 03 27 00 00 02 3f 99 d0 
+[17:09:40] [Client/GameBox/updateTarget/INFO]: receive Package 000C(角色目标)
+[17:09:40] [Client/GameBox/updateTarget/INFO]: targetX: 840/targetY 598
+[17:09:40] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to sessionbaidu.com/123.125.114.144:80
+[17:09:40] [Client/GameBox/sendTargetPos/INFO]: package 000B(角色移动意图) send!
+[17:09:40] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 00 03 00 00 03 48 00 00 02 56 8d 0e 
+[17:09:40] [Client/GameBox/sendTargetPos/INFO]: targetX: 840.0/targetY: 598.0
+[17:09:41] [Client/GameBox/updateTarget/INFO]: receive Package 000C(角色目标)
+[17:09:41] [Client/GameBox/updateTarget/INFO]: targetX: 986/targetY 702
+[17:09:41] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to sessionbaidu.com/123.125.114.144:80
+[17:09:41] [Client/GameBox/sendTargetPos/INFO]: package 000B(角色移动意图) send!
+[17:09:41] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 00 03 00 00 03 da 00 00 02 be 35 66 
+[17:09:41] [Client/GameBox/sendTargetPos/INFO]: targetX: 986.0/targetY: 702.0
+[17:09:41] [Client/GameBox/updateTarget/INFO]: receive Package 000C(角色目标)
+[17:09:41] [Client/GameBox/updateTarget/INFO]: targetX: 1027/targetY 731
+[17:09:41] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to sessionbaidu.com/123.125.114.144:80
+[17:09:41] [Client/GameBox/sendTargetPos/INFO]: package 000B(角色移动意图) send!
+[17:09:41] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 00 03 00 00 04 03 00 00 02 db 1f 52 
+[17:09:41] [Client/GameBox/sendTargetPos/INFO]: targetX: 1027.0/targetY: 731.0
+[17:09:41] [Client/GameBox/updateTarget/INFO]: receive Package 000C(角色目标)
+[17:09:41] [Client/GameBox/updateTarget/INFO]: targetX: 1068/targetY 760
+[17:09:41] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to sessionbaidu.com/123.125.114.144:80
+[17:09:41] [Client/GameBox/sendTargetPos/INFO]: package 000B(角色移动意图) send!
+[17:09:41] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 00 03 00 00 04 2c 00 00 02 f8 91 5c 
+[17:09:41] [Client/GameBox/sendTargetPos/INFO]: targetX: 1068.0/targetY: 760.0
+[17:09:41] [Client/GameBox/updateTarget/INFO]: receive Package 000C(角色目标)
+[17:09:41] [Client/GameBox/updateTarget/INFO]: targetX: 1101/targetY 783
+[17:09:41] [Client/GameBox/sendTargetPos/INFO]: package 000B(角色移动意图) send!
+[17:09:41] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to sessionbaidu.com/123.125.114.144:80
+[17:09:41] [Client/GameBox/sendTargetPos/INFO]: targetX: 1101.0/targetY: 783.0
+[17:09:41] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 00 03 00 00 04 4d 00 00 03 0f 84 ae 
+[17:09:41] [Client/GameBox/updateTarget/INFO]: receive Package 000C(角色目标)
+[17:09:41] [Client/GameBox/updateTarget/INFO]: targetX: 1129/targetY 804
+[17:09:41] [Client/GameBox/sendTargetPos/INFO]: package 000B(角色移动意图) send!
+[17:09:41] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to sessionbaidu.com/123.125.114.144:80
+[17:09:42] [Client/GameBox/sendTargetPos/INFO]: targetX: 1129.0/targetY: 804.0
+[17:09:42] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 00 03 00 00 04 69 00 00 03 24 ba ce 
+[17:09:42] [Client/GameBox/updateTarget/INFO]: receive Package 000C(角色目标)
+[17:09:42] [Client/GameBox/updateTarget/INFO]: targetX: 1166/targetY 830
+[17:09:42] [Client/GameBox/sendTargetPos/INFO]: package 000B(角色移动意图) send!
+[17:09:42] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to sessionbaidu.com/123.125.114.144:80
+[17:09:42] [Client/GameBox/sendTargetPos/INFO]: targetX: 1166.0/targetY: 830.0
+[17:09:42] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 00 03 00 00 04 8e 00 00 03 3e 4d 56 
+[17:09:42] [Client/GameBox/updateTarget/INFO]: receive Package 000C(角色目标)
+[17:09:42] [Client/GameBox/updateTarget/INFO]: targetX: 1202/targetY 856
+[17:09:42] [Client/GameBox/sendTargetPos/INFO]: package 000B(角色移动意图) send!
+[17:09:42] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to sessionbaidu.com/123.125.114.144:80
+[17:09:42] [Client/GameBox/sendTargetPos/INFO]: targetX: 1202.0/targetY: 856.0
+[17:09:42] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 00 03 00 00 04 b2 00 00 03 58 3f 6c 
+[17:09:42] [Client/GameBox/updateTarget/INFO]: receive Package 000C(角色目标)
+[17:09:42] [Client/GameBox/updateTarget/INFO]: targetX: 1235/targetY 879
+[17:09:42] [Client/GameBox/sendTargetPos/INFO]: package 000B(角色移动意图) send!
+[17:09:42] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to sessionbaidu.com/123.125.114.144:80
+[17:09:42] [Client/GameBox/sendTargetPos/INFO]: targetX: 1235.0/targetY: 879.0
+[17:09:42] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 00 03 00 00 04 d3 00 00 03 6f 32 aa 
+[17:09:42] [Client/GameBox/updateTarget/INFO]: receive Package 000C(角色目标)
+[17:09:42] [Client/GameBox/updateTarget/INFO]: targetX: 1268/targetY 902
+[17:09:42] [Client/GameBox/sendTargetPos/INFO]: package 000B(角色移动意图) send!
+[17:09:42] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to sessionbaidu.com/123.125.114.144:80
+[17:09:42] [Client/GameBox/sendTargetPos/INFO]: targetX: 1268.0/targetY: 902.0
+[17:09:42] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 00 03 00 00 04 f4 00 00 03 86 24 e8 
+[17:09:42] [Client/GameBox/updateTarget/INFO]: receive Package 000C(角色目标)
+[17:09:42] [Client/GameBox/updateTarget/INFO]: targetX: 1304/targetY 928
+[17:09:42] [AioModule/Write/Completed/DEBUG]: Sent 22 bytes to sessionbaidu.com/123.125.114.144:80
+[17:09:42] [Client/GameBox/sendTargetPos/INFO]: package 000B(角色移动意图) send!
+[17:09:42] [AioModule/Write/Completed/DEBUG]: Sent contents(22bytes): ff ff 00 00 00 16 00 0b 00 00 00 03 00 00 05 18 00 00 03 a0 51 b5 
+[17:09:42] [Client/GameBox/sendTargetPos/INFO]: targetX: 1304.0/targetY: 928.0
+[17:09:47] [ClientServer/ClientMain/KERNEL]: 7.游戏结束，退出主程序

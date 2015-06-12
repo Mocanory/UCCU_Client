@@ -1,0 +1,6 @@
+[14:36:09] [ClientServer/ClientMain/KERNEL]: 0.开始建立网络连接…………
+[14:36:10] [AioModule/Connect/WARNING]: Failed to connect to 127.0.0.1:80. java.util.concurrent.ExecutionException: java.io.IOException: 拒绝访问。
+
+[14:36:10] [ClientServer/ClientMain/KERNEL]: 1.网络连接失败
+[14:36:12] [ClientServer/ClientMain/KERNEL]: 1.网络连接成功!
+[14:36:12] [ClientServer/ClientMain/KERNEL]: 2.发送0000包，确认对方是否为服务器Gate端

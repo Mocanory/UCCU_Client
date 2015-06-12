@@ -1,0 +1,17 @@
+[15:24:30] [ClientServer/ClientMain/KERNEL]: 1.开始建立网络连接…………
+[15:24:30] [ClientServer/ClientMain/KERNEL]: 2.网络连接成功！启动loginBox
+[15:24:30] [ClientServer/ClientMain/KERNEL]: 2.同时发送0000包，确认对方是否为网关
+[15:24:30] [AioModule/Write/Completed/DEBUG]: Sent 14 bytes to sessionwww.baidu.com/119.75.217.109:80
+[15:24:30] [AioModule/Write/Completed/DEBUG]: Sent contents(14bytes): ff ff 00 00 00 0e 00 00 00 00 30 39 20 db 
+[15:24:40] [ClientSever/LoginBox/serverState/INFO]: Receive a package 0001(回应连接请求)
+[15:24:40] [ClientSever/LoginBox/serverState/INFO]: package 0001: 1
+[15:24:50] [ClientServer/LoginBox/onLoginResponse/INFO]: Receive a package 0003(登陆反馈)
+[15:24:50] [ClientServer/LoginBox/onLoginResponse/INFO]: package 0003: true
+[15:25:00] [ClientSever/LoginBox/addCharacter/INFO]: Receive a package 0006(角色预加载)
+[15:25:00] [ClientSever/LoginBox/addCharacter/INFO]: Receive a package 0006(角色预加载)
+[15:25:00] [ClientServer/LoginBox/noMorePackage/INFO]: Receive a package 0006(角色预加载)
+[15:25:00] [ClientServer/LoginBox/noMorePackage/INFO]: package 0006: 这是最后一个空包
+[15:25:11] [ClientServer/LoginBox/onCreatResponse/INFO]: Receive a package 0009(角色创建结果)
+[15:25:14] [ClientSever/LoginBox/addCharacter/INFO]: Receive a package 0006(角色预加载)
+[15:26:22] [ClientServer/ClientMain/KERNEL]: 3.登陆结束
+[15:26:22] [ClientServer/ClientMain/KERNEL]: 登陆失败，退出主程序

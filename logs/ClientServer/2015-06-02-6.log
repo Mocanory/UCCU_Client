@@ -1,0 +1,21 @@
+[21:10:25] [ClientServer/ClientMain/KERNEL]: 0.开始建立网络连接…………
+[21:10:25] [ClientServer/ClientMain/KERNEL]: 1.网络连接成功!
+[21:10:25] [ClientServer/ClientMain/KERNEL]: 2.发送0000包，确认对方是否为服务器Gate端
+[21:10:29] [ClientServer/ClientDecoder/INFO]: Receive a package 0001(回应连接请求)
+[21:10:29] [ClientServer/ClientDecoder/INFO]: package 0001: 1
+[21:10:29] [ClientSever/LoginBox/serverState/INFO]: Receive a package 0001(回应连接请求)
+[21:10:29] [ClientSever/LoginBox/serverState/INFO]: package 0001: 1
+[21:10:29] [ClientServer/ClientMain/KERNEL]: 3.收到0001包，确认对方为服务器Gate端
+[21:10:29] [ClientServer/ClientMain/KERNEL]: 4.初始化loginBox登陆界面
+[21:10:37] [ClientServer/LoginBox/INFO]: package 0004(注册信息) send!
+[21:10:39] [ClientServer/ClientDecoder/INFO]: Receive a package 0005(注册结果)
+[21:10:39] [ClientServer/ClientDecoder/INFO]: package 0005: false
+[21:10:39] [ClientServer/LoginBox/onRegistResponse/INFO]: Receive a package 0005(注册结果)
+[21:10:39] [ClientServer/LoginBox/onRegistResponse/INFO]: package 0005: false
+[21:11:50] [ClientServer/LoginBox/INFO]: package 0004(注册信息) send!
+[21:11:56] [ClientServer/ClientDecoder/INFO]: Receive a package 0005(注册结果)
+[21:11:56] [ClientServer/ClientDecoder/INFO]: package 0005: false
+[21:11:56] [ClientServer/LoginBox/onRegistResponse/INFO]: Receive a package 0005(注册结果)
+[21:11:56] [ClientServer/LoginBox/onRegistResponse/INFO]: package 0005: false
+[21:12:26] [ClientServer/ClientMain/KERNEL]: 5.登陆结束
+[21:12:26] [ClientServer/ClientMain/KERNEL]: 登陆失败，退出主程序

@@ -1,0 +1,21 @@
+[16:21:40] [ClientServer/ClientMain/KERNEL]: 1.开始建立网络连接…………
+[16:21:40] [ClientServer/ClientMain/KERNEL]: 2.网络连接成功！启动loginBox
+[16:21:41] [ClientServer/ClientMain/KERNEL]: 2.同时发送0000包，确认对方是否为网关
+[16:21:41] [AioModule/Write/Completed/DEBUG]: Sent 14 bytes to session/162.105.38.69:8438
+[16:21:41] [AioModule/Write/Completed/DEBUG]: Sent contents(14bytes): ff ff 00 00 00 0e 00 00 00 00 30 39 20 db 
+[16:21:42] [AioModule/Read/Completed/DEBUG]: Received 11 bytes from session/162.105.38.69:8438
+[16:21:42] [AioModule/Read/Completed/DEBUG]: Received contents(11bytes): ff ff 00 00 00 0b 00 01 01 2a 46 
+[16:21:42] [ClientServer/ClientDecoder/INFO]: Receive a package 0001(回应连接请求)
+[16:21:42] [ClientServer/ClientDecoder/INFO]: package 0001: 1
+[16:21:42] [ClientSever/LoginBox/serverState/INFO]: Receive a package 0001(回应连接请求)
+[16:21:42] [ClientSever/LoginBox/serverState/INFO]: package 0001: 1
+[16:21:44] [ClientServer/LoginBox/onLoginResponse/INFO]: Receive a package 0003(登陆反馈)
+[16:21:44] [ClientServer/LoginBox/onLoginResponse/INFO]: package 0003: true
+[16:21:44] [ClientServer/LoginBox/onRegistResponse/INFO]: Receive a package 0005(注册结果)
+[16:21:44] [ClientServer/LoginBox/onRegistResponse/INFO]: package 0005: true
+[16:21:47] [ClientSever/LoginBox/addCharacter/INFO]: Receive a package 0006(角色预加载)
+[16:21:47] [ClientSever/LoginBox/addCharacter/INFO]: Receive a package 0006(角色预加载)
+[16:21:47] [ClientServer/LoginBox/noMorePackage/INFO]: Receive a package 0006(角色预加载)
+[16:21:47] [ClientServer/LoginBox/noMorePackage/INFO]: package 0006: 这是最后一个空包
+[16:21:48] [ClientServer/LoginBox/onCreatResponse/INFO]: Receive a package 0009(角色创建结果)
+[16:21:50] [ClientSever/LoginBox/addCharacter/INFO]: Receive a package 0006(角色预加载)

@@ -1,0 +1,28 @@
+[15:22:15] [ClientServer/ClientMain/KERNEL]: 0.开始建立网络连接…………
+[15:22:15] [ClientServer/ClientMain/KERNEL]: 1.网络连接成功!
+[15:22:15] [ClientServer/ClientMain/KERNEL]: 2.发送0000包，确认对方是否为服务器Gate端
+[15:22:15] [ClientSever/LoginBox/serverState/INFO]: Receive a package 0001(回应连接请求)
+[15:22:15] [ClientSever/LoginBox/serverState/INFO]: package 0001: 1
+[15:22:15] [ClientServer/ClientMain/KERNEL]: 3.收到0001包，确认对方为服务器Gate端
+[15:22:15] [ClientServer/ClientMain/KERNEL]: 4.初始化loginBox登陆界面
+[15:22:15] [ClientServer/LoginBox/onLoginResponse/INFO]: Receive a package 0003(登陆反馈)
+[15:22:15] [ClientServer/LoginBox/onLoginResponse/INFO]: package 0003: true
+[15:22:16] [ClientSever/LoginBox/addCharacter/INFO]: Receive a package 0006(角色预加载)
+[15:22:16] [ClientSever/LoginBox/addCharacter/INFO]: Receive a package 0006(角色预加载)
+[15:22:16] [ClientServer/LoginBox/noMorePackage/INFO]: Receive a package 0006(角色预加载: 这是最后一个空包
+[15:22:16] [ClientServer/LoginBox/onCreatResponse/INFO]: Receive a package 0009(角色创建结果)
+[15:22:17] [ClientSever/LoginBox/addCharacter/INFO]: Receive a package 0006(角色预加载)
+[15:22:17] [ClientServer/ClientMain/KERNEL]: 5.登陆结束
+[15:22:17] [ClientServer/ClientMain/KERNEL]: 6.开始游戏，启动gameBox
+[15:22:18] [ClientServer/GameBox/startGame/KERNEL]: 接收主角详细信息(000A):关闭加载窗口,开始游戏!
+[15:22:18] [Client/GameBox/updateTarget/INFO]: receive Package 000C(角色目标)
+[15:22:18] [Client/GameBox/updateTarget/INFO]: targetX: 10000/targetY 20000
+[15:22:47] [Client/GameBox/updateTarget/INFO]: receive Package 000C(角色目标)
+[15:22:47] [Client/GameBox/updateTarget/INFO]: targetX: 242/targetY 116
+[15:22:47] [Client/GameBox/sendTargetPos/INFO]: package 000B(角色移动意图) send!
+[15:22:47] [AioModule/Write/Failed/WARNING]: Failed to send to sessionnull. java.nio.channels.ClosedChannelException
+[15:22:47] [Client/GameBox/sendTargetPos/INFO]: targetX: 242.0/targetY: 116.0
+[15:22:48] [Client/GameBox/updateTarget/INFO]: receive Package 000C(角色目标)
+[15:22:48] [Client/GameBox/updateTarget/INFO]: targetX: 651/targetY 291
+[15:22:48] [Client/GameBox/sendTargetPos/INFO]: package 000B(角色移动意图) send!
+[15:22:48] [Client/GameBox/sendTargetPos/INFO]: targetX: 651.0/targetY: 291.0

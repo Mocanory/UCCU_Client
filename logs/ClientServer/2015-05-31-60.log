@@ -1,0 +1,28 @@
+[13:56:05] [ClientServer/ClientMain/KERNEL]: 0.开始建立网络连接…………
+[13:56:05] [ClientServer/ClientMain/KERNEL]: 1.网络连接成功!
+[13:56:05] [ClientServer/ClientMain/KERNEL]: 2.发送0000包，确认对方是否为服务器Gate端
+[13:56:07] [ClientSever/LoginBox/serverState/INFO]: Receive a package 0001(回应连接请求)
+[13:56:07] [ClientSever/LoginBox/serverState/INFO]: package 0001: 1
+[13:56:07] [ClientServer/ClientMain/KERNEL]: 3.收到0001包，确认对方为服务器Gate端
+[13:56:07] [ClientServer/ClientMain/KERNEL]: 4.初始化loginBox登陆界面
+[13:56:09] [ClientServer/LoginBox/onLoginResponse/INFO]: Receive a package 0003(登陆反馈)
+[13:56:09] [ClientServer/LoginBox/onLoginResponse/INFO]: package 0003: true
+[13:56:10] [ClientSever/LoginBox/addCharacter/INFO]: Receive a package 0006(角色预加载)
+[13:56:10] [ClientSever/LoginBox/addCharacter/INFO]: Receive a package 0006(角色预加载)
+[13:56:10] [ClientServer/LoginBox/noMorePackage/INFO]: Receive a package 0006(角色预加载: 这是最后一个空包
+[13:56:12] [ClientServer/LoginBox/onCreatResponse/INFO]: Receive a package 0009(角色创建结果)
+[13:56:14] [ClientSever/LoginBox/addCharacter/INFO]: Receive a package 0006(角色预加载)
+[13:56:14] [ClientServer/ClientMain/KERNEL]: 5.登陆结束
+[13:56:14] [ClientServer/ClientMain/KERNEL]: 6.开始游戏，启动gameBox
+[13:56:14] [ClientServer/GameBox/startGame/KERNEL]: 接收主角详细信息(000A):关闭加载窗口,开始游戏!
+[13:56:14] [Client/GameBox/updateTarget/INFO]: receive Package 000C(角色目标)
+[13:56:14] [Client/GameBox/updateTarget/INFO]: targetX: 10000/targetY 20000
+[13:56:15] [Client/GameBox/updateTarget/INFO]: receive Package 000C(角色目标)
+[13:56:15] [Client/GameBox/updateTarget/INFO]: targetX: 506/targetY 86
+[13:56:15] [Client/GameBox/sendTargetPos/INFO]: package 000B(角色移动意图) send!
+[13:56:15] [Client/GameBox/sendTargetPos/INFO]: targetX: 506.0/targetY: 86.0
+[13:56:17] [Client/GameBox/updateTarget/INFO]: receive Package 000C(角色目标)
+[13:56:17] [Client/GameBox/updateTarget/INFO]: targetX: 584/targetY 56
+[13:56:17] [Client/GameBox/sendTargetPos/INFO]: package 000B(角色移动意图) send!
+[13:56:18] [AioModule/Write/Failed/WARNING]: Failed to send to sessionnull. java.nio.channels.ClosedChannelException
+[13:56:18] [Client/GameBox/sendTargetPos/INFO]: targetX: 584.0/targetY: 56.0

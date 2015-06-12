@@ -1,0 +1,9 @@
+[17:32:04] [ClientServer/ClientMain/init/DEBUG]: address: baidu.com:80
+[17:32:05] [ClientServer/ClientMain/init/DEBUG]: init over
+[17:32:05] [ClientServer/ClientMain/KERNEL]: 0.开始建立网络连接…………
+[17:32:05] [ClientServer/ClientMain/setUpConnection/DEBUG]: setUpConnection over
+[17:32:05] [ClientServer/ClientMain/KERNEL]: 1.网络连接成功!
+[17:32:05] [ClientServer/ClientMain/KERNEL]: 2.发送0000包，确认对方是否为服务器Gate端
+[17:32:05] [ClientServer/ClientMain/send00Package/DEBUG]: send00Package over
+[17:32:05] [AioModule/Write/Completed/DEBUG]: Sent 14 bytes to sessionbaidu.com/220.181.57.217:80
+[17:32:05] [AioModule/Write/Completed/DEBUG]: Sent contents(14bytes): ff ff 00 00 00 0e 00 00 00 00 30 39 20 db 

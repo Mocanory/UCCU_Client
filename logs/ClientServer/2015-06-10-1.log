@@ -1,0 +1,31 @@
+[20:00:18] [ClientServer/ClientMain/KERNEL]: 0.开始建立网络连接…………
+[20:00:18] [ClientServer/ClientMain/KERNEL]: 1.网络连接成功!
+[20:00:18] [ClientServer/ClientMain/KERNEL]: 2.发送0000包，确认对方是否为服务器Gate端
+[20:00:18] [ClientSever/LoginBox/serverState/INFO]: Receive a package 0001(回应连接请求)
+[20:00:18] [ClientSever/LoginBox/serverState/INFO]: package 0001: 1
+[20:00:18] [ClientServer/ClientMain/KERNEL]: 3.收到0001包，确认对方为服务器Gate端
+[20:00:18] [ClientServer/ClientMain/KERNEL]: 4.初始化loginBox登陆界面
+[20:00:18] [ClientServer/LoginBox/onLoginResponse/INFO]: Receive a package 0003(登陆反馈)
+[20:00:18] [ClientServer/LoginBox/onLoginResponse/INFO]: package 0003: true
+[20:00:19] [ClientSever/LoginBox/addCharacter/INFO]: Receive a package 0006(角色预加载)
+[20:00:19] [ClientSever/LoginBox/addCharacter/INFO]: Receive a package 0006(角色预加载)
+[20:00:19] [ClientServer/LoginBox/noMorePackage/INFO]: Receive a package 0006(角色预加载: 这是最后一个空包
+[20:00:20] [ClientServer/LoginBox/onCreatResponse/INFO]: Receive a package 0009(角色创建结果)
+[20:00:21] [ClientSever/LoginBox/addCharacter/INFO]: Receive a package 0006(角色预加载)
+[20:00:21] [ClientServer/ClientMain/KERNEL]: 5.登陆结束
+[20:00:21] [ClientServer/ClientMain/KERNEL]: 6.开始游戏，启动gameBox
+[20:00:21] [ClientServer/GameBox/startGame/KERNEL]: 接收主角详细信息(000A):关闭加载窗口,开始游戏!
+[20:00:21] [Client/GameBox/updateTarget/INFO]: receive Package 000C(角色目标)
+[20:00:22] [Client/GameBox/updateTarget/INFO]: targetX: 10000/targetY 20000
+[20:00:22] [Client/GameBox/updateTarget/INFO]: receive Package 000C(角色目标)
+[20:00:22] [Client/GameBox/updateTarget/INFO]: targetX: 362/targetY 162
+[20:00:22] [Client/GameBox/sendTargetPos/INFO]: package 000B(角色移动意图) send!
+[20:00:22] [Client/GameBox/sendTargetPos/INFO]: targetX: 362.0/targetY: 162.0
+[20:00:23] [Client/GameBox/updateTarget/INFO]: receive Package 000C(角色目标)
+[20:00:23] [Client/GameBox/updateTarget/INFO]: targetX: 583/targetY 338
+[20:00:23] [Client/GameBox/sendTargetPos/INFO]: package 000B(角色移动意图) send!
+[20:00:23] [Client/GameBox/sendTargetPos/INFO]: targetX: 583.0/targetY: 338.0
+[20:00:25] [Client/GameBox/updateTarget/INFO]: receive Package 000C(角色目标)
+[20:00:25] [Client/GameBox/updateTarget/INFO]: targetX: 500/targetY 452
+[20:00:25] [Client/GameBox/sendTargetPos/INFO]: package 000B(角色移动意图) send!
+[20:00:25] [Client/GameBox/sendTargetPos/INFO]: targetX: 500.0/targetY: 452.0

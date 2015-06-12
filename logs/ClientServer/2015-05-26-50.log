@@ -1,0 +1,49 @@
+[17:57:01] [ClientServer/ClientMain/KERNEL]: 1.开始建立网络连接…………
+[17:57:01] [ClientServer/ClientMain/KERNEL]: 2.网络连接成功！启动loginBox
+[17:57:02] [ClientServer/ClientMain/KERNEL]: 2.同时发送0000包，确认对方是否为网关
+[17:57:02] [AioModule/Write/Completed/DEBUG]: Sent 14 bytes to session/162.105.38.69:8438
+[17:57:02] [AioModule/Write/Completed/DEBUG]: Sent contents(14bytes): ff ff 00 00 00 0e 00 00 00 00 30 39 20 db 
+[17:57:02] [AioModule/Read/Completed/DEBUG]: Received 11 bytes from session/162.105.38.69:8438
+[17:57:02] [AioModule/Read/Completed/DEBUG]: Received contents(11bytes): ff ff 00 00 00 0b 00 01 01 2a 46 
+[17:57:02] [ClientServer/ClientDecoder/INFO]: Receive a package 0001(回应连接请求)
+[17:57:02] [ClientServer/ClientDecoder/INFO]: package 0001: 1
+[17:57:02] [ClientSever/LoginBox/serverState/INFO]: Receive a package 0001(回应连接请求)
+[17:57:02] [ClientSever/LoginBox/serverState/INFO]: package 0001: 1
+[17:57:04] [ClientServer/LoginBox/INFO]: package 0004(注册信息) send!
+[17:57:04] [AioModule/Write/Completed/DEBUG]: Sent 46 bytes to session/162.105.38.69:8438
+[17:57:04] [AioModule/Write/Completed/DEBUG]: Sent contents(46bytes): ff ff 00 00 00 2e 00 04 31 31 00 36 35 31 32 42 44 34 33 44 39 43 41 41 36 45 30 32 43 39 39 30 42 30 41 38 32 36 35 32 44 43 41 00 ae 59 
+[17:57:05] [AioModule/Read/Completed/DEBUG]: Received 14 bytes from session/162.105.38.69:8438
+[17:57:05] [AioModule/Read/Completed/DEBUG]: Received contents(14bytes): ff ff 00 00 00 0e 00 05 00 00 00 01 43 96 
+[17:57:05] [ClientServer/ClientDecoder/INFO]: Receive a package 0005(注册结果)
+[17:57:05] [ClientServer/ClientDecoder/INFO]: package 0005: true
+[17:57:05] [ClientServer/LoginBox/onRegistResponse/INFO]: Receive a package 0005(注册结果)
+[17:57:05] [ClientServer/LoginBox/onRegistResponse/INFO]: package 0005: true
+[17:57:06] [ClientServer/LoginBox/INFO]: package 0002(登陆信息) send!
+[17:57:06] [AioModule/Write/Completed/DEBUG]: Sent 46 bytes to session/162.105.38.69:8438
+[17:57:06] [AioModule/Write/Completed/DEBUG]: Sent contents(46bytes): ff ff 00 00 00 2e 00 02 31 31 00 36 35 31 32 42 44 34 33 44 39 43 41 41 36 45 30 32 43 39 39 30 42 30 41 38 32 36 35 32 44 43 41 00 63 82 
+[17:57:07] [AioModule/Read/Completed/DEBUG]: Received 11 bytes from session/162.105.38.69:8438
+[17:57:07] [AioModule/Read/Completed/DEBUG]: Received contents(11bytes): ff ff 00 00 00 0b 00 03 01 2a 58 
+[17:57:07] [ClientServer/ClientDecoder/INFO]: Receive a package 0003(登陆反馈)
+[17:57:07] [ClientServer/ClientDecoder/INFO]: package 0003: true
+[17:57:07] [ClientServer/LoginBox/onLoginResponse/INFO]: Receive a package 0003(登陆反馈)
+[17:57:07] [ClientServer/LoginBox/onLoginResponse/INFO]: package 0003: true
+[17:57:07] [AioModule/Read/Completed/DEBUG]: Received 10 bytes from session/162.105.38.69:8438
+[17:57:07] [AioModule/Read/Completed/DEBUG]: Received contents(10bytes): ff ff 00 00 00 0a 00 06 45 71 
+[17:57:07] [ClientServer/ClientDecoder/INFO]: Receive a package 0006(角色预加载)
+[17:57:07] [ClientServer/ClientDecoder/INFO]: package 0006: 这是最后一个空包
+[17:57:07] [ClientServer/LoginBox/noMorePackage/INFO]: Receive a package 0006(角色预加载)
+[17:57:07] [ClientServer/LoginBox/noMorePackage/INFO]: package 0006: 这是最后一个空包
+[17:57:15] [AioModule/Write/Completed/DEBUG]: Sent 19 bytes to session/162.105.38.69:8438
+[17:57:15] [AioModule/Write/Completed/DEBUG]: Sent contents(19bytes): ff ff 00 00 00 13 00 08 31 31 00 64 64 64 64 00 01 1a f0 
+[17:57:15] [AioModule/Write/Completed/DEBUG]: Sent 19 bytes to session/162.105.38.69:8438
+[17:57:15] [AioModule/Write/Completed/DEBUG]: Sent contents(19bytes): ff ff 00 00 00 13 00 08 31 31 00 64 67 67 67 00 01 a2 d1 
+[17:57:16] [AioModule/Read/Completed/DEBUG]: Received 11 bytes from session/162.105.38.69:8438
+[17:57:16] [AioModule/Read/Completed/DEBUG]: Received contents(11bytes): ff ff 00 00 00 0b 00 09 01 2a 8e 
+[17:57:16] [ClientServer/ClientDecoder/INFO]: Receive a package 0009(角色创建结果)
+[17:57:16] [ClientServer/ClientDecoder/INFO]: package 0009: true
+[17:57:16] [ClientServer/LoginBox/onCreatResponse/INFO]: Receive a package 0009(角色创建结果)
+[17:57:17] [AioModule/Read/Completed/DEBUG]: Received 53 bytes from session/162.105.38.69:8438
+[17:57:17] [AioModule/Read/Completed/DEBUG]: Received contents(53bytes): ff ff 00 00 00 15 00 06 00 00 03 f9 64 64 64 64 00 01 01 1c 80 ff ff 00 00 00 0b 00 09 01 2a 8e ff ff 00 00 00 15 00 06 00 00 03 fa 64 67 67 67 00 01 01 7f a1 
+[17:57:17] [ClientServer/ClientDecoder/INFO]: Receive a package 0006(角色预加载)
+[17:57:17] [ClientServer/ClientDecoder/INFO]: package 0006: /id: 1017/name: dddd/level: 1/gender: 1
+[17:57:17] [ClientSever/LoginBox/addCharacter/INFO]: Receive a package 0006(角色预加载)
