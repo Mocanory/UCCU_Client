@@ -1,0 +1,16 @@
+一些修改：
+	1.添加了一个新的包uccu_panel，里面都是我的panel...你可以不用理它
+	2.我把发包都统一到了SendingModule.java里面，全都写成了静态函数以供调用，方便统一管理
+	3.Entity类被我重构了，继承了父类DoublePoint，DoublePoint就是一个二维实数域上的点
+	4.可能GameBox和ClientMain还是比较早的版本，但是不要直接覆盖你的新版本，因为我有添加一些东西
+新增的方法：
+	1.painter增加了addGIF和deleteGIF方法
+	2.addGIF用于在画面上添加一个动画效果，传入一个DoublePoint对象标记动画的位置，一个id表示效果编号
+	3.addGIF还有一个可选参数turn，表示动画播放几轮后消失，不填写默认无限制
+	4.deleteGIF可以移除一个动画效果，传入当时对其标记的DoublePoint对象即可
+	5.同时，deleteEntity时可以自动移除该Entity对应动画效果，无需再次调用deleteGIF
+需要完成的地方：
+	1.PainterProperty的读入：我在ClientMain里面增加了一个函数loadpic用于图片载入，你把它改成根据配置文件载入的方式
+	2.背包的获取：添加一些函数能让我调用，使得我可以获取背包内容，至少要包括：物品图片id，物品数量，物品描述
+	3.主角详细信息的获取：添加一个函数让我调用可获得主角详细信息
+	4.其他玩家详细信息的获取：添加一个函数让我调用可获得其他玩家的详细信息，这个函数可以用阻塞方式实现
