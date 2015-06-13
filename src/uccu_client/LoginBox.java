@@ -2,6 +2,8 @@
 package uccu_client;
 
 import java.awt.Color;
+import java.awt.Dimension;
+import java.awt.Rectangle;
 import java.awt.Toolkit;
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
@@ -23,6 +25,7 @@ public class LoginBox extends JFrame{
 	private WaitingPanel waitingPanel;
 	private CharacterPanel characterPanel;
 	private CreatePanel createPanel;
+	Dimension  screensize;
 	public void createBack(){
 		createPanel.setVisible(false);
 		characterPanel.setVisible(true);
@@ -40,19 +43,19 @@ public class LoginBox extends JFrame{
 			}
 		});
 		this.setLayout(null);
-//		this.setLocation((1366-getSize().getWidth())/2, 768);
+		screensize = Toolkit.getDefaultToolkit().getScreenSize();
 		this.setUndecorated(true);
 		this.setBackground(new Color(0,0,0,0));
 		loginPanel = new LoginPanel(this);
-		loginPanel.setBounds(0,0, 400, 200);
 		this.setSize(loginPanel.getSize());
+		this.setLocation(((int)screensize.getWidth()-(int)getSize().getWidth())/2
+				, ((int)screensize.getHeight() - (int)getSize().getHeight())/2);
 		this.add(loginPanel);
-		backPicPanel = new BackgroundPanel();
-		backPicPanel.setBounds(0, 0, 1366, 768);
+		backPicPanel = new BackgroundPanel(new Rectangle(0,0,1366,768));
 		waitingPanel = new WaitingPanel(
 				Toolkit.getDefaultToolkit().getImage("loading.gif")
-				,Toolkit.getDefaultToolkit().getImage("bar.png"));
-		waitingPanel.setBounds(0, 0, 1366, 768);
+				,Toolkit.getDefaultToolkit().getImage("bar.png")
+				,new Rectangle(0,0,1366,768));
 		characterPanel = new CharacterPanel(this);
 		characterPanel.setBounds(0, 0, 1366, 768);
 		createPanel = new CreatePanel(this);
@@ -67,6 +70,9 @@ public class LoginBox extends JFrame{
 		UccuLogger.log("ClientServer/LoginBox/onLoginResponse", "package 0003: "+res);
 		if(res){
 			this.setVisible(false);
+			this.setSize(1366, 768);
+			this.setLocation(((int)screensize.getWidth()-(int)getSize().getWidth())/2
+					, ((int)screensize.getHeight() - (int)getSize().getHeight())/2);
 			this.getLayeredPane().add(backPicPanel,new Integer(Integer.MIN_VALUE));
 			((JPanel)this.getContentPane()).setOpaque(false);
 			loginPanel.setVisible(false);

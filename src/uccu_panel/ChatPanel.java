@@ -9,6 +9,7 @@ import java.nio.ByteBuffer;
 import javax.swing.*;
 
 import uccu_client.*;
+import uccu_client.Painter;
 import uccu_client.Entity.style;
 
 public class ChatPanel extends JPanel{
@@ -41,7 +42,7 @@ public class ChatPanel extends JPanel{
     public ChatPanel() {
 //    	session = s;
     	backg = new Picture("lf.jpg", 0, 0, 0);
-    	MaxX = 1366;MaxY = 738;
+    	MaxX = Painter.width;MaxY = Painter.height;
     	publicLabel = new JLabel("公聊");
     	privateLabel = new JLabel("私聊");
         publicViewArea = new JTextArea(10, 50);
