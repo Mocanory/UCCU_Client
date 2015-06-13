@@ -114,11 +114,11 @@ public class Painter extends JFrame{
 			gifPicMap.put(gpp.id, new GIFpicture(gpp));
 	}
 	private void addEventGeter(){
-		this.addKeyListener(new KeyAdapter() {
+		gameWindow.addKeyListener(new KeyAdapter() {
 			long lastpress = 0;
 			@Override
 			public void keyPressed(KeyEvent e){
-				if(e.getWhen()-lastpress < 1000) return;
+				if(e.getWhen()-lastpress < 500) return;
 				lastpress = e.getWhen();
 				if(lockPlayer == null) return;
 				gameBox.attack(lockPlayer.getID());
@@ -129,6 +129,7 @@ public class Painter extends JFrame{
 			public void mousePressed(MouseEvent e){
 				int absX = e.getX() - getWidth()/2 + (int)mainRole.posX;
 				int absY = e.getY() - getHeight()/2 + (int)mainRole.posY;
+				gameWindow.requestFocus();
 				switch(e.getButton()){
 				case MouseEvent.BUTTON1 :
 					button1Clicked(absX, absY);
