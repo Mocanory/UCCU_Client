@@ -8,7 +8,7 @@ public class Item{
 		name= n;
 		describtion=d;	
 	}
-	public int ID;
+	public int instanceID;
 	public int picID;
 	public int num;
 	public long coldtime;

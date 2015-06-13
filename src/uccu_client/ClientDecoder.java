@@ -139,6 +139,57 @@ public class ClientDecoder implements Decoder {
 				UccuLogger.log("ClientServer/ClientDecoder", "sendID: "+sendid+"/recvidID: "+recvid+"/message: "+msg);
 				break;
 			}
+			case 0x0014:{ //PING请求包
+				long timestamp = datagram.getLong();
+				UccuLogger.log("ClientServer/ClientDecoder", "Receive a package 0014(PING)");
+				SendingModule.sendPINGResponse(timestamp);	//立即回应
+				break;
+			}
+			case 0x0016:{ //时间同步
+				GameBox.globalTime = datagram.getLong();
+				UccuLogger.log("ClientServer/ClientDecoder", "Receive a package 0016(时间同步)");
+				break;
+			}
+			case 0x0019:{ //背包信息
+				int size= datagram.getInt();
+				int instanceID,data,ID,num;
+				for(int i=0;i<size;++i){
+					instanceID = datagram.getInt();
+					data = datagram.getInt();
+					num = data&0x7f;
+					ID = data>>>7;
+					gameBox.mainrole.add_items(ID, num, instanceID);
+				}
+				UccuLogger.log("ClientServer/ClientDecoder", "Receive a package 0019(背包信息)");
+			}
+			case 0x001A:{ //技能信息
+				int size= datagram.getInt();
+				int instanceID,data,ID,level,exp;
+				for(int i=0;i<size;++i){
+					instanceID = datagram.getInt();
+					ID = datagram.getInt();
+					data = datagram.getInt();
+					level = data&0x7f;
+					exp = data>>>7;
+					gameBox.mainrole.add_skills(ID, instanceID, level, exp);
+				}
+				UccuLogger.log("ClientServer/ClientDecoder", "Receive a package 001A(技能信息)");
+			}
+			case 0x001B:{ //冷却信息
+				int size = datagram.getInt();
+				int ID,rest;
+				for(int i=0;i<size;++i){
+					ID=datagram.getInt();
+					rest=datagram.getInt();
+					if(ID>=1000000000){
+//						这是技能
+					}
+					else{
+//						这是物品
+					}
+				}
+			}
+			
 	    	}
 		}
 	}

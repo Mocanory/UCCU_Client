@@ -12,7 +12,7 @@ public class Mainrole extends Airplane {
 			skills[i]=new Skill();
 		}	
 	}
-	public void add_items (int ID,int num) {
+	public void add_items (int ID,int num,int instanceID){
 		int i=0;
 		for(;i<items.length;++i)
 			if(items[i].empty||items[i].num==0)	break;
@@ -20,8 +20,18 @@ public class Mainrole extends Airplane {
 		items[i].picID=pre_items[ID].picID;
 		items[i].num=num;
 		items[i].name=pre_items[ID].name;
-		items[i].describtion=pre_items[ID].describtion;	
-		items[i].ID=ID;
+		items[i].describtion = pre_items[ID].describtion;	
+		items[i].instanceID = instanceID;
+	}
+	public void add_skills(int picID,int instanceID,int level,int exp){
+		int i=0;
+		for(;i<skills.length;++i)
+			if(skills[i].empty)	break;
+		skills[i].empty = false;
+		skills[i].picID = picID;	
+		skills[i].instanceID = instanceID;
+		skills[i].level = level;
+		skills[i].exp = exp;
 	}
 }
 
