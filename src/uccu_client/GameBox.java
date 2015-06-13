@@ -83,6 +83,9 @@ public class GameBox{
 					plane=gameBox.playerPool.get(iter.next());
 					deltaX=plane.targetX-plane.posX;
 					deltaY=plane.targetY-plane.posY;
+					int face=deltaX>0?0:1;
+					if(deltaX!=0)
+					plane.angle=Math.PI/2+Math.PI*face+(Math.atan(deltaY/deltaX));							
 					/* 我修改了你的移动方法
 					 * 不然deltaX很小或者deltaY是负数时会出错
 					 * 这里采用总速度不变，横纵速度按比例变化的方法
