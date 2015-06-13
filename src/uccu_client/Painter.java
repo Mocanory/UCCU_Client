@@ -212,7 +212,7 @@ public class Painter extends JFrame{
 		this.getLayeredPane().add(gameWindow,new Integer(Integer.MIN_VALUE));
 		((JPanel)this.getContentPane()).setOpaque(false);
 		background = new Picture("lf.jpg", getWidth(), getHeight(),0);
-		gameWindow.img = background.getImage();
+		gameWindow.img = background.getImage().getScaledInstance(getWidth(),getHeight(), Image.SCALE_DEFAULT);
 		this.getContentPane().add(waitingPanel);
 		setVisible(true);
 	}
