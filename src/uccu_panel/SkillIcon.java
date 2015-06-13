@@ -39,6 +39,6 @@ class SkillIcon extends UsableIcon{
 			return;
 		}
 		info.lastuse = now;
-		SendingModule.sendUseSkill(info.instanceID, 0, -1);
+		SendingModule.sendUseSkill(info.instanceID,0,-1);
 	}
 }

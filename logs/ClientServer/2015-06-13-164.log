@@ -1,0 +1,12 @@
+[23:37:55] [ClientServer/ClientMain/init/DEBUG]: address: baidu.com:80
+[23:37:55] [ClientServer/ClientMain/init/DEBUG]: 图片加载成功
+[23:37:55] [ClientServer/ClientMain/init/DEBUG]: GIF动画加载成功
+[23:37:55] [ClientServer/ClientMain/init/DEBUG]: 物品预加载成功
+[23:37:56] [ClientServer/ClientMain/init/DEBUG]: init over
+[23:37:56] [ClientServer/ClientMain/KERNEL]: 0.开始建立网络连接…………
+[23:37:56] [ClientServer/ClientMain/setUpConnection/DEBUG]: setUpConnection over
+[23:37:56] [ClientServer/ClientMain/KERNEL]: 1.网络连接成功!
+[23:37:56] [ClientServer/ClientMain/KERNEL]: 2.发送0000包，确认对方是否为服务器Gate端
+[23:37:56] [SendingModule/send00Package/INFO]: send00Package over
+[23:37:56] [AioModule/Write/Completed/DEBUG]: Sent 14 bytes to sessionbaidu.com/220.181.57.217:80
+[23:37:56] [AioModule/Write/Completed/DEBUG]: Sent contents(14bytes): ff ff 00 00 00 0e 00 00 00 00 30 39 20 db 
