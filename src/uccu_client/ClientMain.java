@@ -41,7 +41,7 @@ public class ClientMain {
 		UccuLogger.kernel("ClientServer/ClientMain", "3.收到0001包，确认对方为服务器Gate端");
 		UccuLogger.kernel("ClientServer/ClientMain", "4.初始化loginBox登陆界面");
 		loginBox.init();
-		myDebug(2);//debug调试模式使用
+//		myDebug(2);//debug调试模式使用
 		while (!isLoginOver) {mySleep(200);}
 		UccuLogger.kernel("ClientServer/ClientMain", "5.登陆结束");
 		if (!isLoginsuccess) {UccuLogger.kernel("ClientServer/ClientMain", "登陆失败，退出主程序");procExit();}
