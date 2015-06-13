@@ -5,8 +5,11 @@ public class Mainrole extends Airplane {
 	static public Skill[] pre_skills;
 	public Item[] items= new Item[32];//物品数组
 	public Skill[] skills = new Skill[32];//技能数组
-	public Mainrole(int id, int picid, double x, double y,String name,byte level,byte gender) {
-		super(id, picid, x, y,name,level,gender);
+	public Mainrole(int id, int picid, double x, double y,byte l,byte g,int speed,
+				String name, String describe,int life,int curlife,int mana,int curmana,
+				int atk,int def, int exp) {
+		super(id, picid, x, y, l, g, speed, name, describe, life, curlife, mana, curmana, atk, def, exp);
+//		super(id, picid, x, y,name,level,gender);
 		for(int i=0;i<32;++i){
 			items[i]=new Item();
 			skills[i]=new Skill();

@@ -17,7 +17,7 @@ public class GameBox{
 	//本人信息，应该比其他玩家的信息更丰富
 	public Mainrole mainrole;
 	//服务器绝对时间
-	static public long globalTime;
+	static public long globalTime_;
 	//更改playerPool和warheadPool的锁
 	private static Object lock_plane = new Object(); // static确保只有一把锁
 	private static Object lock_bullet = new Object(); // static确保只有一把锁
@@ -68,16 +68,19 @@ public class GameBox{
 		SendingModule.sendMovingTarget(mainrole.getID(), (int)mainrole.targetX, (int)mainrole.targetY);
 		}
 	//将角色初始化,加入角色池并放入贴图池
-	public void addCharacter(int id,String name,byte pid,byte level,byte gender,int posX,int posY){
+	public void addCharacter(int id,String name,String describe,byte level,byte gender,
+			int life,int curlife,int mana, int curmana, int atk,int def,int exp,
+			int movespeed,int posX,int posY,int pid){
 		UccuLogger.debug("ClientServer/GameBox/addCharacter", "Receive a package 000A(游戏中所有玩家信息)");
 		if(id!=ClientMain.mainID){	//非主角玩家
-			Airplane tmpPlane= new Airplane(id, pid, posX, posY,name,level,gender);
+			Airplane tmpPlane= new Airplane(id, pid, posX, posY, level, gender, movespeed, name, describe, life, curlife, mana, curmana, atk, def, exp);
+//			Airplane tmpPlane= new Airplane(id, pid, posX, posY,name,level,gender);
 			playerPool.put(id,tmpPlane);
 			painter.addEntity(tmpPlane);
 			UccuLogger.debug("ClientServer/GameBox/addCharacter", "000A:加入一个非主角玩家:"+name);
 		}
 		else{	//主角玩家
-			Mainrole tmpMain=new Mainrole(id, pid, posX, posY,name,level,gender);
+			Mainrole tmpMain=new Mainrole(id, pid, posX, posY, level, gender, movespeed, name, describe, life, curlife, mana, curmana, atk, def, exp);
 			playerPool.put(id,tmpMain);
 			painter.addEntity(tmpMain);
 			painter.setMainRole(tmpMain);

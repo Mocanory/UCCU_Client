@@ -24,11 +24,12 @@ public class SendingModule {
 		ClientMain.serverSession.write(Datagram.wrap(bb,Target.CL_Gate,0x0002));
 		UccuLogger.log("SendingModule/sendLogin", "package 0002(登陆信息) send!");
 	}
-	public static void sendCreateCharacter(String name,byte gender){
+	public static void sendCreateCharacter(String name,byte gender,int picID){
 		ByteBuffer bb = ByteBuffer.allocate(256);
 		Datagram.restoreString(bb,ClientMain.userID);//user id
 		Datagram.restoreString(bb,name);
 		bb.put(gender);
+		bb.putInt(picID);
 		ClientMain.serverSession.write(Datagram.wrap(bb,Target.CL_Gate,0x0008));
 		UccuLogger.log("SendingModule/sendCreateCharacter","package 0008(创建角色) send!");
 	}

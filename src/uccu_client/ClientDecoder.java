@@ -51,9 +51,10 @@ public class ClientDecoder implements Decoder {
 					String name=Datagram.extractString(datagram);
 					byte level = datagram.get();
 					byte gender=datagram.get();
+					int picID = datagram.get();
 					UccuLogger.log("ClientServer/ClientDecoder", "Receive a package 0006(角色预加载)");
 					UccuLogger.log("ClientServer/ClientDecoder", "package 0006: "+"/id: "+id+"/name: "+name+"/level: "+level+"/gender: "+gender);
-					loginBox.addCharacter(id, name, level, gender);
+					loginBox.addCharacter(id, name, level, gender,picID);
 				}
 				break;
 			}
@@ -67,14 +68,24 @@ public class ClientDecoder implements Decoder {
 			case 0x000A:{//角色详细信息
 				int id=datagram.getInt();
 				String name=Datagram.extractString(datagram);
+				String describe=Datagram.extractString(datagram);
 				byte level=datagram.get();
 				byte gender=datagram.get();
-				byte pid = 12;	//picid 并没有告诉Client---多图情况下需要知道角色是哪款飞机
+				int life = datagram.getInt();
+				int curlife = datagram.getInt();
+				int mana = datagram.getInt();
+				int curmana = datagram.getInt();
+				int atk=datagram.getInt();
+				int def = datagram.getInt();
+				int exp = datagram.getInt();
+				int movespeed=datagram.getInt();
+//				byte pid = 12;	//picid 并没有告诉Client---多图情况下需要知道角色是哪款飞机
 				int posX=datagram.getInt();
 				int posY=datagram.getInt();
+				int pid=datagram.getInt();
 				UccuLogger.log("ClientServer/ClientDecoder", "Receive a package 000A(游戏中所有玩家信息)");
 				UccuLogger.log("ClientServer/ClientDecoder", "package 000A: "+"/id: "+id+"/name: "+name+"/level: "+level+"/gender: "+gender+"/posX: "+posX+"/posY: "+posY);
-				gameBox.addCharacter(id, name, pid, level, gender, posX, posY);
+				gameBox.addCharacter(id, name, describe, level, gender, life, curlife, mana, curmana, atk, def, exp, movespeed, posX, posY, pid);
 				break;
 			}
 			case 0x000C:{//角色发生移动
@@ -147,7 +158,7 @@ public class ClientDecoder implements Decoder {
 				break;
 			}
 			case 0x0016:{ //时间同步
-				GameBox.globalTime = datagram.getLong();
+				GameBox.globalTime_ = datagram.getLong();
 				UccuLogger.log("ClientServer/ClientDecoder", "Receive a package 0016(时间同步)");
 				break;
 			}
@@ -193,14 +204,24 @@ public class ClientDecoder implements Decoder {
 			case 0x001C:{//角色详细信息的重新更新
 				int id=datagram.getInt();
 				String name=Datagram.extractString(datagram);
+				String describe=Datagram.extractString(datagram);
 				byte level=datagram.get();
 				byte gender=datagram.get();
-				byte pid = 12;	//picid 并没有告诉Client---多图情况下需要知道角色是哪款飞机
+				int life = datagram.getInt();
+				int curlife = datagram.getInt();
+				int mana = datagram.getInt();
+				int curmana = datagram.getInt();
+				int atk=datagram.getInt();
+				int def = datagram.getInt();
+				int exp = datagram.getInt();
+				int movespeed=datagram.getInt();
+//				byte pid = 12;	//picid 并没有告诉Client---多图情况下需要知道角色是哪款飞机
 				int posX=datagram.getInt();
 				int posY=datagram.getInt();
+				int pid=datagram.getInt();
 				UccuLogger.log("ClientServer/ClientDecoder", "Receive a package 000A(游戏中所有玩家信息)");
 				UccuLogger.log("ClientServer/ClientDecoder", "package 000A: "+"/id: "+id+"/name: "+name+"/level: "+level+"/gender: "+gender+"/posX: "+posX+"/posY: "+posY);
-				gameBox.addCharacter(id, name, pid, level, gender, posX, posY);
+				gameBox.addCharacter(id, name, describe, level, gender, life, curlife, mana, curmana, atk, def, exp, movespeed, posX, posY, pid);
 				break;
 			}
 			

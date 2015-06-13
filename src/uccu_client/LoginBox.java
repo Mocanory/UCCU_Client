@@ -116,9 +116,9 @@ public class LoginBox extends JFrame{
 		try {Thread.sleep(500);} catch (InterruptedException e) {}
 		this.setVisible(true);//backPicPanel.repaint();
 	}
-	public void addCharacter(int id,String name,byte level, byte gender){
+	public void addCharacter(int id,String name,byte level, byte gender,int picID){
 		UccuLogger.log("ClientSever/LoginBox/addCharacter", "Receive a package 0006(角色预加载)");
-		characterPanel.addCharacter(id,name,level,gender);
+		characterPanel.addCharacter(id,name,level,gender,picID);
 		characterPanel.repaint();
 	}
 	public void serverState(byte stat){

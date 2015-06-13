@@ -20,8 +20,10 @@ public class CreatePanel extends JPanel{
 		createButton = new JButton("create");
 		createButton.addActionListener(e->{
 			String name = nameField.getText();
+//			这两个地方都不要写死
 			byte gender = 1;
-			SendingModule.sendCreateCharacter(name,gender);
+			int picID=11;
+			SendingModule.sendCreateCharacter(name,gender,picID);
 		});
 		backButton = new JButton("back");
 		backButton.addActionListener(e->{

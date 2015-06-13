@@ -125,24 +125,24 @@ public class ClientMain {
 				// loginBox.onRegistResponse(true);//假装收到了一个注册成功反馈
 //				mySleep(1000);
 				// 假装收到了两个角色信息
-				loginBox.addCharacter(1, "first role", (byte) 12, (byte) 0);
-				loginBox.addCharacter(2, "second role", (byte) 15, (byte) 1);
+//				loginBox.addCharacter(1, "first role", (byte) 12, (byte) 0);
+//				loginBox.addCharacter(2, "second role", (byte) 15, (byte) 1);
 				loginBox.noMorePackage();
 //				mySleep(1000);
 				// 假装再创建1个角色
-				SendingModule.sendCreateCharacter("dddd",(byte) 1);
+				SendingModule.sendCreateCharacter("dddd",(byte) 1, 1);
 				// 假装角色创建成功
 				loginBox.onCreatResponse(true);
 				//创建成功后服务器还会再发回来一个包代表刚创建的角色
-				loginBox.addCharacter(3, "third role", (byte) 1, (byte) 1);
+//				loginBox.addCharacter(3, "third role", (byte) 1, (byte) 1);
 				//然后客户端发送一个角色选择的包，登陆结束
 				ClientMain.mainID = 3;	//选出了一个主角ID
 				ClientMain.isLoginsuccess = true;
 				ClientMain.isLoginOver = true;
 				loginBox.dispose();
 				//收到两个角色详细的包，其中一个是mainID代表的主角
-				gameBox.addCharacter(3,"third role", (byte)12, (byte)1,(byte)1,50,50);
-				gameBox.addCharacter(5,"another role", (byte)13, (byte)1,(byte)1,100,100);
+//				gameBox.addCharacter(3,"third role", (byte)12, (byte)1,(byte)1,50,50);
+//				gameBox.addCharacter(5,"another role", (byte)13, (byte)1,(byte)1,100,100);
 			}
 			else if(num==3){//模拟移动情况
 //				gameBox.updateTarget(3, 2000, 5000);

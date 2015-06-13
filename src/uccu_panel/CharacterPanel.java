@@ -9,6 +9,7 @@ import javax.swing.*;
 import uccu_client.ClientMain;
 import uccu_client.Datagram;
 import uccu_client.LoginBox;
+import uccu_client.Picture;
 import uccu_client.SendingModule;
 
 class CharacterInfo{
@@ -16,11 +17,13 @@ class CharacterInfo{
 	String name;
 	byte level;
 	byte gender;
-	public CharacterInfo(	int id,String name,byte level,	byte gender) {
+	int picID;
+	public CharacterInfo(	int id,String name,byte level,	byte gender,int picID) {
 		this.id = id;
 		this.name = name;
 		this.level = level;
 		this.gender = gender;
+		this.picID=picID;
 	}
 }
 public class CharacterPanel extends JPanel{
@@ -104,9 +107,9 @@ public class CharacterPanel extends JPanel{
 		createButton.setBounds(1100,680,100,50);
 		this.add(createButton);
 	}
-	public void addCharacter(int id,String name,byte level, byte gender){
+	public void addCharacter(int id,String name,byte level, byte gender,int picID){
 		if(characterCount == 8) return;
-		characterInfo[characterCount] = new CharacterInfo(id,name,level, gender);
+		characterInfo[characterCount] = new CharacterInfo(id,name,level, gender,picID);
 		characterButton[characterCount].setIcon(new ImageIcon(
 				Toolkit.getDefaultToolkit().getImage("loading.gif") ));
 		characterCount++;
