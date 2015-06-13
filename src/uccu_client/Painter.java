@@ -174,6 +174,9 @@ public class Painter extends JFrame{
 	public Picture getPicByPid(int pid){
 		return picMap.get(pid);
 	}
+	public void localInform(String msg){
+		chatPanel.insertChat("[通知]"+msg, chatPanel.labelstat);
+	}
 	public void allMapChat(chatStat s,int speakerID,String msg){
 		//先检查chatStat如果是success的话那么 Speakerid表示说话的人的名字，msg表示信息
 		//否则输出错误信息:

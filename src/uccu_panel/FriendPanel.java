@@ -11,8 +11,8 @@ public class FriendPanel extends JInternalFrame{
 		this.setLocation(20, 20);
 		this.setSize(200, 200);
 		this.setDefaultCloseOperation(HIDE_ON_CLOSE);
-		ItemIcon tic = new ItemIcon(new Picture("0.png", 0, 0, 0), "haah\nninin\nfdafa", 1);
-		tic.setBounds(20, 20, 50, 50);
-		this.add(tic);
+//		ItemIcon tic = new ItemIcon(new Picture("0.png", 0, 0, 0), "haah\nninin\nfdafa", 1);
+//		tic.setBounds(20, 20, 50, 50);
+//		this.add(tic);
 	}
 }

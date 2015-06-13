@@ -10,12 +10,14 @@ import uccu_client.Item;
 import uccu_client.Painter;
 import uccu_client.Picture;
 import uccu_client.SendingModule;
+import uccu_client.Skill;
 
-class ItemIcon extends UsableIcon{
-	Item info;
-	public ItemIcon(Item it){
-		super(Painter.painter.getPicByPid(it.picID));
-		info = it;
+class SkillIcon extends UsableIcon{
+	Skill info;
+	long lastclick;
+	public SkillIcon(Skill sk){
+		super(Painter.painter.getPicByPid(sk.picID));
+		info = sk;
 	}
 	@Override
     public void myMouseEntered(MouseEvent e) {
@@ -33,10 +35,10 @@ class ItemIcon extends UsableIcon{
 		long canuse = info.coldtime + info.lastuse;
 		if(canuse > now){
 			long lefttime = 1+(canuse-now)/1000;
-			Painter.painter.localInform("物品冷却中，剩余时间："+lefttime+"秒");
+			Painter.painter.localInform("技能冷却中，剩余时间："+lefttime+"秒");
 			return;
 		}
 		info.lastuse = now;
-		SendingModule.sendUseItem(info.ID);
+		SendingModule.sendUseSkill(info.id);
 	}
 }

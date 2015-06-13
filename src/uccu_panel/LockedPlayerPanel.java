@@ -11,11 +11,13 @@ import uccu_client.Picture;
 public class LockedPlayerPanel extends JPanel{
 	Picture headPic;
 	Airplane player;
+	Font font;
 	public LockedPlayerPanel(){
 		this.setOpaque(false);
 		this.setLayout(null);
 		this.setBounds(600,50,200,100);
 		this.setVisible(false);
+		font = Font.decode("黑体");
 	}
 	public void setPlayer(Airplane airplane){
 		this.setVisible(false);
@@ -27,7 +29,7 @@ public class LockedPlayerPanel extends JPanel{
 	public void paintComponent(Graphics g){
 		g.drawImage(headPic.getImage(), 0, 0,headPic.getWidth(),headPic.getHeight(),this);
 		g.setColor(Color.RED);
-		g.setFont(Font.decode("黑体"));
+		g.setFont(font);
 		g.drawChars(player.name.toCharArray(), 0, player.name.length(), headPic.getWidth()+20, headPic.getHeight()/4);
 	}
 }

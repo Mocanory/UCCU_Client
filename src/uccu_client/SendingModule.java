@@ -59,6 +59,12 @@ public class SendingModule {
 		//TODO
 		UccuLogger.debug("SendingModule/sendPriChat", id + ":" + t);
 	}
+	public static void sendUseItem(int id){
+		//TODO
+	}
+	public static void sendUseSkill(int id){
+		//TODO
+	}
 	public static void sendLogout(){
 		//TODO
 		UccuLogger.log("SendingModule/sendLogout", "logout send!");
