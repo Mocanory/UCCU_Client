@@ -1,21 +1,33 @@
 /* 游戏逻辑核心 */
 package uccu_client;
 
+import java.awt.List;
+import java.awt.geom.Area;
+import java.lang.reflect.Array;
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Iterator;
+import java.util.Vector;
 
 public class GameBox{
 	//实体池，应为一个HashMap，以ID为索引，实体对象为元素
 	public HashMap<Integer, Airplane> playerPool;
+	//炮弹池，为一个List
+	public ArrayList<Warhead> warheadPool;
 	//本人信息，应该比其他玩家的信息更丰富
 	public Mainrole mainrole;
+	//更改playerPool和warheadPool的锁
+	private static Object lock_plane = new Object(); // static确保只有一把锁
+	private static Object lock_bullet = new Object(); // static确保只有一把锁
 	//系统聊天信息
 	public static enum chatStat{success,frequency,nopermission,blacklist,wrong};
 	Painter painter;
 	public GameBox(){
 		playerPool = new HashMap<Integer, Airplane>();
+		warheadPool = new ArrayList<Warhead>();
 		painter= new Painter(this);
 	}
+	//开始游戏
 	public void startGame(){
 		boolean roleSending=true;
 		int i=0;
@@ -34,14 +46,19 @@ public class GameBox{
 		//加载完成 等待窗口关闭	正式开始游戏
 		UccuLogger.kernel("ClientServer/GameBox/startGame", "接收主角详细信息(000A):关闭加载窗口,开始游戏!");
 		painter.gameStart();
-		new Thread(new ActionThread(this)).start();
+		new Thread(new ActionThread_plane(this)).start();
+		new Thread(new ActionThread_bullet(this)).start();
 	}
-	public void updateTarget(int id,int targetX,int targetY){
-		//互斥锁
-		(playerPool.get(id)).targetX=targetX;
-		(playerPool.get(id)).targetY=targetY;
-		UccuLogger.log("Client/GameBox/updateTarget", "receive Package 000C(角色目标)");
-		UccuLogger.log("Client/GameBox/updateTarget", "targetX: "+targetX+"/targetY "+targetY);
+	//由decoder调用,更新各个角色的目标位置
+	public void updateTarget(int id, int targetX, int targetY) {
+		synchronized (lock_plane) {
+			(playerPool.get(id)).targetX = targetX;
+			(playerPool.get(id)).targetY = targetY;
+			UccuLogger.log("Client/GameBox/updateTarget",
+					"receive Package 000C(角色目标)");
+			UccuLogger.log("Client/GameBox/updateTarget", "targetX: " + targetX
+					+ "/targetY " + targetY);
+		}
 	}
 	public void sendTargetPos(int targetX,int targetY){
 		updateTarget(ClientMain.mainID,targetX, targetY);//先更新目标地址，再发送数据包
@@ -65,38 +82,88 @@ public class GameBox{
 			UccuLogger.debug("ClientServer/GameBox/addCharacter", "000A:加入一个主角玩家:"+name);
 		}
 	}	
-	//Action线程专门负责处理每0.5s之后所有飞机的位置
-	private class ActionThread implements Runnable{
+	//攻击函数,由当前游戏窗体攻击事件触发
+	public void attack(int id){
+		synchronized (lock_bullet) {
+			Warhead warhead=mainrole.attack((playerPool.get(id)));
+			warheadPool.add(warhead);
+			painter.addEntity(warhead);		
+		}
+	}
+	//Action_plane线程专门负责处理每20ms之后所有飞机的位置
+	private class ActionThread_plane implements Runnable{
 		GameBox gameBox;
-		public ActionThread(GameBox gb) {
+		public ActionThread_plane(GameBox gb) {
 			gameBox = gb;	//获取指示变量的引用
 		}
 		@Override
 		public void run() {
 			while(true){
 				ClientMain.mySleep(20);
-				//与updateTarget函数互斥
-				Iterator<?> iter = gameBox.playerPool.keySet().iterator();
-				Airplane plane;
-				double deltaX,deltaY;
-				while(iter.hasNext()){
-					plane=gameBox.playerPool.get(iter.next());
-					deltaX=plane.targetX-plane.posX;
-					deltaY=plane.targetY-plane.posY;
-					int face=deltaX>0?0:1;
-					if(deltaX!=0)
-					plane.angle=Math.PI/2+Math.PI*face+(Math.atan(deltaY/deltaX));							
-					/* 我修改了你的移动方法
-					 * 不然deltaX很小或者deltaY是负数时会出错
-					 * 这里采用总速度不变，横纵速度按比例变化的方法
-					 * 最后如果delta比速度的步长短时，只移动delta */
-					double tmp = plane.speed/Math.sqrt(deltaX*deltaX + deltaY*deltaY);
-					if(tmp > 1) tmp = 1;//比例大于1说明步长大于delta，将比例修改为1，否则会不能停止移动，反复在原地抖动
-					//speed 是其x轴速度,deltaXY只是用来算角度的
-					plane.posX+=deltaX*tmp;
-					plane.posY+=deltaY*tmp;
+				synchronized (lock_plane) {
+					Iterator<?> iter = gameBox.playerPool.keySet().iterator();
+					Airplane plane;
+					double deltaX, deltaY;
+					while (iter.hasNext()) {
+						plane = gameBox.playerPool.get(iter.next());
+						deltaX = plane.targetX - plane.posX;
+						deltaY = plane.targetY - plane.posY;
+						int face = deltaX > 0 ? 0 : 1;
+						if (deltaX != 0)
+							plane.angle = Math.PI / 2 + Math.PI * face+ (Math.atan(deltaY / deltaX));
+						/* 我修改了你的移动方法 不然deltaX很小或者deltaY是负数时会出错
+						 * 这里采用总速度不变，横纵速度按比例变化的方法 最后如果delta比速度的步长短时，只移动delta*/
+						double tmp = plane.speed
+								/ Math.sqrt(deltaX * deltaX + deltaY * deltaY);
+						if (tmp > 1)
+							tmp = 1;// 比例大于1说明步长大于delta，将比例修改为1，否则会不能停止移动，反复在原地抖动
+						// speed 是其x轴速度,deltaXY只是用来算角度的
+						plane.posX += deltaX * tmp;
+						plane.posY += deltaY * tmp;
+					}
 				}
 			}
 		}		
+	}
+	private class ActionThread_bullet implements Runnable{
+		GameBox gameBox;
+		public ActionThread_bullet(GameBox gb) {
+			gameBox = gb;	//获取指示变量的引用
+		}
+		@Override
+		public void run() {
+			while(true){
+				ClientMain.mySleep(20);
+				synchronized (lock_bullet) {
+					Iterator<?> iter = gameBox.warheadPool.iterator();
+					Warhead warhead;
+					Airplane targetPlane;
+					double deltaX, deltaY;
+					while (iter.hasNext()) {
+						warhead = (Warhead) iter.next();
+						targetPlane=warhead.targetAirplane;
+						deltaX = targetPlane.posX-warhead.posX;
+						deltaY = targetPlane.posY-warhead.posY;
+						if(deltaX==0 && deltaY==0){
+							painter.deleteEntity(warhead);
+							iter.remove();
+							continue;
+						}
+						int face = deltaX > 0 ? 0 : 1;
+						if (deltaX != 0)
+							warhead.angle = Math.PI / 2 + Math.PI * face+ (Math.atan(deltaY / deltaX));
+						/* 我修改了你的移动方法 不然deltaX很小或者deltaY是负数时会出错
+						 * 这里采用总速度不变，横纵速度按比例变化的方法 最后如果delta比速度的步长短时，只移动delta*/
+						double tmp = warhead.speed/ Math.sqrt(deltaX * deltaX + deltaY * deltaY);
+						if (tmp > 1)
+							tmp = 1;// 比例大于1说明步长大于delta，将比例修改为1，否则会不能停止移动，反复在原地抖动
+							// speed 是其x轴速度,deltaXY只是用来算角度的
+						warhead.posX += deltaX * tmp;
+						warhead.posY += deltaY * tmp;
+						
+					}
+				}
+			}
+		}
 	}
 }
