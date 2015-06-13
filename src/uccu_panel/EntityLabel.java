@@ -59,7 +59,7 @@ public class EntityLabel extends JLabel{
 		this.setBounds(relX - picW/2, relY - picH/2, picW, picH);
 		
 		double theta = entityInfo.angle;
-		double hp = 0.6;
+		double hp = entityInfo.hp;
 		AffineTransform savedT = gbuffer.getTransform();
         gbuffer.rotate(theta, relX, relY);
         gbuffer.drawImage(pic.getImage() ,relX-picW/2 ,relY-picH/2, picW, picH, getParent());  
