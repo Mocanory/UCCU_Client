@@ -9,6 +9,7 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.Properties;
+import java.util.Scanner;
 
 import javax.swing.JOptionPane;
 
@@ -51,43 +52,43 @@ public class ClientMain {
 		UccuLogger.kernel("ClientServer/ClientMain", "7.游戏结束，退出主程序");
 		procExit();
 	}
-	
-	private static void procExit(){
-		SendingModule.sendLogout();
-		System.exit(0);//不然有些线程没结束掉还会继续运行
-	}
-	private static void loadpic(){
-		//TODO:修改成从配置文件读取
-		PainterProperty.picp = new PicProperty[6];
-		PainterProperty.picp[0] = new PicProperty("0.png", 32, 51,0);
-		PainterProperty.picp[1] = new PicProperty("loading.gif",100,100,1);
-		PainterProperty.picp[2] = new PicProperty("bar.png", 1000, 30,2);
-		PainterProperty.picp[3] = new PicProperty("飞机1.png", 80, 110,11);
-		PainterProperty.picp[4] = new PicProperty("飞机2.png", 80, 110,12);
-		PainterProperty.picp[5] = new PicProperty("飞机3.png", 159, 224,13);
-		
-		PainterProperty.gifp = new GIFPicProperty[1];
-		PainterProperty.gifp[0] = new GIFPicProperty("longimg.jpg", 70, 88, 10, 70, 1400,440 );
-	}
-	
 	//几个辅助函数，简化main流程
 	private static void init(int style){
 		//注册logger
 		UccuLogger.setOptions("logs/ClientServer/", style);
-		
-		//TODO:从文件加载图片信息
-		loadpic();
-		
 		//从文件加载hostName和port
-//		InputStream inputStream = ClientMain.class.getResourceAsStream("uccu_client/ipConfig.properties");   
+//		InputStream inputStream = ClientMain.class.getResourceAsStream("uccu_client/Config.properties");   
 		InputStream inputStream = null;
-		try {inputStream = new FileInputStream(new File("ipConfig.properties"));
+		try {inputStream = new FileInputStream(new File("Config.properties"));
 		} catch (FileNotFoundException e) {e.printStackTrace();}
 		Properties p = new Properties();   
 		try {p.load(inputStream);} catch (IOException e1) {e1.printStackTrace();}   
 		hostName=p.getProperty("hostName");
 		port=Integer.parseInt(p.getProperty("port"));  
 		UccuLogger.debug("ClientServer/ClientMain/init", "address: "+hostName+":"+port);
+		//加载各张图片
+		int picNum= Integer.parseInt(p.getProperty("picNum"));  
+		PainterProperty.picp = new PicProperty[picNum];
+		for(int i=0;i<picNum;++i){
+			Scanner s = new Scanner(p.getProperty("pic"+i));
+			PainterProperty.picp[i]=new PicProperty(s.next(),s.nextInt(),s.nextInt(),s.nextInt());
+		}
+		UccuLogger.debug("ClientServer/ClientMain/init", "图片加载成功");
+		int gifNum= Integer.parseInt(p.getProperty("gifNum"));  
+		PainterProperty.gifp = new GIFPicProperty[gifNum];
+		for(int i=0;i<gifNum;++i){
+			Scanner s = new Scanner(p.getProperty("gif"+i));
+			PainterProperty.gifp[i]=new GIFPicProperty(s.next(),s.nextInt(),s.nextInt(),s.nextInt(),s.nextInt(),s.nextInt(),s.nextInt());
+		}	
+		UccuLogger.debug("ClientServer/ClientMain/init", "GIF动画加载成功");
+		//预加载物品
+		int itemNum = Integer.parseInt(p.getProperty("itemNum"));
+		Mainrole.pre_items= new item[itemNum];
+		for(int i=0;i<itemNum;++i){
+			Scanner s = new Scanner(p.getProperty("item"+i));
+			Mainrole.pre_items[i]=new item(s.nextInt(),s.next(),s.next());
+		}
+		UccuLogger.debug("ClientServer/ClientMain/init", "物品预加载成功");
 		// 标记初始状态为false
 		isGateComfirm = isGameOver = isLoginOver = isLoginsuccess = false;
 		// 一定要先构造LoginBox和GameBox再构造ClientDecoder，否则decoder会得不到他们正确的引用
@@ -107,6 +108,10 @@ public class ClientMain {
 		}
 		serverSession.asyncRead();
 		UccuLogger.debug("ClientServer/ClientMain/setUpConnection", "setUpConnection over");
+	}
+	private static void procExit(){
+		SendingModule.sendLogout();
+		System.exit(0);//不然有些线程没结束掉还会继续运行
 	}
 	private static void myDebug(int num){
 		if (deBug) {
