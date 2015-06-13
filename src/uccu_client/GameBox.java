@@ -16,6 +16,8 @@ public class GameBox{
 	public ArrayList<Warhead> warheadPool;
 	//本人信息，应该比其他玩家的信息更丰富
 	public Mainrole mainrole;
+	//服务器绝对时间
+	static public long globalTime;
 	//更改playerPool和warheadPool的锁
 	private static Object lock_plane = new Object(); // static确保只有一把锁
 	private static Object lock_bullet = new Object(); // static确保只有一把锁

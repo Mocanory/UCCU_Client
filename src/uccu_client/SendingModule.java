@@ -44,8 +44,8 @@ public class SendingModule {
 		bb.putInt(X);
 		bb.putInt(Y);
 		ClientMain.serverSession.write(Datagram.wrap(bb,Target.CL_Gate,0x000B));
-		UccuLogger.debug("Client/GameBox/sendTargetPos", "package 000B(角色移动意图) send!");
-		UccuLogger.debug("Client/GameBox/sendTargetPos", "targetX: "+X+"/targetY: "+Y);
+		UccuLogger.debug("SendingModule/sendTargetPos", "package 000B(角色移动意图) send!");
+		UccuLogger.debug("SendingModule/sendTargetPos", "targetX: "+X+"/targetY: "+Y);
 
 	}
 	public static void sendPubChat(String t){
@@ -56,17 +56,38 @@ public class SendingModule {
 		UccuLogger.debug("SendingModule/sendPubChat", t);
 	}
 	public static void sendPriChat(int id,String t){
-		//TODO
+		ByteBuffer bb = ByteBuffer.allocate(256);
+		bb.putInt(id);
+		Datagram.restoreString(bb, t);
+		ClientMain.serverSession.write(Datagram.wrap(bb,Target.CL_Gate,0x000D));
 		UccuLogger.debug("SendingModule/sendPriChat", id + ":" + t);
 	}
-	public static void sendUseItem(int id){
-		//TODO
+	public static void sendUseItem(int itemInsId,int Optype,int targetID){
+		ByteBuffer bb = ByteBuffer.allocate(256);
+		bb.putInt(itemInsId);
+		bb.putInt(Optype);
+		bb.putInt(targetID);
+		ClientMain.serverSession.write(Datagram.wrap(bb,Target.CL_Gate,0x0017));
+		UccuLogger.debug("SendingModule/sendUseItem", "发送物品逻辑包:操作的物品实例ID:"+itemInsId);
 	}
-	public static void sendUseSkill(int id){
-		//TODO
+	public static void sendUseSkill(int skillInsId,int Optype,int targetID){
+		ByteBuffer bb = ByteBuffer.allocate(256);
+		bb.putInt(skillInsId);
+		bb.putInt(Optype);
+		bb.putInt(targetID);
+		ClientMain.serverSession.write(Datagram.wrap(bb,Target.CL_Gate,0x0018));
+		UccuLogger.debug("SendingModule/sendUseItem", "发送物品逻辑包:技能实例ID:"+skillInsId);
 	}
 	public static void sendLogout(){
-		//TODO
+		ByteBuffer bb = ByteBuffer.allocate(256);
+    	bb.putInt(0);
+    	ClientMain.serverSession.write(Datagram.wrap(bb,Target.CL_Gate,0x0013));
 		UccuLogger.log("SendingModule/sendLogout", "logout send!");
+	}
+	public static void sendPINGResponse(long timestamp){
+		ByteBuffer bb = ByteBuffer.allocate(256);
+		bb.putLong(timestamp);
+		ClientMain.serverSession.write(Datagram.wrap(bb,Target.CL_Gate,0x0015));
+		UccuLogger.debug("SendingModule/PINGResponse", "package 0015(PING回应包) send!");
 	}
 }
