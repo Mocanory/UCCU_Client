@@ -28,8 +28,8 @@ public class EntityLabel extends JLabel{
 				Entity mr = ((GameWindow)getParent()).mainRole;
 				int absX = (int)entityInfo.posX + e.getX() - pic.getWidth()/2;
 				int absY = (int)entityInfo.posY + e.getY() - pic.getHeight()/2;
-				int relX = absX - (int)mr.posX + 1366/2;
-				int relY = absY - (int)mr.posY + 768/2;
+				int relX = absX - (int)mr.posX + Painter.width/2;
+				int relY = absY - (int)mr.posY + Painter.height/2;
 				switch(e.getButton()){
 				case MouseEvent.BUTTON1 :
 					Painter.painter.button1Clicked(absX, absY);
@@ -47,11 +47,11 @@ public class EntityLabel extends JLabel{
 		return;
 	}
 	public void flashPos(Graphics2D gbuffer,double X,double Y){
-		int relX = (int)(entityInfo.posX - X + 1366/2);
-		int relY = (int)(entityInfo.posY - Y + 768/2);
+		int relX = (int)(entityInfo.posX - X + Painter.width/2);
+		int relY = (int)(entityInfo.posY - Y + Painter.height/2);
 		int picW = pic.getWidth();
 		int picH = pic.getHeight();
-		if(relX + picW <= 0 || relX - picW >= 1366 || relY + picH <= 0 || relY - picH >= 768){
+		if(relX + picW <= 0 || relX - picW >= Painter.width || relY + picH <= 0 || relY - picH >= Painter.height){
 			this.setVisible(false);
 			return;
 		}

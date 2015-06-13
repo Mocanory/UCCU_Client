@@ -80,8 +80,8 @@ class GIF{
 	}
 	public boolean paint(Graphics2D g,double mx,double my,ImageObserver obsv){
 		int delta = pic.getDelta();
-		int x = (int)(pos.posX - mx) + 1366/2 - pic.getWidth()/2;
-		int y = (int)(pos.posY - my) + 768/2 - pic.getHeight()/2;
+		int x = (int)(pos.posX - mx) + Painter.width/2 - pic.getWidth()/2;
+		int y = (int)(pos.posY - my) + Painter.height/2 - pic.getHeight()/2;
 		g.drawImage(pic.getImage(), x, y, x+pic.getWidth(), y+pic.getHeight(), delta*count,0, delta*(count+1), pic.getImgHeight(), obsv);
 		++count;
 		if(count*delta >= pic.getImgWidth()){

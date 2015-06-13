@@ -1,5 +1,7 @@
 package uccu_panel;
 
+import java.awt.Rectangle;
+
 import javax.swing.*;
 
 import uccu_client.Picture;
@@ -15,7 +17,7 @@ public class BagPanel extends JInternalFrame{
 		this.setDefaultCloseOperation(HIDE_ON_CLOSE);
 		this.setLayout(null);
 		bp = null;
-		backg = new BackgroundPanel();
+		backg = new BackgroundPanel(new Rectangle(0,0,getWidth(),getHeight()));
 		backg.setSize(getSize());
 		backg.img = new Picture("lf.jpg", 0, 0, 0).getImage();
 		this.getRootPane().add(backg);

@@ -4,9 +4,8 @@ import java.awt.*;
 
 import javax.swing.*;
 
-import uccu_client.Airplane;
-import uccu_client.Entity;
-
+import uccu_client.*;
+import uccu_client.Painter;
 public class GameWindow extends JPanel{
 	public Image img;
 	EntityMenu entityMenu;
@@ -20,7 +19,7 @@ public class GameWindow extends JPanel{
 	}
 	public GameWindow() {
 		this.setLayout(null);
-		this.setBounds(0,0,1366, 768);
+		this.setBounds(Painter.painter.getBounds());
 		entityMenu = new EntityMenu();
 	}
 	public void paintComponent(Graphics g){

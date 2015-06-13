@@ -1,16 +1,17 @@
 package uccu_client;
 
 
+import java.awt.Color;
+import java.awt.Dimension;
 import java.awt.Graphics2D;
 import java.awt.Image;
 import java.awt.RenderingHints;
+import java.awt.Toolkit;
 import java.awt.event.KeyAdapter;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
-
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
-
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.concurrent.ConcurrentHashMap;
@@ -50,7 +51,8 @@ public class Painter extends JFrame{
 	IconPanel iconPanel;
 	GameWindow gameWindow;
 	WaitingPanel waitingPanel;
-	final int width = 1366,height = 768,windowWidth = width,windowHeight = 768 - getInsets().top;
+	public static Dimension  screensize;
+	public static int width,height,windowWidth,windowHeight;
 //	final AffineTransform identity = new AffineTransform();
 	
     HashMap<Integer, Picture> picMap;
@@ -65,7 +67,14 @@ public class Painter extends JFrame{
 		gameBox = gb;
 		painter = this;
 		
-		this.setSize(1366, 768);
+		this.setUndecorated(true);
+		this.setBackground(new Color(0,0,0,0));
+		screensize = Toolkit.getDefaultToolkit().getScreenSize();
+		this.setSize(screensize);
+		width = windowWidth = getWidth();
+		height = windowHeight = getHeight();
+		this.setLocation(((int)screensize.getWidth()-(int)getSize().getWidth())/2
+				, ((int)screensize.getHeight() - (int)getSize().getHeight())/2);
 		this.setResizable(false);
 		this.setLayout(null);
 		this.addWindowListener(new WindowAdapter() {
@@ -84,11 +93,11 @@ public class Painter extends JFrame{
 		
 		gameWindow = new GameWindow();
 		chatPanel = new ChatPanel();
-		waitingPanel = new WaitingPanel(picMap.get(1).getImage(),picMap.get(2).getImage());
+		waitingPanel = new WaitingPanel(picMap.get(1).getImage(),picMap.get(2).getImage(),getBounds());
 		desktopPane = new JDesktopPane();
 		popupInfoPanel = new PopupInfoPanel(new Picture("lf.jpg", 0,0,0));
 		iconPanel = new IconPanel();
-		iconPanel.setLocation(700, 670);
+		iconPanel.setLocation(chatPanel.getWidth(), getHeight()-iconPanel.getHeight());
 		lockedPlayerPanel = new LockedPlayerPanel();
 		playerInfoPanel = new PlayerInfoPanel("haha",true,true);
 		selfInfoPanel = new SelfInfoPanel();
@@ -110,8 +119,8 @@ public class Painter extends JFrame{
 		gameWindow.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mousePressed(MouseEvent e){
-				int absX = e.getX() - 1366/2 + (int)mainRole.posX;
-				int absY = e.getY() - 768/2 + (int)mainRole.posY;
+				int absX = e.getX() - getWidth()/2 + (int)mainRole.posX;
+				int absY = e.getY() - getHeight()/2 + (int)mainRole.posY;
 				switch(e.getButton()){
 				case MouseEvent.BUTTON1 :
 					button1Clicked(absX, absY);
@@ -202,9 +211,8 @@ public class Painter extends JFrame{
 //		session = gameBox.session;
 		this.getLayeredPane().add(gameWindow,new Integer(Integer.MIN_VALUE));
 		((JPanel)this.getContentPane()).setOpaque(false);
-		background = new Picture("lf.jpg", 1366, 768,0);
-		gameWindow.img = background.getImage();
-		waitingPanel.setBounds(0, 0, 1366, 768);
+		background = new Picture("lf.jpg", getWidth(), getHeight(),0);
+		gameWindow.img = background.getImage().getScaledInstance(getWidth(),getHeight(), Image.SCALE_DEFAULT);
 		this.getContentPane().add(waitingPanel);
 		setVisible(true);
 	}
@@ -225,7 +233,7 @@ public class Painter extends JFrame{
 		background = new Picture("背景.jpg",1000,1000,0);
 		this.getContentPane().add(desktopPane);
 		desktopPane.setOpaque(false);
-		desktopPane.setBounds(0, 0, 1366, 768);
+		desktopPane.setBounds(getBounds());
 		desktopPane.add(popupInfoPanel,new Integer(Integer.MAX_VALUE));
 		desktopPane.add(chatPanel);
 		desktopPane.add(iconPanel);
