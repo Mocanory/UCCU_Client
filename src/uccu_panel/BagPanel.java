@@ -18,7 +18,7 @@ public class BagPanel extends JInternalFrame{
 		bp = null;
 		backg = new BackgroundPanel(new Rectangle(0,0,getWidth(),getHeight()));
 		backg.setSize(getSize());
-		backg.img = new Picture("lf.jpg", 0, 0, 0).getImage();
+		backg.img = new Picture("物品栏背景.png", 0, 0, 0).getImage();
 		this.getRootPane().add(backg);
 		((JPanel)this.getContentPane()).setOpaque(false);
 	}

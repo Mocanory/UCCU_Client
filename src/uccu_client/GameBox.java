@@ -81,6 +81,13 @@ public class GameBox{
 			painter.addEntity(tmpMain);
 			painter.setMainRole(tmpMain);
 			mainrole=tmpMain;
+			mainrole.deltaTime = 50;
+			mainrole.add_items(0, 5);
+			mainrole.add_items(0, 5);
+			mainrole.add_items(0, 5);
+			mainrole.add_items(0, 5);
+			mainrole.add_items(0, 5);
+			mainrole.add_items(0, 5);
 			UccuLogger.debug("ClientServer/GameBox/addCharacter", "000A:加入一个主角玩家:"+name);
 		}
 	}	
@@ -98,10 +105,11 @@ public class GameBox{
 		public ActionThread_plane(GameBox gb) {
 			gameBox = gb;	//获取指示变量的引用
 		}
+		int sleeptime = 20;
 		@Override
 		public void run() {
 			while(true){
-				ClientMain.mySleep(20);
+				ClientMain.mySleep(sleeptime);
 				synchronized (lock_plane) {
 					Iterator<?> iter = gameBox.playerPool.keySet().iterator();
 					Airplane plane;
@@ -115,8 +123,12 @@ public class GameBox{
 							plane.angle = Math.PI / 2 + Math.PI * face+ (Math.atan(deltaY / deltaX));
 						/* 我修改了你的移动方法 不然deltaX很小或者deltaY是负数时会出错
 						 * 这里采用总速度不变，横纵速度按比例变化的方法 最后如果delta比速度的步长短时，只移动delta*/
-						double tmp = plane.speed
-								/ Math.sqrt(deltaX * deltaX + deltaY * deltaY);
+						double dL = Math.sqrt(deltaX * deltaX + deltaY * deltaY);
+						if(dL == 0) continue;
+						double dt = plane.deltaTime;
+						double modspeed = plane.speed;
+						modspeed = (1+dt/(sleeptime*dL/modspeed - dt))*modspeed;
+						double tmp = modspeed / dL;
 						if (tmp > 1)
 							tmp = 1;// 比例大于1说明步长大于delta，将比例修改为1，否则会不能停止移动，反复在原地抖动
 						// speed 是其x轴速度,deltaXY只是用来算角度的
