@@ -52,10 +52,11 @@ public class GameBox{
 		new Thread(new ActionThread_bullet(this)).start();
 	}
 	//由decoder调用,更新各个角色的目标位置
-	public void updateTarget(int id, int targetX, int targetY) {
+	public void updateTarget(int id, int targetX, int targetY,long globalTime) {
 		synchronized (lock_plane) {
 			(playerPool.get(id)).targetX = targetX;
 			(playerPool.get(id)).targetY = targetY;
+			(playerPool.get(id)).deltaTime=(int)(System.currentTimeMillis()-globalTime);
 			UccuLogger.log("Client/GameBox/updateTarget",
 					"receive Package 000C(角色目标)");
 			UccuLogger.log("Client/GameBox/updateTarget", "targetX: " + targetX
@@ -63,7 +64,7 @@ public class GameBox{
 		}
 	}
 	public void sendTargetPos(int targetX,int targetY){
-		updateTarget(ClientMain.mainID,targetX, targetY);//先更新目标地址，再发送数据包
+		updateTarget(ClientMain.mainID,targetX, targetY,System.currentTimeMillis());//先更新目标地址，再发送数据包
 		SendingModule.sendMovingTarget(mainrole.getID(), (int)mainrole.targetX, (int)mainrole.targetY);
 		}
 	//将角色初始化,加入角色池并放入贴图池
@@ -82,12 +83,6 @@ public class GameBox{
 			painter.setMainRole(tmpMain);
 			mainrole=tmpMain;
 			mainrole.deltaTime = 50;
-			mainrole.add_items(0, 5);
-			mainrole.add_items(0, 5);
-			mainrole.add_items(0, 5);
-			mainrole.add_items(0, 5);
-			mainrole.add_items(0, 5);
-			mainrole.add_items(0, 5);
 			UccuLogger.debug("ClientServer/GameBox/addCharacter", "000A:加入一个主角玩家:"+name);
 		}
 	}	

@@ -43,6 +43,7 @@ public class SendingModule {
 		bb.putInt(ID);
 		bb.putInt(X);
 		bb.putInt(Y);
+		bb.putLong(System.currentTimeMillis());
 		ClientMain.serverSession.write(Datagram.wrap(bb,Target.CL_Gate,0x000B));
 		UccuLogger.debug("SendingModule/sendTargetPos", "package 000B(角色移动意图) send!");
 		UccuLogger.debug("SendingModule/sendTargetPos", "targetX: "+X+"/targetY: "+Y);

@@ -146,7 +146,7 @@ public class ClientMain {
 			}
 			else if(num==3){//模拟移动情况
 //				gameBox.updateTarget(3, 2000, 5000);
-				gameBox.updateTarget(5, 10000, 20000);
+				gameBox.updateTarget(5, 10000, 20000,System.currentTimeMillis());
 			}
 			else if(num==4){	//模拟各种聊天请求
 				mySleep(500);

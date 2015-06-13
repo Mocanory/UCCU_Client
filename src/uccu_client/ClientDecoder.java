@@ -81,9 +81,10 @@ public class ClientDecoder implements Decoder {
 				int id=datagram.getInt();
 				int targetX=datagram.getInt();
 				int targetY=datagram.getInt();
+				long globalTime= datagram.getLong();
 				UccuLogger.log("ClientServer/ClientDecoder", "Receive a package 000C(所有玩家目标坐标更新)");
 				UccuLogger.log("ClientServer/ClientDecoder", "package 000C: "+"/id: "+id+"/posX: "+targetX+"/posY: "+targetY);
-				gameBox.updateTarget(id, targetX, targetY);
+				gameBox.updateTarget(id, targetX, targetY,globalTime);
 				break;
 			}
 			case 0x000E:{	//全局喇叭被服务器拒绝
