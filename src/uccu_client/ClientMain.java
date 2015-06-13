@@ -41,7 +41,7 @@ public class ClientMain {
 		UccuLogger.kernel("ClientServer/ClientMain", "3.收到0001包，确认对方为服务器Gate端");
 		UccuLogger.kernel("ClientServer/ClientMain", "4.初始化loginBox登陆界面");
 		loginBox.init();
-//		myDebug(2);//debug调试模式使用
+		myDebug(2);//debug调试模式使用
 		while (!isLoginOver) {mySleep(200);}
 		UccuLogger.kernel("ClientServer/ClientMain", "5.登陆结束");
 		if (!isLoginsuccess) {UccuLogger.kernel("ClientServer/ClientMain", "登陆失败，退出主程序");procExit();}
@@ -120,15 +120,15 @@ public class ClientMain {
 				loginBox.serverState((byte) 1);// 假装连接成功，服务器处于空闲状态
 			}
 			else if (num == 2) {
-				mySleep(2000);
+//				mySleep(2000);
 				loginBox.onLoginResponse(true);// 假装收到了一个登录成功反馈
 				// loginBox.onRegistResponse(true);//假装收到了一个注册成功反馈
-				mySleep(1000);
+//				mySleep(1000);
 				// 假装收到了两个角色信息
 				loginBox.addCharacter(1, "first role", (byte) 12, (byte) 0);
 				loginBox.addCharacter(2, "second role", (byte) 15, (byte) 1);
 				loginBox.noMorePackage();
-				mySleep(1000);
+//				mySleep(1000);
 				// 假装再创建1个角色
 				SendingModule.sendCreateCharacter("dddd",(byte) 1);
 				// 假装角色创建成功
