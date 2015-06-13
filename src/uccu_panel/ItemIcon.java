@@ -37,6 +37,6 @@ class ItemIcon extends UsableIcon{
 			return;
 		}
 		info.lastuse = now;
-		SendingModule.sendUseItem(info.ID);
+		SendingModule.sendUseItem(info.instanceID,1,-1);
 	}
 }
