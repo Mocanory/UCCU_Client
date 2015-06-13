@@ -7,6 +7,10 @@ public class Mainrole extends Airplane {
 	public skill[] skills = new skill[32];//技能数组
 	public Mainrole(int id, int picid, double x, double y,String name,byte level,byte gender) {
 		super(id, picid, x, y,name,level,gender);
+		for(int i=0;i<32;++i){
+			items[i]=new item();
+			skills[i]=new skill();
+		}	
 	}
 	public void add_items (int ID,int num) {
 		int i=0;
@@ -16,18 +20,20 @@ public class Mainrole extends Airplane {
 		items[i].picID=pre_items[ID].picID;
 		items[i].num=num;
 		items[i].name=pre_items[ID].name;
-		items[i].describtion=pre_items[ID].describtion;		
+		items[i].describtion=pre_items[ID].describtion;	
+		items[i].ID=ID;
 	}
 }
 class item{
 	public item() {
 		empty=true;
 	}
-	public item(int ID,String n,String d){//for static pre_items
-		picID=ID;
+	public item(int picid,String n,String d){//for static pre_items
+		picID=picid;
 		name= n;
 		describtion=d;			
 	}
+	int ID;
 	int picID;
 	int num;
 	boolean empty;//标记该物品栏是否为空
@@ -37,6 +43,7 @@ class item{
 }
 class skill{
 	int gifID;
+	int id;
 	String name;
 	String describtion;
 }
