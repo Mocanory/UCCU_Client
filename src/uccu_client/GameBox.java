@@ -80,12 +80,8 @@ public class GameBox{
 			painter.setMainRole(tmpMain);
 			mainrole=tmpMain;
 			mainrole.deltaTime = 50;
-			mainrole.add_items(0, 5);
-			mainrole.add_items(0, 5);
-			mainrole.add_items(0, 5);
-			mainrole.add_items(0, 5);
-			mainrole.add_items(0, 5);
-			mainrole.add_items(0, 5);
+			for(int i=0;i<32;++i)
+				mainrole.add_items(0, 5);
 			UccuLogger.debug("ClientServer/GameBox/addCharacter", "000A:加入一个主角玩家:"+name);
 		}
 	}	
