@@ -83,10 +83,10 @@ public class ClientMain {
 		UccuLogger.debug("ClientServer/ClientMain/init", "GIF动画加载成功");
 		//预加载物品
 		int itemNum = Integer.parseInt(p.getProperty("itemNum"));
-		Mainrole.pre_items= new item[itemNum];
+		Mainrole.pre_items= new Item[itemNum];
 		for(int i=0;i<itemNum;++i){
 			Scanner s = new Scanner(p.getProperty("item"+i));
-			Mainrole.pre_items[i]=new item(s.nextInt(),s.next(),s.next());
+			Mainrole.pre_items[i]=new Item(s.nextInt(),s.next(),s.next());
 		}
 		UccuLogger.debug("ClientServer/ClientMain/init", "物品预加载成功");
 		// 标记初始状态为false

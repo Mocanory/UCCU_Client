@@ -8,6 +8,7 @@ import java.awt.Image;
 import java.awt.RenderingHints;
 import java.awt.Toolkit;
 import java.awt.event.KeyAdapter;
+import java.awt.event.KeyEvent;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import java.awt.event.WindowAdapter;
@@ -113,8 +114,15 @@ public class Painter extends JFrame{
 			gifPicMap.put(gpp.id, new GIFpicture(gpp));
 	}
 	private void addEventGeter(){
-		gameWindow.addKeyListener(new KeyAdapter() {
-			
+		this.addKeyListener(new KeyAdapter() {
+			long lastpress = 0;
+			@Override
+			public void keyPressed(KeyEvent e){
+				if(e.getWhen()-lastpress < 1000) return;
+				lastpress = e.getWhen();
+				if(lockPlayer == null) return;
+				gameBox.attack(lockPlayer.getID());
+			}
 		});
 		gameWindow.addMouseListener(new MouseAdapter() {
 			@Override
@@ -173,6 +181,9 @@ public class Painter extends JFrame{
 	}
 	public Picture getPicByPid(int pid){
 		return picMap.get(pid);
+	}
+	public void localInform(String msg){
+		chatPanel.insertChat("[通知]"+msg, chatPanel.labelstat);
 	}
 	public void allMapChat(chatStat s,int speakerID,String msg){
 		//先检查chatStat如果是success的话那么 Speakerid表示说话的人的名字，msg表示信息

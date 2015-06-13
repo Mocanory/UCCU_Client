@@ -1,15 +1,15 @@
 package uccu_client;
 
 public class Mainrole extends Airplane {
-	static public item[] pre_items;
-	static public skill[] pre_skills;
-	public item[] items= new item[32];//物品数组
-	public skill[] skills = new skill[32];//技能数组
+	static public Item[] pre_items;
+	static public Skill[] pre_skills;
+	public Item[] items= new Item[32];//物品数组
+	public Skill[] skills = new Skill[32];//技能数组
 	public Mainrole(int id, int picid, double x, double y,String name,byte level,byte gender) {
 		super(id, picid, x, y,name,level,gender);
 		for(int i=0;i<32;++i){
-			items[i]=new item();
-			skills[i]=new skill();
+			items[i]=new Item();
+			skills[i]=new Skill();
 		}	
 	}
 	public void add_items (int ID,int num) {
@@ -24,26 +24,4 @@ public class Mainrole extends Airplane {
 		items[i].ID=ID;
 	}
 }
-class item{
-	public item() {
-		empty=true;
-	}
-	public item(int picid,String n,String d){//for static pre_items
-		picID=picid;
-		name= n;
-		describtion=d;			
-	}
-	int ID;
-	int picID;
-	int num;
-	boolean empty;//标记该物品栏是否为空
-	String name;
-	String describtion;
 
-}
-class skill{
-	int gifID;
-	int id;
-	String name;
-	String describtion;
-}

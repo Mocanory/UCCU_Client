@@ -18,7 +18,7 @@ public class ChatPanel extends JPanel{
     public enum puborpri{
     	pub,pri
     }
-    puborpri labelstat;
+    public puborpri labelstat;
     Entity priID;
 //	AioSession session;
 	int mainID;

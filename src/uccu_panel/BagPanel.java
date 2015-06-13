@@ -1,11 +1,10 @@
 package uccu_panel;
 
+import uccu_client.*;
 import java.awt.Rectangle;
-
 import javax.swing.*;
 
-import uccu_client.Picture;
-
+import uccu_client.*;
 public class BagPanel extends JInternalFrame{
 	JPanel bp;
 	BackgroundPanel backg;
@@ -31,8 +30,10 @@ public class BagPanel extends JInternalFrame{
 		bp.setLayout(null);
 		bp.setBounds(50, 50, 4*lbW, 8*lbH);
 		this.add(bp);
-		for(int i=0;i<32;++i){
-			ItemIcon item = new ItemIcon(new Picture("0.png", 0, 0, 0), "123\n1231\neee", 1);
+		Item[] bagitem = uccu_client.Painter.gameBox.mainrole.items;
+		for(int i=0;i<bagitem.length;++i){
+			if(bagitem[i] == null || bagitem[i].empty) continue;
+			ItemIcon item = new ItemIcon(bagitem[i]);
 			item.setBounds((i%4)*lbW,(i/4)*lbH,50,50);
 			bp.add(item);
 		}
