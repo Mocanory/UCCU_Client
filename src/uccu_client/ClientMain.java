@@ -120,7 +120,7 @@ public class ClientMain {
 				loginBox.serverState((byte) 1);// 假装连接成功，服务器处于空闲状态
 			}
 			else if (num == 2) {
-//				mySleep(2000);
+				mySleep(200000);
 				loginBox.onLoginResponse(true);// 假装收到了一个登录成功反馈
 				// loginBox.onRegistResponse(true);//假装收到了一个注册成功反馈
 //				mySleep(1000);

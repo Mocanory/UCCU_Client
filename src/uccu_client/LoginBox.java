@@ -1,6 +1,7 @@
 /* 登录窗体类 */
 package uccu_client;
 
+import java.awt.Color;
 import java.awt.Toolkit;
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
@@ -38,15 +39,16 @@ public class LoginBox extends JFrame{
 				((JFrame)e.getSource()).dispose();
 			}
 		});
-		this.setSize(1366, 768);
 		this.setLayout(null);
+//		this.setLocation((1366-getSize().getWidth())/2, 768);
+		this.setUndecorated(true);
+		this.setBackground(new Color(0,0,0,0));
+		loginPanel = new LoginPanel(this);
+		loginPanel.setBounds(0,0, 400, 200);
+		this.setSize(loginPanel.getSize());
+		this.add(loginPanel);
 		backPicPanel = new BackgroundPanel();
 		backPicPanel.setBounds(0, 0, 1366, 768);
-		this.getLayeredPane().add(backPicPanel,new Integer(Integer.MIN_VALUE));
-		((JPanel)this.getContentPane()).setOpaque(false);
-		loginPanel = new LoginPanel(this);
-		loginPanel.setBounds(300, 300, 400, 200);
-		this.add(loginPanel);
 		waitingPanel = new WaitingPanel(
 				Toolkit.getDefaultToolkit().getImage("loading.gif")
 				,Toolkit.getDefaultToolkit().getImage("bar.png"));
@@ -57,7 +59,7 @@ public class LoginBox extends JFrame{
 		createPanel.setBounds(0, 0, 1366, 768);
 	}
 	public void init(){
-		backPicPanel.img = Toolkit.getDefaultToolkit().getImage("bg1.jpg");
+//		backPicPanel.img = Toolkit.getDefaultToolkit().getImage("bg1.jpg");
 		this.setVisible(true);	
 	}
 	public void onLoginResponse(boolean res){
@@ -65,6 +67,8 @@ public class LoginBox extends JFrame{
 		UccuLogger.log("ClientServer/LoginBox/onLoginResponse", "package 0003: "+res);
 		if(res){
 			this.setVisible(false);
+			this.getLayeredPane().add(backPicPanel,new Integer(Integer.MIN_VALUE));
+			((JPanel)this.getContentPane()).setOpaque(false);
 			loginPanel.setVisible(false);
 			this.add(waitingPanel);
 			backPicPanel.img = Toolkit.getDefaultToolkit().getImage("lf.jpg");
